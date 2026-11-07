@@ -75,8 +75,16 @@ h2.severe-title { color: var(--bad); }
 
 .finding { border-left: 3px solid var(--muted); background: var(--panel-2); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
 .finding.high { border-color: var(--bad); } .finding.medium { border-color: var(--warn); } .finding.low { border-color: var(--accent); }
+/* Critical: AI said high AND it cites advertising / session-replay evidence. Thicker red + tinted. */
+.finding.critical { border-left: 5px solid var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--panel-2)); }
 .finding .t { font-weight: 700; }
 .finding .law { color: var(--muted); font-size: 12px; margin-top: 4px; }
+/* AI legal review bits */
+.chip.ai { color: var(--accent); border-color: var(--accent); }
+.finding .quote { margin: 6px 0; padding: 4px 10px; border-left: 2px solid var(--line); color: var(--muted); font-style: italic; }
+.finding .reasoning { font-size: 13px; margin-top: 4px; }
+.ai-summary { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+.ai-summary .evidence { font-size: 12px; color: var(--muted); padding-left: 18px; }
 
 /* ---------- Tables ---------- */
 .scroll { overflow: auto; max-height: 460px; }  /* long tables scroll inside their box */

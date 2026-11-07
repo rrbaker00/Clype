@@ -11,6 +11,8 @@ from playwright.sync_api import sync_playwright, Playwright
 def base_domain(url):
     """Return the registrable domain (e.g. 'bbc.co.uk') for a URL."""
     ext = tldextract.extract(url)
+    if not ext.suffix:  # no public suffix (localhost, IPs, made-up test domains like shop.example)
+        return ".".join(p for p in (ext.subdomain, ext.domain) if p).removeprefix("www.")
     return f"{ext.domain}.{ext.suffix}"
 
 def make_logger(site_domain):

@@ -12,6 +12,8 @@ from fastapi.staticfiles import StaticFiles     # serves plain files (our HTML/C
 from pydantic import BaseModel                  # validates the JSON body of incoming requests
 
 from agent.run_audit import run as run_audit    # the actual pipeline: capture -> consent -> ... -> compare
+from agent.letter import draft_letter           # drafts the complaint letter (LLM job 3)
+from agent import llm                           # Cost tracker for the letter call
 
 # __file__ is this file's path (api/main.py). .resolve() makes it absolute,
 # .parent is the api/ folder, .parent again is the project root (HTB/).
@@ -98,6 +100,31 @@ def get_audit(audit_id: str):
     a = json.loads(f.read_text())
     a["tracker_counts"] = tracker_counts(a)  # add the counts (in the response only, the file isn't changed)
     return a  # send the full audit back as JSON
+
+
+# POST /api/audits/{id}/letter -> the "Create draft letter" button.
+# Drafts a letter for an audit that didn't get one automatically, saves it into the
+# audit file, and returns it. DRAFT ONLY: this route never sends email.
+@app.post("/api/audits/{audit_id}/letter")
+def create_letter(audit_id: str):
+    f = AUDITS / f"{audit_id}.json"
+    if not re.fullmatch(r"[\w.\-]+", audit_id) or not f.exists():
+        raise HTTPException(404, "not found")
+    a = json.loads(f.read_text())
+    cost = llm.Cost()
+    letter = draft_letter(a, cost=cost)
+    if letter.get("error") and not letter.get("body"):
+        raise HTTPException(422, letter["error"])  # e.g. nothing to complain about
+    letter["auto"] = {"tier": None, "reason": "Requested from the dashboard."}
+    a["letter"] = letter
+    # Add this call's tokens to the audit's running cost, so the totals stay honest.
+    c, new = a.setdefault("cost", {}), cost.as_dict()
+    for k in ("llm_calls", "input_tokens", "output_tokens"):
+        c[k] = (c.get(k) or 0) + new[k]
+    if new["model"] and new["model"] not in (c.get("model") or ""):
+        c["model"] = "+".join(filter(None, [c.get("model"), new["model"]]))
+    f.write_text(json.dumps(a, indent=2))
+    return letter
 
 
 # Serve everything in web/ as normal files: /index.html, /audit.html, /style.css.

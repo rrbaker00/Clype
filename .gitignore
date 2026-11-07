@@ -1,3 +1,5 @@
 .env
 .venv/
 __pycache__/
+data/sent_log.json
+data/outbox/

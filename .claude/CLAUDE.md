@@ -24,6 +24,8 @@ Team of 2, 24-hour hackathon. Submission is Sunday 8 Nov, around midday.
   1. Finding/clicking the cookie banner when plain selectors fail.
   2. Reading the privacy policy.
   3. Drafting the letter.
+  4. Legal review: reads the evidence summary + privacy/cookie policies and adds
+     findings tagged `"source": "ai"` (agent/legal_review.py). Must cite evidence IDs.
 - Everything else is plain code. No LLM calls in the capture loop.
 
 ## Core features (in build order)
@@ -33,7 +35,8 @@ Team of 2, 24-hour hackathon. Submission is Sunday 8 Nov, around midday.
 4. Flag trackers using a known list (DuckDuckGo Tracker Radar or EasyPrivacy).
 5. Find the privacy policy and extract the companies it says it shares with.
 6. Compare what the policy said against what was observed.
-7. Draft a complaint / SAR letter. Draft only, never sent.
+7. Draft a complaint letter (auto for critical/high audits, on request otherwise).
+   Critical ones are emailed per SEND_MODE.
 8. Results page showing what leaked, broken promises, and the letter.
 
 Bonus, only if core is done: session-replay keystroke capture, fingerprinting
@@ -42,7 +45,10 @@ detection (canvas / WebGL / AudioContext hooks via `add_init_script`).
 ## Hard rules
 - **Passive only.** We observe what our own browser receives. No attacks,
   no fuzzing, no bypassing auth.
-- **Never send anything.** Letters are drafts shown to the user.
+- **Sending is limited and controlled by `SEND_MODE` in `.env`.** Only audits whose worst finding
+  is `critical` are emailed automatically (agent/mailer.py, via Brevo SMTP). `test` (default) sends to our own
+  Gmail; `live` sends to the real DPO, max one email per site and 5 per day; `off` = drafts only.
+  `outbox` saves .eml files instead. `high` audits are drafted, never sent. Never send from tests or debugging runs.
 - **Track cost.** Log tokens used and time taken per audit into the audit
   JSON. Wordsmith judges on this.
 - Never commit `.env` or API keys.

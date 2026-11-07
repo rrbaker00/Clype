@@ -11,69 +11,187 @@ category below is a small hand-curated guess for the companies most
 likely to actually show up in an audit — "best effort", not official
 Tracker Radar data.
 
-CATEGORY_BY_COMPANY doubles as the actual tracker allowlist: Tracker
+TRACKER_COMPANIES doubles as the actual tracker allowlist: Tracker
 Radar's domain map is an *ownership* map, not an *evil tracker* list — it
 includes a site's own CDN and generic infra (Cloudflare, AWS, etc.)
 right alongside ad-tech. Only companies listed here count as trackers;
 everything else in the raw dataset is treated as not-a-tracker rather
 than risk accusing a CDN of spying in a real complaint letter.
+
+Same idea one level down, for big companies that do lots of non-tracking
+things too (Google owns gstatic.com fonts and firebaseapp.com hosting,
+Amazon owns AWS, Microsoft owns Office, Facebook owns reactjs.org...).
+For those, MIXED_COMPANY_TRACKING_DOMAINS lists the domains that are
+actually used for ads/analytics, and every other domain they own is
+treated as not-a-tracker. Without this, a site using Google Fonts or
+hosted on AWS would get "X tracked you after you rejected cookies".
 """
 import json
 import os
+from urllib.parse import urlparse
 
 _DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "trackers.json")
 
 with open(_DATA_PATH) as f:
     _DOMAIN_TO_COMPANY = json.load(f)
 
-CATEGORY_BY_COMPANY = {
-    "Google": "Advertising",
-    "Facebook": "Advertising",
-    "ByteDance": "Advertising",
-    "Amazon": "Advertising",
-    "Microsoft": "Analytics",
-    "Adobe": "Analytics",
-    "Criteo": "Advertising",
-    "Taboola": "Advertising",
-    "Outbrain": "Advertising",
-    "Hotjar": "Analytics",
-    "Twitter": "Advertising",
-    "LinkedIn": "Advertising",
-    "Pinterest": "Advertising",
-    "Oracle": "Advertising",
-    "comScore": "Analytics",
-    "Nielsen": "Analytics",
-    "Quantcast": "Advertising",
-    "Magnite": "Advertising",
-    "PubMatic": "Advertising",
-    "OpenX": "Advertising",
-    "Index Exchange": "Advertising",
-    "Xandr": "Advertising",
-    "Yahoo": "Advertising",
-    "Snap Inc.": "Advertising",
-    "Amplitude": "Analytics",
-    "Segment": "Analytics",
-    "Mixpanel": "Analytics",
-    "New Relic": "Analytics",
-    "Datadog": "Analytics",
-    "Chartbeat": "Analytics",
-    "Optimizely": "Analytics",
-    "Dotmetrics": "Analytics",
+# Tracker Radar company name -> (name we show, category).
+# Keys must match data/trackers.json EXACTLY (e.g. "Amazon.com", not "Amazon"),
+# otherwise that company silently never matches.
+TRACKER_COMPANIES = {
+    # Advertising
+    "Google": ("Google", "Advertising"),
+    "Facebook": ("Facebook", "Advertising"),
+    "ByteDance": ("TikTok", "Advertising"),
+    "Amazon.com": ("Amazon", "Advertising"),
+    "Microsoft": ("Microsoft", "Advertising"),      # Bing Ads, LinkedIn, Xandr (adnxs.com), Clarity
+    "Twitter": ("Twitter", "Advertising"),
+    "Pinterest": ("Pinterest", "Advertising"),
+    "Snap": ("Snap", "Advertising"),
+    "Verizon Media": ("Yahoo", "Advertising"),
+    "Oracle": ("Oracle", "Advertising"),
+    "Criteo": ("Criteo", "Advertising"),
+    "Taboola": ("Taboola", "Advertising"),
+    "Outbrain": ("Outbrain", "Advertising"),
+    "Quantcast": ("Quantcast", "Advertising"),
+    "Magnite": ("Magnite", "Advertising"),
+    "PubMatic": ("PubMatic", "Advertising"),
+    "OpenX": ("OpenX", "Advertising"),
+    "Index Exchange": ("Index Exchange", "Advertising"),
+    "The Trade Desk": ("The Trade Desk", "Advertising"),
+    "LiveRamp": ("LiveRamp", "Advertising"),
+    "ID5": ("ID5", "Advertising"),
+    "Lotame Solutions": ("Lotame", "Advertising"),
+    "Permutive": ("Permutive", "Advertising"),
+    "Teads": ("Teads", "Advertising"),
+    "Adform": ("Adform", "Advertising"),
+    "TripleLift": ("TripleLift", "Advertising"),
+    "Media.net Advertising": ("Media.net", "Advertising"),
+    "Sovrn Holdings": ("Sovrn", "Advertising"),
+    "The Ozone Project": ("Ozone", "Advertising"),
+    "Bounce Exchange": ("Bounce Exchange", "Advertising"),
+    # Analytics / audience measurement
+    "Adobe": ("Adobe", "Analytics"),
+    "comScore": ("comScore", "Analytics"),
+    "The Nielsen Company": ("Nielsen", "Analytics"),
+    "Dotmetrics": ("Dotmetrics", "Analytics"),
+    "Chartbeat": ("Chartbeat", "Analytics"),
+    "Parsely": ("Parse.ly", "Analytics"),
+    "Gemius": ("Gemius", "Analytics"),
+    "Optimizely": ("Optimizely", "Analytics"),
+    "Amplitude": ("Amplitude", "Analytics"),
+    "Segment.io": ("Segment", "Analytics"),
+    "Mixpanel": ("Mixpanel", "Analytics"),
+    "Tealium": ("Tealium", "Analytics"),
+    # Session replay (records clicks / scrolling / typing)
+    "Hotjar": ("Hotjar", "Session replay"),
+    "FullStory": ("FullStory", "Session replay"),
+    "Mouseflow": ("Mouseflow", "Session replay"),
+    "Crazy Egg": ("Crazy Egg", "Session replay"),
+    "ContentSquare": ("Contentsquare", "Session replay"),
+    "Lucky Orange": ("Lucky Orange", "Session replay"),
+    "Quantum Metric": ("Quantum Metric", "Session replay"),
+    # Performance monitoring: technically sends data, but mostly speed/error stats.
+    # Kept separate so compare.py can treat it as low severity.
+    "New Relic": ("New Relic", "Monitoring"),
+    "Datadog": ("Datadog", "Monitoring"),
 }
 
-def match(domain, site_domain):
+# For big companies that also run fonts / hosting / CDNs / normal products:
+# ONLY these domains count as tracking. Everything else they own is ignored.
+MIXED_COMPANY_TRACKING_DOMAINS = {
+    "Google": {"google-analytics.com", "googletagmanager.com", "googletagservices.com",
+               "doubleclick.net", "doubleclick.com", "googlesyndication.com",
+               "googleadservices.com", "2mdn.net", "googleoptimize.com",
+               "app-measurement.com", "adtrafficquality.google",
+               "youtube.com"},  # embedded YouTube sets tracking cookies (youtube-nocookie.com doesn't)
+    "Microsoft": {"bing.com", "clarity.ms", "adnxs.com", "adnxs-simple.com", "appnexus.com",
+                  "linkedin.com", "bizographics.com", "adsymptotic.com"},
+    "Amazon.com": {"amazon-adsystem.com", "amazonadsystem.com", "assoc-amazon.com",
+                   "assoc-amazon.co.uk", "associates-amazon.com", "serving-sys.com",
+                   "sizmek.com", "peer39.com", "peer39.net", "alexametrics.com"},
+    "Facebook": {"facebook.net", "facebook.com", "instagram.com", "atdmt.com",
+                 "fbthirdpartypixel.com", "fbthirdpartypixel.net", "fbthirdpartypixel.org"},
+    "Twitter": {"ads-twitter.com", "twitter.com", "x.com", "t.co"},
+    "ByteDance": {"tiktok.com"},
+    "Pinterest": {"pinterest.com"},
+    "Snap": {"sc-static.net", "snapchat.com"},
+    "Verizon Media": {"yahoo.com", "oath.com", "advertising.com"},
+    "Oracle": {"bluekai.com", "bkrtx.com", "addthis.com", "moatads.com", "grapeshot.co.uk"},
+    "Adobe": {"omtrdc.net", "demdex.net", "everesttech.net", "2o7.net", "adobedtm.com",
+              "adobetarget.com"},
+}
+
+# Exact hostnames that are trackers even though their domain isn't in the lists above.
+TRACKER_HOSTS = {
+    "snap.licdn.com": "Microsoft",  # LinkedIn Insight tag (licdn.com is otherwise LinkedIn's image CDN)
+}
+
+# Paths on non-tracking domains that ARE tracking (google.com is mostly search/maps/reCAPTCHA).
+TRACKER_URL_PARTS = {
+    "google.com/pagead/": "Google",       # ad conversion tracking
+    "google.com/ads/": "Google",          # e.g. /ads/ga-audiences (remarketing)
+    "google.co.uk/pagead/": "Google",
+    "google.co.uk/ads/": "Google",
+}
+
+
+# Tracker cookies that sit on the SITE'S OWN domain (set by the tracker's script, e.g.
+# Google Analytics' _ga on .bbc.co.uk). Matching by cookie domain alone misses these.
+# Name prefix -> Tracker Radar company key (must be in TRACKER_COMPANIES).
+FIRST_PARTY_TRACKER_COOKIES = {
+    "_ga": "Google", "_gid": "Google", "_gat": "Google", "_gcl_": "Google",   # _ga also covers GA4's _ga_XXXX
+    "_fbp": "Facebook", "_fbc": "Facebook",
+    "_ttp": "ByteDance",
+    "_uetsid": "Microsoft", "_uetvid": "Microsoft", "_clck": "Microsoft", "_clsk": "Microsoft",
+    "_pin_unauth": "Pinterest",
+    "_scid": "Snap",
+    "__qca": "Quantcast",
+    "_hj": "Hotjar",
+    "_cb": "Chartbeat", "_chartbeat": "Chartbeat",
+    "AMCV_": "Adobe", "s_vi": "Adobe", "s_ecid": "Adobe",
+    "ajs_anonymous_id": "Segment.io", "ajs_user_id": "Segment.io",
+    "_pcid": "Permutive", "permutive-id": "Permutive",
+    "optimizelyEndUserId": "Optimizely",
+}
+
+
+def match_cookie(name, cookie_domain, site_domain):
+    """Tracker dict for a cookie: known tracker cookie NAME first, then the cookie's domain."""
+    for prefix, company in FIRST_PARTY_TRACKER_COOKIES.items():
+        if name.startswith(prefix):
+            shown, category = TRACKER_COMPANIES[company]
+            return {"is_tracker": True, "company": shown, "category": category}
+    return match(cookie_domain, site_domain)
+
+
+def match(domain, site_domain, url=None):
     """Return the audit-format 'tracker' dict for a request's base domain.
     Tracker Radar's entity list includes first-party sites, CDNs, and
     generic infra too (it's an ownership map, not a tracking-only list) —
     a site's own domain is never a tracker, and only companies in
-    CATEGORY_BY_COMPANY count as known trackers."""
+    TRACKER_COMPANIES count as known trackers.
+
+    url (optional) lets us check the exact hostname/path, e.g. to tell
+    LinkedIn's tracking script apart from LinkedIn's image CDN."""
     if domain == site_domain:
         return {"is_tracker": False}
-    company = _DOMAIN_TO_COMPANY.get(domain)
-    if company is None or company not in CATEGORY_BY_COMPANY:
+
+    company = None
+    if url:
+        host = urlparse(url).hostname or ""
+        company = TRACKER_HOSTS.get(host)
+        if company is None:
+            company = next((c for part, c in TRACKER_URL_PARTS.items() if part in url), None)
+
+    if company is None:
+        company = _DOMAIN_TO_COMPANY.get(domain)
+        # Big mixed company? Only its known tracking domains count.
+        allowed = MIXED_COMPANY_TRACKING_DOMAINS.get(company)
+        if allowed is not None and domain not in allowed:
+            return {"is_tracker": False}
+
+    if company not in TRACKER_COMPANIES:  # also covers company is None
         return {"is_tracker": False}
-    return {
-        "is_tracker": True,
-        "company": company,
-        "category": CATEGORY_BY_COMPANY[company],
-    }
+    name, category = TRACKER_COMPANIES[company]
+    return {"is_tracker": True, "company": name, "category": category}

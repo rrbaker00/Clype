@@ -57,16 +57,39 @@ function statsSection(a) {
 }
 
 // The broken promises, coloured by severity.
+// The broken promises, coloured by severity. AI-review findings get an "AI review" label,
+// their reasoning, the policy sentence they quote, and which evidence lines they rely on.
 function findingsPanel(a) {
   const findings = a.findings ?? [];
+  const review = a.ai_review;
   return el("div", { class: "panel" },
     el("h3", {}, "Broken promises"),
     findings.length === 0
       ? el("p", { class: "muted" }, "No broken promises found.")
       : findings.map((f) => el("div", { class: "finding " + (f.severity ?? "") },
-          el("div", { class: "row" }, el("span", { class: "t" }, f.title), el("span", { class: "muted" }, f.severity)),
+          el("div", { class: "row" },
+            el("span", { class: "t" }, f.title),
+            el("span", {},
+              f.source === "ai" ? el("span", { class: "chip ai" }, "AI review") : null,
+              el("span", { class: "muted" }, " " + (f.severity ?? "")))),
           el("div", {}, f.detail),
-          f.law ? el("div", { class: "law" }, f.law) : null)));
+          f.policy_quote ? el("blockquote", { class: "quote" }, `Policy says: "${f.policy_quote}"`) : null,
+          f.reasoning ? el("div", { class: "reasoning" }, "Why: " + f.reasoning) : null,
+          f.severity_note ? el("div", { class: "law" }, f.severity_note) : null,  // our safeguard changed the AI's tier
+          f.law ? el("div", { class: "law" }, f.law + (f.evidence?.length ? `  ·  evidence ${f.evidence.join(", ")}` : "")) : null)),
+    review ? aiSummary(review) : null);
+}
+
+// The AI's overall verdict + what it was given, so a judge can check E1, E2... themselves.
+function aiSummary(review) {
+  return el("div", { class: "ai-summary" },
+    el("div", { class: "row" }, el("b", {}, "AI legal review"),
+      el("span", { class: "muted" }, `${show(review.model)} · ${review.findings_kept ?? 0} kept, ${review.findings_dropped ?? 0} dropped (no valid evidence)`)),
+    review.error ? el("p", { class: "muted" }, "Review failed: " + review.error) : null,
+    review.summary ? el("p", {}, review.summary) : null,
+    el("p", { class: "muted" }, "Automated assessment, not legal advice. Every AI finding must cite the evidence below."),
+    review.evidence?.length ? el("details", {}, el("summary", {}, `Evidence given to the AI (${review.evidence.length} lines)`),
+      el("ul", { class: "evidence" }, review.evidence.map((e) => el("li", {}, e)))) : null);
 }
 
 // Group tracker requests by company -> "who tracked you, and did they stop?"
@@ -183,15 +206,33 @@ function requestsPanel(a) {
 // The drafted letter: editable, with a copy button. Never sent anywhere.
 function letterPanel(a) {
   const l = a.letter;
-  // No letter in the JSON yet -> offer to make one. Letters are request-only, never automatic.
+  // No letter in the JSON yet (audit wasn't critical/high) -> offer to draft one on request.
+  // The API route only drafts; it never sends.
   if (!l) {
-    const create = el("button", { id: "create-letter" }, "Create draft letter");
-    // TODO: on click, ask the API to draft a letter for this audit, then show it here.
-    return el("div", { class: "panel" },
-      el("div", { class: "row" }, el("h3", {}, "Draft letter"),
-        el("span", { class: "pill warn" }, "Draft only")),
-      el("p", { class: "muted" }, "No letter drafted for this audit yet."),
-      create);
+    const msg = el("span", { class: "muted" });
+    const panel = el("div", { class: "panel" });
+    const create = el("button", {
+      id: "create-letter",
+      onclick: async () => {
+        create.disabled = true;
+        msg.textContent = "  Drafting… (about 10-20 seconds)";
+        try {
+          const res = await fetch(`/api/audits/${encodeURIComponent(id)}/letter`, { method: "POST" });
+          const data = await res.json();
+          if (!res.ok) throw new Error(data.detail || `API error ${res.status}`);
+          a.letter = data;
+          panel.replaceWith(letterPanel(a));  // swap the button for the drafted letter
+        } catch (err) {
+          msg.textContent = "  Could not draft: " + err.message;
+          create.disabled = false;
+        }
+      },
+    }, "Create draft letter");
+    panel.append(
+      el("div", { class: "row" }, el("h3", {}, "Draft letter"), el("span", { class: "pill warn" }, "Draft only")),
+      el("p", { class: "muted" }, "No letter for this audit yet. Letters are drafted automatically only for critical and high audits."),
+      create, msg);
+    return panel;
   }
   const to = el("input", { value: l.to ?? "" });
   const subject = el("input", { value: l.subject ?? "" });
@@ -205,12 +246,35 @@ function letterPanel(a) {
     },
   }, "Copy letter");
   return el("div", { class: "panel" },
-    el("div", { class: "row" }, el("h3", {}, `Draft letter (${(l.kind ?? "").toUpperCase()})`),
-      el("span", { class: "pill warn" }, "Draft only")),
+    el("div", { class: "row" }, el("h3", {}, `Letter (${(l.kind ?? "").toUpperCase()})`), deliveryPill(l.delivery)),
+    l.auto?.reason ? el("p", { class: "muted" }, l.auto.reason) : null,
+    deliveryLine(l.delivery),
+    l.note ? el("p", { class: "muted" }, l.note) : null,
+    l.error ? el("p", { class: "muted" }, "Problem: " + l.error) : null,
     el("label", {}, "To"), to,
     el("label", {}, "Subject"), subject,
     el("label", {}, "Body"), body,
     copy, msg);
+}
+
+// Label for the letter: sent / test-sent / draft only.
+function deliveryPill(d) {
+  if (d?.sent && d.mode === "live") return el("span", { class: "pill bad" }, "Sent to DPO");
+  if (d?.sent && d.mode === "test") return el("span", { class: "pill ok" }, "Test email sent to you");
+  if (d?.saved_to) return el("span", { class: "pill ok" }, "Saved to outbox");
+  return el("span", { class: "pill warn" }, "Draft only, not sent");
+}
+
+// One line explaining what happened with sending (or why it didn't happen).
+function deliveryLine(d) {
+  if (!d) return null;
+  const when = d.at ? fmtDate(d.at) : "";
+  if (d.sent) {
+    const where = d.mode === "test" ? `${d.to} (test mode; would have gone to ${d.intended_to ?? "no DPO address"})` : d.to;
+    return el("p", { class: "muted" }, `Emailed ${where} on ${when}. Replies go to the Gmail inbox.`);
+  }
+  if (d.saved_to) return el("p", { class: "muted" }, `Outbox mode: saved as ${d.saved_to} on ${when} (not sent; would go to ${d.intended_to ?? "no DPO address"}).`);
+  return el("p", { class: "muted" }, `Not sent: ${d.reason ?? "unknown reason"}`);
 }
 
 // Everything in the JSON, using the generic renderer. Catches fields we don't have a nice view for yet.

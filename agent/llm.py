@@ -1,14 +1,18 @@
 """
 The ONLY place LLM calls happen in this codebase (see .claude/CLAUDE.md).
 
-Two tiers:
+Three tiers:
   FAST_MODEL   (gpt-5.4-mini) -> job 1: consent.py banner-click fallback
                                   job 2: policy.py extraction
   STRONG_MODEL (gpt-5.4)      -> job 3: letter.py drafting only
+  REVIEW_MODEL (env var, defaults to FAST_MODEL)
+                              -> job 4: legal_review.py (AI legal review of the evidence)
+     Set REVIEW_MODEL=<model id> in .env to switch (e.g. to a Luna model) without code changes.
 
 Never import this from capture.py.
 """
 import json
+import os
 import time
 
 from openai import OpenAI
@@ -21,6 +25,7 @@ except ImportError:
 
 FAST_MODEL = "gpt-5.4-mini"
 STRONG_MODEL = "gpt-5.4"
+REVIEW_MODEL = os.getenv("REVIEW_MODEL", FAST_MODEL)  # read after load_dotenv(), so .env works
 
 _client = None
 
@@ -94,3 +99,18 @@ def ask_strong(prompt, *, system=None, max_tokens=2000, cost=None):
     """System-2: plain text only, used for letter drafting."""
     return _call(STRONG_MODEL, prompt, system=system, max_tokens=max_tokens,
                  json_mode=False, cost=cost)
+
+
+def ask_review(prompt, *, system=None, max_tokens=6000, cost=None):
+    """Job 4: legal review. Always JSON back (the prompt must describe the shape).
+    6000 tokens: reasoning-style models spend part of the budget thinking before answering,
+    and a cut-off answer is broken JSON."""
+    return _call(REVIEW_MODEL, prompt, system=system, max_tokens=max_tokens,
+                 json_mode=True, cost=cost)
+
+
+def ask_strong_json(prompt, *, system=None, max_tokens=2500, cost=None):
+    """Job 3 (letter drafting) with a JSON answer ({"subject", "body"}) so the subject
+    line and body come back separately."""
+    return _call(STRONG_MODEL, prompt, system=system, max_tokens=max_tokens,
+                 json_mode=True, cost=cost)
