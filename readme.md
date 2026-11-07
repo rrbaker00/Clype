@@ -23,3 +23,11 @@ Additonal features
 - look for data collection in input boxes, eg typing a email into a   box w out submiting it 
 - cnamw clokeing  
 
+
+## Credits and licences
+- **Tracker data:** `data/trackers.json` is derived from [DuckDuckGo Tracker Radar](https://github.com/duckduckgo/tracker-radar)
+  (© 2020 Duck Duck Go, Inc.), licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+  We reduced it to a domain → company-name map; that file is shared under the same licence. Details: `data/README.md`.
+- **Open-source libraries** (all MIT / BSD-3-Clause / Apache-2.0 / PSF): Playwright and Chromium, FastAPI, Starlette,
+  uvicorn, Pydantic, OpenAI Python SDK, tldextract (with the Public Suffix List, MPL-2.0), python-dotenv, pypdf (PDF policies).
+- **Services:** OpenAI API (AI review, policy reading, letters), Brevo (email sending).

@@ -22,6 +22,8 @@ button; others are a list of per-category Accept/Reject toggles with no
 single "reject all" at all — that case is plain code (click every
 per-category Reject, then Apply/Save), not an AI decision.
 """
+import re
+
 from . import llm
 
 REJECT_PHRASES = [
@@ -65,13 +67,57 @@ def find_by_phrases(page, phrases):
                     continue
     return None
 
+# Text that tells us a button belongs to a cookie / consent banner.
+COOKIE_CONTEXT_JS = """el => {
+    // Walk up a few parent elements; if a SMALL one (a banner, not the whole page)
+    // mentions cookies / consent / privacy in its text, id or class, it's a cookie control.
+    const re = /cookie|consent|privacy|gdpr|tracking|personal data/i;
+    let n = el;
+    for (let i = 0; i < 6 && n && n !== document.body; i++, n = n.parentElement) {
+        const text = n.innerText || "";
+        if (text.length > 4000) break;          // reached the main page: stop, too broad
+        if (re.test(text) || re.test(n.id || "") || re.test(String(n.className || ""))) return true;
+    }
+    return false;
+}"""
+
+# Consent-banner iframes (OneTrust, Sourcepoint, ...) usually say so in their address.
+CMP_FRAME = re.compile(r"consent|cmp|cookie|privacy|sourcepoint|onetrust|didomi|trustarc|quantcast|usercentrics", re.I)
+
+
+def in_cookie_context(frame, el):
+    """True if this button sits inside something about cookies/consent (or a consent iframe).
+    Stops us clicking e.g. a shop's "Customize" product button (talldwarfhosting.com) and
+    calling it a cookie banner."""
+    if frame != frame.page.main_frame and CMP_FRAME.search(frame.url or ""):
+        return True
+    try:
+        return bool(el.evaluate(COOKIE_CONTEXT_JS))
+    except Exception:
+        return False
+
+
+def find_cookie_button(page, phrases):
+    """Like find_by_phrases, but only returns buttons/links that are in a cookie context."""
+    for phrase in phrases:
+        for role in ("button", "link"):
+            for frame in page.frames:
+                try:
+                    for el in frame.get_by_role(role, name=phrase).all()[:5]:
+                        if el.is_visible() and in_cookie_context(frame, el):
+                            return el
+                except Exception:
+                    continue
+    return None
+
+
 def find_reject_button(page):
-    """Return the first visible reject-cookies button/link found in any frame, or None."""
-    return find_by_phrases(page, REJECT_PHRASES)
+    """Return the first visible reject-cookies button/link (in a cookie banner), or None."""
+    return find_cookie_button(page, REJECT_PHRASES)
 
 def find_manage_button(page):
-    """Return the first visible 'manage preferences'-style button/link, or None."""
-    return find_by_phrases(page, MANAGE_PHRASES)
+    """Return the first visible 'manage preferences'-style button/link (in a cookie banner), or None."""
+    return find_cookie_button(page, MANAGE_PHRASES)
 
 def find_apply_button(page):
     """Return the first visible 'apply/save/confirm settings' button/link, or None."""

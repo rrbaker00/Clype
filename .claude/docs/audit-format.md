@@ -77,7 +77,9 @@ Added for letters and email:
   safeguard; AI findings also carry `ai_severity` and `severity_note`.
 
 Added for reliability:
-- `loaded`: false if the site couldn't be opened (then no AI review / letter, 0 LLM calls).
+- `loaded`: false if the site couldn't be opened OR showed a bot-protection / HTTP 4xx-5xx page
+  (then no AI review / letter, 0 LLM calls; the reason is in `errors`).
+- `policy.format`: `"html"` or `"pdf"` (PDF policies are downloaded and read with pypdf).
 - `errors`: `[{"step", "error"}]` for any pipeline step that failed; the rest of the audit still ran.
 
 Bonus fields (only if built):

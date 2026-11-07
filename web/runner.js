@@ -43,6 +43,18 @@ async function startOne(e) {
   }
 }
 
+// Cancel everything still waiting. Running audits finish on their own.
+async function cancelQueued() {
+  if (!confirm("Cancel all audits that haven't started yet? Running ones will still finish.")) return;
+  try {
+    const { cancelled } = await postJson("/api/jobs/cancel", {});
+    setMsg(`Cancelled ${cancelled} waiting audit${cancelled === 1 ? "" : "s"}.`);
+    pollJobs();
+  } catch (err) {
+    setMsg("Could not cancel: " + err.message);
+  }
+}
+
 // A file was chosen: show its name + URL count, so you can check it before auditing.
 async function showChosenFile() {
   const file = document.getElementById("auditFile").files[0];
@@ -109,21 +121,24 @@ async function pollJobs() {
   // Summary line + progress bar, so a 300-URL batch is readable at a glance.
   const count = (s) => list.filter((j) => j.status === s).length;
   const [queued, running, done, failed] = ["queued", "running", "done", "failed"].map(count);
-  const total = list.length, finished = done + failed;
+  const total = list.length, finished = done + failed + count("cancelled");
   const critical = list.filter((j) => j.tier === "critical").length;
   document.getElementById("queueSummary").replaceChildren(...(total ? [
     el("div", { class: "muted small" },
       `${finished}/${total} finished · ${running} running · ${queued} waiting · ${failed} failed` +
+      (count("cancelled") ? ` · ${count("cancelled")} cancelled` : "") +
       (critical ? ` · ${critical} critical` : "")),
     el("div", { class: "bar" }, el("i", { style: `width:${Math.round((finished / total) * 100)}%` })),
   ] : []));
+  // "Cancel waiting audits" only makes sense while something is waiting.
+  document.getElementById("cancelQueuedBtn").hidden = queued === 0;
   // Show what's running first, then the most recent others (max 30 rows).
-  const order = { running: 0, queued: 2, done: 1, failed: 1 };
+  const order = { running: 0, queued: 2, done: 1, failed: 1, cancelled: 3 };
   const shown = [...list].sort((a, b) => order[a.status] - order[b.status] || b.created - a.created).slice(0, 30);
   document.getElementById("jobList").replaceChildren(...shown.map(jobRow));
   if (list.length > 30) document.getElementById("jobList").append(el("li", { class: "muted small" }, `…and ${list.length - 30} more`));
   // A job just finished? Refresh the totals + audit cards so it appears.
-  const newlyDone = list.filter((j) => ["done", "failed"].includes(j.status) && !finishedSeen.has(j.id));
+  const newlyDone = list.filter((j) => ["done", "failed", "cancelled"].includes(j.status) && !finishedSeen.has(j.id));
   newlyDone.forEach((j) => finishedSeen.add(j.id));
   if (newlyDone.length) fetchAudits();
   // Keep polling only while something is still in progress.
@@ -135,6 +150,7 @@ window.addEventListener("load", () => {
   document.getElementById("auditFileBtn").addEventListener("click", startFile);
   document.getElementById("auditFile").addEventListener("change", showChosenFile);
   document.getElementById("fileRemoveBtn").addEventListener("click", removeFile);
+  document.getElementById("cancelQueuedBtn").addEventListener("click", cancelQueued);
   // Don't re-trigger "refresh cards" for jobs that finished before this page was opened.
   fetch("/api/jobs").then((r) => r.json()).then((list) => {
     list.filter((j) => ["done", "failed"].includes(j.status)).forEach((j) => finishedSeen.add(j.id));

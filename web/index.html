@@ -38,6 +38,7 @@
         or new lines. Up to 300 per file; 4 run at once by default (about 30-50 s each, so 300 is roughly an hour).</p>
       <p id="runMsg" class="muted small"></p>
       <div id="queueSummary" class="queue-summary"></div>
+      <button id="cancelQueuedBtn" type="button" class="secondary" hidden>Cancel waiting audits</button>
       <ul id="jobList" class="jobs"></ul>
     </div>
 
@@ -61,6 +62,13 @@
         <div class="n" id="totalAfter">0</div>
         <div class="l">Still tracking after "Reject all"</div>
       </div>
+    </div>
+
+    <!-- Cross-site tracking: which companies follow you across many of the audited sites. -->
+    <div id="crossSection" class="panel cross" hidden>
+      <div class="row"><h3>Followed across sites</h3><span id="crossNote" class="muted small"></span></div>
+      <div id="crossRows"></div>
+      <button id="crossMore" type="button" class="secondary" hidden>Show all companies</button>
     </div>
 
     <!-- Severe: sites that kept tracking after "Reject all". Hidden until script.js finds one. -->

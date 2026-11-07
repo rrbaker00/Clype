@@ -13,8 +13,11 @@ Trust rules (a wrong "not named in policy" finding is a false accusation):
     the "not named" check instead of treating an empty list as the truth.
   - Only keep a contact email that really appears in the policy text.
 """
+import io
 import re
 from urllib.parse import urlparse
+
+from pypdf import PdfReader
 
 from .capture import base_domain
 from . import llm
@@ -200,6 +203,37 @@ def clean_contact(candidate, text):
     return None
 
 
+MAX_PDF_BYTES = 15_000_000   # skip anything bigger: not a privacy policy
+MAX_PDF_PAGES = 60
+
+
+def _pdf_text(page, url):
+    """Download a PDF with the browser's own session (a normal GET, same cookies) and
+    extract its text with pypdf. Some sites publish their privacy policy only as a PDF."""
+    resp = page.request.get(url, timeout=20000)
+    data = resp.body()
+    if not resp.ok or len(data) > MAX_PDF_BYTES:
+        raise ValueError(f"PDF not readable (HTTP {resp.status}, {len(data)} bytes)")
+    reader = PdfReader(io.BytesIO(data))
+    return "\n".join((pg.extract_text() or "") for pg in reader.pages[:MAX_PDF_PAGES])
+
+
+def open_text(page, url):
+    """Open a policy URL and return (final url, text, is_pdf).
+    Web page -> navigate and read the visible text. PDF -> download and extract instead
+    (navigating to a PDF in headless Chromium just starts a download and errors)."""
+    if urlparse(url).path.lower().endswith(".pdf"):
+        return url, _pdf_text(page, url), True
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=15000)
+    except Exception as e:
+        if "Download is starting" in str(e):   # a PDF without .pdf in its address
+            return url, _pdf_text(page, url), True
+        raise
+    page.wait_for_timeout(1500)
+    return page.url, page.inner_text("body"), False
+
+
 def read_cookie_policy(page, site_domain, cookie_href, result, texts):
     """Read the cookie policy into texts["cookie"] and record its URL in result.
     If it's the same page as the privacy policy (BBC: one combined policy), don't fetch twice."""
@@ -210,10 +244,7 @@ def read_cookie_policy(page, site_domain, cookie_href, result, texts):
         texts["cookie"] = texts["privacy"]
         return
     try:
-        page.goto(cookie_href, wait_until="domcontentloaded", timeout=15000)
-        page.wait_for_timeout(1500)
-        result["cookie_policy_url"] = page.url
-        texts["cookie"] = page.inner_text("body")
+        result["cookie_policy_url"], texts["cookie"], _ = open_text(page, cookie_href)
     except Exception as e:
         result["cookie_policy_error"] = f"{type(e).__name__}: {e}"[:300]
 
@@ -237,21 +268,18 @@ def read_policy(page, cost=None):
         read_cookie_policy(page, site_domain, cookie_href, result, texts)
         return result, texts
     try:
-        page.goto(href, wait_until="domcontentloaded", timeout=15000)
-        page.wait_for_timeout(1500)
-        result.update(url=page.url, found=True)
-        full_text = page.inner_text("body")
+        landed, full_text, is_pdf = open_text(page, href)
+        result.update(url=landed, found=True, format="pdf" if is_pdf else "html")
 
-        # Short page = probably a hub/summary (BBC, Guardian both do this) with the real
-        # policy one more click away. Follow the best policy link on it, once.
-        if len(full_text) < HUB_PAGE_CHARS:
+        # Short page = probably a hub/summary (BBC, Guardian, talldwarfhosting's /legal) with the
+        # real policy one more click away (sometimes a PDF). Follow the best policy link, once.
+        if not is_pdf and len(full_text) < HUB_PAGE_CHARS:
             deeper = find_policy_url(page, site_domain, exclude=[href, page.url])
             if deeper is not None:
-                page.goto(deeper, wait_until="domcontentloaded", timeout=15000)
-                page.wait_for_timeout(1500)
-                deeper_text = page.inner_text("body")
+                deeper_url, deeper_text, deeper_pdf = open_text(page, deeper)
                 if len(deeper_text) > len(full_text):   # only keep it if it's actually more policy
-                    result["url"], full_text = page.url, deeper_text
+                    result.update(url=deeper_url, format="pdf" if deeper_pdf else "html")
+                    full_text = deeper_text
 
         texts["privacy"] = full_text
         if cookie_href is None:  # not linked from the homepage? try the privacy policy page

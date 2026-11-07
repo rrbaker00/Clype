@@ -11,6 +11,7 @@ function fetchAudits() {
     .then((audits) => {
       renderStats(audits);
       renderCards(audits);
+      fetchCrossSite();   // the cross-site view changes whenever the audits do
     })
     // Show errors on the page AND in the console, instead of failing silently.
     .catch((err) => {
@@ -39,6 +40,7 @@ function renderStats(audits) {
 
 // Pick the coloured label for a card.
 function statusPill(a) {
+  if (a.loaded === false) return el("span", { class: "pill warn" }, "Blocked / didn't load");
   if (a.rejected !== true) return el("span", { class: "pill warn" }, "Reject failed");
   if ((a.tracker_counts?.after ?? 0) > 0) return el("span", { class: "pill bad" }, "Ignored your no");
   return el("span", { class: "pill ok" }, "Respected your choice");
@@ -83,4 +85,43 @@ function renderCards(audits) {
     return;
   }
   cards.replaceChildren(...rest.map(makeCard));
+}
+
+
+// ---------- Cross-site tracking ----------
+let crossShowAll = false;
+
+function fetchCrossSite() {
+  fetch("/api/cross-site")
+    .then((r) => (r.ok ? r.json() : Promise.reject(`API error ${r.status}`)))
+    .then(renderCrossSite)
+    .catch((err) => console.error(err));
+}
+
+// One row per company: name, category, a bar for "share of sites", and the sites behind it.
+function renderCrossSite(data) {
+  const section = document.getElementById("crossSection");
+  const rows = data.companies ?? [];
+  // Only worth showing once we have a few sites and someone appears on more than one.
+  if (data.sites_audited < 2 || !rows.some((c) => c.sites.length > 1)) return (section.hidden = true);
+  section.hidden = false;
+  document.getElementById("crossNote").textContent =
+    `${rows.length} tracking companies across ${data.sites_audited} sites (newest audit per site)`;
+  const shown = crossShowAll ? rows : rows.slice(0, 12);
+  document.getElementById("crossRows").replaceChildren(...shown.map((c) => {
+    const after = c.sites_after_reject.length;
+    return el("details", { class: "cross-row" },
+      el("summary", {},
+        el("span", { class: "cross-name" }, c.company, " ", el("span", { class: "chip" }, show(c.category))),
+        el("span", { class: "cross-bar" }, el("i", { style: `width:${c.share}%` })),
+        el("span", { class: "cross-num" }, `${c.sites.length} of ${data.sites_audited} sites (${c.share}%)`,
+          after ? el("span", { class: "hot" }, ` · ${after} after reject`) : null)),
+      el("div", { class: "cross-sites muted small" },
+        "Seen on: ", c.sites.join(", "),
+        after ? el("div", {}, el("b", {}, "Still tracking after Reject all on: "), c.sites_after_reject.join(", ")) : null));
+  }));
+  const more = document.getElementById("crossMore");
+  more.hidden = rows.length <= 12;
+  more.textContent = crossShowAll ? "Show top 12" : `Show all ${rows.length} companies`;
+  more.onclick = () => { crossShowAll = !crossShowAll; renderCrossSite(data); };
 }

@@ -47,6 +47,13 @@ A wrong accusation in front of judges is worse than a missed one.
 - [x] Add Brevo SMTP_USER / SMTP_PASSWORD + FROM_ADDRESS (and SEND_MODE, SENDER_NAME) to `.env`, send one test email
 - [ ] Find a site with ad trackers after reject to demo a critical audit end to end
 
+## 1d. Done since: cross-site, cancel, PDF policies, block detection
+- [x] Cross-site tracking panel ("Followed across sites"), newest audit per site
+- [x] Cancel waiting audits button; up to 300 URLs per file, 4 audits in parallel (AUDIT_WORKERS)
+- [x] PDF privacy policies (pypdf); cookie banner buttons must be inside a cookie/consent area
+- [x] Bot-protection / HTTP 4xx pages count as "not loaded" (no AI calls, reason shown)
+- [x] Licences checked; Tracker Radar credit in data/README.md + readme.md
+
 ## 2. Pipeline reliability (P, about 1.5 h)
 - [x] `run_audit.py:89`: save as `audits/{timestamp}_{domain}.json` (no overwrites, UI sorts by name),
       path based on project root not the current folder (10 min)
@@ -72,7 +79,7 @@ A wrong accusation in front of judges is worse than a missed one.
 ## 5. Demo prep (both, about 2 h, Sunday morning)
 - [ ] Pick 2-3 sites with juicy results, list them in `demo_sites.txt`, keep their audit JSON as backup
 - [ ] Run `/demo-check`
-- [ ] README: what it is, how to run, credit DuckDuckGo Tracker Radar (check its licence, needs attribution)
+- [x] README: what it is, how to run, credit DuckDuckGo Tracker Radar (check its licence, needs attribution)
 - [x] Show tokens / time / model on screen (Wordsmith judges this)
 - [ ] Record a backup video
 - [ ] Last 2 hours: no new features
@@ -81,5 +88,5 @@ A wrong accusation in front of judges is worse than a missed one.
 - [ ] Auto-audit browser extension (about 1 h)
 - [ ] Fingerprinting detection via `add_init_script` (1-2 h)
 - [ ] CNAME cloaking (about 1 h)
-- [ ] Cross-site tracking across audits (about 30 min)
+- [x] Cross-site tracking across audits (about 30 min)
 - [ ] Input-box capture (1-2 h)

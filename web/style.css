@@ -132,3 +132,18 @@ dd { margin: 0; word-break: break-all; white-space: pre-wrap; }
 .file-info { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 13px; margin: 4px 0; }
 .file-info[hidden] { display: none; }
 button.secondary { background: var(--panel-2); color: var(--text); border: 1px solid var(--line); margin-top: 0; padding: 6px 12px; }
+.jobs .job.cancelled { opacity: .55; }
+#cancelQueuedBtn { margin: 4px 0 6px; }
+
+/* ---------- Cross-site tracking ("Followed across sites") ---------- */
+.cross { margin-top: 18px; }
+.cross-row { border-bottom: 1px solid var(--line); padding: 6px 0; }
+.cross-row summary { display: grid; grid-template-columns: minmax(140px, 1.2fr) 2fr minmax(150px, 1.2fr); gap: 12px;
+                     align-items: center; cursor: pointer; list-style: none; }
+.cross-row summary::-webkit-details-marker { display: none; }
+.cross-name { font-weight: 600; }
+.cross-bar { height: 8px; background: var(--panel-2); border-radius: 99px; overflow: hidden; }
+.cross-bar > i { display: block; height: 100%; background: var(--bad); }
+.cross-num { font-size: 13px; font-variant-numeric: tabular-nums; }
+.cross-sites { padding: 6px 0 4px; word-break: break-word; }
+@media (max-width: 640px) { .cross-row summary { grid-template-columns: 1fr; gap: 4px; } }

@@ -12,7 +12,8 @@ from fastapi.staticfiles import StaticFiles     # serves plain files (our HTML/C
 from pydantic import BaseModel                  # validates the JSON body of incoming requests
 
 from agent.letter import draft_letter           # drafts the complaint letter (LLM job 3)
-from api import jobs                            # background audit queue (runs the pipeline one at a time)
+from api import jobs                            # background audit queue (runs the pipeline in the background)
+from agent.capture import base_domain           # "https://www.bbc.co.uk/news" -> "bbc.co.uk"
 from agent import llm                           # Cost tracker for the letter call
 
 # __file__ is this file's path (api/main.py). .resolve() makes it absolute,
@@ -95,27 +96,96 @@ def get_jobs():
     return jobs.list_jobs()
 
 
+# POST /api/jobs/cancel -> cancels every audit still waiting in the queue (running ones finish).
+@app.post("/api/jobs/cancel")
+def cancel_jobs():
+    return {"cancelled": jobs.cancel_queued()}
+
+
 # @app.get(...) is a "decorator": it tells FastAPI "when a browser asks for
 # GET /api/audits, run the function below and send back what it returns".
+# Reading every audit file on every refresh gets slow with hundreds of audits (each can be
+# ~1 MB). So we keep a small summary per file and only re-read a file when it changes.
+_summary_cache = {}   # path -> (modified time, summary dict)
+
+
+def audit_summary(f):
+    """Small summary of one audit file (cached until the file changes), or None if unreadable."""
+    mtime = f.stat().st_mtime
+    hit = _summary_cache.get(f)
+    if hit and hit[0] == mtime:
+        return hit[1]
+    try:
+        a = json.loads(f.read_text())  # read the file as text, then parse the JSON into a dict
+    except json.JSONDecodeError:
+        return None  # file is broken or half-written (agent still saving it) -> skip it, don't crash
+    rejected = (a.get("consent") or {}).get("rejected")
+    # Tracker companies seen on this site: any phase / still sending after a successful reject.
+    seen, after, categories = set(), set(), {}
+    for r in a.get("requests", []):
+        t = r.get("tracker") or {}
+        if t.get("is_tracker") and t.get("company"):
+            seen.add(t["company"])
+            categories.setdefault(t["company"], t.get("category"))
+            if rejected and r.get("phase") == "after_reject":
+                after.add(t["company"])
+    for phase in ("before_consent", "after_reject"):
+        for c in (a.get("cookies") or {}).get(phase, []):
+            if c.get("tracker_company"):
+                seen.add(c["tracker_company"])
+    summary = {
+        "id": f.stem,                                   # f.stem = file name without ".json"
+        "url": a.get("url"),
+        "site": base_domain(a.get("url") or ""),
+        "started_at": a.get("started_at"),
+        "loaded": a.get("loaded", True),                # False = site blocked us / didn't load
+        "summary": a.get("summary", {}),                # second argument = default if missing
+        "rejected": rejected,                           # for the card's status pill
+        "tracker_counts": tracker_counts(a),
+        "_companies": {"seen": sorted(seen), "after": sorted(after), "categories": categories},
+    }
+    _summary_cache[f] = (mtime, summary)
+    return summary
+
+
 @app.get("/api/audits")
 def list_audits():
-    out = []  # we'll fill this with one small summary per audit file
-    # AUDITS.glob("*.json") finds every .json file in audits/.
     # sorted(..., reverse=True) puts them newest first (file names start with a timestamp).
+    out = []
     for f in sorted(AUDITS.glob("*.json"), reverse=True):
-        try:
-            a = json.loads(f.read_text())  # read the file as text, then parse the JSON into a dict
-        except json.JSONDecodeError:
-            continue  # file is broken or half-written (agent still saving it) -> skip it, don't crash
-        # Only send the bits the list page needs, not the whole (possibly huge) audit.
-        # a.get("url") returns None instead of crashing if the key is missing.
-        out.append({"id": f.stem,                       # f.stem = file name without ".json"
-                    "url": a.get("url"),
-                    "started_at": a.get("started_at"),
-                    "summary": a.get("summary", {}),    # second argument = default if missing
-                    "rejected": (a.get("consent") or {}).get("rejected"),  # for the card's status pill
-                    "tracker_counts": tracker_counts(a)})
+        s = audit_summary(f)
+        if s:
+            out.append({k: v for k, v in s.items() if not k.startswith("_")})  # don't send internals
     return out  # FastAPI automatically converts the Python list to JSON for the browser
+
+
+# GET /api/cross-site -> which tracker companies follow you across MANY sites.
+# Uses the newest successfully-loaded audit per site, so re-running a site doesn't double count.
+@app.get("/api/cross-site")
+def cross_site():
+    latest = {}
+    for f in sorted(AUDITS.glob("*.json")):            # oldest first, so newer audits overwrite
+        s = audit_summary(f)
+        if s and s["loaded"] and s["site"]:
+            latest[s["site"]] = s
+    companies = {}
+    for site, s in latest.items():
+        c = s["_companies"]
+        for name in c["seen"]:
+            e = companies.setdefault(name, {"company": name, "category": c["categories"].get(name),
+                                            "sites": [], "sites_after_reject": []})
+            e["category"] = e["category"] or c["categories"].get(name)
+            e["sites"].append(site)
+        for name in c["after"]:
+            companies[name]["sites_after_reject"].append(site)
+    total = len(latest)
+    rows = sorted(companies.values(), key=lambda e: (-len(e["sites"]), e["company"]))
+    for e in rows:
+        e["sites"].sort()
+        e["sites_after_reject"].sort()
+        e["share"] = round(100 * len(e["sites"]) / total) if total else 0
+    rejected_sites = sum(1 for s in latest.values() if s["rejected"])
+    return {"sites_audited": total, "sites_rejected": rejected_sites, "companies": rows}
 
 
 # {audit_id} in the path is a variable: GET /api/audits/abc puts "abc" into audit_id.

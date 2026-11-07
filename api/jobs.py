@@ -69,10 +69,23 @@ def submit(url):
         _jobs[job["id"]] = job
         if len(_jobs) > MAX_KEEP:                    # forget the oldest finished jobs
             for old in sorted(_jobs.values(), key=lambda j: j["created"])[: len(_jobs) - MAX_KEEP]:
-                if old["status"] in ("done", "failed"):
+                if old["status"] in ("done", "failed", "cancelled"):
                     _jobs.pop(old["id"], None)
     _queue.put(job["id"])
     return job
+
+
+def cancel_queued():
+    """Cancel every job that hasn't started yet. Running audits are left to finish
+    (stopping a browser mid-audit could leave a half-written audit file).
+    Returns how many were cancelled."""
+    n = 0
+    with _lock:
+        for job in _jobs.values():
+            if job["status"] == "queued":
+                job.update(status="cancelled", step="Cancelled", finished=time.time())
+                n += 1
+    return n
 
 
 def list_jobs():
@@ -84,7 +97,7 @@ def _worker():
     """Runs forever in the background: take the next job, run the audit, record the result."""
     while True:
         job = _jobs.get(_queue.get())
-        if job is None:
+        if job is None or job["status"] == "cancelled":   # cancelled while waiting: skip it
             continue
         job.update(status="running", started=time.time(), step="Starting")
         try:
@@ -94,7 +107,8 @@ def _worker():
                        tier=audit_tier(audit), emailed=delivery.get("sent"),
                        errors=len(audit.get("errors") or []))
             if not audit.get("loaded"):
-                job.update(status="failed", error="The site could not be loaded.")
+                first = (audit.get("errors") or [{}])[0].get("error") or "The site could not be loaded."
+                job.update(status="failed", error=first.split("\n")[0][:200])   # first line only, e.g. "Site refused the automated browser (HTTP 403...)"
         except Exception as e:                       # run_audit shouldn't raise, but never kill the worker
             job.update(status="failed", step="Failed", error=f"{type(e).__name__}: {e}"[:300])
         job["finished"] = time.time()

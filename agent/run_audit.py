@@ -12,6 +12,7 @@ LLM error) is recorded in audit["errors"] and the rest still runs. If the
 site can't be loaded at all, a short audit with the error is still saved,
 and no LLM calls are made.
 """
+import re
 import sys
 import json
 import time
@@ -41,6 +42,26 @@ def tag_cookie_trackers(cookies, site_domain):
         match = trackers.match_cookie(c["name"], domain, site_domain)  # name check catches first-party _ga, _fbp...
         c["tracker_company"] = match["company"] if match["is_tracker"] else None
     return cookies
+
+
+# Bot-protection pages (Akamai, Cloudflare, Incapsula...). Auditing one of these would
+# "find nothing" and look like a clean site, so we treat them as "couldn't load".
+BLOCK_TITLE = re.compile(r"access denied|just a moment|attention required|request unsuccessful|"
+                         r"pardon our interruption|verifying device|challenge validation|are you a robot", re.I)
+
+
+def blocked_reason(page, resp):
+    """Why this page is a block/error page instead of the real site, or None if it looks fine."""
+    status = resp.status if resp else None
+    try:
+        title = page.title() or ""
+    except Exception:
+        title = ""
+    if status and status >= 400:
+        return f"Site refused the automated browser (HTTP {status}{', ' + title[:60] if title else ''})."
+    if BLOCK_TITLE.search(title):
+        return f"Site showed a bot-protection page instead of the website ('{title[:60]}')."
+    return None
 
 
 def save(audit, site_domain, started):
@@ -87,9 +108,13 @@ def run(url, progress=None):
 
             say("Opening the site")
             try:
-                page.goto(url, wait_until="domcontentloaded", timeout=PAGE_TIMEOUT_MS)
+                resp = page.goto(url, wait_until="domcontentloaded", timeout=PAGE_TIMEOUT_MS)
                 page.wait_for_timeout(3000)          # let trackers fire, like a real visitor would
-                loaded = True
+                blocked = blocked_reason(page, resp)
+                if blocked:
+                    errors.append({"step": "Opening the site", "error": blocked})
+                else:
+                    loaded = True
             except Exception as e:
                 errors.append({"step": "Opening the site", "error": f"{type(e).__name__}: {e}"[:300]})
 
