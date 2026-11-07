@@ -1,0 +1,57 @@
+{
+  "url": "https://quietbooks.example",
+  "started_at": "2026-11-07T12:15:00Z",
+  "duration_s": 21.7,
+  "cost": { "llm_calls": 2, "input_tokens": 9800, "output_tokens": 900, "model": "gpt-6-luna + gpt-6.1-sol" },
+
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "selector",
+    "clicks": ["Reject all"]
+  },
+
+  "requests": [
+    { "url": "https://quietbooks.example/", "domain": "quietbooks.example", "phase": "before_consent", "type": "document",
+      "tracker": { "is_tracker": false, "company": null, "category": null } },
+    { "url": "https://quietbooks.example/static/main.css", "domain": "quietbooks.example", "phase": "before_consent", "type": "stylesheet",
+      "tracker": { "is_tracker": false, "company": null, "category": null } },
+    { "url": "https://js.stripe.com/v3/", "domain": "stripe.com", "phase": "after_reject", "type": "script",
+      "tracker": { "is_tracker": false, "company": "Stripe", "category": "Payments" } },
+    { "url": "https://quietbooks.example/books/1", "domain": "quietbooks.example", "phase": "after_reject", "type": "document",
+      "tracker": { "is_tracker": false, "company": null, "category": null } }
+  ],
+
+  "cookies": {
+    "before_consent": [
+      { "name": "csrftoken", "domain": "quietbooks.example", "tracker_company": null }
+    ],
+    "after_reject": [
+      { "name": "csrftoken", "domain": "quietbooks.example", "tracker_company": null },
+      { "name": "consent", "domain": "quietbooks.example", "tracker_company": null }
+    ]
+  },
+
+  "policy": {
+    "url": "https://quietbooks.example/privacy",
+    "found": true,
+    "companies_named": ["Stripe"],
+    "dpo_contact": "privacy@quietbooks.example"
+  },
+
+  "findings": [],
+
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 1,
+    "companies_in_policy": 1,
+    "companies_not_disclosed": []
+  },
+
+  "letter": {
+    "kind": "sar",
+    "to": "privacy@quietbooks.example",
+    "subject": "Subject Access Request - quietbooks.example",
+    "body": "Dear Data Protection Officer,\n\nUnder Article 15 UK GDPR, please provide a copy of any personal data you hold about me.\n\nYours faithfully,\n[Your name]"
+  }
+}

@@ -1,0 +1,86 @@
+<!doctype html>                          <!-- modern HTML -->
+<meta charset="utf-8">                    <!-- text encoding -->
+<title>Audit</title>                      <!-- browser tab text -->
+<link rel="stylesheet" href="style.css">  <!-- shared styles -->
+
+<p><a href="/">&larr; all audits</a></p>  <!-- back link; &larr; is the ← arrow -->
+<div id="out">Loading…</div>              <!-- placeholder; the script replaces this with the audit -->
+
+<script>
+  // Small helper: make an element. Uses textContent, so site data can't inject HTML.
+  // el("h2", "hello") -> <h2>hello</h2>.  el("table") -> empty <table>.
+  function el(tag, text) {
+    const e = document.createElement(tag);         // create the element, e.g. <h2>
+    if (text !== undefined) e.textContent = text;  // only set text if we were given some
+    return e;                                      // hand the element back to whoever called us
+  }
+
+  // Turns any JSON value into HTML: list of objects -> table, object -> key/value list.
+  // It calls itself for nested values ("recursion"), so it copes with any shape of JSON.
+  function render(value) {
+    // Missing data (null or undefined) -> show a dash instead of crashing.
+    if (value === null || value === undefined) return el("span", "—");
+
+    if (Array.isArray(value)) {                               // it's a list [...]
+      if (value.length === 0) return el("span", "(none)");    // empty list
+      // List of simple things, e.g. ["Google", "Stripe"] -> "Google, Stripe"
+      if (typeof value[0] !== "object") return el("span", value.join(", "));
+      return table(value);  // list of objects, e.g. requests -> draw a table
+    }
+
+    if (typeof value === "object") {  // it's an object {...}, e.g. consent or summary
+      const dl = el("dl");            // <dl> = "description list": pairs of name (dt) and value (dd)
+      // Object.entries turns {a: 1, b: 2} into [["a", 1], ["b", 2]] so we can loop over it.
+      for (const [k, v] of Object.entries(value)) {
+        const dd = el("dd");          // the value cell
+        dd.append(render(v));         // render the value (could itself be an object/list -> recursion)
+        dl.append(el("dt", k), dd);   // add the key name, then its value
+      }
+      return dl;
+    }
+
+    // Anything else is a plain value: string, number, true/false.
+    return el("span", String(value));
+  }
+
+  // Draw a list of objects as a table: one row per object, one column per key.
+  function table(rows) {
+    // Collect every key used by any row. flatMap gives one big list of all keys,
+    // new Set(...) removes duplicates, [...] turns it back into a normal array.
+    // This means a key missing from some rows still gets a column (shown as "—").
+    const cols = [...new Set(rows.flatMap(r => Object.keys(r)))];
+    const t = el("table");
+    const head = el("tr");                         // header row
+    cols.forEach(c => head.append(el("th", c)));   // one <th> heading per column
+    t.append(head);
+    for (const r of rows) {        // for each object (e.g. each request)...
+      const tr = el("tr");         // ...make a row
+      for (const c of cols) {      // for each column...
+        const td = el("td");       // ...make a cell
+        td.append(render(r[c]));   // render that row's value for the column (missing -> "—")
+        tr.append(td);
+      }
+      t.append(tr);
+    }
+    return t;
+  }
+
+  // Read ?id=... from the page's URL. For audit.html?id=abc this gives "abc".
+  const id = new URLSearchParams(location.search).get("id");
+
+  fetch("/api/audits/" + encodeURIComponent(id))  // ask the API for this one audit
+    // If the server said OK, parse the JSON. Otherwise jump straight to .catch below.
+    .then(r => r.ok ? r.json() : Promise.reject("Audit not found"))
+    .then(audit => {
+      const out = document.getElementById("out");  // the "Loading…" div
+      out.replaceChildren(el("h1", audit.url));    // wipe "Loading…" and put the site URL as the title
+      // One section per top-level key: url, cost, consent, requests, cookies, policy, ...
+      for (const [key, value] of Object.entries(audit)) {
+        const s = el("section");
+        s.append(el("h2", key), render(value));    // heading = key name, body = rendered value
+        out.append(s);
+      }
+    })
+    // Runs if anything above failed (404, server down, bad JSON). Shows the error on the page.
+    .catch(err => document.getElementById("out").textContent = err);
+</script>

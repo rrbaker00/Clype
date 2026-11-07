@@ -1,0 +1,84 @@
+{
+  "url": "https://dailyscoop.example",
+  "started_at": "2026-11-07T12:00:00Z",
+  "duration_s": 48.3,
+  "cost": { "llm_calls": 3, "input_tokens": 21400, "output_tokens": 2350, "model": "gpt-6-luna + gpt-6.1-sol" },
+
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "llm",
+    "clicks": ["Manage preferences", "Reject all"]
+  },
+
+  "requests": [
+    { "url": "https://dailyscoop.example/", "domain": "dailyscoop.example", "phase": "before_consent", "type": "document",
+      "tracker": { "is_tracker": false, "company": null, "category": null } },
+    { "url": "https://www.googletagmanager.com/gtm.js?id=GTM-XXXX", "domain": "googletagmanager.com", "phase": "before_consent", "type": "script",
+      "tracker": { "is_tracker": true, "company": "Google", "category": "Analytics" } },
+    { "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-XXXX", "domain": "google-analytics.com", "phase": "before_consent", "type": "fetch",
+      "tracker": { "is_tracker": true, "company": "Google", "category": "Analytics" } },
+    { "url": "https://connect.facebook.net/en_US/fbevents.js", "domain": "facebook.net", "phase": "before_consent", "type": "script",
+      "tracker": { "is_tracker": true, "company": "Meta", "category": "Advertising" } },
+    { "url": "https://connect.facebook.net/signals/config/123456", "domain": "facebook.net", "phase": "after_reject", "type": "script",
+      "tracker": { "is_tracker": true, "company": "Meta", "category": "Advertising" } },
+    { "url": "https://www.facebook.com/tr/?id=123456&ev=PageView", "domain": "facebook.com", "phase": "after_reject", "type": "image",
+      "tracker": { "is_tracker": true, "company": "Meta", "category": "Advertising" } },
+    { "url": "https://analytics.tiktok.com/i18n/pixel/events.js", "domain": "tiktok.com", "phase": "after_reject", "type": "script",
+      "tracker": { "is_tracker": true, "company": "TikTok", "category": "Advertising" } },
+    { "url": "https://static.hotjar.com/c/hotjar-999.js", "domain": "hotjar.com", "phase": "after_reject", "type": "script",
+      "tracker": { "is_tracker": true, "company": "Hotjar", "category": "Session Replay" } },
+    { "url": "https://securepubads.g.doubleclick.net/gampad/ads?iu=/1234/news", "domain": "doubleclick.net", "phase": "after_reject", "type": "xhr",
+      "tracker": { "is_tracker": true, "company": "Google", "category": "Advertising" } },
+    { "url": "https://bat.bing.com/action/0?ti=5555&evt=pageLoad", "domain": "bing.com", "phase": "after_reject", "type": "image",
+      "tracker": { "is_tracker": true, "company": "Microsoft", "category": "Advertising" } },
+    { "url": "https://cdn.dailyscoop.example/app.js", "domain": "dailyscoop.example", "phase": "after_reject", "type": "script",
+      "tracker": { "is_tracker": false, "company": null, "category": null } }
+  ],
+
+  "cookies": {
+    "before_consent": [
+      { "name": "_ga", "domain": ".dailyscoop.example", "tracker_company": "Google" },
+      { "name": "_fbp", "domain": ".dailyscoop.example", "tracker_company": "Meta" },
+      { "name": "session_id", "domain": "dailyscoop.example", "tracker_company": null }
+    ],
+    "after_reject": [
+      { "name": "_ga", "domain": ".dailyscoop.example", "tracker_company": "Google" },
+      { "name": "_fbp", "domain": ".dailyscoop.example", "tracker_company": "Meta" },
+      { "name": "_ttp", "domain": ".dailyscoop.example", "tracker_company": "TikTok" },
+      { "name": "session_id", "domain": "dailyscoop.example", "tracker_company": null }
+    ]
+  },
+
+  "policy": {
+    "url": "https://dailyscoop.example/privacy",
+    "found": true,
+    "companies_named": ["Google"],
+    "dpo_contact": "dpo@dailyscoop.example"
+  },
+
+  "findings": [
+    { "severity": "high", "title": "Meta tracked you after you rejected cookies",
+      "detail": "2 requests to facebook.net / facebook.com after clicking Reject all.", "law": "PECR reg. 6" },
+    { "severity": "high", "title": "Tracking cookies set before you could choose",
+      "detail": "_ga and _fbp were set before the banner was answered.", "law": "PECR reg. 6" },
+    { "severity": "medium", "title": "4 companies not named in the privacy policy",
+      "detail": "Policy names Google only. We saw Meta, TikTok, Hotjar and Microsoft.", "law": "UK GDPR Art. 13(1)(e)" },
+    { "severity": "low", "title": "Session replay script loaded",
+      "detail": "Hotjar can record clicks and typing on the page.", "law": "UK GDPR Art. 5(1)(c)" }
+  ],
+
+  "summary": {
+    "trackers_after_reject": 6,
+    "companies_seen": 5,
+    "companies_in_policy": 1,
+    "companies_not_disclosed": ["Meta", "TikTok", "Hotjar", "Microsoft"]
+  },
+
+  "letter": {
+    "kind": "sar",
+    "to": "dpo@dailyscoop.example",
+    "subject": "Subject Access Request and consent complaint - dailyscoop.example",
+    "body": "Dear Data Protection Officer,\n\nOn 7 November 2026 I visited dailyscoop.example and clicked \"Reject all\" on your cookie banner. Despite this, my browser was sent to Meta, TikTok, Hotjar, Microsoft and Google advertising services.\n\nUnder Article 15 UK GDPR, please provide:\n1. All personal data you hold about me.\n2. Every third party you shared it with.\n3. The lawful basis for each.\n\nYour privacy policy names only Google. Please explain why Meta, TikTok, Hotjar and Microsoft are not disclosed.\n\nI expect a response within one month.\n\nYours faithfully,\n[Your name]"
+  }
+}

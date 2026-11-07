@@ -1,0 +1,36 @@
+<!doctype html>                          <!-- tells the browser this is modern HTML -->
+<meta charset="utf-8">                    <!-- text encoding, so symbols like → display correctly -->
+<title>Receipts</title>                   <!-- text shown in the browser tab -->
+<link rel="stylesheet" href="style.css">  <!-- load our styles from web/style.css -->
+
+<div class="stats">
+  <div class="stat">
+    <div class="stat-number" id="totalBlocked">0</div>
+    <div class="stat-label">Total Blocked</div>
+  </div>
+</div>
+
+<h1>Audits</h1>
+<ul id="list"></ul>  <!-- empty list; the script below fills it. id="list" lets JS find it -->
+
+<script>
+  // Ask our API for the list of audits. fetch() runs in the background and
+  // returns a "promise"; each .then(...) runs once the previous step finishes.
+  fetch("/api/audits")
+    .then(r => r.json())        // step 1: the response body is JSON text -> turn it into a JS array
+    .then(audits => {           // step 2: now we have the array of audit summaries
+      for (const a of audits) { // loop over each audit summary
+        const link = document.createElement("a");  // make a new <a> (link) element
+        // Link to the detail page, passing the id in the URL: audit.html?id=2026...
+        // encodeURIComponent makes the id safe to put in a URL (escapes odd characters).
+        link.href = "audit.html?id=" + encodeURIComponent(a.id);
+        // The text of the link. Backticks `...` let us drop values in with ${...}.
+        // "?? '?'" means: if trackers_after_reject is missing (null/undefined), show "?" instead.
+        // textContent (not innerHTML) puts it in as plain text, so a site name can't inject HTML.
+        link.textContent = `${a.url} (${a.summary.trackers_after_reject ?? "?"} trackers after reject)`;
+        const li = document.createElement("li");   // make a list item
+        li.append(link);                           // put the link inside the list item
+        document.getElementById("list").append(li); // add the list item to the <ul> on the page
+      }
+    });
+</script>

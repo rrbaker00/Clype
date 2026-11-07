@@ -1,0 +1,44 @@
+{
+  "url": "https://brokenbanner.example",
+  "started_at": "2026-11-07T12:30:00Z",
+  "duration_s": 63.0,
+  "cost": { "llm_calls": 1, "input_tokens": 5200 },
+
+  "consent": {
+    "banner_found": false,
+    "rejected": false,
+    "method": "failed",
+    "clicks": []
+  },
+
+  "requests": [
+    { "url": "https://brokenbanner.example/", "domain": "brokenbanner.example", "phase": "before_consent", "type": "document" },
+    { "url": "https://www.googletagmanager.com/gtag/js?id=G-YYYY", "domain": "googletagmanager.com", "phase": "before_consent", "type": "script",
+      "tracker": { "is_tracker": true, "company": "Google", "category": "Analytics" } },
+    { "url": "https://px.unknownads.example/p.gif?uid=abc123", "domain": "unknownads.example", "phase": "before_consent", "type": "image",
+      "tracker": { "is_tracker": true, "company": null, "category": null } }
+  ],
+
+  "cookies": {
+    "before_consent": [
+      { "name": "_ga", "domain": ".brokenbanner.example", "tracker_company": "Google" }
+    ]
+  },
+
+  "policy": {
+    "url": null,
+    "found": false,
+    "companies_named": [],
+    "dpo_contact": null
+  },
+
+  "findings": [
+    { "severity": "medium", "title": "Could not find or click the cookie banner",
+      "detail": "No 'after reject' data. Trackers below loaded with no choice offered." }
+  ],
+
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 2
+  }
+}

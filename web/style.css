@@ -1,0 +1,19 @@
+/* Whole page: system font, centred, max 1100px wide, a bit of space around the edge. */
+body { font: 14px/1.5 system-ui, sans-serif; max-width: 1100px; margin: 0 auto; padding: 16px; }
+
+/* Each top-level audit key (cost, consent, requests...) is a box with a light border. */
+section { border: 1px solid #ddd; border-radius: 8px; padding: 8px 16px; margin: 12px 0; }
+
+/* Tables fill the width; border-collapse stops double borders between cells. */
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+
+/* Table cells: thin line under each row, a little padding, text at the top.
+   word-break: break-all lets long tracker URLs wrap instead of stretching the page.
+   white-space: pre-wrap keeps line breaks (\n) in the text, e.g. in the letter. */
+th, td { border-bottom: 1px solid #eee; padding: 4px 8px; text-align: left; vertical-align: top;
+         word-break: break-all; white-space: pre-wrap; }
+
+/* Key/value lists as a 2-column grid: key column only as wide as needed, value takes the rest. */
+dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; }
+dt { color: #666; }                       /* key names in grey */
+dd { margin: 0; white-space: pre-wrap; }  /* values: no indent, keep line breaks (letter body) */
