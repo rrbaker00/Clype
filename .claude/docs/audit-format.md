@@ -1,7 +1,7 @@
 # Audit JSON format
 
 This is the contract between the agent (Person A) and the frontend (Person B).
-One audit = one JSON file in `audits/`. Add fields freely; don't rename or
+One audit = one JSON file in `audits/`, named `<YYYYMMDDTHHMMSS>_<domain>.json` (one per run, never overwritten). Add fields freely; don't rename or
 remove existing ones without telling the other person.
 
 ```json
@@ -75,6 +75,10 @@ Added for letters and email:
 - `letter.delivery` (critical only): `{ "mode": "off"|"test"|"live", "sent", "to", "intended_to", "at", "reason", "message_id", "site" }`
 - severities are now `critical` > `high` > `medium` > `low`. `critical` only comes from the AI review
   safeguard; AI findings also carry `ai_severity` and `severity_note`.
+
+Added for reliability:
+- `loaded`: false if the site couldn't be opened (then no AI review / letter, 0 LLM calls).
+- `errors`: `[{"step", "error"}]` for any pipeline step that failed; the rest of the audit still ran.
 
 Bonus fields (only if built):
 - `fingerprinting`: list of `{ "api": "canvas.toDataURL", "script": "https://..." }`

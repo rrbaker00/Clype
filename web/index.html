@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="common.js"></script>  <!-- shared helpers (el, host, ...) - must load first -->
   <script src="script.js"></script>  <!-- this page's code -->
+  <script src="runner.js"></script>  <!-- "Run an audit" panel + live queue -->
 </head>
 <body onload="load()">  <!-- run load() once the page has finished loading -->
   <div class="wrap">
@@ -16,6 +17,29 @@
         <div class="tag">What websites still send after you click "Reject all"</div>
       </div>
     </header>
+
+    <!-- Run audits: one URL, or a file of URLs. runner.js handles this and the live queue. -->
+    <div class="panel runner">
+      <h3>Run an audit</h3>
+      <form id="auditForm" class="run-row">
+        <input id="auditUrl" placeholder="e.g. bbc.co.uk or https://www.example.com" autocomplete="off">
+        <button type="submit">Audit</button>
+      </form>
+      <div class="run-row">
+        <input id="auditFile" type="file" accept=".json,.txt,.csv">
+        <button id="auditFileBtn" type="button">Audit file</button>
+      </div>
+      <!-- Shown once a file is chosen: its name, how many URLs, and a button to remove it. -->
+      <div id="fileInfo" class="file-info" hidden>
+        <span id="fileInfoText"></span>
+        <button id="fileRemoveBtn" type="button" class="secondary">Remove file</button>
+      </div>
+      <p class="muted small">File: a JSON list like <code>["bbc.co.uk", "theguardian.com"]</code>, or URLs separated by commas
+        or new lines. Up to 300 per file; 4 run at once by default (about 30-50 s each, so 300 is roughly an hour).</p>
+      <p id="runMsg" class="muted small"></p>
+      <div id="queueSummary" class="queue-summary"></div>
+      <ul id="jobList" class="jobs"></ul>
+    </div>
 
     <!-- Big numbers across all audits. script.js fills each id. -->
     <div class="stats">

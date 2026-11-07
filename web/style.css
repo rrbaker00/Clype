@@ -113,3 +113,22 @@ details summary { cursor: pointer; color: var(--muted); }
 dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 0; }
 dt { color: var(--muted); }
 dd { margin: 0; word-break: break-all; white-space: pre-wrap; }
+
+/* ---------- "Run an audit" panel + live queue (runner.js) ---------- */
+.runner { margin-bottom: 18px; }
+.run-row { display: flex; gap: 10px; align-items: center; margin: 8px 0; flex-wrap: wrap; }
+.run-row input:not([type=file]) { flex: 1; min-width: 200px; }
+.run-row input[type=file] { flex: 1; min-width: 200px; width: auto; }
+.run-row button { margin-top: 0; }
+.small { font-size: 12px; margin: 4px 0; }
+.jobs { list-style: none; padding: 0; margin: 8px 0 0; font-size: 13px; }
+.jobs .job { padding: 6px 10px; border-left: 3px solid var(--line); margin: 4px 0; background: var(--panel-2); border-radius: 6px; }
+.jobs .job.running { border-color: var(--accent); }
+.jobs .job.done { border-color: var(--ok); }
+.jobs .job.failed { border-color: var(--warn); }
+.jobs .job.critical { border-color: var(--bad); }
+.queue-summary .bar { margin: 4px 0 8px; }
+/* Chosen-file line with its Remove button */
+.file-info { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 13px; margin: 4px 0; }
+.file-info[hidden] { display: none; }
+button.secondary { background: var(--panel-2); color: var(--text); border: 1px solid var(--line); margin-top: 0; padding: 6px 12px; }

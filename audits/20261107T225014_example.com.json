@@ -1,0 +1,78 @@
+{
+  "url": "https://example.com",
+  "started_at": "2026-11-07T22:50:14.358344+00:00",
+  "duration_s": 7.02,
+  "cost": {
+    "llm_calls": 2,
+    "input_tokens": 1138,
+    "output_tokens": 175,
+    "model": "gpt-5.4-mini+gpt-5.6-luna",
+    "elapsed_s": 7.02
+  },
+  "consent": {
+    "banner_found": false,
+    "rejected": false,
+    "method": "failed",
+    "clicks": []
+  },
+  "requests": [
+    {
+      "url": "https://example.com/",
+      "domain": "example.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://example.com/s.js",
+      "domain": "example.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [],
+    "after_reject": []
+  },
+  "policy": {
+    "url": null,
+    "found": false,
+    "companies_named": [],
+    "dpo_contact": null,
+    "cookie_policy_url": null
+  },
+  "visited_pages": [],
+  "findings": [],
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 0,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": [],
+    "companies_after_reject": [],
+    "companies_with_cookies_before_consent": [],
+    "categories": {}
+  },
+  "letter": null,
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "No findings are recorded because the evidence contains no network requests, cookies, local storage, advertising, profiling, or other tracking activity to assess. The crawler did not find a cookie banner or privacy/cookie policy, but the absence of those items alone is insufficient to establish a breach without evidence of data collection.",
+    "findings_kept": 0,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: False. Reject clicked successfully: False. Method: failed. Buttons clicked: none.",
+      "E2: Privacy policy: not found. Companies it names: none extracted. Contact email found: None.",
+      "E3: Cookie policy: not found."
+    ]
+  }
+}

@@ -3,14 +3,20 @@ CLI: python -m agent.run_audit <url>
 
 Glues the pipeline together in one real browser session: capture -> consent
 -> browse (only if reject worked) -> policy + cookie policy -> trackers
--> compare -> AI legal review -> letter (auto for critical/high). Writes one audit JSON to audits/<site_domain>.json,
-matching the shape in .claude/docs/audit-format.md. Other audits get a letter
-later, only when the user asks for it — left as null here.
+-> compare -> AI legal review -> letter (auto for critical/high).
+Writes one audit JSON per run to audits/<timestamp>_<site_domain>.json,
+matching the shape in .claude/docs/audit-format.md.
+
+Reliability: every step is wrapped so one failure (slow site, weird banner,
+LLM error) is recorded in audit["errors"] and the rest still runs. If the
+site can't be loaded at all, a short audit with the error is still saved,
+and no LLM calls are made.
 """
 import sys
 import json
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
@@ -24,6 +30,10 @@ from . import legal_review
 from . import letter
 from . import llm
 
+AUDITS_DIR = Path(__file__).resolve().parent.parent / "audits"   # project root, not the current folder
+PAGE_TIMEOUT_MS = 30000   # max wait for the first page to load
+
+
 def tag_cookie_trackers(cookies, site_domain):
     """Add a tracker_company field to each cookie, per audit-format.md."""
     for c in cookies:
@@ -32,52 +42,94 @@ def tag_cookie_trackers(cookies, site_domain):
         c["tracker_company"] = match["company"] if match["is_tracker"] else None
     return cookies
 
-def run(url):
+
+def save(audit, site_domain, started):
+    """audits/20261107T224100_bbc.co.uk.json: one file per run, so re-runs never overwrite."""
+    AUDITS_DIR.mkdir(exist_ok=True)
+    path = AUDITS_DIR / f"{started:%Y%m%dT%H%M%S}_{site_domain}.json"
+    path.write_text(json.dumps(audit, indent=2))
+    audit["id"] = path.stem
+    return path
+
+
+def run(url, progress=None):
+    """Run a full audit. progress(step_text) is called as it goes (the dashboard shows it).
+    Always returns an audit dict and always saves it, even if steps failed."""
+    say = progress or (lambda text: None)
     site_domain = base_domain(url)
     cost = llm.Cost()
-    started_at = datetime.now(timezone.utc).isoformat()
+    started = datetime.now(timezone.utc)
     start = time.monotonic()
+    errors = []
+
+    def step(name, fn, default):
+        """Run one pipeline step; on failure record the error and carry on with `default`."""
+        say(name)
+        try:
+            return fn()
+        except Exception as e:
+            errors.append({"step": name, "error": f"{type(e).__name__}: {e}"[:300]})
+            return default
 
     requests_list, on_request, phase_state = make_logger(site_domain)
+    consent_result = {"banner_found": False, "rejected": False, "method": "failed", "clicks": []}
+    policy_result = {"url": None, "found": False, "companies_named": [], "dpo_contact": None, "cookie_policy_url": None}
+    policy_texts = {"privacy": "", "cookie": ""}
+    cookies_before, cookies_after, visited = [], [], []
+    loaded = False
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.on("request", on_request)
-        page.goto(url)
-        page.wait_for_timeout(3000)
+        try:
+            page = browser.new_page()
+            page.set_default_timeout(15000)          # no single click/wait can hang forever
+            page.on("request", on_request)
 
-        cookies_before = serialize_cookies(page.context.cookies())
-        consent_result = reject_cookies(page, cost=cost)
+            say("Opening the site")
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=PAGE_TIMEOUT_MS)
+                page.wait_for_timeout(3000)          # let trackers fire, like a real visitor would
+                loaded = True
+            except Exception as e:
+                errors.append({"step": "Opening the site", "error": f"{type(e).__name__}: {e}"[:300]})
 
-        visited = []
-        if consent_result["rejected"]:
-            phase_state["phase"] = "after_reject"
-            page.wait_for_timeout(1000)
-            visited = browse(page, site_domain, max_pages=3)
-        # Read the policies even if reject failed: a "pay or consent" site (Guardian) still
-        # has a policy worth checking. policy_texts are for the AI review, not saved in the JSON.
-        policy_result, policy_texts = read_policy(page, cost=cost)
-
-        # No successful reject = there is no "after reject", so don't label cookies that way.
-        cookies_after = serialize_cookies(page.context.cookies()) if consent_result["rejected"] else []
-        browser.close()
+            if loaded:
+                cookies_before = step("Recording cookies before consent",
+                                      lambda: serialize_cookies(page.context.cookies()), [])
+                consent_result = step("Clicking reject on the cookie banner",
+                                      lambda: reject_cookies(page, cost=cost), consent_result)
+                if consent_result["rejected"]:
+                    phase_state["phase"] = "after_reject"
+                    page.wait_for_timeout(1000)
+                    visited = step("Browsing pages after reject",
+                                   lambda: browse(page, site_domain, max_pages=3), [])
+                # Read the policies even if reject failed: a "pay or consent" site still has a
+                # policy worth checking. policy_texts go to the AI review, not into the JSON.
+                policy_result, policy_texts = step("Reading the privacy and cookie policies",
+                                                   lambda: read_policy(page, cost=cost),
+                                                   (policy_result, policy_texts))
+                # No successful reject = there is no "after reject", so don't label cookies that way.
+                if consent_result["rejected"]:
+                    cookies_after = step("Recording cookies after reject",
+                                         lambda: serialize_cookies(page.context.cookies()), [])
+        finally:
+            browser.close()                          # even if something above blew up
 
     tag_cookie_trackers(cookies_before, site_domain)
     tag_cookie_trackers(cookies_after, site_domain)
-
     for r in requests_list:
         r["tracker"] = trackers.match(r["domain"], site_domain, url=r["url"])  # url: lets trackers.py check the exact host
 
     cookies = {"before_consent": cookies_before, "after_reject": cookies_after}
-    findings, summary = compare(requests_list, cookies, policy_result, consent_result)
+    findings, summary = step("Comparing what we saw with the policy",
+                             lambda: compare(requests_list, cookies, policy_result, consent_result), ([], {}))
     for f in findings:
         f["source"] = "observed"  # plain-code findings, straight from the evidence
 
     audit = {
         "url": url,
-        "started_at": started_at,
-        "duration_s": round(time.monotonic() - start, 2),
+        "started_at": started.isoformat(),
+        "duration_s": None,
         "cost": cost.as_dict(),
         "consent": consent_result,
         "requests": requests_list,
@@ -87,26 +139,33 @@ def run(url):
         "findings": findings,
         "summary": summary,
         "letter": None,
+        "loaded": loaded,
+        "errors": errors,
     }
 
-    # AI legal review (LLM job 4): reads the evidence + both policies, adds "source": "ai"
-    # findings. Merged into the same list so the UI and the letter use them, worst first.
-    ai_findings, audit["ai_review"] = legal_review.review(audit, policy_texts, cost=cost)
-    audit["findings"] = sorted(findings + ai_findings, key=lambda f: SEVERITY_ORDER[f["severity"]])
+    if loaded:  # nothing to review or complain about if the site never loaded (saves API credit)
+        # AI legal review (LLM job 4): adds "source": "ai" findings, merged in, worst first.
+        ai_findings, audit["ai_review"] = step("AI legal review",
+                                               lambda: legal_review.review(audit, policy_texts, cost=cost),
+                                               ([], {"error": "review step failed"}))
+        audit["findings"] = sorted(findings + ai_findings, key=lambda f: SEVERITY_ORDER[f["severity"]])
+        # Letter: critical -> draft + send (per SEND_MODE), high -> draft only, else None.
+        audit["letter"] = step("Drafting the letter", lambda: letter.auto_letter(audit, cost=cost), None)
 
-    # Letter: critical audit -> draft + send (per SEND_MODE in .env), high -> draft only,
-    # anything else -> None (the UI's "Create draft letter" button can still ask for one).
-    audit["letter"] = letter.auto_letter(audit, cost=cost)
-    audit["cost"] = cost.as_dict()          # again, so it includes the review + letter calls
+    audit["cost"] = cost.as_dict()          # final totals, including review + letter calls
     audit["duration_s"] = round(time.monotonic() - start, 2)
-
-    with open(f"audits/{site_domain}.json", "w") as f:
-        json.dump(audit, f, indent=2)
+    audit["errors"] = errors
+    say("Saving")
+    save(audit, site_domain, started)
     return audit
 
+
 def main():
-    audit = run(sys.argv[1])
+    audit = run(sys.argv[1], progress=lambda text: print("...", text, flush=True))
     print(json.dumps(audit["summary"], indent=2))
+    if audit["errors"]:
+        print("errors:", json.dumps(audit["errors"], indent=2))
+
 
 if __name__ == "__main__":
     main()

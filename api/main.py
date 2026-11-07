@@ -11,8 +11,8 @@ from fastapi import FastAPI, HTTPException      # FastAPI = the web framework; H
 from fastapi.staticfiles import StaticFiles     # serves plain files (our HTML/CSS) from a folder
 from pydantic import BaseModel                  # validates the JSON body of incoming requests
 
-from agent.run_audit import run as run_audit    # the actual pipeline: capture -> consent -> ... -> compare
 from agent.letter import draft_letter           # drafts the complaint letter (LLM job 3)
+from api import jobs                            # background audit queue (runs the pipeline one at a time)
 from agent import llm                           # Cost tracker for the letter call
 
 # __file__ is this file's path (api/main.py). .resolve() makes it absolute,
@@ -51,17 +51,48 @@ class AuditRequest(BaseModel):
     url: str  # pydantic checks the request body actually has a "url" string
 
 
-# POST /audit {"url": "https://example.com"} -> runs a real audit right now
-# (opens a real browser, clicks around, calls the LLM) and returns the
-# finished JSON. This blocks until it's done - a full run can take a
-# minute or so, so whatever calls this should expect to wait.
-# A plain "def" (not "async def") makes FastAPI run it in a worker thread,
-# which is what lets Playwright's blocking browser calls work here at all.
-@app.post("/audit")
+class BatchRequest(BaseModel):
+    urls: list[str]  # the dashboard reads the uploaded file and sends the list
+
+
+# POST /api/audit {"url": "bbc.co.uk"} -> queues one audit and returns the job straight away.
+# The audit itself runs in the background (api/jobs.py), one at a time. The dashboard
+# polls GET /api/jobs to show progress, then opens the finished audit.
+@app.post("/api/audit")
 def post_audit(req: AuditRequest):
-    audit = run_audit(req.url)
-    audit["tracker_counts"] = tracker_counts(audit)
-    return audit
+    try:
+        url = jobs.clean_url(req.url)
+    except ValueError as e:
+        raise HTTPException(400, f"{req.url}: {e}")  # 400 = "your request was wrong"
+    return jobs.submit(url)
+
+
+# POST /api/audit/batch {"urls": [...]} -> queues up to jobs.MAX_BATCH audits from an uploaded file.
+# Bad or duplicate URLs are skipped and reported back, the rest are queued.
+@app.post("/api/audit/batch")
+def post_batch(req: BatchRequest):
+    queued, rejected, seen = [], [], set()
+    for raw in req.urls:
+        try:
+            url = jobs.clean_url(raw)
+        except ValueError as e:
+            rejected.append({"url": raw, "reason": str(e)})
+            continue
+        if url in seen:
+            rejected.append({"url": raw, "reason": "duplicate"})
+            continue
+        if len(queued) >= jobs.MAX_BATCH:
+            rejected.append({"url": raw, "reason": f"over the {jobs.MAX_BATCH}-URL limit per file"})
+            continue
+        seen.add(url)
+        queued.append(jobs.submit(url))
+    return {"queued": queued, "rejected": rejected}
+
+
+# GET /api/jobs -> every recent job (queued / running / done / failed) with its current step.
+@app.get("/api/jobs")
+def get_jobs():
+    return jobs.list_jobs()
 
 
 # @app.get(...) is a "decorator": it tells FastAPI "when a browser asks for

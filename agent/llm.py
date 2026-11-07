@@ -27,6 +27,10 @@ FAST_MODEL = "gpt-5.4-mini"
 STRONG_MODEL = "gpt-5.4"
 REVIEW_MODEL = os.getenv("REVIEW_MODEL", FAST_MODEL)  # read after load_dotenv(), so .env works
 
+# Budget guard: a normal audit makes 2-4 calls (banner fallback, policy, review, letter).
+# Anything past this is a bug (e.g. a retry loop) burning credit, so refuse the call.
+MAX_CALLS_PER_AUDIT = 6
+
 _client = None
 
 
@@ -68,7 +72,14 @@ class Cost:
 usage = Cost()  # convenience default for quick/ad-hoc scripts only
 
 
+class CallLimitReached(RuntimeError):
+    """Raised instead of making an LLM call once an audit has used MAX_CALLS_PER_AUDIT."""
+
+
 def _call(model, prompt, *, system, max_tokens, json_mode, cost):
+    # Only per-audit Cost objects are capped; the global `usage` default is for ad-hoc scripts.
+    if cost is not None and cost.llm_calls >= MAX_CALLS_PER_AUDIT:
+        raise CallLimitReached(f"LLM call limit reached ({MAX_CALLS_PER_AUDIT} per audit)")
     cost = cost or usage
     messages = []
     if system:

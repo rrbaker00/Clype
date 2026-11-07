@@ -28,6 +28,7 @@ Every attempt, sent or not, is logged in data/sent_log.json.
 import json
 import os
 import smtplib
+import threading
 from datetime import datetime, timezone
 from email.message import EmailMessage
 from email.utils import formataddr, make_msgid
@@ -39,6 +40,10 @@ MAX_LIVE_PER_DAY = 5
 DATA = Path(__file__).resolve().parent.parent / "data"
 LOG_PATH = DATA / "sent_log.json"
 OUTBOX = DATA / "outbox"
+
+# Audits run in parallel (api/jobs.py). The live limits are "read the log, check, send, write
+# the log": two audits doing that at once could both pass the check. So one send at a time.
+_send_lock = threading.Lock()
 
 
 def _settings():
@@ -109,7 +114,13 @@ def _smtp_send(s, msg):
 
 def send_letter(letter, audit):
     """Send (or save) the letter according to SEND_MODE. Returns a 'delivery' dict for the
-    audit JSON. Never raises: a mail problem shouldn't lose the audit."""
+    audit JSON. Never raises: a mail problem shouldn't lose the audit.
+    Thread-safe: only one send (check + send + log) happens at a time."""
+    with _send_lock:
+        return _send_letter(letter, audit)
+
+
+def _send_letter(letter, audit):
     s = _settings()
     site = base_domain(audit.get("url", ""))
     dpo = (letter.get("to") or "").strip()

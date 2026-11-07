@@ -68,6 +68,7 @@ cannot see request contents beyond the URLs listed.
 - If you say the policy promises or omits something, put the exact sentence in "policy_quote", \
 copied word for word from the policy text. If you can't quote it, use null.
 - Only name companies that appear in the evidence or the policy text.
+- "Not found" for a policy means our crawler could not find it, NOT that the site has none. A missing policy can be at most "low", and only if there is also tracking evidence.
 - When unsure, choose the LOWER severity and say why. Do not overstate: this may be used in a \
 complaint letter, and a wrong accusation is worse than a missed one.
 - The "Automated check" items are already reported. Do not repeat them. Only add a finding that \
