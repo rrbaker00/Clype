@@ -1,36 +1,46 @@
-<!doctype html>                          <!-- tells the browser this is modern HTML -->
-<meta charset="utf-8">                    <!-- text encoding, so symbols like → display correctly -->
-<title>Receipts</title>                   <!-- text shown in the browser tab -->
-<link rel="stylesheet" href="style.css">  <!-- load our styles from web/style.css -->
+<!doctype html>  <!-- tells the browser this is modern HTML -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">                                                  <!-- text encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- scale properly on phones -->
+  <title>Clype</title>                                           <!-- browser tab text -->
+  <link rel="stylesheet" href="style.css">
+  <script src="common.js"></script>  <!-- shared helpers (el, host, ...) - must load first -->
+  <script src="script.js"></script>  <!-- this page's code -->
+</head>
+<body onload="load()">  <!-- run load() once the page has finished loading -->
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <div class="brand">Clype<span>.</span></div>
+        <div class="tag">What websites still send after you click "Reject all"</div>
+      </div>
+    </header>
 
-<div class="stats">
-  <div class="stat">
-    <div class="stat-number" id="totalBlocked">0</div>
-    <div class="stat-label">Total Blocked</div>
+    <!-- Big numbers across all audits. script.js fills each id. -->
+    <div class="stats">
+      <div class="stat">
+        <div class="n" id="totalSites">0</div>
+        <div class="l">Sites audited</div>
+      </div>
+      <div class="stat">
+        <div class="n" id="totalSeen">0</div>
+        <div class="l">Trackers found</div>
+      </div>
+      <div class="stat ok">
+        <div class="n" id="totalBlocked">0</div>
+        <div class="l">Stopped by "Reject all"</div>
+        <div class="bar"><i id="stopBar" style="width:0"></i></div>  <!-- green progress bar -->
+        <div class="l" id="stopPct"></div>
+      </div>
+      <div class="stat bad">
+        <div class="n" id="totalAfter">0</div>
+        <div class="l">Still tracking after "Reject all"</div>
+      </div>
+    </div>
+
+    <h2>Audits</h2>
+    <div class="cards" id="cards"></div>  <!-- one card per audit, added by script.js -->
   </div>
-</div>
-
-<h1>Audits</h1>
-<ul id="list"></ul>  <!-- empty list; the script below fills it. id="list" lets JS find it -->
-
-<script>
-  // Ask our API for the list of audits. fetch() runs in the background and
-  // returns a "promise"; each .then(...) runs once the previous step finishes.
-  fetch("/api/audits")
-    .then(r => r.json())        // step 1: the response body is JSON text -> turn it into a JS array
-    .then(audits => {           // step 2: now we have the array of audit summaries
-      for (const a of audits) { // loop over each audit summary
-        const link = document.createElement("a");  // make a new <a> (link) element
-        // Link to the detail page, passing the id in the URL: audit.html?id=2026...
-        // encodeURIComponent makes the id safe to put in a URL (escapes odd characters).
-        link.href = "audit.html?id=" + encodeURIComponent(a.id);
-        // The text of the link. Backticks `...` let us drop values in with ${...}.
-        // "?? '?'" means: if trackers_after_reject is missing (null/undefined), show "?" instead.
-        // textContent (not innerHTML) puts it in as plain text, so a site name can't inject HTML.
-        link.textContent = `${a.url} (${a.summary.trackers_after_reject ?? "?"} trackers after reject)`;
-        const li = document.createElement("li");   // make a list item
-        li.append(link);                           // put the link inside the list item
-        document.getElementById("list").append(li); // add the list item to the <ul> on the page
-      }
-    });
-</script>
+</body>
+</html>

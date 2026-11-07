@@ -1,19 +1,102 @@
-/* Whole page: system font, centred, max 1100px wide, a bit of space around the edge. */
-body { font: 14px/1.5 system-ui, sans-serif; max-width: 1100px; margin: 0 auto; padding: 16px; }
+/* ---------- Colours. Dark by default; light if the computer is in light mode. ---------- */
+:root {
+  --bg: #0b0d12; --panel: #12151c; --panel-2: #181c26; --line: #232836;
+  --text: #e8eaf0; --muted: #8b93a7; --accent: #7c5cff;
+  --bad: #ff5c7a; --warn: #ffb547; --ok: #3ddc97;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f6fa; --panel: #ffffff; --panel-2: #f0f2f7; --line: #e3e6ee;
+    --text: #151821; --muted: #5f6779; --accent: #5b3df5;
+    --bad: #e5294f; --warn: #b86e00; --ok: #0f9a63;
+  }
+}
 
-/* Each top-level audit key (cost, consent, requests...) is a box with a light border. */
-section { border: 1px solid #ddd; border-radius: 8px; padding: 8px 16px; margin: 12px 0; }
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }  /* padding counts inside an element's width (easier layouts) */
+body { margin: 0; background: var(--bg); color: var(--text);
+       font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; } /* system fonts = works offline */
+a { color: inherit; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 16px 64px; }  /* centred page column */
+.muted { color: var(--muted); }
+h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 32px 0 12px; }
+.panel h3 { margin: 0 0 12px; font-size: 16px; }
 
-/* Tables fill the width; border-collapse stops double borders between cells. */
-table { border-collapse: collapse; width: 100%; font-size: 13px; }
+/* ---------- Header ---------- */
+header.top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+.brand { font-weight: 800; font-size: 26px; letter-spacing: -.02em; }
+.brand span { color: var(--accent); }
+.tag { color: var(--muted); font-size: 14px; }
+.back { color: var(--muted); text-decoration: none; font-size: 14px; }
+.back:hover { color: var(--text); }
 
-/* Table cells: thin line under each row, a little padding, text at the top.
-   word-break: break-all lets long tracker URLs wrap instead of stretching the page.
-   white-space: pre-wrap keeps line breaks (\n) in the text, e.g. in the letter. */
-th, td { border-bottom: 1px solid #eee; padding: 4px 8px; text-align: left; vertical-align: top;
-         word-break: break-all; white-space: pre-wrap; }
+/* ---------- Big number tiles ---------- */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+.stat .n { font-size: 40px; font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.stat .l { color: var(--muted); font-size: 13px; }
+.stat.bad .n { color: var(--bad); }
+.stat.ok .n { color: var(--ok); }
+.bar { height: 6px; background: var(--panel-2); border-radius: 99px; overflow: hidden; margin: 10px 0 4px; }
+.bar > i { display: block; height: 100%; background: var(--ok); transition: width .6s ease; }
 
-/* Key/value lists as a 2-column grid: key column only as wide as needed, value takes the rest. */
-dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; }
-dt { color: #666; }                       /* key names in grey */
-dd { margin: 0; white-space: pre-wrap; }  /* values: no indent, keep line breaks (letter body) */
+/* ---------- Audit cards on the home page ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.card { display: block; text-decoration: none; background: var(--panel); border: 1px solid var(--line);
+        border-radius: var(--radius); padding: 18px; transition: border-color .15s, transform .15s; }
+.card:hover { border-color: var(--accent); transform: translateY(-2px); }  /* lift on hover */
+.card .host { font-weight: 700; font-size: 17px; }
+.card .date { color: var(--muted); font-size: 12px; }
+.mini { display: flex; gap: 22px; margin: 14px 0 10px; }
+.mini b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+.mini span { color: var(--muted); font-size: 12px; }
+.mini .bad b { color: var(--bad); }
+.mini .ok b { color: var(--ok); }
+
+/* ---------- Small labels ---------- */
+.pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 10px; border-radius: 99px; border: 1px solid currentColor; white-space: nowrap; }
+.pill.bad { color: var(--bad); } .pill.ok { color: var(--ok); } .pill.warn { color: var(--warn); }
+.chip { display: inline-block; font-size: 12px; padding: 2px 9px; margin: 2px 4px 2px 0;
+        border-radius: 99px; background: var(--panel-2); border: 1px solid var(--line); }
+.chip.bad { color: var(--bad); }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+
+/* ---------- Detail page panels ---------- */
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-top: 14px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid2 > .panel { margin-top: 14px; }
+@media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }  /* stack on phones */
+
+.finding { border-left: 3px solid var(--muted); background: var(--panel-2); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
+.finding.high { border-color: var(--bad); } .finding.medium { border-color: var(--warn); } .finding.low { border-color: var(--accent); }
+.finding .t { font-weight: 700; }
+.finding .law { color: var(--muted); font-size: 12px; margin-top: 4px; }
+
+/* ---------- Tables ---------- */
+.scroll { overflow: auto; max-height: 460px; }  /* long tables scroll inside their box */
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
+     text-align: left; position: sticky; top: 0; background: var(--panel); }  /* header stays visible while scrolling */
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.url { word-break: break-all; color: var(--muted); }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.hot { color: var(--bad); font-weight: 700; }
+
+/* ---------- Form bits (letter, filters) ---------- */
+input, textarea, select { width: 100%; background: var(--panel-2); color: var(--text); border: 1px solid var(--line);
+                          border-radius: 10px; padding: 9px 12px; font: inherit; }
+input[type=checkbox] { width: auto; }
+textarea { min-height: 300px; font: 13px/1.6 ui-monospace, Menlo, Consolas, monospace; resize: vertical; }
+label { display: block; color: var(--muted); font-size: 12px; margin: 10px 0 4px; }
+.filters { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.filters label { display: flex; gap: 6px; align-items: center; margin: 0; }
+.filters select { width: auto; }
+button { background: var(--accent); color: #fff; border: 0; border-radius: 10px; padding: 9px 16px;
+         font: inherit; font-weight: 600; cursor: pointer; margin-top: 10px; }
+
+/* ---------- Raw JSON fallback ---------- */
+details summary { cursor: pointer; color: var(--muted); }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 0; }
+dt { color: var(--muted); }
+dd { margin: 0; word-break: break-all; white-space: pre-wrap; }

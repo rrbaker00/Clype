@@ -1,4 +1,4 @@
-# Tiny web server that hands audit JSON files to the web page.
+# Clype: tiny web server that hands audit JSON files to the web page.
 # Run: uvicorn api.main:app --reload   then open http://127.0.0.1:8000
 #   "api.main" = the file api/main.py, ":app" = the variable called app below.
 #   --reload   = restart automatically whenever you save a .py file.
@@ -15,7 +15,31 @@ from fastapi.staticfiles import StaticFiles     # serves plain files (our HTML/C
 # Doing it this way means it works no matter which folder you run uvicorn from.
 ROOT = Path(__file__).resolve().parent.parent
 AUDITS = ROOT / "audits"   # the "/" operator joins paths: HTB/audits
-app = FastAPI()            # create the web app; uvicorn looks for this variable
+app = FastAPI(title="Clype")  # create the web app; uvicorn looks for this variable
+
+
+def tracker_counts(audit):
+    """Count unique tracker DOMAINS (not requests) for one audit.
+
+    seen    = tracker domains seen at any point
+    stopped = fired before consent, went quiet after Reject all
+    after   = still sending after Reject all (the bad ones)
+    """
+    before, after = set(), set()  # sets ignore duplicates, so each domain counts once
+    for r in audit.get("requests", []):
+        # "or {}" copes with a request that has no tracker info at all
+        if not (r.get("tracker") or {}).get("is_tracker"):
+            continue  # not a tracker -> ignore
+        if r.get("phase") == "before_consent":
+            before.add(r.get("domain"))
+        elif r.get("phase") == "after_reject":
+            after.add(r.get("domain"))
+    rejected = (audit.get("consent") or {}).get("rejected")  # did the Reject click work?
+    return {
+        "seen": len(before | after),                        # | = union: in either set
+        "stopped": len(before - after) if rejected else 0,  # - = in before but not in after
+        "after": len(after),
+    }
 
 
 # @app.get(...) is a "decorator": it tells FastAPI "when a browser asks for
@@ -35,7 +59,9 @@ def list_audits():
         out.append({"id": f.stem,                       # f.stem = file name without ".json"
                     "url": a.get("url"),
                     "started_at": a.get("started_at"),
-                    "summary": a.get("summary", {})})   # second argument = default if missing
+                    "summary": a.get("summary", {}),    # second argument = default if missing
+                    "rejected": (a.get("consent") or {}).get("rejected"),  # for the card's status pill
+                    "tracker_counts": tracker_counts(a)})
     return out  # FastAPI automatically converts the Python list to JSON for the browser
 
 
@@ -49,7 +75,9 @@ def get_audit(audit_id: str):
     # Also return 404 if the file simply doesn't exist.
     if not re.fullmatch(r"[\w.\-]+", audit_id) or not f.exists():
         raise HTTPException(404, "not found")  # stops here and sends a 404 error to the browser
-    return json.loads(f.read_text())  # send the full audit back as JSON
+    a = json.loads(f.read_text())
+    a["tracker_counts"] = tracker_counts(a)  # add the counts (in the response only, the file isn't changed)
+    return a  # send the full audit back as JSON
 
 
 # Serve everything in web/ as normal files: /index.html, /audit.html, /style.css.
