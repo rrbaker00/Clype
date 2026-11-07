@@ -1,0 +1,4 @@
+playwright
+tldextract
+openai
+python-dotenv

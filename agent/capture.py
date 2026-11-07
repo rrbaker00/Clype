@@ -1,3 +1,63 @@
-from playwright.async_api import sync_playwright
+"""
+Job 1: open a site and record every request + cookie it makes on load.
+No consent handling and no tracker matching here yet — this is just the
+raw capture, before/after-reject phase tagging comes with consent.py.
+"""
+import sys
+import json
+import tldextract
+from playwright.sync_api import sync_playwright, Playwright
 
-url = "https://www.bbc.co.uk"
+def base_domain(url):
+    """Return the registrable domain (e.g. 'bbc.co.uk') for a URL."""
+    ext = tldextract.extract(url)
+    return f"{ext.domain}.{ext.suffix}"
+
+def on_request(request):
+    """Playwright request-event handler: append one record per request."""
+    captured_requests.append({
+        "url": request.url,
+        "domain": base_domain(request.url),
+        "third_party": base_domain(request.url) != site_domain,
+        "method": request.method,
+        "type": request.resource_type,
+    })
+
+def serialize_cookies(cookies):
+    """Convert Playwright's cookie objects into plain JSON-safe dicts."""
+    return [
+        {
+            "name": cookie["name"],
+            "value": cookie["value"],
+            "domain": cookie["domain"],
+            "path": cookie["path"],
+            "expires": cookie["expires"],
+            "httpOnly": cookie["httpOnly"],
+            "secure": cookie["secure"],
+            "sameSite": cookie.get("sameSite"),
+        }
+        for cookie in cookies
+    ]
+
+def run(playwright: Playwright) -> None:
+    """Load `url` headlessly, wait for it to settle, dump requests + cookies."""
+    browser = playwright.chromium.launch(headless=True)
+    page = browser.new_page()
+    page.on("request", on_request)
+    page.goto(url)
+    page.wait_for_timeout(3000)
+    cookies = serialize_cookies(page.context.cookies())
+    out_path = f"audits/{site_domain}.json"
+    with open(out_path, "w") as f:
+        json.dump({"requests": captured_requests, "cookies": cookies}, f, indent=4)
+
+def main():
+    global url, site_domain, captured_requests
+    url = sys.argv[1]
+    site_domain = base_domain(url)
+    captured_requests = []
+    with sync_playwright() as p:
+        run(p)
+
+if __name__ == "__main__":
+    main()
