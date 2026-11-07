@@ -10,6 +10,13 @@ individual domain files (too much to fetch for a 24h build), so the
 category below is a small hand-curated guess for the companies most
 likely to actually show up in an audit — "best effort", not official
 Tracker Radar data.
+
+CATEGORY_BY_COMPANY doubles as the actual tracker allowlist: Tracker
+Radar's domain map is an *ownership* map, not an *evil tracker* list — it
+includes a site's own CDN and generic infra (Cloudflare, AWS, etc.)
+right alongside ad-tech. Only companies listed here count as trackers;
+everything else in the raw dataset is treated as not-a-tracker rather
+than risk accusing a CDN of spying in a real complaint letter.
 """
 import json
 import os
@@ -49,20 +56,24 @@ CATEGORY_BY_COMPANY = {
     "Mixpanel": "Analytics",
     "New Relic": "Analytics",
     "Datadog": "Analytics",
+    "Chartbeat": "Analytics",
+    "Optimizely": "Analytics",
+    "Dotmetrics": "Analytics",
 }
 
 def match(domain, site_domain):
     """Return the audit-format 'tracker' dict for a request's base domain.
-    Tracker Radar's entity list includes first-party sites too (it's an
-    ownership map, not a tracking-only list) — a site's own domain is
-    never a tracker, so site_domain is required, not optional."""
+    Tracker Radar's entity list includes first-party sites, CDNs, and
+    generic infra too (it's an ownership map, not a tracking-only list) —
+    a site's own domain is never a tracker, and only companies in
+    CATEGORY_BY_COMPANY count as known trackers."""
     if domain == site_domain:
         return {"is_tracker": False}
     company = _DOMAIN_TO_COMPANY.get(domain)
-    if company is None:
+    if company is None or company not in CATEGORY_BY_COMPANY:
         return {"is_tracker": False}
     return {
         "is_tracker": True,
         "company": company,
-        "category": CATEGORY_BY_COMPANY.get(company),
+        "category": CATEGORY_BY_COMPANY[company],
     }

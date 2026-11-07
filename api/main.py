@@ -9,6 +9,9 @@ from pathlib import Path  # built-in: nicer way to work with file paths than pla
 
 from fastapi import FastAPI, HTTPException      # FastAPI = the web framework; HTTPException = send an error back (e.g. 404)
 from fastapi.staticfiles import StaticFiles     # serves plain files (our HTML/CSS) from a folder
+from pydantic import BaseModel                  # validates the JSON body of incoming requests
+
+from agent.run_audit import run as run_audit    # the actual pipeline: capture -> consent -> ... -> compare
 
 # __file__ is this file's path (api/main.py). .resolve() makes it absolute,
 # .parent is the api/ folder, .parent again is the project root (HTB/).
@@ -40,6 +43,23 @@ def tracker_counts(audit):
         "stopped": len(before - after) if rejected else 0,  # - = in before but not in after
         "after": len(after),
     }
+
+
+class AuditRequest(BaseModel):
+    url: str  # pydantic checks the request body actually has a "url" string
+
+
+# POST /audit {"url": "https://example.com"} -> runs a real audit right now
+# (opens a real browser, clicks around, calls the LLM) and returns the
+# finished JSON. This blocks until it's done - a full run can take a
+# minute or so, so whatever calls this should expect to wait.
+# A plain "def" (not "async def") makes FastAPI run it in a worker thread,
+# which is what lets Playwright's blocking browser calls work here at all.
+@app.post("/audit")
+def post_audit(req: AuditRequest):
+    audit = run_audit(req.url)
+    audit["tracker_counts"] = tracker_counts(audit)
+    return audit
 
 
 # @app.get(...) is a "decorator": it tells FastAPI "when a browser asks for

@@ -13,15 +13,25 @@ def base_domain(url):
     ext = tldextract.extract(url)
     return f"{ext.domain}.{ext.suffix}"
 
-def on_request(request):
-    """Playwright request-event handler: append one record per request."""
-    captured_requests.append({
-        "url": request.url,
-        "domain": base_domain(request.url),
-        "third_party": base_domain(request.url) != site_domain,
-        "method": request.method,
-        "type": request.resource_type,
-    })
+def make_logger(site_domain):
+    """Build a (requests_list, on_request_handler, phase_state) trio.
+    Every captured request is tagged with phase_state['phase'] at the
+    moment it fires — the caller flips phase_state['phase'] to
+    'after_reject' once consent has actually been rejected."""
+    requests_list = []
+    phase_state = {"phase": "before_consent"}
+
+    def on_request(request):
+        requests_list.append({
+            "url": request.url,
+            "domain": base_domain(request.url),
+            "third_party": base_domain(request.url) != site_domain,
+            "method": request.method,
+            "type": request.resource_type,
+            "phase": phase_state["phase"],
+        })
+
+    return requests_list, on_request, phase_state
 
 def serialize_cookies(cookies):
     """Convert Playwright's cookie objects into plain JSON-safe dicts."""
@@ -52,10 +62,10 @@ def run(playwright: Playwright) -> None:
         json.dump({"requests": captured_requests, "cookies": cookies}, f, indent=4)
 
 def main():
-    global url, site_domain, captured_requests
+    global url, site_domain, captured_requests, on_request
     url = sys.argv[1]
     site_domain = base_domain(url)
-    captured_requests = []
+    captured_requests, on_request, _ = make_logger(site_domain)
     with sync_playwright() as p:
         run(p)
 

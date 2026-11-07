@@ -1,0 +1,1415 @@
+{
+  "url": "https://www.theguardian.com",
+  "started_at": "2026-11-07T18:00:26.927202+00:00",
+  "duration_s": 4.64,
+  "cost": {
+    "llm_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "model": null,
+    "elapsed_s": 4.64
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": false,
+    "method": "pay_or_consent",
+    "clicks": [
+      "Reject all and subscribe"
+    ]
+  },
+  "requests": [
+    {
+      "url": "https://www.theguardian.com/",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.theguardian.com/uk",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?rum=0&features=es6%2Ces7%2Ces2017%2Ces2018%2Ces2019%2Cdefault-3.6%2CHTMLPictureElement%2CIntersectionObserver%2CIntersectionObserverEntry%2CURLSearchParams%2Cfetch%2CNodeList.prototype.forEach%2Cnavigator.sendBeacon%2Cperformance.now%2CPromise.allSettled&flags=gated&callback=guardianPolyfilled&unknown=polyfill&cacheClear=1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/frameworks.client.web.d4864592db0ae9c44631.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/index.client.web.9c625442282dd9c22685.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/commercial/5d5d35d7fe558d91db44/graun.standalone.commercial.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/static/frontend/fonts/guardian-headline/noalts-not-hinted/GHGuardianHeadline-Bold.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/static/frontend/fonts/guardian-textegyptian/noalts-not-hinted/GuardianTextEgyptian-Regular.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/polyfill.io/v3/polyfill.min.js?rum=0&features=es6%2Ces7%2Ces2017%2Ces2018%2Ces2019%2Cdefault-3.6%2CHTMLPictureElement%2CIntersectionObserver%2CIntersectionObserverEntry%2CURLSearchParams%2Cfetch%2CNodeList.prototype.forEach%2Cnavigator.sendBeacon%2Cperformance.now%2CPromise.allSettled&flags=gated&callback=guardianPolyfilled&unknown=polyfill&cacheClear=1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/frameworks.client.web.d4864592db0ae9c44631.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/index.client.web.9c625442282dd9c22685.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/commercial/5d5d35d7fe558d91db44/graun.standalone.commercial.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/static/frontend/css/print.css",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/79b85c937ffed09426bf9c4a8da0474288e3be69/656_1296_3543_3543/master/3543.jpg?width=98&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/89f8345e8bfc4c7ee6f5c143152d2c19be125e5c/463_953_3477_3477/master/3477.jpg?width=98&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/ab150660e1c0941c2982524b3f3d02283867ef5d/336_429_1925_1925/master/1925.jpg?width=98&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/e735d39c230e213e1ed1955930cc9c1477060973/0_122_3671_2937/master/3671.jpg?width=98&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2017/10/06/Arwa_Mahdawi,_L.png?width=98&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/0b959ff0ef8e3b81da00082aaa888c9a2dd43fa7/305_165_1463_1463/master/1463.jpg?width=98&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2026/11/07/Five_killed_in_Krakow_market_square_shooting--d58eb354-5f0c-4123-831f-ff3db76aeb27-1.0.0000000.jpg?width=620&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/c3c6b99f0a024d3deb184dea44054eed0944f26e/149_0_4233_3386/master/4233.jpg?width=460&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/a82621f2173bcdb47b29018958e54222130414c4/291_0_2520_2016/master/2520.jpg?width=220&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/78f703913b8bb129d666b06187eb2aca13440d34/605_20_5235_4187/master/5235.jpg?width=220&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/4bf2fa47568a8900b9eab3de3b35711cc466232f/710_0_5000_4000/master/5000.jpg?width=220&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/0453031071a4359ad9f3f2d5a0161318653a79a5/500_0_5000_4000/master/5000.jpg?width=220&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/ab150660e1c0941c2982524b3f3d02283867ef5d/350_0_2943_2354/master/2943.jpg?width=460&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/a2fc75b9c99135828cf28282679c71defca50e3a/170_0_1743_1394/master/1743.jpg?width=220&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/39d678b9ca605872bc79bc6670dec9ba6e628cc7/121_59_1778_1423/master/1778.jpg?width=220&dpr=1&s=none&crop=5%3A4",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2017/10/06/Gaby-Hinsliff,-L.png?width=150&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2017/10/06/Arwa_Mahdawi,_L.png?width=80&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2026/11/06/Sarah_Solemani.png?width=80&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2025/05/21/Judith_Levine.png?width=90&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2026/11/06/Luca_Cesari,_L.png?width=90&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2026/02/16/Elisabeth_Braw_v2.png?width=90&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2024/02/23/Elena_Kostyuchenko.png?width=90&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/uploads/2018/01/10/Peter_Bradshaw,_L.png?width=90&dpr=1&s=none&crop=1%3A1",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.theguardian.com/commercial/sponsor/21/Oct/2026/754afb00-1b49-4c90-acca-d99c4a78ebb5-guide_dogs_pos_280.png",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.theguardian.com/commercial/sponsor/13/Oct/2026/8e81c2ec-ee69-41fb-96d3-287940087e91-starling_purple_280.png",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/static/frontend/fonts/guardian-textsans/noalts-not-hinted/GuardianTextSans-Regular.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/static/frontend/fonts/guardian-textsans/noalts-not-hinted/GuardianTextSans-Bold.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/static/frontend/fonts/guardian-headline/noalts-not-hinted/GHGuardianHeadline-Medium.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://i.guim.co.uk/img/media/0312d200602b299fe774847a5f06b6f25056098c/615_355_3221_2577/master/3221.jpg?width=940&dpr=1&s=none&crop=5%3A3%2Coffset-x50%2Coffset-y0",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/5030.client.web.b26805339698f445f3e4.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/2726.client.web.c068ddae84ab64a4bded.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/2075.client.web.2c58b89524f821d58c8b.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/767.client.web.12ba7e75545d4fddeb4d.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/9001.client.web.3be30537bdf1c124981a.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/Metrics-island.client.web.059e95e92b344e65a1cc.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/SetABTests-island.client.web.294a1a7609561eec3bbb.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/SetAdTargeting-island.client.web.d321df7411a330a418d9.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/2972.client.web.008624c9e662cc91c0e0.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/4042.client.web.5a45119526236f8c653f.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/2203.client.web.b171da938fb5066863a7.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/3632.client.web.b18d3874f724150ea54c.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/TopBar-island.client.web.89f195b755635afebac5.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/5524.client.web.f7f310241c563e0193e1.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/6743.client.web.1b5b1ef2a2e5ed50cca1.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/Titlepiece-island.client.web.be8e34ce9212713b0722.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/1?v=17&platform=next-gen&url=https%3A%2F%2Fwww.theguardian.com%2Fuk&ref=&visibilityState=visible&tz=0&navigationType=navigate&contentType=network%20front&frontsTestExposure=%7B%22variant%22%3A%22a%22%2C%22dt%22%3A1794074427997%2C%22path%22%3A%22%2Fuk%22%7D&viewId=mw6plbxyua4ckdzwoxmt",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&edition=UK",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&experiences=dotcom-rendering",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/unified/wrapperMessagingWithoutDetection.js",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&inPrivateBrowsingMode=false",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/PulsingDot-island.client.web.f599cac009bee7967dec.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/8252.client.web.1d407203ca59860654e1.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/1771.client.web.7419c5bd52ad30b561ce.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/2130.client.web.ecd3511ec1d0333a6407.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/765.client.web.906aeba149e537e283a5.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/8818.client.web.7ecd096ce57095456729.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/6090.client.web.62f80440b1224a294d13.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/734.client.web.e8827da1c611b704d5a9.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/7657.client.web.031628334948a27de072.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/3588.client.web.52ed4b9db5d5a607b5c1.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/4513.client.web.4725fe3b8a4fd4d1616c.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/ScrollableHighlights-island.client.web.aaa8d54b7f5f9165d5be.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/6696.client.web.6dff7c2ec6c214f87c96.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/DirectoryPageNav-island.client.web.2973d6ad9cdb7faece45.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&attentionMs=0",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/unified/4.41.0/gdpr-tcf.e7290277d588e0de9bb9.bundle.js",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/wrapper/v2/meta-data?hasCsp=true&accountId=1257&env=prod&metadata=%7B%22gdpr%22%3A%7B%7D%7D&propertyId=7417&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1257%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22gdpr%22%3A%7B%22consentStatus%22%3A%7B%7D%2C%22targetingParams%22%3A%7B%22framework%22%3A%22tcfv2%22%2C%22excludePage%22%3Afalse%2C%22isCorP%22%3Atrue%2C%22isUserSignedIn%22%3Afalse%2C%22corPCurrency%22%3A%22GBP%22%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fsourcepoint.theguardian.com%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.theguardian.com%2Fuk%22%2C%22propertyId%22%3A7417%7D&localState=null&metadata=%7B%22gdpr%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=null&ch=528616180528616180fda1&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/4501.client.web.d27f246692f7989805e5.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/wrapper/v2/pv-data?hasCsp=true&env=prod&ch=528616180528616180fda1&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&componentEvent=%7B%22component%22%3A%7B%22componentType%22%3A%22CONSENT%22%2C%22id%22%3A%22CONSENT_OR_PAY_BANNER-1482252%22%7D%2C%22action%22%3A%22VIEW%22%7D",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&abTestRegister=%7B%22growth-auxia-banner%22%3A%7B%22variantName%22%3A%22control%22%2C%22complete%22%3Afalse%7D%2C%22commercial-spacefinder-highvalue-sections-set2%22%3A%7B%22variantName%22%3A%22control%22%2C%22complete%22%3Afalse%7D%2C%22fronts-and-curation-editorial-test%22%3A%7B%22variantName%22%3A%22a%22%2C%22complete%22%3Afalse%7D%7D",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/index.html?hasCsp=true&message_id=1482252&consentUUID=null&consent_origin=https%3A%2F%2Fsourcepoint.theguardian.com%2Fconsent%2Ftcfv2&preload_message=true&version=v1",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/Notice.9cce2.css",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/polyfills.01516.js",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/Notice.fcfb9.js",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&componentEvent=%7B%22component%22%3A%7B%22componentType%22%3A%22CUSTOM_SUBNAV%22%2C%22id%22%3A%22UK%22%7D%2C%22action%22%3A%22VIEW%22%2C%22value%22%3A%22f5ea84b2-947a-48bc-97cc-061278e9f461%22%7D",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/consent/tcfv2/vendor-list/categories?siteId=7417",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&performance=%7B%22dns%22%3A0%2C%22connection%22%3A0%2C%22firstByte%22%3A20%2C%22lastByte%22%3A41%2C%22domContentLoadedEvent%22%3A519%2C%22loadEvent%22%3A295%2C%22navType%22%3A0%2C%22redirectCount%22%3A1%7D&renderedComponents=%5B%22header%22%2C%22topbar%22%2C%22highlights%22%2C%22sub-nav%22%2C%22custom-subnav-UK%22%2C%22news%22%2C%22gu-video-loop%22%2C%22the-saturday-read%22%2C%22in-focus%22%2C%22features%22%2C%22more-features%22%2C%22weekend%22%2C%22sport%22%2C%22more-sport%22%2C%22opinion%22%2C%22more-opinion%22%2C%22editorials%22%2C%22letters%22%2C%22cartoon%22%2C%22more-top-stories%22%2C%22climate-crisis-%26-environment%22%2C%22uk-news%22%2C%22world-news%22%2C%22business-%26-technology%22%2C%22secure-messaging%22%2C%22culture%22%2C%22what-to-watch%22%2C%22what-to-listen-to%22%2C%22what-to-read%22%2C%22what-to-play%22%2C%22what-to-visit%22%2C%22more-culture%22%2C%22guardian-labs%22%2C%22labs-logo%20%7C%20front-card-guide-dogs%22%2C%22labs-logo%20%7C%20front-card-starling%22%2C%22the-filter%22%2C%22lifestyle%22%2C%22food%22%2C%22relationships%22%2C%22money-%26-consumer%22%2C%22health-%26-fitness%22%2C%22fashion-%26-beauty%22%2C%22travel%22%2C%22more-lifestyle%22%2C%22documentary%22%2C%22you-may-have-missed%22%2C%22take-part%22%2C%22newsletters%22%2C%22in-pictures%22%2C%22most-popular%22%2C%22trending-topics%22%2C%22footer%22%5D",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&performance=%7B%22dns%22%3A0%2C%22connection%22%3A0%2C%22firstByte%22%3A20%2C%22lastByte%22%3A41%2C%22domContentLoadedEvent%22%3A519%2C%22loadEvent%22%3A295%2C%22navType%22%3A0%2C%22redirectCount%22%3A1%7D",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sourcepoint.theguardian.com/consent/tcfv2/vendor-list/categories?siteId=7417&consentLanguage=en",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://media.guim.co.uk/8c1c22e152b853e10ff3e1511aa2da58ee04351b/0_0_512_512/512.png",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://media.guim.co.uk/843ea07704db2a72afc0f835b7b2d4beafc189df/0_0_512_512/140.jpg",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/AlreadyVisited-island.client.web.10894c4d0608ece174dc.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/FocusStyles-island.client.web.580505e8274994442b01.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/ShowHideContainers-island.client.web.e330579d13b07892d3ca.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/BrazeMessaging-island.client.web.31907973ded81a753d76.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/ReaderRevenueDev-island.client.web.f51a4c2e88c30c2fa9cd.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/GoogleOneTap-island.client.web.5fa7ce303a1922527f60.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/EditionSwitcherBanner-island.client.web.ba41004d97fd8dcff21f.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/1959.client.web.57d4e5ac197c0407af99.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/7903.client.web.4ccca125f069d72ad1f4.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.guim.co.uk/assets/StickyBottomBanner-island.client.web.63b6193ab00fed9442ac.js",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://interactive.guim.co.uk/fonts/guss-webfonts/GHGuardianHeadline/GHGuardianHeadline-Bold.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://interactive.guim.co.uk/fonts/guss-webfonts/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Regular.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://interactive.guim.co.uk/fonts/guss-webfonts/GuardianTextEgyptianWeb/GuardianTextEgyptianWeb-Bold.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://interactive.guim.co.uk/fonts/guss-webfonts/GuardianTextSansWeb/GuardianTextSansWeb-Regular.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://interactive.guim.co.uk/fonts/guss-webfonts/GuardianTextSansWeb/GuardianTextSansWeb-Bold.woff2",
+      "domain": "guim.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ophan.theguardian.com/img/2?viewId=mw6plbxyua4ckdzwoxmt&adUnitWasHidden=false",
+      "domain": "theguardian.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "gu_client_ab_tests",
+        "value": "growth-auxia-banner:control,commercial-spacefinder-highvalue-sections-set2:control",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1796666427.561332,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "gu_v2_mvt_id",
+        "value": "306",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1801850427.561408,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "GU_mvt_id",
+        "value": "662924",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1801850427.561438,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "GU_geo_country",
+        "value": "GB",
+        "domain": "www.theguardian.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "bwid",
+        "value": "idFromPV_2pdQT9zJDF9LcOdDjA9cOQ",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1825610428.080068,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "bwid_withoutSameSiteForIncompatibleClients",
+        "value": "idFromPV_2pdQT9zJDF9LcOdDjA9cOQ",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1825610428.080205,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "consentUUID",
+        "value": "f00e1ff6-bbdd-442a-8a8d-12d2c51abfba",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1825610428.297207,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "gu_client_ab_tests",
+        "value": "growth-auxia-banner:control,commercial-spacefinder-highvalue-sections-set2:control",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1796666427.561332,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "gu_v2_mvt_id",
+        "value": "306",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1801850427.561408,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "GU_mvt_id",
+        "value": "662924",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1801850427.561438,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "GU_geo_country",
+        "value": "GB",
+        "domain": "www.theguardian.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "bwid",
+        "value": "idFromPV_2pdQT9zJDF9LcOdDjA9cOQ",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1825610428.080068,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "bwid_withoutSameSiteForIncompatibleClients",
+        "value": "idFromPV_2pdQT9zJDF9LcOdDjA9cOQ",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1825610428.080205,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "consentUUID",
+        "value": "f00e1ff6-bbdd-442a-8a8d-12d2c51abfba",
+        "domain": ".theguardian.com",
+        "path": "/",
+        "expires": 1825610428.297207,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None"
+      }
+    ]
+  },
+  "policy": {
+    "url": null,
+    "found": false,
+    "companies_named": [],
+    "dpo_contact": null
+  },
+  "visited_pages": [],
+  "findings": [],
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 0,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": []
+  },
+  "letter": null
+}

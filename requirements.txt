@@ -2,3 +2,5 @@ playwright
 tldextract
 openai
 python-dotenv
+fastapi
+uvicorn
