@@ -15,9 +15,11 @@ Core Features
 6. Compare: what they said against what actually happened, for example “Policy names 5 companies, we saw 18” or “Meta tracked you after you said no”.
 7. Draft the letter: a complaint or data request (Subject Access Request) addressed to their data protection contact. It’s a draft only and never sent automatically.
 8. Results page: a clear visual of what leaked, the broken promises, and the letter.
+9. Check for crossite tracking. 
 
 Additonal features 
 - Fuck this site (send random data)
 - Block ads 
-- 
+- look for data collection in input boxes, eg typing a email into a   box w out submiting it 
+- cnamw clokeing  
 
