@@ -183,7 +183,16 @@ function requestsPanel(a) {
 // The drafted letter: editable, with a copy button. Never sent anywhere.
 function letterPanel(a) {
   const l = a.letter;
-  if (!l) return el("div", { class: "panel" }, el("h3", {}, "Draft letter"), el("p", { class: "muted" }, "No letter drafted for this audit."));
+  // No letter in the JSON yet -> offer to make one. Letters are request-only, never automatic.
+  if (!l) {
+    const create = el("button", { id: "create-letter" }, "Create draft letter");
+    // TODO: on click, ask the API to draft a letter for this audit, then show it here.
+    return el("div", { class: "panel" },
+      el("div", { class: "row" }, el("h3", {}, "Draft letter"),
+        el("span", { class: "pill warn" }, "Draft only")),
+      el("p", { class: "muted" }, "No letter drafted for this audit yet."),
+      create);
+  }
   const to = el("input", { value: l.to ?? "" });
   const subject = el("input", { value: l.subject ?? "" });
   const body = el("textarea", {});
@@ -197,7 +206,7 @@ function letterPanel(a) {
   }, "Copy letter");
   return el("div", { class: "panel" },
     el("div", { class: "row" }, el("h3", {}, `Draft letter (${(l.kind ?? "").toUpperCase()})`),
-      el("span", { class: "pill warn" }, "Draft only, never sent")),
+      el("span", { class: "pill warn" }, "Draft only")),
     el("label", {}, "To"), to,
     el("label", {}, "Subject"), subject,
     el("label", {}, "Body"), body,

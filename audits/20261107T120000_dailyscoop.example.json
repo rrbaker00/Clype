@@ -73,12 +73,5 @@
     "companies_seen": 5,
     "companies_in_policy": 1,
     "companies_not_disclosed": ["Meta", "TikTok", "Hotjar", "Microsoft"]
-  },
-
-  "letter": {
-    "kind": "sar",
-    "to": "dpo@dailyscoop.example",
-    "subject": "Subject Access Request and consent complaint - dailyscoop.example",
-    "body": "Dear Data Protection Officer,\n\nOn 7 November 2026 I visited dailyscoop.example and clicked \"Reject all\" on your cookie banner. Despite this, my browser was sent to Meta, TikTok, Hotjar, Microsoft and Google advertising services.\n\nUnder Article 15 UK GDPR, please provide:\n1. All personal data you hold about me.\n2. Every third party you shared it with.\n3. The lawful basis for each.\n\nYour privacy policy names only Google. Please explain why Meta, TikTok, Hotjar and Microsoft are not disclosed.\n\nI expect a response within one month.\n\nYours faithfully,\n[Your name]"
   }
 }

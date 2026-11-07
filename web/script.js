@@ -44,24 +44,43 @@ function statusPill(a) {
   return el("span", { class: "pill ok" }, "Respected your choice");
 }
 
-// One clickable card per audit.
+// Severe = we successfully clicked "Reject all" AND trackers kept sending anyway.
+// (Same rule as the red "Ignored your no" pill above.)
+function isSevere(a) {
+  return a.rejected === true && (a.tracker_counts?.after ?? 0) > 0;
+}
+
+// Build one clickable card for an audit.
+function makeCard(a) {
+  const t = a.tracker_counts ?? {};
+  const hidden = a.summary?.companies_not_disclosed ?? [];  // companies the policy didn't mention
+  return el("a", { class: "card" + (isSevere(a) ? " severe" : ""), href: "audit.html?id=" + encodeURIComponent(a.id) },
+    el("div", { class: "row" }, el("span", { class: "host" }, host(a.url)), statusPill(a)),
+    el("div", { class: "date" }, fmtDate(a.started_at)),
+    el("div", { class: "mini" },
+      el("div", {}, el("b", {}, show(t.seen)), el("span", {}, "found")),
+      el("div", { class: "ok" }, el("b", {}, show(t.stopped)), el("span", {}, "stopped")),
+      el("div", { class: "bad" }, el("b", {}, show(t.after)), el("span", {}, "after reject"))),
+    hidden.length ? el("div", {}, el("span", { class: "muted" }, "Not in policy: "),
+      hidden.map((name) => el("span", { class: "chip bad" }, name))) : null);
+}
+
+// Split audits into Severe (top section) and everything else (Audits section).
 function renderCards(audits) {
+  const severe = audits.filter(isSevere)
+    .sort((x, y) => (y.tracker_counts?.after ?? 0) - (x.tracker_counts?.after ?? 0));  // worst first
+  const rest = audits.filter((a) => !isSevere(a));
+
+  // Severe section only appears if there's at least one severe audit.
+  document.getElementById("severeSection").hidden = severe.length === 0;
+  document.getElementById("severeCount").textContent = `(${severe.length})`;
+  document.getElementById("severeCards").replaceChildren(...severe.map(makeCard));
+
   const cards = document.getElementById("cards");
-  if (audits.length === 0) {
-    cards.replaceChildren(el("p", { class: "muted" }, "No audits yet. Run one and it will appear here."));
+  if (rest.length === 0) {
+    const msg = audits.length === 0 ? "No audits yet. Run one and it will appear here." : "No other audits.";
+    cards.replaceChildren(el("p", { class: "muted" }, msg));
     return;
   }
-  cards.replaceChildren(...audits.map((a) => {
-    const t = a.tracker_counts ?? {};
-    const hidden = a.summary?.companies_not_disclosed ?? [];  // companies the policy didn't mention
-    return el("a", { class: "card", href: "audit.html?id=" + encodeURIComponent(a.id) },
-      el("div", { class: "row" }, el("span", { class: "host" }, host(a.url)), statusPill(a)),
-      el("div", { class: "date" }, fmtDate(a.started_at)),
-      el("div", { class: "mini" },
-        el("div", {}, el("b", {}, show(t.seen)), el("span", {}, "found")),
-        el("div", { class: "ok" }, el("b", {}, show(t.stopped)), el("span", {}, "stopped")),
-        el("div", { class: "bad" }, el("b", {}, show(t.after)), el("span", {}, "after reject"))),
-      hidden.length ? el("div", {}, el("span", { class: "muted" }, "Not in policy: "),
-        hidden.map((name) => el("span", { class: "chip bad" }, name))) : null);
-  }));
+  cards.replaceChildren(...rest.map(makeCard));
 }

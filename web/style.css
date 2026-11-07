@@ -47,6 +47,11 @@ header.top { display: flex; align-items: flex-end; justify-content: space-betwee
         border-radius: var(--radius); padding: 18px; transition: border-color .15s, transform .15s; }
 .card:hover { border-color: var(--accent); transform: translateY(-2px); }  /* lift on hover */
 .card .host { font-weight: 700; font-size: 17px; }
+/* Severe cards: red border + faint red glow so they stand out. */
+.card.severe { border-color: color-mix(in srgb, var(--bad) 55%, var(--line));
+               background: color-mix(in srgb, var(--bad) 6%, var(--panel)); }
+.card.severe:hover { border-color: var(--bad); }
+h2.severe-title { color: var(--bad); }
 .card .date { color: var(--muted); font-size: 12px; }
 .mini { display: flex; gap: 22px; margin: 14px 0 10px; }
 .mini b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
