@@ -1,0 +1,19 @@
+{
+    "requests": [
+        {
+            "url": "https://example.com/",
+            "domain": "example.com",
+            "third_party": false,
+            "method": "GET",
+            "type": "document"
+        },
+        {
+            "url": "https://example.com/s.js",
+            "domain": "example.com",
+            "third_party": false,
+            "method": "GET",
+            "type": "script"
+        }
+    ],
+    "cookies": []
+}
