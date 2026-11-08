@@ -1,0 +1,88 @@
+{
+  "started_at": "2026-11-08T10:18:19.332479+00:00",
+  "duration_s": 63.2,
+  "engine": "chromium",
+  "sites": [
+    {
+      "site": "hollywoodbowl.co.uk",
+      "url": "https://hollywoodbowl.co.uk",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "onthemarket.com",
+      "url": "https://onthemarket.com",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "experian.co.uk",
+      "url": "https://experian.co.uk",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "spectator.co.uk",
+      "url": "https://spectator.co.uk",
+      "loaded": true,
+      "rejected": true
+    }
+  ],
+  "requests": 878,
+  "links": [
+    {
+      "company": "Amazon",
+      "category": "Advertising",
+      "via": "cookie ad-id",
+      "id_preview": "A6GfJWhI\u2026",
+      "sites": {
+        "hollywoodbowl.co.uk": {
+          "phases": [
+            "after_reject"
+          ],
+          "example": "https://aax-eu.amazon-adsystem.com/s/iu3?pid=ec469ffc-b1e6-485a-b04c-2a0e6288c246&event=PageView&gtmVersion=3.5&ts=1794133107148&gdpr=1&gdpr_pd=1&gdpr_consent=C"
+        },
+        "spectator.co.uk": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://c.amazon-adsystem.com/aax2/apstag.js"
+        }
+      },
+      "after_reject_on": [
+        "hollywoodbowl.co.uk",
+        "spectator.co.uk"
+      ]
+    },
+    {
+      "company": "Google",
+      "category": "Advertising",
+      "via": "cookie IDE",
+      "id_preview": "AHWqTUn_\u2026",
+      "sites": {
+        "hollywoodbowl.co.uk": {
+          "phases": [
+            "before_consent"
+          ],
+          "example": "https://cm.g.doubleclick.net/pixel?&in=0&google_nid=zeta_interactive&google_cm=&google_sc=&google_hm=NTEzNDQ1NTQzNjY4MjMzMTU5OQ==&forward="
+        },
+        "spectator.co.uk": {
+          "phases": [
+            "before_consent"
+          ],
+          "example": "https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+        }
+      },
+      "after_reject_on": []
+    }
+  ],
+  "cost": {
+    "llm_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "model": null,
+    "elapsed_s": 63.23,
+    "by_model": {}
+  }
+}

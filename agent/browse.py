@@ -14,6 +14,7 @@ dropped from visited_pages and we move on.
 from urllib.parse import urlparse
 
 from .capture import base_domain
+from .consent import usable_frames   # skips iframes that never finish loading (they hang queries)
 
 SKIP_KEYWORDS = [
     "cookie", "privacy", "legal", "terms", "about", "contact",
@@ -53,7 +54,7 @@ def find_internal_links(page, site_domain, limit=10):
     e.g. /news, /sport, /weather instead of three /news articles."""
     seen = {page.url.split("#")[0].rstrip("/")}
     candidates = []
-    for frame in page.frames:
+    for frame in usable_frames(page):
         try:
             hrefs = frame.eval_on_selector_all("a[href]", "els => els.map(e => e.href)")
         except Exception:

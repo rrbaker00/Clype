@@ -32,6 +32,9 @@ REJECT_PHRASES = [
     "necessary only",          # e.g. just-eat.co.uk: "Necessary only" is its reject option
     "only necessary",
     "essential only",
+    "essential cookies only",  # e.g. notonthehighstreet.com
+    "necessary cookies only",
+    "use necessary cookies only",
     "disable all",             # e.g. sse.com: "Allow all" / "Disable all"
     "deny all",
     "decline",
@@ -73,11 +76,36 @@ APPLY_PHRASES = [
 
 PAYWALL_KEYWORDS = ["subscribe", "pay", "premium"]
 
+
+def usable_frames(page):
+    """The main page + iframes you can actually SEE. Playwright's element queries (locator.all/count)
+    and evaluate() have NO timeout, and some hidden iframes never answer them: ocado.com has a hidden
+    login iframe (display:none, "/login?silent=true") that hung every audit forever at "Clicking
+    reject". A hidden frame can't hold a visible cookie banner, so skip it. The visibility check is
+    asked of the PARENT page, which answers normally; frames that aren't ready in 1.5 s are skipped too."""
+    out = []
+    for frame in page.frames:
+        if frame == page.main_frame:
+            out.append(frame)
+            continue
+        try:
+            element = frame.frame_element()
+            if not element.is_visible():
+                continue
+            box = element.bounding_box()
+            if not box or box["width"] < 20 or box["height"] < 20:   # tracking pixels / 1x1 frames
+                continue
+            frame.wait_for_load_state("domcontentloaded", timeout=1500)
+            out.append(frame)
+        except Exception:
+            continue
+    return out
+
 def find_by_phrases(page, phrases):
     """Return the first visible button/link in any frame matching any phrase, or None."""
     for phrase in phrases:
         for role in ("button", "link"):
-            for frame in page.frames:
+            for frame in usable_frames(page):
                 try:
                     locator = frame.get_by_role(role, name=phrase)
                     if locator.count() > 0 and locator.first.is_visible():
@@ -160,7 +188,7 @@ PRETICKED_JS = """() => {
 def find_preticked(page):
     """Labels of non-essential cookie toggles that are already ON, across all frames (deduped)."""
     labels = []
-    for frame in page.frames:
+    for frame in usable_frames(page):
         try:
             for label in frame.evaluate(PRETICKED_JS):
                 if label not in labels:
@@ -187,7 +215,7 @@ def find_cookie_button(page, phrases):
     """Like find_by_phrases, but only returns buttons/links that are in a cookie context."""
     for phrase in phrases:
         for role in ("button", "link"):
-            for frame in page.frames:
+            for frame in usable_frames(page):
                 try:
                     for el in frame.get_by_role(role, name=phrase).all()[:5]:
                         if el.is_visible() and in_cookie_context(frame, el):
@@ -217,7 +245,7 @@ def is_paywalled(label):
 def gather_candidates(page, limit=30):
     """Collect (label, locator) pairs for visible buttons/links in every frame."""
     candidates = []
-    for frame in page.frames:
+    for frame in usable_frames(page):
         for role in ("button", "link"):
             try:
                 for el in frame.get_by_role(role).all():
@@ -245,7 +273,7 @@ BANNER_SCHEMA = {
 def count_exact_reject_buttons(page):
     """Count visible elements whose text is exactly 'Reject', across all frames."""
     total = 0
-    for frame in page.frames:
+    for frame in usable_frames(page):
         for role in ("button", "link"):
             try:
                 total += frame.get_by_role(role, name="Reject", exact=True).count()
@@ -258,7 +286,7 @@ def click_all_reject_toggles(page):
     per-category toggles some preference panels use instead of a single
     reject-all button. Returns True if anything was clicked."""
     clicked_any = False
-    for frame in page.frames:
+    for frame in usable_frames(page):
         for role in ("button", "link"):
             try:
                 locator = frame.get_by_role(role, name="Reject", exact=True)

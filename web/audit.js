@@ -16,6 +16,7 @@ function renderAudit(a) {
   document.title = host(a.url) + " · Clype";
   const panels = [
     headerSection(a),
+    criticalBanner(a),                 // null unless the worst finding is critical
     timelineSection(a),                // older audits of the same site (filled in after a fetch)
     statsSection(a),
     yourBrowserSection(a),             // filled in after a fetch, if the extension captured this site
@@ -97,6 +98,22 @@ function yourBrowserSection(a) {
   return box;
 }
 
+// Big red banner at the top of a CRITICAL report: what's critical + what happened to the letter.
+function criticalBanner(a) {
+  const crit = (a.findings ?? []).filter((f) => f.severity === "critical");
+  if (!crit.length) return null;
+  const d = a.letter?.delivery;
+  const letter = !a.letter ? "No letter drafted yet: use \"Create draft letter\" below."
+    : d?.sent ? (d.mode === "live" ? "Complaint letter emailed to the company." : "Letter drafted and sent to you (test mode).")
+    : "Complaint letter drafted (not sent).";
+  return el("div", { class: "critical-banner", role: "alert" },
+    el("span", { class: "big" }, "⚠"),
+    el("div", {},
+      el("b", {}, `CRITICAL: ${crit[0].title}`),
+      crit.length > 1 ? el("div", {}, `+ ${crit.length - 1} more critical finding${crit.length > 2 ? "s" : ""}`) : null,
+      el("div", {}, letter, " ", el("a", { href: "#findings" }, "See the evidence ↓"))));
+}
+
 // Same rules as the dashboard cards' status pill.
 function runPill(r) {
   if (r.loaded === false) return el("span", { class: "pill warn" }, "Blocked");
@@ -140,7 +157,7 @@ function statsSection(a) {
 function findingsPanel(a) {
   const findings = a.findings ?? [];
   const review = a.ai_review;
-  return el("div", { class: "panel" },
+  return el("div", { class: "panel", id: "findings" },           // the critical banner links here
     el("h3", {}, "Broken promises"),
     findings.length === 0
       ? el("p", { class: "muted" }, "No broken promises found.")
@@ -265,14 +282,14 @@ function cookiesPanel(a) {
   const after = a.cookies?.after_reject ?? [];
   const beforeNames = new Set(before.map((k) => k.name));
   const cookieTable = (list, isAfter) => list.length === 0 ? el("p", { class: "muted" }, "None recorded.") :
-    el("table", {},
+    el("div", { class: "scroll" }, el("table", { class: "cookie-table" },
       el("tr", {}, el("th", {}, "Name"), el("th", {}, "Domain"), el("th", {}, "Tracker"), el("th", {}, "Holds")),
       list.map((k) => el("tr", {},
         el("td", { class: isAfter && k.tracker_company ? "hot" : "" }, k.name,
           isAfter && !beforeNames.has(k.name) ? el("span", { class: "chip" }, "new") : null),  // set only after reject
         el("td", { class: "muted" }, show(k.domain)),
         el("td", {}, show(k.tracker_company)),
-        el("td", { title: k.value ?? "" }, valueKind(k.value_kind)))));
+        el("td", { title: k.value ?? "" }, valueKind(k.value_kind))))));
   return el("div", { class: "grid2" },
     el("div", { class: "panel" }, el("h3", {}, `Cookies before consent (${before.length})`), cookieTable(before, false)),
     el("div", { class: "panel" }, el("h3", {}, `Cookies after reject (${after.length})`), cookieTable(after, true)));
@@ -285,18 +302,18 @@ function fingerprintPanel(a) {
   const when = { before_consent: "Before choice", after_reject: "After reject" };
   return el("div", { class: "panel" },
     el("h3", {}, `Fingerprinting (${list.length})`),
-    el("table", {},
+    el("div", { class: "scroll-x" }, el("table", {},
       el("tr", {}, el("th", {}, "Technique"), el("th", {}, "Script"), el("th", {}, "When"), el("th", {}, "What it did")),
       list.map((e) => el("tr", {},
         el("td", {}, e.technique),
         el("td", { class: "muted" }, host(e.script)),
         el("td", { class: e.phase === "after_reject" ? "hot" : "" }, when[e.phase] ?? e.phase),
-        el("td", { class: "muted" }, e.detail)))));
+        el("td", { class: "muted" }, e.detail))))));
 }
 
 // What a cookie actually stores. Empty ones aren't counted as tracking evidence.
 function valueKind(kind) {
-  const label = { id: "Unique ID", value: "A value", empty: "Empty", placeholder: "Nothing (placeholder)" }[kind];
+  const label = { id: "Unique ID", value: "A value", empty: "Empty", placeholder: "Placeholder" }[kind];
   if (!label) return "—";
   return el("span", { class: kind === "id" ? "chip hot" : kind === "value" ? "chip" : "chip muted" }, label);
 }
@@ -311,7 +328,7 @@ function idLeakPanel(a) {
     el("p", { class: "muted small" }, "A value unique to this browser (it differed in a second, fresh browser) "
       + "found in a request to another company. \"Likely\" = the fresh browser didn't get that cookie, so we "
       + "couldn't double-check it; those aren't used for findings."),
-    leaks.length ? el("table", {},
+    leaks.length ? el("div", { class: "scroll-x" }, el("table", {},
       el("tr", {}, el("th", {}, "Cookie"), el("th", {}, "ID"), el("th", {}, "Sent to"), el("th", {}, "When"),
         el("th", {}, "Where"), el("th", {}, "Checked")),
       leaks.map((l) => el("tr", {},
@@ -320,7 +337,7 @@ function idLeakPanel(a) {
         el("td", {}, l.company ? el("b", {}, l.company) : null, " ", el("span", { class: "muted" }, l.to)),
         el("td", { class: l.phase === "after_reject" ? "hot" : "" }, when[l.phase] ?? l.phase),
         el("td", { class: "muted" }, l.in + (l.encoding !== "raw" ? ` (${l.encoding})` : "")),
-        el("td", {}, l.confidence === "confirmed" ? "Confirmed" : el("span", { class: "muted" }, "Likely"))))) : null,
+        el("td", {}, l.confidence === "confirmed" ? "Confirmed" : el("span", { class: "muted" }, "Likely")))))) : null,
     syncs.length ? el("div", {}, el("h4", {}, "Ad-tech ID matching"),
       syncs.map((x) => el("div", { class: "small" }, `${x.type} → ${x.to} (${when[x.phase] ?? x.phase})`
         + (x.sources?.length ? `: ${x.sources.join(", ")}` : "")))) : null);
@@ -345,8 +362,8 @@ function requestsPanel(a) {
       el("tr", {}, el("th", {}, "Company"), el("th", {}, "Phase"), el("th", {}, "Type"), el("th", {}, "URL")),
       rows.slice(0, 500).map((r) => el("tr", {},   // cap at 500 rows so huge audits stay fast
         el("td", { class: r.tracker?.is_tracker ? "hot" : "" }, r.tracker?.company ?? r.domain),
-        el("td", { class: "muted" }, show(r.phase)),
-        el("td", { class: "muted" }, show(r.type)),
+        el("td", { class: "muted nowrap" }, show(r.phase)),
+        el("td", { class: "muted nowrap" }, show(r.type)),
         el("td", { class: "url" }, r.url)))));  // shown as text, not a link: we don't want people clicking trackers
   }
   onlyTrackers.addEventListener("change", draw);
@@ -477,5 +494,6 @@ function deliveryLine(d) {
 // Everything in the JSON, using the generic renderer. Catches fields we don't have a nice view for yet.
 function rawPanel(a) {
   return el("div", { class: "panel" },
-    el("details", {}, el("summary", {}, "Raw audit data (every field)"), render(a)));
+    // Deeply nested on a phone: let this debug view scroll sideways inside its own box.
+    el("details", {}, el("summary", {}, "Raw audit data (every field)"), el("div", { class: "scroll-x" }, render(a))));
 }

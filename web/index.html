@@ -29,6 +29,8 @@
         <input id="auditFile" type="file" accept=".json,.txt,.csv">
         <button id="auditFileBtn" type="button">Audit file</button>
       </div>
+      <label class="check small"><input type="checkbox" id="skipAudited" checked>
+        Skip sites that already have an audit (blocked or failed ones are tried again)</label>
       <!-- Shown once a file is chosen: its name, how many URLs, and a button to remove it. -->
       <div id="fileInfo" class="file-info" hidden>
         <span id="fileInfoText"></span>
@@ -62,7 +64,12 @@
         <div class="n" id="totalAfter">0</div>
         <div class="l">Still tracking after "Reject all"</div>
       </div>
+      <a class="stat critical-stat" href="#criticalSection" title="Jump to the critical audits">
+        <div class="n" id="totalCritical">0</div>
+        <div class="l">Critical audits</div>
+      </a>
     </div>
+
 
     <!-- AI (OpenAI) usage across every saved audit. script.js fills it from /api/usage. -->
     <div id="usageSection" class="panel usage" hidden>
@@ -79,6 +86,13 @@
       <button id="crossMore" type="button" class="secondary" hidden>Show all companies</button>
       <!-- Proof, not just presence: same ID sent from different sites (one shared browser). -->
       <div id="proofBox" class="proof"></div>
+    </div>
+
+    <!-- Critical audits (the ones to act on), just above Severe: the ones to act on. Hidden until script.js finds one. -->
+    <div id="criticalSection" class="critical-section" hidden>
+      <h2 class="critical-title"><span class="pulse"></span>Critical <span id="criticalCount"></span></h2>
+      <p class="muted small">Worst finding is critical: advertising or session-replay tracking backed by strong evidence. Letters for these are drafted automatically.</p>
+      <div class="cards" id="criticalCards"></div>
     </div>
 
     <!-- Severe: sites that kept tracking after "Reject all". Hidden until script.js finds one. -->

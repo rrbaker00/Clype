@@ -69,6 +69,7 @@ class AuditRequest(BaseModel):
 
 class BatchRequest(BaseModel):
     urls: list[str]  # the dashboard reads the uploaded file and sends the list
+    skip_audited: bool = False   # tick box: skip sites that already have a successful audit
 
 
 # POST /api/audit {"url": "bbc.co.uk"} -> queues one audit and returns the job straight away.
@@ -88,19 +89,30 @@ def post_audit(req: AuditRequest):
 @app.post("/api/audit/batch")
 def post_batch(req: BatchRequest):
     queued, rejected, seen = [], [], set()
+    # Sites already waiting/running: never queue them twice (whatever the tick box says).
+    in_queue = {base_domain(j["url"]) for j in jobs.list_jobs() if j["status"] in ("queued", "running")}
+    # Tick box: sites with a SUCCESSFUL audit (blocked/failed ones are retried).
+    audited = {s["site"] for s in _latest_by_site().values()} if req.skip_audited else set()
     for raw in req.urls:
         try:
             url = jobs.clean_url(raw)
         except ValueError as e:
             rejected.append({"url": raw, "reason": str(e)})
             continue
-        if url in seen:
+        site = base_domain(url)
+        if site in seen:                      # by SITE: "bbc.co.uk" and "https://www.bbc.co.uk/" are one
             rejected.append({"url": raw, "reason": "duplicate"})
+            continue
+        if site in in_queue:
+            rejected.append({"url": raw, "reason": "already in the queue"})
+            continue
+        if site in audited:
+            rejected.append({"url": raw, "reason": "already audited"})
             continue
         if len(queued) >= jobs.MAX_BATCH:
             rejected.append({"url": raw, "reason": f"over the {jobs.MAX_BATCH}-URL limit per file"})
             continue
-        seen.add(url)
+        seen.add(site)
         queued.append(jobs.submit(url))
     return {"queued": queued, "rejected": rejected}
 
@@ -115,6 +127,15 @@ def get_jobs():
 @app.post("/api/jobs/cancel")
 def cancel_jobs():
     return {"cancelled": jobs.cancel_queued()}
+
+
+# POST /api/jobs/<id>/cancel -> the ✕ on one job: stop it (running or waiting) and drop it from the list.
+@app.post("/api/jobs/{job_id}/cancel")
+def cancel_job(job_id: str):
+    url = jobs.cancel(job_id)
+    if url is None:
+        raise HTTPException(404, "No such audit in the queue (it may have just finished)")
+    return {"cancelled": url}
 
 
 # @app.get(...) is a "decorator": it tells FastAPI "when a browser asks for
@@ -307,6 +328,9 @@ def _site_status(url, start=False, force=False):
         return {"site": site, "status": "done", "audit": public(latest)}
     if job and job["status"] == "failed" and not force and time.time() - (job["finished"] or 0) < 3600:
         return {"site": site, "status": "failed", "error": job["error"], "audit": public(latest) if latest else None}
+    if start and jobs.recently_cancelled(site) and not force:
+        # You cancelled this site's audit a moment ago: don't let the extension's polling restart it.
+        return {"site": site, "status": "none", "audit": public(latest) if latest else None}
     if start:
         # Audit the site's homepage, not the page you're on: a deep link / login page / 404 would make
         # the audit look "blocked", and the audit is per site anyway.

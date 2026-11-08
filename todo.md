@@ -69,6 +69,11 @@ A wrong accusation in front of judges is worse than a missed one.
 - [x] Cross-site B: "Proof of cross-site tracking" button (linkage pass in one browser; linkage/*.json)
 - [x] Firefox extension phase 1 (extension/): auto-audit new sites via the server, badge, popup with all reports, critical in-page box + notification; extension audits never send
 - [x] Audits run in headless Firefox by default (AUDIT_BROWSER); agent + extension handle web-component (shadow DOM) banners and "Necessary only"
+- [x] Layout: long cookie names/URLs/site names no longer push panels off screen (grid minmax(0,1fr), fixed cookie-table columns, text wraps); checked on every audit at 400/1280/1920 px
+- [x] Hung audits: banner search skips hidden/1x1 iframes (ocado.com hung forever); watchdog kills an audit's own browser after AUDIT_TIMEOUT_S (default 6 min) -> failed "Timed out", worker moves on; ✕ cancel kills the browser instantly
+- [x] ✕ on running/waiting audits: cancels (running ones stop at the next step, nothing saved), removes from the queue, extension won't re-queue for 15 min
+- [x] Batch upload: "Skip sites that already have an audit" tick box; duplicates detected by site; never re-queue sites already waiting
+- [x] Critical audits: own top section, red stat tile, CRITICAL cards with top finding, red banner on the audit page
 - [x] Extension tested in real Firefox 159 (Marionette, temp profile): reject in tab (BBC, Just Eat web components, sse "Disable all"), Guardian pay-or-consent not clicked, Google skipped, critical alert + notification, hop between sites, reset -> forced fast-lane audit. Fixed: lost first requests, reject race, unload beacons in next site, www/subdomain splitting, server-restart polling, Audit now after failure, PNG notification icon; server: shutdown stops workers (reload no longer hangs), batch job promoted to fast lane / recent report shown
 - [x] Extension: Reset this site's cookies forces a fresh audit + new your-browser capture; extension audits use a fast lane in the job queue
 - [x] Google Analytics / Clarity / Tag Manager get their own categories (GA isn't advertising; GTM is "Tag manager", low); Consent Mode gcs=G100 pings explained

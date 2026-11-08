@@ -79,9 +79,16 @@ async function startFile() {
   const urls = parseUrlFile(await file.text());
   if (!urls.length) return setMsg("No URLs found in that file.");
   try {
-    const { queued, rejected } = await postJson("/api/audit/batch", { urls });
+    const skip_audited = document.getElementById("skipAudited").checked;
+    const { queued, rejected } = await postJson("/api/audit/batch", { urls, skip_audited });
     let msg = `Queued ${queued.length} audit${queued.length === 1 ? "" : "s"}.`;
-    if (rejected.length) msg += ` Skipped ${rejected.length}: ` + rejected.map((r) => `${r.url} (${r.reason})`).join(", ");
+    if (rejected.length) {
+      // Group by reason so a 300-line file gives one readable line, e.g. "120 already audited, 2 duplicate".
+      const byReason = {};
+      for (const r of rejected) (byReason[r.reason] ??= []).push(r.url);
+      msg += " Skipped " + Object.entries(byReason).map(([reason, list]) =>
+        `${list.length} ${reason}` + (list.length <= 3 ? ` (${list.join(", ")})` : "")).join(", ") + ".";
+    }
     setMsg(msg);
     removeFileQuietly();
     pollJobs();
@@ -106,8 +113,25 @@ function jobRow(j) {
   const label = j.audit_id
     ? el("a", { href: "audit.html?id=" + encodeURIComponent(j.audit_id) }, host(j.url))
     : el("span", {}, host(j.url));
+  const active = j.status === "running" || j.status === "queued";
   return el("li", { class: "job " + j.status + (j.tier === "critical" ? " critical" : "") },
-    label, el("span", { class: "muted" }, " " + status));
+    el("span", { class: "job-text" }, label, el("span", { class: "muted" }, " " + status)),
+    active ? el("button", { type: "button", class: "job-x", title: "Cancel this audit and remove it",
+                            "aria-label": `Cancel the audit of ${host(j.url)}`, onclick: () => cancelJob(j) }, "✕") : null);
+}
+
+// ✕ on one job: a waiting audit is dropped; a running one stops at its next step and saves nothing.
+async function cancelJob(j) {
+  const running = j.status === "running";
+  if (!confirm(`Cancel the audit of ${host(j.url)}?` + (running ? " It's running: its browser is stopped straight away and nothing is saved." : ""))) return;
+  try {
+    const r = await fetch(`/api/jobs/${encodeURIComponent(j.id)}/cancel`, { method: "POST" });
+    if (!r.ok && r.status !== 404) throw new Error((await r.json().catch(() => ({}))).detail || `HTTP ${r.status}`);
+    setMsg(`Cancelled the audit of ${host(j.url)}.`);
+  } catch (err) {
+    setMsg("Could not cancel: " + err.message);
+  }
+  pollJobs();
 }
 
 // Queue list open/closed. Remembered in this browser (localStorage can be unavailable: then just
@@ -174,6 +198,10 @@ window.addEventListener("load", () => {
   document.getElementById("auditFile").addEventListener("change", showChosenFile);
   document.getElementById("fileRemoveBtn").addEventListener("click", removeFile);
   document.getElementById("cancelQueuedBtn").addEventListener("click", cancelQueued);
+  // Remember the "skip already audited" tick box in this browser.
+  const skip = document.getElementById("skipAudited");
+  try { const v = localStorage.getItem("clype.skipAudited"); if (v !== null) skip.checked = v === "1"; } catch {}
+  skip.addEventListener("change", () => { try { localStorage.setItem("clype.skipAudited", skip.checked ? "1" : "0"); } catch {} });
   // Don't re-trigger "refresh cards" for jobs that finished before this page was opened.
   fetch("/api/jobs").then((r) => r.json()).then((list) => {
     list.filter((j) => ["done", "failed"].includes(j.status)).forEach((j) => finishedSeen.add(j.id));

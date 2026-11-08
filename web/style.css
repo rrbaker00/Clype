@@ -69,10 +69,16 @@ h2.severe-title { color: var(--bad); }
 
 /* ---------- Detail page panels ---------- */
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin-top: 14px; }
-.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+/* minmax(0, 1fr): a column may not grow past its share. Plain 1fr grew to fit one long unbreakable
+   cookie name (e.g. AMCV_...%40AdobeOrg) and pushed the right-hand panel off the screen. */
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.grid2 > * { min-width: 0; }
 .grid2 > .panel { margin-top: 14px; }
-@media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }  /* stack on phones */
+@media (max-width: 760px) { .grid2 { grid-template-columns: minmax(0, 1fr); } }  /* stack on phones */
 
+/* Long unbroken text (URLs, cookie names, IDs) wraps instead of pushing the page sideways. It only breaks
+   mid-word when a line would otherwise overflow, so normal sentences are unaffected. */
+.panel, .card { overflow-wrap: anywhere; min-width: 0; }
 .finding { border-left: 3px solid var(--muted); background: var(--panel-2); border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
 .finding.high { border-color: var(--bad); } .finding.medium { border-color: var(--warn); } .finding.low { border-color: var(--accent); }
 /* Critical: AI said high AND it cites advertising / session-replay evidence. Thicker red + tinted. */
@@ -92,6 +98,14 @@ table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
      text-align: left; position: sticky; top: 0; background: var(--panel); }  /* header stays visible while scrolling */
 th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+/* Table cells: only break a word that really doesn't fit (break-word keeps short columns at their natural
+   width). "anywhere" here squeezed Company/Phase/Type in the requests table to one letter per line.
+   The URL column and the fixed-width cookie tables opt in to breaking anywhere. */
+table { overflow-wrap: break-word; }
+th { white-space: nowrap; }
+td.url { overflow-wrap: anywhere; }
+.pill, .cookie-table .chip { white-space: nowrap; }   /* short labels ("Unique ID") stay on one line;
+                                                        other chips (long company names) may wrap */
 td.url { word-break: break-all; color: var(--muted); }
 .num { text-align: right; font-variant-numeric: tabular-nums; }
 .hot { color: var(--bad); font-weight: 700; }
@@ -110,9 +124,11 @@ button { background: var(--accent); color: #fff; border: 0; border-radius: 10px;
 
 /* ---------- Raw JSON fallback ---------- */
 details summary { cursor: pointer; color: var(--muted); }
-dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 0; }
-dt { color: var(--muted); }
-dd { margin: 0; word-break: break-all; white-space: pre-wrap; }
+/* Label/value lists: the value column may shrink (minmax(0, 1fr)) so long values wrap instead of
+   pushing the page sideways on a phone; labels wrap too if they must. */
+dl { display: grid; grid-template-columns: minmax(0, max-content) minmax(0, 1fr); gap: 4px 14px; margin: 0; }
+dt { color: var(--muted); overflow-wrap: anywhere; }
+dd { margin: 0; min-width: 0; overflow-wrap: anywhere; white-space: pre-wrap; }
 
 /* ---------- "Run an audit" panel + live queue (runner.js) ---------- */
 .runner { margin-bottom: 18px; }
@@ -188,3 +204,53 @@ button.secondary { background: var(--panel-2); color: var(--text); border: 1px s
 .queue-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .queue-toggle { font-size: 12px; padding: 3px 10px; }
 .jobs { max-height: 320px; overflow-y: auto; }
+
+.check { display: flex; align-items: center; gap: 6px; margin: 6px 0 2px; color: var(--muted); cursor: pointer; }
+
+/* ---------- Critical audits: impossible to miss ---------- */
+.critical-stat { text-decoration: none; color: inherit; }
+.critical-stat.has { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--panel)); }
+.critical-stat.has .n { color: var(--bad); }
+.critical-section { margin: 22px 0 8px; }
+h2.critical-title { color: var(--bad); display: flex; align-items: center; gap: 10px; margin-top: 0; }
+.pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--bad); box-shadow: 0 0 0 0 var(--bad);
+         animation: pulse 1.6s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--bad) 70%, transparent); }
+                   70% { box-shadow: 0 0 0 10px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+.card.critical { border: 2px solid var(--bad); border-left-width: 6px;
+                 background: color-mix(in srgb, var(--bad) 9%, var(--panel)); }
+.card.critical:hover { border-color: var(--bad); }
+.pill.crit { background: var(--bad); color: #fff; border-color: var(--bad); letter-spacing: .04em; }
+.crit-finding { margin: 8px 0 2px; font-weight: 600; color: var(--bad); font-size: 14px; }
+.chip.sev-high { color: var(--bad); }
+.critical-banner { display: flex; gap: 14px; align-items: flex-start; margin: 0 0 16px; padding: 14px 18px;
+                   border-radius: var(--radius); background: var(--bad); color: #fff; }
+.critical-banner b { font-size: 16px; }
+.critical-banner a { color: #fff; font-weight: 700; }
+.critical-banner .big { font-size: 26px; line-height: 1; }
+
+/* ✕ cancel button on running / waiting jobs */
+.jobs .job { display: flex; align-items: center; gap: 10px; }
+.jobs .job .job-text { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.job-x { flex: none; background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 6px;
+         width: 26px; height: 26px; padding: 0; font-size: 13px; line-height: 1; cursor: pointer; }
+.job-x:hover, .job-x:focus-visible { color: var(--bad); border-color: var(--bad); }
+
+.scroll-x { overflow-x: auto; }
+
+/* Cookie tables: fixed column shares, so one very long cookie name can't squeeze the other columns
+   (or push the panel off the screen). Long names/domains wrap inside their own column; on a phone the
+   table keeps a readable minimum width and scrolls inside its box. */
+.cookie-table { table-layout: fixed; min-width: 480px; }
+.cookie-table th:nth-child(1) { width: 34%; } .cookie-table th:nth-child(2) { width: 28%; }
+.cookie-table th:nth-child(3) { width: 19%; } .cookie-table th:nth-child(4) { width: 19%; }
+.cookie-table td { overflow-wrap: anywhere; }
+.cookie-table td:nth-child(3) { overflow-wrap: break-word; }   /* company names stay whole when they fit */
+.cookie-table th, .cookie-table td:nth-child(4) { white-space: nowrap; }
+
+/* Audit page header: a long site name (manchestereveningnews.co.uk) wraps instead of widening the page */
+header.top > * { min-width: 0; }
+.brand { overflow-wrap: anywhere; }
+
+td.nowrap { white-space: nowrap; }

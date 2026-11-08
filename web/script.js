@@ -46,6 +46,9 @@ function renderStats(audits) {
   document.getElementById("totalSeen").textContent = seen;
   document.getElementById("totalBlocked").textContent = stopped;
   document.getElementById("totalAfter").textContent = sum("after");
+  const crit = audits.filter(isCritical).length;
+  document.getElementById("totalCritical").textContent = crit;
+  document.querySelector(".critical-stat").classList.toggle("has", crit > 0);   // red only when there are some
 
   // Percentage stopped. "seen ? ... : 0" avoids dividing by zero when there are no trackers.
   const pct = seen ? Math.round((stopped / seen) * 100) : 0;
@@ -61,6 +64,11 @@ function statusPill(a) {
   return el("span", { class: "pill ok" }, "Respected your choice");
 }
 
+// Critical = the audit's worst finding is "critical" (the ones to act on; shown first, in their own section).
+function isCritical(a) {
+  return a.worst === "critical";
+}
+
 // Severe = we successfully clicked "Reject all" AND trackers kept sending anyway.
 // (Same rule as the red "Ignored your no" pill above.)
 function isSevere(a) {
@@ -71,8 +79,13 @@ function isSevere(a) {
 function makeCard(a) {
   const t = a.tracker_counts ?? {};
   const hidden = a.summary?.companies_not_disclosed ?? [];  // companies the policy didn't mention
-  return el("a", { class: "card" + (isSevere(a) ? " severe" : ""), href: "audit.html?id=" + encodeURIComponent(a.id) },
-    el("div", { class: "row" }, el("span", { class: "host" }, host(a.url)), statusPill(a)),
+  const crit = isCritical(a);
+  const topCritical = crit ? (a.top_findings ?? []).find((f) => f.severity === "critical") : null;
+  return el("a", { class: "card" + (crit ? " critical" : isSevere(a) ? " severe" : ""), href: "audit.html?id=" + encodeURIComponent(a.id) },
+    el("div", { class: "row" }, el("span", { class: "host" }, host(a.url)),
+      crit ? el("span", { class: "pill crit" }, "CRITICAL") : statusPill(a)),
+    topCritical ? el("div", { class: "crit-finding" }, topCritical.title) : null,
+    !crit && a.worst && a.loaded !== false ? el("span", { class: `chip sev-${a.worst}` }, `worst: ${a.worst}`) : null,
     el("div", { class: "date" }, fmtDate(a.started_at), " ",
       a.runs > 1 ? el("span", { class: "chip", title: "Older runs are in the timeline on the audit page" }, `${a.runs} runs`) : null),
     el("div", { class: "mini" },
@@ -85,9 +98,15 @@ function makeCard(a) {
 
 // Split audits into Severe (top section) and everything else (Audits section).
 function renderCards(audits) {
-  const severe = audits.filter(isSevere)
+  // Each audit appears once: Critical first, then Severe, then everything else.
+  const critical = audits.filter(isCritical);
+  document.getElementById("criticalSection").hidden = critical.length === 0;
+  document.getElementById("criticalCount").textContent = `(${critical.length})`;
+  document.getElementById("criticalCards").replaceChildren(...critical.map(makeCard));
+
+  const severe = audits.filter((a) => !isCritical(a) && isSevere(a))
     .sort((x, y) => (y.tracker_counts?.after ?? 0) - (x.tracker_counts?.after ?? 0));  // worst first
-  const rest = audits.filter((a) => !isSevere(a));
+  const rest = audits.filter((a) => !isCritical(a) && !isSevere(a));
 
   // Severe section only appears if there's at least one severe audit.
   document.getElementById("severeSection").hidden = severe.length === 0;

@@ -20,7 +20,7 @@ import time
 import uuid
 from urllib.parse import urlparse
 
-from agent.run_audit import run as run_audit
+from agent.run_audit import run as run_audit, AuditCancelled, AUDITS_DIR
 from agent.letter import audit_tier
 
 MAX_BATCH = 300       # most URLs accepted from one file (~1 h at 4 workers)
@@ -100,6 +100,32 @@ def promote(job_id):
     return True
 
 
+CANCEL_HOLD_S = 15 * 60
+_cancelled_sites = {}   # site -> when it was cancelled (the extension must not quietly re-queue it)
+
+
+def cancel(job_id):
+    """The ✕ on one job. Waiting: dropped, never runs. Running: flagged; it stops at its next step,
+    closes its browser and saves nothing. Either way it disappears from the list straight away.
+    Returns the removed job's url, or None if there was no such job."""
+    from agent.capture import base_domain
+    with _lock:
+        job = _jobs.pop(job_id, None)            # gone from the list now (the worker keeps its own reference)
+        if job is None:
+            return None
+        job["cancel"] = True
+        if job["status"] == "queued":
+            job.update(status="cancelled", step="Cancelled", finished=time.time())
+        _cancelled_sites[base_domain(job["url"])] = time.time()
+    if job["status"] == "running" and job.get("_kill"):
+        job["_kill"]()                            # stop its browser now, even if it's stuck mid-step
+    return job["url"]
+
+
+def recently_cancelled(site):
+    return time.time() - _cancelled_sites.get(site, 0) < CANCEL_HOLD_S
+
+
 def cancel_queued():
     """Cancel every job that hasn't started yet. Running audits are left to finish
     (stopping a browser mid-audit could leave a half-written audit file).
@@ -114,8 +140,9 @@ def cancel_queued():
 
 
 def list_jobs():
-    with _lock:
-        return sorted((dict(j) for j in _jobs.values()), key=lambda j: j["created"], reverse=True)
+    with _lock:   # "_kill" etc. are internal (not JSON): leave them out
+        return sorted(({k: v for k, v in j.items() if not k.startswith("_")} for j in _jobs.values()),
+                      key=lambda j: j["created"], reverse=True)
 
 
 def stop():
@@ -138,7 +165,13 @@ def _worker():
         job.update(status="running", started=time.time(), step="Starting")
         try:
             audit = run_audit(job["url"], progress=lambda text: job.update(step=text),
-                              allow_send=job.get("allow_send", True))
+                              allow_send=job.get("allow_send", True),
+                              should_stop=lambda: job.get("cancel", False) or job.get("timed_out", False),
+                              on_browser=lambda kill: job.update(_kill=kill))
+            if job.get("cancel") and audit.get("id"):
+                # Cancelled in the instant between the last check and saving: remove the saved file.
+                (AUDITS_DIR / f"{audit['id']}.json").unlink(missing_ok=True)
+                continue
             delivery = (audit.get("letter") or {}).get("delivery") or {}
             job.update(status="done", step="Finished", audit_id=audit.get("id"),
                        tier=audit_tier(audit), emailed=delivery.get("sent"),
@@ -146,10 +179,37 @@ def _worker():
             if not audit.get("loaded"):
                 first = (audit.get("errors") or [{}])[0].get("error") or "The site could not be loaded."
                 job.update(status="failed", error=first.split("\n")[0][:200])   # first line only, e.g. "Site refused the automated browser (HTTP 403...)"
+        except AuditCancelled:
+            if job.get("timed_out"):                 # stopped by the watchdog: show it as failed
+                job.update(status="failed", step="Timed out", finished=time.time(),
+                           error=f"Timed out after {AUDIT_TIMEOUT_S // 60} min: the site hung the audit browser, so it was stopped.")
+            continue                                 # (cancelled from the dashboard: job already removed)
         except Exception as e:                       # run_audit shouldn't raise, but never kill the worker
             job.update(status="failed", step="Failed", error=f"{type(e).__name__}: {e}"[:300])
         job["finished"] = time.time()
 
+
+# Watchdog: an audit normally takes ~1 min. One running longer than this is stuck (some sites hang
+# the browser in ways no timeout catches), so its browser is killed and it's marked failed. The worker
+# then moves on to the next URL: you always keep all workers busy.
+AUDIT_TIMEOUT_S = max(120, int(os.getenv("AUDIT_TIMEOUT_S", "360")))
+
+
+def _watchdog():
+    while not _stopping.is_set():
+        time.sleep(10)
+        now = time.time()
+        with _lock:
+            stuck = [j for j in _jobs.values() if j["status"] == "running" and j.get("started")
+                     and now - j["started"] > AUDIT_TIMEOUT_S and not j.get("timed_out")]
+        for job in stuck:
+            job["timed_out"] = True
+            job["step"] = "Timed out: stopping its browser"
+            if job.get("_kill"):
+                job["_kill"]()
+
+
+threading.Thread(target=_watchdog, daemon=True, name="audit-watchdog").start()
 
 for n in range(WORKERS):  # each thread takes the next queued job when it's free
     threading.Thread(target=_worker, daemon=True, name=f"audit-worker-{n + 1}").start()

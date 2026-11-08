@@ -14,6 +14,8 @@ and no LLM calls are made.
 """
 import os
 import re
+import signal
+import subprocess
 import sys
 import json
 import time
@@ -109,7 +111,34 @@ def save(audit, site_domain, started):
     return path
 
 
-def run(url, progress=None, allow_send=True):
+class AuditCancelled(Exception):
+    """Raised between steps when the dashboard cancelled this audit (nothing gets saved)."""
+
+
+def _kill_switch(p):
+    """A function that hard-stops THIS audit's browser: its own Playwright driver process and the browser
+    it started (found at call time, as the browser spawns more processes while running). Any browser
+    call stuck forever then fails at once ("Connection closed"), so the audit thread can unwind.
+    Used by the job queue's watchdog (audits stuck > 6 min) and by the ✕ cancel button."""
+    def descendants(pid):
+        out = subprocess.run(["pgrep", "-P", str(pid)], capture_output=True, text=True).stdout.split()
+        return [pid] + [d for c in out for d in descendants(int(c))]
+
+    def kill():
+        try:
+            driver = p._impl_obj._connection._transport._proc.pid
+        except Exception:
+            return False
+        for pid in reversed(descendants(driver)):
+            try:
+                os.kill(pid, signal.SIGKILL)
+            except OSError:
+                pass
+        return True
+    return kill
+
+
+def run(url, progress=None, allow_send=True, should_stop=None, on_browser=None):
     """Run a full audit. progress(step_text) is called as it goes (the dashboard shows it).
     Always returns an audit dict and always saves it, even if steps failed."""
     say = progress or (lambda text: None)
@@ -119,11 +148,19 @@ def run(url, progress=None, allow_send=True):
     start = time.monotonic()
     errors = []
 
+    def stop_if_cancelled():
+        if should_stop and should_stop():
+            raise AuditCancelled(url)
+
     def step(name, fn, default):
-        """Run one pipeline step; on failure record the error and carry on with `default`."""
+        """Run one pipeline step; on failure record the error and carry on with `default`.
+        Cancelled from the dashboard? Stop here (between steps), so nothing half-done is saved."""
+        stop_if_cancelled()
         say(name)
         try:
             return fn()
+        except AuditCancelled:
+            raise
         except Exception as e:
             errors.append({"step": name, "error": f"{type(e).__name__}: {e}"[:300]})
             return default
@@ -139,6 +176,8 @@ def run(url, progress=None, allow_send=True):
     browser_info = AUDIT_BROWSER
 
     with sync_playwright() as p:
+        if on_browser:
+            on_browser(_kill_switch(p))      # lets the queue stop this audit's browser if it hangs
         browser = getattr(p, AUDIT_BROWSER).launch(headless=True)
         browser_info = f"{AUDIT_BROWSER} {browser.version}"
         try:
@@ -185,7 +224,10 @@ def run(url, progress=None, allow_send=True):
                 fresh_cookies = step("Checking which cookie values are IDs",
                                      lambda: fresh_landing_cookies(browser, url), [])
         finally:
-            browser.close()                          # even if something above blew up
+            try:
+                browser.close()                      # even if something above blew up
+            except Exception:
+                pass                                 # already killed by the watchdog / cancel
 
     tag_cookie_trackers(cookies_before, site_domain)
     tag_cookie_trackers(cookies_after, site_domain)
@@ -246,6 +288,7 @@ def run(url, progress=None, allow_send=True):
     audit["cost"] = cost.as_dict()          # final totals, including review + letter calls
     audit["duration_s"] = round(time.monotonic() - start, 2)
     audit["errors"] = errors
+    stop_if_cancelled()                     # last chance: a cancelled audit is never saved
     say("Saving")
     save(audit, site_domain, started)
     return audit
