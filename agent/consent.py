@@ -32,6 +32,8 @@ REJECT_PHRASES = [
     "necessary only",          # e.g. just-eat.co.uk: "Necessary only" is its reject option
     "only necessary",
     "essential only",
+    "disable all",             # e.g. sse.com: "Allow all" / "Disable all"
+    "deny all",
     "decline",
     "disagree",
     "reject",

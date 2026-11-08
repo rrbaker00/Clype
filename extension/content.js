@@ -60,7 +60,8 @@
   const REJECT_PHRASES = ["reject all", "reject all cookies", "reject additional cookies", "reject optional cookies",
     "reject non-essential cookies", "decline all", "refuse all", "use necessary cookies only", "necessary cookies only",
     "only necessary cookies", "essential cookies only", "necessary only", "only necessary", "essential only",
-    "strictly necessary only", "decline optional", "decline", "disagree", "reject", "refuse"];
+    "strictly necessary only", "decline optional", "disable all", "deny all", "decline", "disagree", "deny",
+    "reject", "refuse"];
   const NEVER = /accept|agree|allow|ok\b|got it|subscribe|pay|premium|continue with/i;
   const COOKIE = /cookie|consent|privacy|gdpr|tracking|personal data/i;
   const CMP_FRAME = /consent|cmp|cookie|privacy|sourcepoint|onetrust|didomi|trustarc|quantcast|usercentrics/i;

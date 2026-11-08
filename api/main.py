@@ -5,6 +5,7 @@
 
 from urllib.parse import urlsplit  # built-in: page address -> its homepage
 import time       # built-in: how long ago a failed audit was
+from contextlib import asynccontextmanager  # built-in: startup/shutdown hook
 import threading  # built-in: runs the cross-site check in the background
 import json   # built-in: turns JSON text into Python dicts/lists and back
 import re     # built-in: regular expressions, used to check the audit id is safe
@@ -29,7 +30,13 @@ from agent.compare import SEVERITY_ORDER         # worst finding first
 # Doing it this way means it works no matter which folder you run uvicorn from.
 ROOT = Path(__file__).resolve().parent.parent
 AUDITS = ROOT / "audits"   # the "/" operator joins paths: HTB/audits
-app = FastAPI(title="Clype")  # create the web app; uvicorn looks for this variable
+@asynccontextmanager
+async def lifespan(app):
+    yield                  # the server runs here
+    jobs.stop()            # shutting down / --reload: audit workers stop taking new jobs
+
+
+app = FastAPI(title="Clype", lifespan=lifespan)  # create the web app; uvicorn looks for this variable
 
 
 def tracker_counts(audit):
@@ -283,12 +290,19 @@ def _site_status(url, start=False, force=False):
             break
     public = (lambda s: {k: v for k, v in s.items() if not k.startswith("_")}) if latest else None
     job = next((j for j in jobs.list_jobs() if base_domain(j["url"]) == site), None)   # newest job for site
-    if job and job["status"] in ("queued", "running"):
-        return {"site": site, "status": job["status"], "step": job["step"], "audit": public(latest) if latest else None}
     recent = False
     if latest and latest.get("started_at"):
         age = datetime.now(timezone.utc) - datetime.fromisoformat(latest["started_at"])
         recent = age.days < RECENT_DAYS
+    if job and job["status"] in ("queued", "running"):
+        # A dashboard batch has this site waiting but there's a recent report: show that report
+        # (the batch re-audit still happens later). Otherwise show the job, and if it's waiting in the
+        # normal lane while you're on the site, move it into the fast lane.
+        if recent and not force and job.get("source") != "extension":
+            return {"site": site, "status": "done", "audit": public(latest)}
+        if start and job["status"] == "queued":
+            jobs.promote(job["id"])
+        return {"site": site, "status": job["status"], "step": job["step"], "audit": public(latest) if latest else None}
     if recent and not force:
         return {"site": site, "status": "done", "audit": public(latest)}
     if job and job["status"] == "failed" and not force and time.time() - (job["finished"] or 0) < 3600:

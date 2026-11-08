@@ -110,6 +110,23 @@ function jobRow(j) {
     label, el("span", { class: "muted" }, " " + status));
 }
 
+// Queue list open/closed. Remembered in this browser (localStorage can be unavailable: then just
+// use the default: open for a few jobs, closed for a big batch).
+function queueOpen(total) {
+  try {
+    const saved = localStorage.getItem("clype.queueOpen");
+    if (saved !== null) return saved === "1";
+  } catch {}
+  return total <= 5;
+}
+
+function toggleQueue() {
+  const list = document.getElementById("jobList");
+  const open = list.hidden;                              // hidden now -> we're opening it
+  try { localStorage.setItem("clype.queueOpen", open ? "1" : "0"); } catch {}
+  pollJobs();
+}
+
 async function pollJobs() {
   clearTimeout(pollTimer);
   let list = [];
@@ -123,11 +140,17 @@ async function pollJobs() {
   const [queued, running, done, failed] = ["queued", "running", "done", "failed"].map(count);
   const total = list.length, finished = done + failed + count("cancelled");
   const critical = list.filter((j) => j.tier === "critical").length;
+  const open = queueOpen(total);
+  document.getElementById("jobList").hidden = !open;
   document.getElementById("queueSummary").replaceChildren(...(total ? [
-    el("div", { class: "muted small" },
-      `${finished}/${total} finished · ${running} running · ${queued} waiting · ${failed} failed` +
-      (count("cancelled") ? ` · ${count("cancelled")} cancelled` : "") +
-      (critical ? ` · ${critical} critical` : "")),
+    el("div", { class: "queue-head" },
+      el("span", { class: "muted small" },
+        `${finished}/${total} finished · ${running} running · ${queued} waiting · ${failed} failed` +
+        (count("cancelled") ? ` · ${count("cancelled")} cancelled` : "") +
+        (critical ? ` · ${critical} critical` : "")),
+      el("button", { type: "button", class: "secondary queue-toggle", "aria-expanded": String(open),
+                     "aria-controls": "jobList", onclick: toggleQueue },
+        open ? "Hide list ▴" : `Show list (${total}) ▾`)),
     el("div", { class: "bar" }, el("i", { style: `width:${Math.round((finished / total) * 100)}%` })),
   ] : []));
   // "Cancel waiting audits" only makes sense while something is waiting.

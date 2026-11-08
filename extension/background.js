@@ -26,16 +26,28 @@ const lastAsked = {};     // host -> time we last asked the server
 let serverUp = true;
 
 // ---------- settings (saved in the browser) ----------
+const DEFAULTS = { enabled: true, monitor: true, skip: [], alerted: [], dismissed: [] };
+let cfg = { ...DEFAULTS };        // in-memory copy: navigation handlers must not wait on storage
 async function settings() {
-  const s = await browser.storage.local.get({ enabled: true, monitor: true, skip: [], alerted: [], dismissed: [] });
-  return s;
+  cfg = await browser.storage.local.get(DEFAULTS);
+  return cfg;
 }
+settings();
+browser.storage.onChanged.addListener(() => { settings(); });
 
 function hostOf(url) {
   try {
     const u = new URL(url);
     return /^https?:$/.test(u.protocol) ? u.hostname : null;
   } catch { return null; }
+}
+
+// Same site? "bbc.co.uk" ~ "www.bbc.co.uk" ~ "news.bbc.co.uk" (redirects and subdomains don't start a
+// new visit). Not "notbbc.co.uk".
+function sameSiteHost(a, b) {
+  if (!a || !b) return false;
+  a = a.replace(/^www\./, ""); b = b.replace(/^www\./, "");
+  return a === b || a.endsWith("." + b) || b.endsWith("." + a);
 }
 
 function isSkipped(host, extraSkip) {
@@ -88,11 +100,13 @@ browser.webNavigation.onCompleted.addListener(async (details) => {
 browser.tabs.onActivated.addListener(refreshBadges);
 browser.tabs.onUpdated.addListener((tabId, change) => { if (change.url) refreshBadges(); });
 
-// Keep polling audits that are queued or running until they finish.
+// Keep polling audits that are queued or running until they finish. Polls with the "visit" request:
+// it returns the existing job/report, and re-queues the site if the server restarted and lost its queue
+// (otherwise the site would silently never be audited).
 setInterval(async () => {
   for (const res of Object.values(sites)) {
     if (res.status === "queued" || res.status === "running") {
-      await checkHost(res.audit?.url || "https://" + res.site, false);
+      await checkHost(res.audit?.url || "https://" + res.site, cfg.enabled);
     }
   }
 }, POLL_MS);
@@ -135,7 +149,7 @@ async function onFinished(res) {
   if (!s.alerted.includes(res.audit.id)) {
     await browser.storage.local.set({ alerted: [...s.alerted, res.audit.id].slice(-200) });
     browser.notifications.create("clype:" + res.audit.id, {
-      type: "basic", iconUrl: browser.runtime.getURL("icons/clype.svg"),
+      type: "basic", iconUrl: browser.runtime.getURL("icons/clype-96.png"),
       title: `Clype: critical issue on ${res.site}`,
       message: res.audit.top_findings?.[0]?.title || "Open the report for details.",
     });
@@ -208,9 +222,18 @@ browser.runtime.onMessage.addListener(async (msg, sender) => {
                                                label: live.label } : null,
              skipped: host ? isSkipped(host, s.skip) : true, userSkipped: s.skip.includes(host), site: res };
   }
+  if (msg.type === "debug-state") {
+    // Read-only snapshot for testing/troubleshooting (only this extension's own pages/scripts can ask).
+    const snap = {};
+    for (const [tabId, x] of Object.entries(sessions)) {
+      snap[tabId] = { host: x.host, rejected: x.rejected, label: x.label, sent: x.sent, requests: x.requests.length,
+                      first: x.requests[0]?.url?.slice(0, 80) || null, sendResult: x.sendResult || null };
+    }
+    return { cfg, serverUp, hostToSite, sites, sessions: snap };
+  }
   if (msg.type === "popup-audit-now") {
     lastAsked[hostOf(msg.url)] = Date.now();
-    return checkHost(msg.url, true);
+    return checkHost(msg.url, true, true);        // explicit click: retry even after a recent failure
   }
   if (msg.type === "popup-toggle") {
     await browser.storage.local.set({ enabled: msg.enabled });
@@ -236,21 +259,23 @@ const SEND_NO_BANNER_MS = 40000;      // no banner found / already answered: sen
 const MAX_REQUESTS = 3000;
 const sessions = {};                  // tabId -> {host, url, started, rejected, label, requests, sent, timer}
 
-async function startSession(tabId, url) {
-  const s = await settings();
+// Synchronous on purpose: the new page's first requests (incl. the page itself) fire right after
+// navigation starts, so the new session must exist before we wait on anything.
+function startSession(tabId, url) {
   const host = hostOf(url);
   const old = sessions[tabId];
-  if (old && old.host === host) return;               // same site, keep recording
-  if (old && !old.sent) await sendSession(tabId);     // left the site: send what we have
-  if (!s.monitor || !host || isSkipped(host, s.skip)) { delete sessions[tabId]; return; }
-  sessions[tabId] = { host, url, started: new Date().toISOString(), rejected: false, label: null,
-                      bannerFound: false, requests: [], cookiesBefore: null, sent: false,
-                      timer: setTimeout(() => sendSession(tabId), SEND_NO_BANNER_MS) };
+  if (old && sameSiteHost(old.host, host)) return;    // same site (incl. www./subdomain), keep recording
+  if (old) sendSession(old);                          // left the site: send what we have (in the background)
+  if (!cfg.monitor || !host || isSkipped(host, cfg.skip)) { delete sessions[tabId]; return; }
+  const session = { host, url, started: new Date().toISOString(), rejected: false, label: null,
+                    bannerFound: false, requests: [], cookiesBefore: null, sent: false };
+  session.timer = setTimeout(() => sendSession(session), SEND_NO_BANNER_MS);
+  sessions[tabId] = session;
 }
 
 // Main-frame navigation starts (or continues) a session BEFORE the page's own requests fire.
 browser.webNavigation.onBeforeNavigate.addListener((d) => { if (d.frameId === 0) startSession(d.tabId, d.url); });
-browser.tabs.onRemoved.addListener((tabId) => { if (sessions[tabId] && !sessions[tabId].sent) sendSession(tabId); });
+browser.tabs.onRemoved.addListener((tabId) => { sendSession(sessions[tabId]); delete sessions[tabId]; });
 
 function bodyText(details) {
   const b = details.requestBody;
@@ -263,8 +288,15 @@ function bodyText(details) {
 }
 
 browser.webRequest.onBeforeRequest.addListener((details) => {
+  // The page's own request can arrive before webNavigation.onBeforeNavigate (Firefox doesn't order the
+  // two), so a top-level page request also starts the session; otherwise it would go unrecorded.
+  if (details.type === "main_frame" && details.tabId >= 0) startSession(details.tabId, details.url);
   const session = sessions[details.tabId];
   if (!session || session.sent || details.url.startsWith(SERVER)) return;
+  // Requests sent by the PREVIOUS page as it unloads (analytics "goodbye" beacons) arrive after the new
+  // site's session started: drop anything the top-level page of another host made.
+  if (details.frameId === 0 && details.type !== "main_frame" && details.documentUrl &&
+      !sameSiteHost(hostOf(details.documentUrl), session.host)) return;
   if (session.requests.length >= MAX_REQUESTS) return;
   session.requests.push({ url: details.url, method: details.method, type: details.type,
                           phase: session.rejected ? "after_reject" : "before_consent", _post: bodyText(details) });
@@ -273,10 +305,11 @@ browser.webRequest.onBeforeRequest.addListener((details) => {
 // Cookies for THIS site only: the site's own + those of domains its requests went to (never the
 // whole cookie jar). Includes Firefox's partitioned (Total Cookie Protection) cookies for the site.
 async function siteCookies(session) {
-  const site = hostToSite[session.host] || session.host;
+  const site = hostToSite[session.host] || session.host.replace(/^www\./, "");
   const domains = new Set([site, ...session.requests.map((r) => hostOf(r.url)).filter(Boolean)]);
-  const related = (c) => [...domains].some((d) => d.endsWith(c.domain.replace(/^\./, "")) ||
-                                                   c.domain.replace(/^\./, "").endsWith(d));
+  const under = (a, b) => a === b || a.endsWith("." + b);          // "x.bbc.co.uk" under "bbc.co.uk", not "notbbc.co.uk"
+  const related = (c) => { const cd = c.domain.replace(/^\./, "");
+                           return [...domains].some((d) => under(d, cd) || under(cd, d)); };
   let all = [];
   try { all = all.concat((await browser.cookies.getAll({})).filter(related)); } catch {}
   try {
@@ -292,16 +325,17 @@ async function siteCookies(session) {
 async function markRejected(tabId, label) {
   const session = sessions[tabId];
   if (!session || session.sent || session.rejected) return;
-  session.cookiesBefore = await siteCookies(session);   // snapshot at the moment of the click
+  // Flip the state FIRST: requests from now on are "after reject", and a second reject message
+  // (e.g. from a consent iframe) is ignored. Then snapshot the cookies as of the click.
   session.rejected = true;
   session.bannerFound = true;
   session.label = String(label || "").slice(0, 80);
   clearTimeout(session.timer);
-  session.timer = setTimeout(() => sendSession(tabId), SEND_AFTER_REJECT_MS);
+  session.timer = setTimeout(() => sendSession(session), SEND_AFTER_REJECT_MS);
+  session.cookiesBefore = await siteCookies(session);
 }
 
-async function sendSession(tabId) {
-  const session = sessions[tabId];
+async function sendSession(session) {
   if (!session || session.sent) return;
   session.sent = true;
   clearTimeout(session.timer);
@@ -310,12 +344,16 @@ async function sendSession(tabId) {
     url: session.url, started_at: session.started, banner_found: session.bannerFound,
     rejected: session.rejected, reject_label: session.label, browser: navigator.userAgent,
     requests: session.requests,
-    cookies: session.rejected ? { before_consent: session.cookiesBefore, after_reject: now }
+    cookies: session.rejected ? { before_consent: session.cookiesBefore || [], after_reject: now }
                               : { before_consent: now, after_reject: [] },
   };
   session.requests = [];                                 // free memory either way
-  if (capture.requests.length) {
-    await api("/api/extension/session", { method: "POST", headers: { "Content-Type": "application/json" },
-                                          body: JSON.stringify(capture) });
+  // A bounce (instant redirect / closed straight away) with no banner isn't worth a capture.
+  if (capture.requests.length >= 5 || capture.rejected) {
+    const res = await api("/api/extension/session", { method: "POST", headers: { "Content-Type": "application/json" },
+                                                      body: JSON.stringify(capture) });
+    session.sendResult = res ? (res.error ? "error: " + res.error : "saved " + res.id) : "server unreachable";
+  } else {
+    session.sendResult = "nothing recorded";
   }
 }

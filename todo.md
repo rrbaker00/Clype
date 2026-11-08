@@ -69,6 +69,7 @@ A wrong accusation in front of judges is worse than a missed one.
 - [x] Cross-site B: "Proof of cross-site tracking" button (linkage pass in one browser; linkage/*.json)
 - [x] Firefox extension phase 1 (extension/): auto-audit new sites via the server, badge, popup with all reports, critical in-page box + notification; extension audits never send
 - [x] Audits run in headless Firefox by default (AUDIT_BROWSER); agent + extension handle web-component (shadow DOM) banners and "Necessary only"
+- [x] Extension tested in real Firefox 159 (Marionette, temp profile): reject in tab (BBC, Just Eat web components, sse "Disable all"), Guardian pay-or-consent not clicked, Google skipped, critical alert + notification, hop between sites, reset -> forced fast-lane audit. Fixed: lost first requests, reject race, unload beacons in next site, www/subdomain splitting, server-restart polling, Audit now after failure, PNG notification icon; server: shutdown stops workers (reload no longer hangs), batch job promoted to fast lane / recent report shown
 - [x] Extension: Reset this site's cookies forces a fresh audit + new your-browser capture; extension audits use a fast lane in the job queue
 - [x] Google Analytics / Clarity / Tag Manager get their own categories (GA isn't advertising; GTM is "Tag manager", low); Consent Mode gcs=G100 pings explained
 - [x] Firefox extension phase 2: rejects in your own tab, records your tab's traffic, server analyses it (sessions/, git-ignored); "Your browser" in popup + audit page; Reset this site's cookies

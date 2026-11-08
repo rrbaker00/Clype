@@ -5,7 +5,7 @@
   "description": "Audits each new site you visit for cookie-consent and privacy-policy problems (needs the Clype server running on this computer).",
   "icons": {
     "48": "icons/clype.svg",
-    "96": "icons/clype.svg"
+    "96": "icons/clype-96.png"
   },
   "browser_action": {
     "default_icon": "icons/clype.svg",

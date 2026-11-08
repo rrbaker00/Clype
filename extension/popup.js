@@ -39,7 +39,7 @@ function currentCard(state) {
   const res = state.site, audit = res?.audit;
   const report = audit ? `${state.server}/audit.html?id=${encodeURIComponent(audit.id)}` : null;
   let status;
-  if (state.skipped) status = state.userSkipped ? "Skipped (you chose to skip this site)" : "Skipped (sensitive or local site)";
+  if (state.skipped) status = state.userSkipped ? "Skipped (you chose to skip this site)" : "Skipped automatically (search engines, sensitive and local sites aren't audited)";
   else if (!res) status = "Not audited yet";
   else if (res.status === "queued") status = "Waiting in the audit queue…";
   else if (res.status === "running") status = `Auditing: ${res.step || "working"}…`;

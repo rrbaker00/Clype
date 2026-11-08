@@ -183,3 +183,8 @@ button.secondary { background: var(--panel-2); color: var(--text); border: 1px s
 
 .yours .okc { color: var(--ok); }
 .panel.yours { border-left: 3px solid var(--accent, #7c3aed); }
+
+/* Collapsible audit queue: summary always visible, the list scrolls inside a fixed height */
+.queue-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.queue-toggle { font-size: 12px; padding: 3px 10px; }
+.jobs { max-height: 320px; overflow-y: auto; }

@@ -38,6 +38,7 @@ FAST, NORMAL = 0, 1
 _queue = queue.PriorityQueue()
 _order = itertools.count()
 _lock = threading.Lock()
+_stopping = threading.Event()   # set when the server shuts down / reloads: take no NEW jobs
 
 
 def clean_url(raw):
@@ -82,8 +83,21 @@ def submit(url, allow_send=True, source="dashboard"):
             for old in sorted(_jobs.values(), key=lambda j: j["created"])[: len(_jobs) - MAX_KEEP]:
                 if old["status"] in ("done", "failed", "cancelled"):
                     _jobs.pop(old["id"], None)
+    job["lane"] = "fast" if source == "extension" else "normal"
     _queue.put((FAST if source == "extension" else NORMAL, next(_order), job["id"]))
     return job
+
+
+def promote(job_id):
+    """Move a waiting job into the fast lane (you opened that site in the browser while it was
+    waiting in a batch). Its old place in the queue is skipped when reached (status no longer "queued")."""
+    with _lock:
+        job = _jobs.get(job_id)
+        if not job or job["status"] != "queued" or job.get("lane") == "fast":
+            return False
+        job["lane"] = "fast"
+    _queue.put((FAST, next(_order), job_id))
+    return True
 
 
 def cancel_queued():
@@ -104,11 +118,22 @@ def list_jobs():
         return sorted((dict(j) for j in _jobs.values()), key=lambda j: j["created"], reverse=True)
 
 
+def stop():
+    """Server is shutting down (or uvicorn --reload restarting): workers finish the audit they're on
+    but take no new ones. Without this the old process kept working through a whole batch while
+    shutting down, so the restarted server couldn't come up (API down for up to an hour)."""
+    _stopping.set()
+    for _ in range(WORKERS):
+        _queue.put((-1, -1, None))                # wake idle workers so they see the stop flag
+
+
 def _worker():
-    """Runs forever in the background: take the next job, run the audit, record the result."""
-    while True:
+    """Runs in the background: take the next job, run the audit, record the result."""
+    while not _stopping.is_set():
         job = _jobs.get(_queue.get()[2])          # (priority, order, job id)
-        if job is None or job["status"] == "cancelled":   # cancelled while waiting: skip it
+        if _stopping.is_set():
+            return
+        if job is None or job["status"] != "queued":     # cancelled, or already run via the fast lane
             continue
         job.update(status="running", started=time.time(), step="Starting")
         try:
