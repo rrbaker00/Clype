@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Clype",
+  "version": "0.2.0",
+  "description": "Audits each new site you visit for cookie-consent and privacy-policy problems (needs the Clype server running on this computer).",
+  "icons": {
+    "48": "icons/clype.svg",
+    "96": "icons/clype.svg"
+  },
+  "browser_action": {
+    "default_icon": "icons/clype.svg",
+    "default_title": "Clype",
+    "default_popup": "popup.html",
+    "default_area": "navbar"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "cookies",
+    "browsingData",
+    "storage",
+    "notifications",
+    "<all_urls>"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "clype@hacktheburgh.local",
+      "strict_min_version": "109.0"
+    }
+  }
+}

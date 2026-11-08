@@ -29,6 +29,7 @@ CATEGORY_SEVERITY = {
     "Session replay": "high",
     "Analytics": "medium",
     "Monitoring": "low",
+    "Tag manager": "low",   # only loads other scripts; what it loads is judged on its own domains
 }
 
 # The same company under different names. Policies often say "Meta" or "YouTube"
@@ -86,6 +87,8 @@ def _law(category, base):
         return base + ". Some audience-measurement analytics may be exempt under the Data (Use and Access) Act 2025"
     if category == "Monitoring":
         return "Possibly exempt: performance monitoring is usually treated as strictly necessary"
+    if category == "Tag manager":
+        return base + ". A tag manager only loads other scripts; on its own it may not store or read anything"
     return base
 
 
@@ -103,7 +106,14 @@ def _group_trackers(requests, phase):
         t = r.get("tracker") or {}
         if not t.get("is_tracker") or r.get("phase") != phase:
             continue
-        g = groups.setdefault(t["company"], {"category": t.get("category"), "count": 0, "domains": set()})
+        g = groups.setdefault(t["company"], {"category": t.get("category"), "count": 0, "domains": set(),
+                                             "consent_mode_denied": 0})
+        # One company, several categories (Google: Analytics AND Advertising): keep the most serious.
+        if SEVERITY_ORDER[CATEGORY_SEVERITY.get(t.get("category"), "medium")] < SEVERITY_ORDER[CATEGORY_SEVERITY.get(g["category"], "medium")]:
+            g["category"] = t.get("category")
+        # Google Consent Mode "denied" ping: gcs=G100 means ad + analytics storage denied.
+        if re.search(r"[?&]gcs=G100", r.get("url", "")):
+            g["consent_mode_denied"] += 1
         g["count"] += 1
         g["domains"].add(r.get("domain"))
     return groups
@@ -163,6 +173,10 @@ def compare(requests, cookies, policy, consent):
                   f"after you clicked reject ({g['category'] or 'tracker'}).")
         if new_cookies:
             detail += f" New tracking cookies set after reject: {', '.join(sorted(new_cookies))}."
+        if g["consent_mode_denied"]:
+            detail += (f" {_plural(g['consent_mode_denied'], 'request')} {'was' if g['consent_mode_denied'] == 1 else 'were'} "
+                       "Google Consent Mode 'denied' pings (gcs=G100): sent without cookies, but still sending "
+                       "page and device details to Google after you said no.")
         findings.append({
             "severity": CATEGORY_SEVERITY.get(g["category"], "medium"),
             "title": f"{company} still received data after you rejected cookies",

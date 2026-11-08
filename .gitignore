@@ -3,3 +3,6 @@
 __pycache__/
 data/sent_log.json
 data/outbox/
+audits/
+# Captures from YOUR browser (extension phase 2): contain your real cookies, never commit
+sessions/

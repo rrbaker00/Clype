@@ -18,6 +18,7 @@ function renderAudit(a) {
     headerSection(a),
     timelineSection(a),                // older audits of the same site (filled in after a fetch)
     statsSection(a),
+    yourBrowserSection(a),             // filled in after a fetch, if the extension captured this site
     findingsPanel(a),
     companiesPanel(a),
     el("div", { class: "grid2" }, consentPanel(a), policyPanel(a)),  // side by side
@@ -67,6 +68,32 @@ function timelineSection(a) {
       box.hidden = false;
     })
     .catch((err) => console.error(err));                 // the timeline is extra: never break the page
+  return box;
+}
+
+// What YOUR Firefox sent on this site after the extension clicked reject in your tab (extension phase 2).
+function yourBrowserSection(a) {
+  const box = el("div", { class: "panel yours", hidden: true });
+  const site = a.id?.split("_").slice(1).join("_") || host(a.url);
+  fetch("/api/sessions/latest?site=" + encodeURIComponent(site))
+    .then((r) => (r.ok ? r.json() : null))
+    .then((y) => {
+      if (!y) return;
+      const after = y.companies_after_reject ?? [];
+      box.replaceChildren(el("div", {},
+        el("div", { class: "row" }, el("h3", {}, "Your browser"),
+          el("span", { class: "muted small" }, `${fmtDate(y.started_at)} · ${y.requests} requests · captured by the Clype extension`)),
+        !y.rejected
+          ? el("p", { class: "muted" }, y.banner_found ? "A banner was found but not rejected."
+              : "No cookie banner appeared in your browser (if you answered it before, reset the site's cookies from the extension).")
+          : el("p", {}, `The extension clicked "${y.reject_label}" in your tab. `,
+              after.length ? el("span", { class: "hot" }, `After that, ${after.join(", ")} still received data from your browser.`)
+                           : el("span", { class: "okc" }, "After that, no known trackers received data from your browser.")),
+        y.findings.length ? el("ul", {}, y.findings.map((f) =>
+          el("li", {}, el("span", { class: `chip sev-${f.severity}` }, f.severity), " ", f.title))) : null));
+      box.hidden = false;
+    })
+    .catch((err) => console.error(err));
   return box;
 }
 

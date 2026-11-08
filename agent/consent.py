@@ -29,6 +29,9 @@ from . import llm
 REJECT_PHRASES = [
     "reject all",
     "reject all cookies",
+    "necessary only",          # e.g. just-eat.co.uk: "Necessary only" is its reject option
+    "only necessary",
+    "essential only",
     "decline",
     "disagree",
     "reject",
@@ -86,8 +89,10 @@ COOKIE_CONTEXT_JS = """el => {
     // Walk up a few parent elements; if a SMALL one (a banner, not the whole page)
     // mentions cookies / consent / privacy in its text, id or class, it's a cookie control.
     const re = /cookie|consent|privacy|gdpr|tracking|personal data/i;
+    // n.getRootNode().host: step OUT of a shadow DOM (web-component banners, e.g. just-eat.co.uk's
+    // <pie-cookie-banner>), otherwise the walk would stop at the component's edge.
     let n = el;
-    for (let i = 0; i < 6 && n && n !== document.body; i++, n = n.parentElement) {
+    for (let i = 0; i < 8 && n && n !== document.body; i++, n = n.parentElement || n.getRootNode().host) {
         const text = n.innerText || "";
         if (text.length > 4000) break;          // reached the main page: stop, too broad
         if (re.test(text) || re.test(n.id || "") || re.test(String(n.className || ""))) return true;
@@ -161,6 +166,19 @@ def find_preticked(page):
         except Exception:
             continue
     return labels
+
+
+def label_of(el):
+    """Visible text of a button. Web-component buttons (<pie-button>Necessary only</pie-button>) keep their
+    text on the component, outside the inner <button>'s shadow DOM, so inner_text() is empty there."""
+    try:
+        text = el.inner_text().strip()
+        if text:
+            return text
+        return (el.evaluate("e => (e.getRootNode().host || e).textContent || e.getAttribute('aria-label') || ''")
+                or "").strip()
+    except Exception:
+        return ""
 
 
 def find_cookie_button(page, phrases):
@@ -265,7 +283,7 @@ def dig_into_preferences(page, cost=None):
     manage_button = find_manage_button(page)
     if manage_button is None:
         return None
-    manage_label = manage_button.inner_text()
+    manage_label = label_of(manage_button)
     manage_button.click()
     page.wait_for_timeout(1000)
     preticked = find_preticked(page)   # before we touch anything in the panel
@@ -282,7 +300,7 @@ def _dig(page, manage_label, cost=None):
         clicks = [manage_label, "reject toggles"]
         if apply_button is None:
             return {"banner_found": True, "rejected": True, "method": "selector", "clicks": clicks}
-        clicks.append(apply_button.inner_text())
+        clicks.append(label_of(apply_button))
         if not apply_button.is_enabled():
             # Apply stays locked — usually because some categories are
             # marked "consent required" with no reject option at all, i.e.
@@ -293,7 +311,7 @@ def _dig(page, manage_label, cost=None):
 
     direct = find_reject_button(page)
     if direct is not None:
-        label = direct.inner_text()
+        label = label_of(direct)
         if is_paywalled(label):
             return {"banner_found": True, "rejected": False, "method": "pay_or_consent", "clicks": [manage_label, label]}
         direct.click()
@@ -332,7 +350,7 @@ def reject_cookies(page, cost=None):
     reject = 2+ clicks" into a finding. We only LOOK for the accept button; we never click it."""
     accept = find_cookie_button(page, ACCEPT_PHRASES)   # must look before rejecting: the banner closes after
     try:
-        accept_label = accept.inner_text().strip()[:60] if accept is not None else None
+        accept_label = label_of(accept)[:60] if accept is not None else None
     except Exception:
         accept_label = None
     first_screen = find_preticked(page)                  # toggles shown on the banner itself
@@ -349,7 +367,7 @@ def _reject_cookies(page, cost=None):
     """The actual reject logic (see reject_cookies)."""
     button = find_reject_button(page)
     if button is not None:
-        label = button.inner_text()
+        label = label_of(button)
         if is_paywalled(label):
             return {"banner_found": True, "rejected": False, "method": "pay_or_consent", "clicks": [label]}
         button.click()

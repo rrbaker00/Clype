@@ -3,6 +3,8 @@
 #   "api.main" = the file api/main.py, ":app" = the variable called app below.
 #   --reload   = restart automatically whenever you save a .py file.
 
+from urllib.parse import urlsplit  # built-in: page address -> its homepage
+import time       # built-in: how long ago a failed audit was
 import threading  # built-in: runs the cross-site check in the background
 import json   # built-in: turns JSON text into Python dicts/lists and back
 import re     # built-in: regular expressions, used to check the audit id is safe
@@ -154,6 +156,8 @@ def audit_summary(f):
         "worst": min((f.get("severity") for f in a.get("findings", [])),
                      key=lambda s: SEVERITY_ORDER.get(s, 9), default=None),
         "findings_count": len(a.get("findings", [])),
+        "top_findings": [{"severity": f.get("severity"), "title": f.get("title")}   # findings are worst first
+                         for f in a.get("findings", [])[:3]],
     }
     _summary_cache[f] = (mtime, summary)
     return summary
@@ -249,6 +253,164 @@ def cross_site():
         e["share"] = round(100 * len(e["sites"]) / total) if total else 0
     rejected_sites = sum(1 for s in latest.values() if s["rejected"])
     return {"sites_audited": total, "sites_rejected": rejected_sites, "companies": rows}
+
+
+# ---- Firefox extension (extension/) ----
+# The extension tells us which site you're on; we audit it in the background (same queue as the
+# dashboard) unless it was audited recently, and it polls for the result to show a badge / alert.
+RECENT_DAYS = 7     # reuse an audit this recent instead of re-auditing (saves AI cost)
+
+
+class VisitRequest(BaseModel):
+    url: str
+    force: bool = False      # True after "Reset this site's cookies": re-audit even if audited recently
+
+
+def _site_status(url, start=False, force=False):
+    """{site, status, audit, job}. status: done / queued / running / failed / none.
+    start=True queues an audit if there's no recent report and none in the queue.
+    force=True (with start): ignore the recent report / recent failure and audit again now."""
+    try:
+        url = jobs.clean_url(url)            # also refuses localhost / private addresses
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    site = base_domain(url)
+    latest = None
+    for f in sorted(AUDITS.glob("*.json"), reverse=True):     # newest first
+        s = audit_summary(f)
+        if s and s["site"] == site:
+            latest = s
+            break
+    public = (lambda s: {k: v for k, v in s.items() if not k.startswith("_")}) if latest else None
+    job = next((j for j in jobs.list_jobs() if base_domain(j["url"]) == site), None)   # newest job for site
+    if job and job["status"] in ("queued", "running"):
+        return {"site": site, "status": job["status"], "step": job["step"], "audit": public(latest) if latest else None}
+    recent = False
+    if latest and latest.get("started_at"):
+        age = datetime.now(timezone.utc) - datetime.fromisoformat(latest["started_at"])
+        recent = age.days < RECENT_DAYS
+    if recent and not force:
+        return {"site": site, "status": "done", "audit": public(latest)}
+    if job and job["status"] == "failed" and not force and time.time() - (job["finished"] or 0) < 3600:
+        return {"site": site, "status": "failed", "error": job["error"], "audit": public(latest) if latest else None}
+    if start:
+        # Audit the site's homepage, not the page you're on: a deep link / login page / 404 would make
+        # the audit look "blocked", and the audit is per site anyway.
+        parts = urlsplit(url)
+        job = jobs.submit(f"{parts.scheme}://{parts.netloc}/", allow_send=False, source="extension")  # never emails
+        return {"site": site, "status": "queued", "step": job["step"], "audit": public(latest) if latest else None}
+    return {"site": site, "status": "none", "audit": public(latest) if latest else None}
+
+
+@app.get("/api/extension/site")
+def extension_site(url: str):
+    return _site_status(url)
+
+
+@app.post("/api/extension/visit")
+def extension_visit(req: VisitRequest):
+    return _site_status(req.url, start=True, force=req.force)
+
+
+# ---- Phase 2: what YOUR browser did (extension rejects in your tab and records the traffic) ----
+# Same plain-code analysis as an audit (trackers, compare, ID leaks), no AI. Saved in sessions/,
+# separate from audits/, so the dashboard's audit numbers only ever come from the agent.
+SESSIONS = ROOT / "sessions"
+MAX_SESSION_REQUESTS = 5000
+
+
+class SessionCapture(BaseModel):
+    url: str
+    started_at: str | None = None
+    banner_found: bool = False
+    rejected: bool = False
+    reject_label: str | None = None
+    browser: str | None = None
+    requests: list[dict] = []          # {url, method, type, phase, _post?}
+    cookies: dict = {}                 # {"before_consent": [...], "after_reject": [...]}
+
+
+def _latest_audit_for(site):
+    for f in sorted(AUDITS.glob("*.json"), reverse=True):
+        s = audit_summary(f)
+        if s and s["site"] == site:
+            return json.loads(f.read_text())
+    return None
+
+
+@app.post("/api/extension/session")
+def extension_session(cap: SessionCapture):
+    from agent import trackers as tr, crosssite
+    from agent.compare import compare
+    from agent.run_audit import tag_cookie_trackers
+    try:
+        url = jobs.clean_url(cap.url)
+    except ValueError as e:
+        raise HTTPException(400, str(e))
+    site = base_domain(url)
+    requests = []
+    for r in cap.requests[:MAX_SESSION_REQUESTS]:
+        u = str(r.get("url") or "")
+        if not u.startswith(("http://", "https://")):
+            continue
+        d = base_domain(u)
+        requests.append({"url": u[:2000], "domain": d, "third_party": d != site,
+                         "method": str(r.get("method") or "GET")[:10], "type": str(r.get("type") or "")[:30],
+                         "phase": "after_reject" if r.get("phase") == "after_reject" else "before_consent",
+                         "_post": str(r.get("_post") or "")[:20000],
+                         "tracker": tr.match(d, site, url=u)})
+    keep = ("name", "value", "domain", "path", "expires", "httpOnly", "secure", "sameSite", "partitioned")
+    cookies = {ph: [{k: c.get(k) for k in keep} for c in (cap.cookies.get(ph) or [])[:2000] if c.get("name")]
+               for ph in ("before_consent", "after_reject")}
+    if not cap.rejected:
+        cookies["after_reject"] = []               # no reject = no "after reject"
+    for ph in cookies.values():
+        tag_cookie_trackers(ph, site)
+    consent = {"banner_found": cap.banner_found, "rejected": cap.rejected, "method": "extension",
+               "clicks": [cap.reject_label] if cap.reject_label else []}
+    audit = _latest_audit_for(site)               # policy + a second, independent browser's cookies
+    policy = (audit or {}).get("policy") or {"found": False, "companies_named": []}
+    findings, summary = compare(requests, cookies, policy, consent)
+    # ID leaks: the headless audit is the "other browser" for the per-browser-ID check.
+    other = [c for ph in ((audit or {}).get("cookies") or {}).values() for c in ph]
+    all_cookies = list({(c["domain"], c["name"]): c for c in cookies["before_consent"] + cookies["after_reject"]}.values())
+    leaks = crosssite.find_leaks(requests, crosssite.find_ids(all_cookies, other), site) if other else []
+    syncs = crosssite.find_syncs(requests)
+    findings = sorted(findings + crosssite.findings(leaks, syncs), key=lambda f: SEVERITY_ORDER[f["severity"]])
+    for f in findings:
+        f["source"] = "your_browser"
+    for r in requests:
+        r.pop("_post", None)
+    session = {"site": site, "url": url, "source": "extension", "browser": (cap.browser or "")[:100],
+               "started_at": cap.started_at or datetime.now(timezone.utc).isoformat(),
+               "saved_at": datetime.now(timezone.utc).isoformat(), "consent": consent,
+               "requests": requests, "cookies": cookies, "findings": findings, "summary": summary,
+               "id_leaks": [{k: v for k, v in l.items() if k != "_id"} for l in leaks], "id_syncs": syncs,
+               "compared_with_audit": (audit or {}).get("id")}
+    session["tracker_counts"] = tracker_counts(session)
+    SESSIONS.mkdir(exist_ok=True)
+    name = f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}_{site}"
+    (SESSIONS / f"{name}.json").write_text(json.dumps(session, indent=2))
+    return _session_brief(name, session)
+
+
+def _session_brief(name, s):
+    return {"id": name, "site": s["site"], "started_at": s["started_at"], "rejected": s["consent"]["rejected"],
+            "banner_found": s["consent"]["banner_found"], "reject_label": (s["consent"]["clicks"] or [None])[0],
+            "tracker_counts": s["tracker_counts"], "companies_after_reject": s["summary"].get("companies_after_reject", []),
+            "findings": [{"severity": f["severity"], "title": f["title"]} for f in s["findings"][:5]],
+            "requests": len(s["requests"])}
+
+
+@app.get("/api/sessions/latest")
+def latest_session(site: str):
+    """Newest capture from your own browser for a site (for the audit page and the popup)."""
+    if not re.fullmatch(r"[\w.\-]+", site):
+        raise HTTPException(400, "bad site")
+    files = sorted(SESSIONS.glob(f"*_{site}.json")) if SESSIONS.exists() else []
+    if not files:
+        return None
+    return _session_brief(files[-1].stem, json.loads(files[-1].read_text()))
 
 
 # ---- Proving cross-site links (agent/crosssite.py linkage_pass) ----

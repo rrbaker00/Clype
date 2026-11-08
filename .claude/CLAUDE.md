@@ -19,7 +19,9 @@ Team of 2, 24-hour hackathon. Submission is Sunday 8 Nov, around midday.
   between the two. Don't change it without saying so.
 
 ## Stack
-- Python 3.11+, Playwright (Chromium only), FastAPI, uvicorn.
+- Python 3.11+, Playwright, FastAPI, uvicorn. Audits run in headless Firefox by default
+  (AUDIT_BROWSER=chromium switches back); the cross-site proof uses Chromium (Chrome's defaults).
+  Never add stealth / bot-block evasion: a site that blocks the audit browser is reported as blocked.
 - LLM is used ONLY for these jobs:
   1. Finding/clicking the cookie banner when plain selectors fail.
   2. Reading the privacy policy.
@@ -51,6 +53,7 @@ detection (canvas / WebGL / AudioContext hooks via `add_init_script`).
   `outbox` saves .eml files instead. `high` audits are drafted, never sent automatically.
   The dashboard's "Send email" button sends one letter after a confirm, following the same
   SEND_MODE and live limits. Never send from tests or debugging runs.
+  Audits started by the Firefox extension (extension/) never send, whatever SEND_MODE says.
 - **Track cost.** Log tokens used and time taken per audit into the audit
   JSON. Wordsmith judges on this.
 - Never commit `.env` or API keys.
@@ -63,6 +66,7 @@ agent/       capture, consent, browse, trackers, policy, compare, letter
   run_audit.py   CLI: python -m agent.run_audit <url>
 api/main.py  FastAPI: POST /audit {url} -> audit JSON
 web/         frontend
+extension/   Firefox extension (toolbar badge, popup, critical alerts); talks to api/ on :8000
 data/        tracker lists
 audits/      saved audit JSON (one file per run)
 ```

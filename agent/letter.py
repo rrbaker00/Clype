@@ -106,15 +106,19 @@ def draft_letter(audit, cost=None):
     return letter
 
 
-def auto_letter(audit, cost=None):
+def auto_letter(audit, cost=None, allow_send=True):
     """What run_audit.py calls. Drafts for critical/high audits and sends for critical ones.
-    Returns the letter dict, or None if this audit doesn't qualify (user can still request one)."""
+    allow_send=False: draft only (audits started by the browser extension: just browsing must never
+    email a company). Returns the letter dict, or None if this audit doesn't qualify."""
     tier = audit_tier(audit)
     if tier not in AUTO_DRAFT_TIERS:
         return None
     letter = draft_letter(audit, cost=cost)
     letter["auto"] = {"tier": tier, "reason": f"Audit's worst finding is {tier}."}
-    if tier in AUTO_SEND_TIERS and letter["body"] and not letter.get("error"):
+    if not allow_send and tier in AUTO_SEND_TIERS:
+        letter["delivery"] = {"sent": False, "mode": "draft", "reason": "Started by the browser extension: drafted only. "
+                              "Use Send email on the report if you want to send it."}
+    elif tier in AUTO_SEND_TIERS and letter["body"] and not letter.get("error"):
         from . import mailer  # imported here so drafting works even with no email set up
         letter["delivery"] = mailer.send_letter(letter, audit)
     return letter

@@ -12,6 +12,7 @@ LLM error) is recorded in audit["errors"] and the rest still runs. If the
 site can't be loaded at all, a short audit with the error is still saved,
 and no LLM calls are made.
 """
+import os
 import re
 import sys
 import json
@@ -36,6 +37,12 @@ from . import llm
 
 AUDITS_DIR = Path(__file__).resolve().parent.parent / "audits"   # project root, not the current folder
 PAGE_TIMEOUT_MS = 30000   # max wait for the first page to load
+# Which browser engine audits use. Firefox by default: the Clype extension is for Firefox users, so
+# audits show what they experience. A real Firefox build, no disguise: sites that block it are
+# reported as blocked. AUDIT_BROWSER=chromium in .env switches back.
+AUDIT_BROWSER = os.getenv("AUDIT_BROWSER", "firefox").strip().lower()
+if AUDIT_BROWSER not in ("firefox", "chromium"):
+    AUDIT_BROWSER = "firefox"
 
 
 def fresh_landing_cookies(browser, url):
@@ -102,7 +109,7 @@ def save(audit, site_domain, started):
     return path
 
 
-def run(url, progress=None):
+def run(url, progress=None, allow_send=True):
     """Run a full audit. progress(step_text) is called as it goes (the dashboard shows it).
     Always returns an audit dict and always saves it, even if steps failed."""
     say = progress or (lambda text: None)
@@ -129,9 +136,11 @@ def run(url, progress=None):
     loaded = False
     fp_events = []
     fresh_cookies = []
+    browser_info = AUDIT_BROWSER
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = getattr(p, AUDIT_BROWSER).launch(headless=True)
+        browser_info = f"{AUDIT_BROWSER} {browser.version}"
         try:
             context = browser.new_context()
             # Fingerprinting hooks: must be installed before the site's first script runs.
@@ -205,6 +214,7 @@ def run(url, progress=None):
 
     audit = {
         "url": url,
+        "browser": browser_info,             # e.g. "firefox 157.0"
         "started_at": started.isoformat(),
         "duration_s": None,
         "cost": cost.as_dict(),
@@ -230,7 +240,7 @@ def run(url, progress=None):
                                                ([], {"error": "review step failed"}))
         audit["findings"] = sorted(findings + ai_findings, key=lambda f: SEVERITY_ORDER[f["severity"]])
         # Letter: critical -> draft + send (per SEND_MODE), high -> draft only, else None.
-        audit["letter"] = step("Drafting the letter", lambda: letter.auto_letter(audit, cost=cost), None)
+        audit["letter"] = step("Drafting the letter", lambda: letter.auto_letter(audit, cost=cost, allow_send=allow_send), None)
 
     eu_law.add_eu_law(audit["findings"])    # "law_eu": EU GDPR / ePrivacy equivalents (plain code)
     audit["cost"] = cost.as_dict()          # final totals, including review + letter calls

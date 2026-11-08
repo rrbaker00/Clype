@@ -28,7 +28,8 @@ MIN_FULL_POLICY_CHARS = 3000  # shorter = a hub / links page or a page that didn
 MAX_COOKIE_CHARS = 20000      # cookie policy, after keeping the relevant parts (~5k tokens)
 MAX_FINDINGS = 8              # keep the report focused
 SEVERITIES = ("high", "medium", "low")   # what the AI may answer; "critical" is only ever set by regrade()
-STRONG_CATEGORIES = {"Advertising", "Session replay"}  # evidence that can make a finding critical
+STRONG_CATEGORIES = {"Advertising", "Session replay"}
+_CATEGORY_RANK = {"Advertising": 0, "Session replay": 1, "Analytics": 2, "Monitoring": 3, "Tag manager": 4}  # evidence that can make a finding critical
 _CATEGORY_BY_SHOWN_NAME = {shown: cat for shown, cat in TRACKER_COMPANIES.values()}  # "Criteo" -> "Advertising"
 
 SYSTEM_PROMPT = """You are a UK data protection and privacy compliance analyst. You review evidence \
@@ -162,6 +163,8 @@ def build_evidence(audit):
             continue
         g = companies.setdefault(t["company"], {"category": t.get("category"), "before_consent": 0,
                                                "after_reject": 0, "domains": set(), "examples": []})
+        if _CATEGORY_RANK.get(t.get("category"), 9) < _CATEGORY_RANK.get(g["category"], 9):
+            g["category"] = t.get("category")      # mixed company (Google): its most serious category
         g[r.get("phase", "before_consent")] = g.get(r.get("phase", "before_consent"), 0) + 1
         g["domains"].add(r.get("domain"))
         if len(g["examples"]) < 2 and r.get("phase") == "after_reject":

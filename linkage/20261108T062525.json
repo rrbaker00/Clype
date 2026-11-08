@@ -1,0 +1,126 @@
+{
+  "started_at": "2026-11-08T06:24:22.036057+00:00",
+  "duration_s": 63.9,
+  "engine": "chromium",
+  "sites": [
+    {
+      "site": "sse.com",
+      "url": "https://sse.com",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "bbc.co.uk",
+      "url": "https://www.bbc.co.uk",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "convatec.com",
+      "url": "https://convatec.com",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "intertek.com",
+      "url": "https://intertek.com",
+      "loaded": true,
+      "rejected": true
+    }
+  ],
+  "requests": 900,
+  "links": [
+    {
+      "company": "Microsoft",
+      "category": "Advertising",
+      "via": "cookie bcookie",
+      "id_preview": "edd2c333\u2026",
+      "sites": {
+        "intertek.com": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794119097604&pageLoadId=f4a06279-d1d0-4bef-b6de-aa8537fea0a0&url=https%3A%2F%2Fwww.intertek.com"
+        },
+        "sse.com": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g"
+        }
+      },
+      "after_reject_on": [
+        "intertek.com",
+        "sse.com"
+      ]
+    },
+    {
+      "company": "Microsoft",
+      "category": "Advertising",
+      "via": "cookie li_gc",
+      "id_preview": "MTswOzE3\u2026",
+      "sites": {
+        "intertek.com": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794119097604&pageLoadId=f4a06279-d1d0-4bef-b6de-aa8537fea0a0&url=https%3A%2F%2Fwww.intertek.com"
+        },
+        "sse.com": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g"
+        }
+      },
+      "after_reject_on": [
+        "intertek.com",
+        "sse.com"
+      ]
+    },
+    {
+      "company": "Microsoft",
+      "category": "Advertising",
+      "via": "cookie lidc",
+      "id_preview": "AQEuMy9u\u2026",
+      "sites": {
+        "intertek.com": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794119097604&pageLoadId=f4a06279-d1d0-4bef-b6de-aa8537fea0a0&url=https%3A%2F%2Fwww.intertek.com"
+        },
+        "sse.com": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g"
+        }
+      },
+      "after_reject_on": [
+        "intertek.com",
+        "sse.com"
+      ]
+    }
+  ],
+  "cost": {
+    "llm_calls": 1,
+    "input_tokens": 244,
+    "output_tokens": 11,
+    "model": "gpt-5.6-luna",
+    "elapsed_s": 63.95,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 1,
+        "input_tokens": 244,
+        "output_tokens": 11
+      }
+    }
+  }
+}

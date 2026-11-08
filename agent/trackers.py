@@ -123,6 +123,15 @@ MIXED_COMPANY_TRACKING_DOMAINS = {
               "adobetarget.com"},
 }
 
+# Domains of a big company that are ANALYTICS, not advertising (the company's default category is
+# Advertising). Without this, Google Analytics traffic counted as ad tracking and could make an audit
+# "critical" (just-eat.co.uk: GA4 consent-mode pings after reject were called advertising).
+ANALYTICS_DOMAINS = {"google-analytics.com", "app-measurement.com", "googleoptimize.com", "clarity.ms"}
+SESSION_REPLAY_DOMAINS = {"clarity.ms"}   # Microsoft Clarity records sessions
+# Tag LOADERS deliver other scripts and collect nothing themselves: their own category, the weakest,
+# so they never decide a company's category (the tracking they load shows up on its own domains).
+TAG_MANAGER_DOMAINS = {"googletagmanager.com", "adobedtm.com"}
+
 # Exact hostnames that are trackers even though their domain isn't in the lists above.
 TRACKER_HOSTS = {
     "snap.licdn.com": "Microsoft",  # LinkedIn Insight tag (licdn.com is otherwise LinkedIn's image CDN)
@@ -234,4 +243,10 @@ def match(domain, site_domain, url=None):
     if company not in TRACKER_COMPANIES:  # also covers company is None
         return {"is_tracker": False}
     name, category = TRACKER_COMPANIES[company]
+    if domain in TAG_MANAGER_DOMAINS:
+        category = "Tag manager"
+    elif domain in SESSION_REPLAY_DOMAINS:
+        category = "Session replay"
+    elif domain in ANALYTICS_DOMAINS:
+        category = "Analytics"
     return {"is_tracker": True, "company": name, "category": category}

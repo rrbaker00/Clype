@@ -1,7 +1,8 @@
 """
 Audit queue for the dashboard: audits run in background threads, AUDIT_WORKERS at a
 time (default 4, max 8, set in .env), so the web server stays responsive. Each
-worker runs one audit with its own Chromium (~0.5-1 GB RAM each).
+worker runs one audit with its own headless browser (~0.5-1 GB RAM each). Audits started
+by the Firefox extension use a fast lane: they run before waiting dashboard/batch audits.
 
   submit(url)  -> adds a job, returns it straight away (status "queued")
   list_jobs()  -> recent jobs, newest first, with live status + current step
@@ -11,6 +12,7 @@ change) forgets the queue. Finished audits are already saved in audits/, so
 nothing is lost except jobs that hadn't finished.
 """
 import ipaddress
+import itertools
 import os
 import queue
 import threading
@@ -28,7 +30,13 @@ MAX_KEEP = 1000       # jobs remembered for the dashboard (must be > MAX_BATCH)
 WORKERS = max(1, min(8, int(os.getenv("AUDIT_WORKERS", "4"))))
 
 _jobs = {}            # job id -> job dict
-_queue = queue.Queue()
+# Priority queue with a FAST LANE: audits for the site you're browsing (the Firefox extension) jump
+# ahead of waiting dashboard/batch audits. Items are (priority, order, job id): lower priority runs
+# first, and "order" keeps first-come-first-served within the same priority. Running audits are
+# never interrupted; the batch just continues once the fast lane is empty.
+FAST, NORMAL = 0, 1
+_queue = queue.PriorityQueue()
+_order = itertools.count()
 _lock = threading.Lock()
 
 
@@ -60,9 +68,12 @@ def clean_url(raw):
     return url
 
 
-def submit(url):
-    """Queue one audit (url must already be clean). Returns the job dict."""
+def submit(url, allow_send=True, source="dashboard"):
+    """Queue one audit (url must already be clean). Returns the job dict.
+    allow_send=False: never email (extension audits). source: "dashboard" or "extension"
+    (extension audits go in the fast lane)."""
     job = {"id": uuid.uuid4().hex[:8], "url": url, "status": "queued", "step": "Waiting in queue",
+           "allow_send": allow_send, "source": source,
            "created": time.time(), "started": None, "finished": None,
            "audit_id": None, "tier": None, "emailed": None, "errors": 0, "error": None}
     with _lock:
@@ -71,7 +82,7 @@ def submit(url):
             for old in sorted(_jobs.values(), key=lambda j: j["created"])[: len(_jobs) - MAX_KEEP]:
                 if old["status"] in ("done", "failed", "cancelled"):
                     _jobs.pop(old["id"], None)
-    _queue.put(job["id"])
+    _queue.put((FAST if source == "extension" else NORMAL, next(_order), job["id"]))
     return job
 
 
@@ -96,12 +107,13 @@ def list_jobs():
 def _worker():
     """Runs forever in the background: take the next job, run the audit, record the result."""
     while True:
-        job = _jobs.get(_queue.get())
+        job = _jobs.get(_queue.get()[2])          # (priority, order, job id)
         if job is None or job["status"] == "cancelled":   # cancelled while waiting: skip it
             continue
         job.update(status="running", started=time.time(), step="Starting")
         try:
-            audit = run_audit(job["url"], progress=lambda text: job.update(step=text))
+            audit = run_audit(job["url"], progress=lambda text: job.update(step=text),
+                              allow_send=job.get("allow_send", True))
             delivery = (audit.get("letter") or {}).get("delivery") or {}
             job.update(status="done", step="Finished", audit_id=audit.get("id"),
                        tier=audit_tier(audit), emailed=delivery.get("sent"),

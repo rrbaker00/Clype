@@ -67,6 +67,11 @@ A wrong accusation in front of judges is worse than a missed one.
 - [x] Dashboard: one card per site (newest audit, "N runs" chip)
 - [x] Cross-site A: ID leaks in every audit (agent/crosssite.py; fresh-browser ID check; id_leaks / id_syncs; findings for confirmed IDs to known trackers)
 - [x] Cross-site B: "Proof of cross-site tracking" button (linkage pass in one browser; linkage/*.json)
+- [x] Firefox extension phase 1 (extension/): auto-audit new sites via the server, badge, popup with all reports, critical in-page box + notification; extension audits never send
+- [x] Audits run in headless Firefox by default (AUDIT_BROWSER); agent + extension handle web-component (shadow DOM) banners and "Necessary only"
+- [x] Extension: Reset this site's cookies forces a fresh audit + new your-browser capture; extension audits use a fast lane in the job queue
+- [x] Google Analytics / Clarity / Tag Manager get their own categories (GA isn't advertising; GTM is "Tag manager", low); Consent Mode gcs=G100 pings explained
+- [x] Firefox extension phase 2: rejects in your own tab, records your tab's traffic, server analyses it (sessions/, git-ignored); "Your browser" in popup + audit page; Reset this site's cookies
 - [ ] #6 Children's Code: flag ad trackers on sites aimed at children (low confidence) (~1 h)
 
 ## 2. Pipeline reliability (P, about 1.5 h)
@@ -100,7 +105,7 @@ A wrong accusation in front of judges is worse than a missed one.
 - [ ] Last 2 hours: no new features
 
 ## Stretch (only if everything above is done)
-- [ ] Auto-audit browser extension (about 1 h)
+- [x] Auto-audit browser extension (see 1e: Firefox extension phase 1)
 - [ ] Fingerprinting detection via `add_init_script` (1-2 h)
 - [ ] CNAME cloaking (about 1 h)
 - [x] Cross-site tracking across audits (about 30 min)

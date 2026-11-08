@@ -180,3 +180,6 @@ button.secondary { background: var(--panel-2); color: var(--text); border: 1px s
 .proof { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
 .proof h4 { margin: 0; }
 .proof-link { padding: 8px 10px; margin: 6px 0; border-left: 3px solid var(--bad); background: var(--panel-2); border-radius: 6px; }
+
+.yours .okc { color: var(--ok); }
+.panel.yours { border-left: 3px solid var(--accent, #7c3aed); }

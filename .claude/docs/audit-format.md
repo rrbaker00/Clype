@@ -9,6 +9,7 @@ remove existing ones without telling the other person.
   "url": "https://example.com",
   "started_at": "2026-11-07T20:15:00Z",
   "duration_s": 42.1,
+  "browser": "firefox 157.0",   // engine that ran the audit (AUDIT_BROWSER, default firefox)
   "cost": { "llm_calls": 3, "input_tokens": 8200, "output_tokens": 1100, "model": "...",
             "by_model": { "gpt-5.4": { "llm_calls": 1, "input_tokens": 2000, "output_tokens": 900 } } },  // by_model: newer audits only, used for the /api/usage spend estimate
 
@@ -73,6 +74,7 @@ Added for the AI legal review (nothing renamed):
 - `id_leaks`: our per-browser IDs found in requests to OTHER companies (agent/crosssite.py). Each: `{cookie, cookie_domain, id_preview, to, company, category, phase, in: "address"|"body", encoding: "raw"|"base64"|"base64url"|"md5"|"sha1"|"sha256", confidence: "confirmed"|"likely", example}`. "confirmed" = the value differed in a second, fresh browser; only confirmed leaks to known tracker companies become findings ("Your ID was sent to X ..."). Full IDs are never saved, only `id_preview`.
 - `id_syncs`: ad-tech ID matching seen in requests: `{type: "Google cookie matching"|"Prebid shared user IDs", to, phase, example?, sources?}`. Any = a "high" finding.
 - `summary.id_leak_companies`: companies that received one of our IDs.
+- Captures from the user's own Firefox (extension phase 2) are saved as `sessions/<timestamp>_<site>.json` (git-ignored: real cookies). Same shape as an audit's `consent` (method "extension"), `requests`, `cookies`, `findings` (source "your_browser"), `summary`, `id_leaks`, `id_syncs`, plus `compared_with_audit` (the headless audit used for the policy and as the second browser for the ID check). API: `POST /api/extension/session`, `GET /api/sessions/latest?site=`.
 - Cross-site proof results (not part of an audit) are saved as `linkage/<timestamp>.json`: `{started_at, duration_s, sites: [{site, url, loaded, rejected, error?}], requests, links: [{company, category, via, id_preview, sites: {site: {phases, example}}, after_reject_on}], cost}`. A link = the same per-browser ID reached the same company from 2+ sites in one browser. API: `POST /api/cross-site/prove {sites?}` (2-5 audited sites; omitted = auto-picked), `GET /api/cross-site/proof`.
 - `cookies.*[].value_kind`: what the cookie holds: `"empty"` (blank, or only `key=` labels), `"placeholder"` (deleted / null / 0 / false), `"id"` (looks like a unique identifier) or `"value"` (anything else). Empty and placeholder tracker cookies are not counted as tracking evidence (compare + AI review).
 

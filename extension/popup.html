@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/clype.svg" alt="" width="22" height="22">
+    <b>Clype</b>
+    <label class="toggle" title="Audit each new site you visit (on the Clype server)">
+      <input type="checkbox" id="enabled"> Auto-audit
+    </label>
+    <label class="toggle" title="Click reject on cookie banners in your tab and check what your browser still sends">
+      <input type="checkbox" id="monitor"> Reject in my tab
+    </label>
+  </header>
+  <!-- popup.js fills these -->
+  <section id="current"></section>
+  <h2>All reports</h2>
+  <section id="reports"></section>
+  <footer><a id="dashboard" href="#" target="_blank">Open dashboard ↗</a></footer>
+  <script src="popup.js"></script>
+</body>
+</html>
