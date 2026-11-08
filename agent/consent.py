@@ -34,6 +34,20 @@ REJECT_PHRASES = [
     "reject",
 ]
 
+# "Accept" options on the banner's first screen. Only used to MEASURE how easy accepting
+# is compared to rejecting; we never click these.
+ACCEPT_PHRASES = [
+    "accept all",
+    "accept all cookies",
+    "allow all",
+    "accept",
+    "i agree",
+    "agree",
+    "allow",
+    "got it",
+    "ok",
+]
+
 MANAGE_PHRASES = [
     "manage preferences",
     "manage cookies",
@@ -95,6 +109,58 @@ def in_cookie_context(frame, el):
         return bool(el.evaluate(COOKIE_CONTEXT_JS))
     except Exception:
         return False
+
+
+# Pre-ticked toggles (ICO: consent needs a clear positive action, so non-essential
+# categories must start OFF). Runs inside each frame; returns the labels of toggles that are
+# visible, inside a cookie banner, switched ON, NOT locked (locked = strictly necessary,
+# that's allowed) and about a non-essential purpose. Read-only: we never click these.
+PRETICKED_JS = """() => {
+    const cookieRe = /cookie|consent|privacy|gdpr|tracking|personal data/i;
+    const optionalRe = /marketing|advertis|targeting|analytic|statistic|performance|measurement|personali[sz]|social media|tracking|profil/i;
+    const essentialRe = /strictly|necessary|essential|required|always active/i;
+    const inCookieBox = (el) => {
+        for (let n = el, i = 0; i < 8 && n && n !== document.body; i++, n = n.parentElement) {
+            const t = n.innerText || "";
+            if (t.length > 4000) break;
+            if (cookieRe.test(t) || cookieRe.test(n.id || "") || cookieRe.test(String(n.className || ""))) return true;
+        }
+        return false;
+    };
+    const labelOf = (el) => {
+        // The toggle's own label, else the text of the nearest small container (its category row).
+        let t = el.getAttribute("aria-label") || (el.labels && el.labels[0] && el.labels[0].innerText) || "";
+        for (let n = el.parentElement, i = 0; !t.trim() && n && i < 4; i++, n = n.parentElement) {
+            if ((n.innerText || "").length < 200) t = n.innerText || "";
+        }
+        return t.replace(/\\s+/g, " ").trim().slice(0, 80);
+    };
+    const visible = (el) => { const r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; };
+    const found = [];
+    for (const el of document.querySelectorAll('input[type=checkbox], [role=switch], [role=checkbox]')) {
+        const on = el.checked === true || el.getAttribute("aria-checked") === "true";
+        const locked = el.disabled || el.getAttribute("aria-disabled") === "true";
+        // Custom switches often hide the real <input>; check its label's size instead.
+        const shown = visible(el) || (el.labels && el.labels[0] && visible(el.labels[0]));
+        if (!on || locked || !shown || !inCookieBox(el)) continue;
+        const label = labelOf(el);
+        if (optionalRe.test(label) && !essentialRe.test(label)) found.push(label);
+    }
+    return found;
+}"""
+
+
+def find_preticked(page):
+    """Labels of non-essential cookie toggles that are already ON, across all frames (deduped)."""
+    labels = []
+    for frame in page.frames:
+        try:
+            for label in frame.evaluate(PRETICKED_JS):
+                if label not in labels:
+                    labels.append(label)
+        except Exception:
+            continue
+    return labels
 
 
 def find_cookie_button(page, phrases):
@@ -202,7 +268,14 @@ def dig_into_preferences(page, cost=None):
     manage_label = manage_button.inner_text()
     manage_button.click()
     page.wait_for_timeout(1000)
+    preticked = find_preticked(page)   # before we touch anything in the panel
+    result = _dig(page, manage_label, cost)
+    result["preticked"] = preticked
+    return result
 
+
+def _dig(page, manage_label, cost=None):
+    """The rest of dig_into_preferences, once the panel is open."""
     if count_exact_reject_buttons(page) >= 2:
         click_all_reject_toggles(page)
         apply_button = find_apply_button(page)
@@ -252,7 +325,28 @@ def ask_ai_for_reject_index(candidates, cost=None):
     return result.get("index")
 
 def reject_cookies(page, cost=None):
-    """Try to click a reject-cookies button. Returns the audit-format 'consent' dict."""
+    """Try to click a reject-cookies button. Returns the audit-format 'consent' dict, plus:
+      accept_label     the one-click "Accept" button on the banner's first screen (None if none)
+      reject_steps     how many clicks rejecting took (None if rejecting didn't work)
+    ICO guidance: refusing must be as easy as accepting. compare.py turns "accept = 1 click,
+    reject = 2+ clicks" into a finding. We only LOOK for the accept button; we never click it."""
+    accept = find_cookie_button(page, ACCEPT_PHRASES)   # must look before rejecting: the banner closes after
+    try:
+        accept_label = accept.inner_text().strip()[:60] if accept is not None else None
+    except Exception:
+        accept_label = None
+    first_screen = find_preticked(page)                  # toggles shown on the banner itself
+    result = _reject_cookies(page, cost=cost)
+    result["accept_label"] = accept_label
+    # Non-essential toggles that were already ON before we touched anything (banner + prefs panel).
+    result["preticked"] = list(dict.fromkeys(first_screen + result.get("preticked", [])))
+    # Each entry in "clicks" is one step the user would take ("reject toggles" = one panel of toggles).
+    result["reject_steps"] = len(result["clicks"]) if result["rejected"] else None
+    return result
+
+
+def _reject_cookies(page, cost=None):
+    """The actual reject logic (see reject_cookies)."""
     button = find_reject_button(page)
     if button is not None:
         label = button.inner_text()

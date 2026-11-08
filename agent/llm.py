@@ -23,13 +23,46 @@ try:
 except ImportError:
     pass
 
-FAST_MODEL = "gpt-5.4-mini"
+FAST_MODEL = "gpt-5.6-luna"
 STRONG_MODEL = "gpt-5.4"
 REVIEW_MODEL = os.getenv("REVIEW_MODEL", FAST_MODEL)  # read after load_dotenv(), so .env works
 
 # Budget guard: a normal audit makes 2-4 calls (banner fallback, policy, review, letter).
 # Anything past this is a bug (e.g. a retry loop) burning credit, so refuse the call.
 MAX_CALLS_PER_AUDIT = 6
+
+
+def _parse_prices(text):
+    """LLM_PRICES in .env, US$ per 1M tokens, input/output, e.g.
+    LLM_PRICES=gpt-5.4=2.50/15.00,gpt-5.6-luna=0.40/3.20
+    -> {"gpt-5.4": (2.5, 15.0), ...}. Unset or broken entries are skipped (no price = no estimate)."""
+    prices = {}
+    for item in (text or "").split(","):
+        try:
+            model, pair = item.strip().split("=", 1)
+            i, o = pair.split("/")
+            prices[model.strip()] = (float(i), float(o))
+        except ValueError:
+            continue
+    return prices
+
+
+PRICES = _parse_prices(os.getenv("LLM_PRICES"))   # copy real numbers from OpenAI's pricing page
+try:
+    BUDGET = float(os.getenv("LLM_BUDGET") or 0) or None   # optional, US$, shown on the dashboard
+except ValueError:
+    BUDGET = None
+
+
+def estimate_usd(by_model):
+    """US$ for {model: {"input_tokens", "output_tokens"}}, or None if any model has no price."""
+    total = 0.0
+    for model, u in (by_model or {}).items():
+        if model not in PRICES:
+            return None
+        i, o = PRICES[model]
+        total += u.get("input_tokens", 0) / 1e6 * i + u.get("output_tokens", 0) / 1e6 * o
+    return total
 
 _client = None
 
@@ -51,6 +84,7 @@ class Cost:
         self.input_tokens = 0
         self.output_tokens = 0
         self.models_used = set()
+        self.by_model = {}        # {model: {"llm_calls", "input_tokens", "output_tokens"}}, for pricing
         self._start = time.monotonic()
 
     def record(self, model, usage):
@@ -58,6 +92,10 @@ class Cost:
         self.input_tokens += usage.prompt_tokens
         self.output_tokens += usage.completion_tokens
         self.models_used.add(model)
+        m = self.by_model.setdefault(model, {"llm_calls": 0, "input_tokens": 0, "output_tokens": 0})
+        m["llm_calls"] += 1
+        m["input_tokens"] += usage.prompt_tokens
+        m["output_tokens"] += usage.completion_tokens
 
     def as_dict(self):
         return {
@@ -66,6 +104,7 @@ class Cost:
             "output_tokens": self.output_tokens,
             "model": "+".join(sorted(self.models_used)) if self.models_used else None,
             "elapsed_s": round(time.monotonic() - self._start, 2),
+            "by_model": self.by_model,
         }
 
 

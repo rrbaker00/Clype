@@ -19,8 +19,10 @@ from datetime import datetime
 from . import llm
 from .policy import select_relevant
 from .trackers import TRACKER_COMPANIES
+from .capture import base_domain
 
-MAX_POLICY_CHARS = 30000      # per policy, after keeping the relevant parts (~7.5k tokens each)
+MAX_POLICY_CHARS = 60000      # privacy policy sent in full up to this (~15k tokens), so the Art. 13 check sees all of it
+MAX_COOKIE_CHARS = 20000      # cookie policy, after keeping the relevant parts (~5k tokens)
 MAX_FINDINGS = 8              # keep the report focused
 SEVERITIES = ("high", "medium", "low")   # what the AI may answer; "critical" is only ever set by regrade()
 STRONG_CATEGORIES = {"Advertising", "Session replay"}  # evidence that can make a finding critical
@@ -76,6 +78,16 @@ raises a different legal point (for example, a contradiction with a specific pol
 - At most %d findings. If nothing is wrong, return an empty list.
 - This is an automated assessment, not legal advice.
 
+Privacy policy checklist (UK GDPR Art. 13): for each item below, look through the PRIVACY POLICY TEXT (and the cookie policy) and answer "present" with a short exact quote (under 200 characters, copied word for word) that shows it, or "missing" only if the text really does not cover it anywhere. If no policy text was provided, set "policy_checklist" to null. Items:
+- controller_identity: who the organisation responsible for the data is
+- purposes: what personal data is used for
+- lawful_basis: the legal basis (consent, contract, legitimate interests, legal obligation...)
+- recipients: who data is shared with, by name or by category
+- retention: how long data is kept, or how that is decided
+- rights: the user's rights (access, erasure, objection, etc.)
+- withdraw_consent: how to withdraw consent / change cookie choices
+- complain_to_regulator: the right to complain to the ICO or another supervisory authority
+
 Respond with JSON only, exactly this shape:
 {
   "findings": [
@@ -89,7 +101,12 @@ Respond with JSON only, exactly this shape:
       "reasoning": "why this is a problem and why you chose this severity, 1-3 sentences"
     }
   ],
-  "summary": "2-4 sentences: overall view of this site's compliance and the main reasons"
+  "summary": "2-4 sentences: overall view of this site's compliance and the main reasons",
+  "policy_checklist": {
+    "controller_identity": {"status": "present" | "missing", "quote": "exact short quote, or null"},
+    "purposes": {...same shape...}, "lawful_basis": {...}, "recipients": {...}, "retention": {...},
+    "rights": {...}, "withdraw_consent": {...}, "complain_to_regulator": {...}
+  }
 }""" % MAX_FINDINGS
 
 
@@ -116,6 +133,14 @@ def build_evidence(audit):
     c = audit.get("consent") or {}
     add(f"Cookie banner found: {c.get('banner_found')}. Reject clicked successfully: {c.get('rejected')}. "
         f"Method: {c.get('method')}. Buttons clicked: {', '.join(c.get('clicks') or []) or 'none'}.")
+    fp = {}
+    for e in audit.get("fingerprinting") or []:   # one line per script domain that fingerprinted
+        g = fp.setdefault(base_domain(e["script"]), (set(), set()))
+        g[0].add(e["technique"]); g[1].add(e["phase"])
+    for d, (techniques, phases) in sorted(fp.items()):
+        add(f"Fingerprinting by scripts from {d}: {', '.join(sorted(techniques))}; phases: {', '.join(sorted(phases))}.")
+    if c.get("preticked"):
+        add(f"Non-essential cookie toggles already ON before any choice: {'; '.join(c['preticked'])}.")
 
     # One line per tracker company: counts per phase, domains, a couple of example URLs.
     companies = {}
@@ -143,11 +168,17 @@ def build_evidence(audit):
         for k in cookies.get(phase, []):
             if not k.get("tracker_company"):
                 continue
+            if k.get("value_kind") in ("empty", "placeholder"):
+                # Worded differently on purpose: strong_evidence_ids() must NOT count these.
+                add(f"Empty cookie {k.get('name')} ({k['tracker_company']}) present {label}: it holds no value, "
+                    f"so it stores nothing about the user.")
+                continue
             days = _days_until(k.get("expires"), started)
             life = "session cookie" if days is None else f"expires in {days} days"
             new = " (NEW, not present before)" if phase == "after_reject" and k.get("name") not in before_names else ""
+            held = "; holds what looks like a unique ID" if k.get("value_kind") == "id" else ""
             add(f"Tracking cookie {k.get('name')} from {k['tracker_company']} on {k.get('domain')} present "
-                f"{label}{new}; {life}.")
+                f"{label}{new}; {life}{held}.")
 
     visited = audit.get("visited_pages") or []
     if visited:
@@ -171,7 +202,7 @@ def build_prompt(audit, texts):
     if cookie_raw and cookie_raw == texts.get("privacy"):
         cookie = "(Same document as the privacy policy above.)"
     else:
-        cookie = select_relevant(cookie_raw, MAX_POLICY_CHARS) or "(Not found.)"
+        cookie = select_relevant(cookie_raw, MAX_COOKIE_CHARS) or "(Not found.)"
     return (
         f"SITE: {audit.get('url')}\n\n"
         "EVIDENCE (cite by ID):\n" + "\n".join(build_evidence(audit)) + "\n\n"
@@ -185,15 +216,24 @@ def _norm(text):
     return re.sub(r"\s+", " ", (text or "").lower()).strip()
 
 
+MIN_REQUESTS_FOR_CRITICAL = 3   # a single stray request isn't enough to accuse anyone automatically
+
+
 def strong_evidence_ids(evidence_lines):
-    """IDs of evidence lines about ADVERTISING or SESSION REPLAY trackers (requests or cookies).
-    Only these can back a "critical" finding. Parses the lines build_evidence() writes, e.g.
-      "E4: Tracker Criteo (Advertising): ..."  or  "E9: Tracking cookie _fbp from Facebook on ..." """
+    """IDs of evidence lines that can back a "critical" finding: ADVERTISING or SESSION REPLAY
+    trackers with SUBSTANTIAL evidence. Parses the lines build_evidence() writes, e.g.
+      "E4: Tracker Criteo (Advertising): 2 requests before consent, 5 after reject, to ..."
+      "E9: Tracking cookie _fbp from Facebook on ..."
+    Counts as strong: any tracking cookie (actual storage on the device), any request AFTER
+    Reject all, or at least MIN_REQUESTS_FOR_CRITICAL requests. One request before consent
+    with nothing else (iana.org: one hit to an ad-fraud check) is not enough."""
     strong = set()
     for line in evidence_lines:
-        m = re.match(r"(E\d+): Tracker .+? \(([^)]+)\):", line)
+        m = re.match(r"(E\d+): Tracker .+? \(([^)]+)\): (\d+) requests before consent, (\d+) after reject", line)
         if m and m.group(2) in STRONG_CATEGORIES:
-            strong.add(m.group(1))
+            before, after = int(m.group(3)), int(m.group(4))
+            if after > 0 or before + after >= MIN_REQUESTS_FOR_CRITICAL:
+                strong.add(m.group(1))
             continue
         m = re.match(r"(E\d+): Tracking cookie \S+ from (.+?) on ", line)
         if m and _CATEGORY_BY_SHOWN_NAME.get(m.group(2)) in STRONG_CATEGORIES:
@@ -209,7 +249,8 @@ def regrade(severity, evidence_ids, strong_ids):
         return severity, None
     if set(evidence_ids) & strong_ids:
         return "critical", "Raised to critical: rated high and backed by advertising or session-replay evidence."
-    return "medium", ("Lowered from high: no advertising or session-replay evidence cited, "
+    return "medium", ("Lowered from high: no substantial advertising or session-replay evidence cited "
+                      "(a tracking cookie, activity after reject, or 3+ requests), "
                       "so an exemption or innocent explanation is plausible.")
 
 
@@ -249,6 +290,69 @@ def validate(raw, n_evidence, policy_texts, strong_ids=frozenset()):
     return kept, dropped
 
 
+# UK GDPR Art. 13 items: (label shown to people, keywords that suggest the policy DOES cover it).
+# The keywords are a safety net: if the AI says "missing" but these words appear in the policy,
+# we mark it "unclear" instead of accusing the site.
+CHECKLIST = {
+    "controller_identity": ("Who is responsible (the controller)",
+                            r"controller|registered (office|address|in)|company number|operated by|\bltd\b|limited|\bplc\b"),
+    "purposes": ("What the data is used for", r"purpose|we use (your|this|personal)|in order to"),
+    "lawful_basis": ("The legal basis for using it",
+                     r"lawful basis|legal basis|legitimate interest|basis for processing|article 6|legal obligation|"
+                     r"perform(ance of)? (a|the|our|your) contract"),
+    "recipients": ("Who it is shared with", r"third[- ]part|share|recipient|service provider|processor|partner|disclos"),
+    "retention": ("How long it is kept", r"retain|retention|keep (your|personal|this|it)|how long|stored for|delete"),
+    "rights": ("Your rights (access, erasure, objection...)",
+               r"right to (access|erasure|rectif|object|restrict|portab|be forgotten)|your rights|subject access"),
+    "withdraw_consent": ("How to withdraw consent",
+                         r"withdraw|change your (mind|preferences|settings|choices)|opt[- ]out|switch (these|them|it) off"),
+    "complain_to_regulator": ("Right to complain to the ICO",
+                              r"information commissioner|\bico\b|ico\.org\.uk|supervisory authority|data protection authority"),
+}
+
+
+def check_policy(raw, texts, evidence):
+    """Turn the AI's Art. 13 checklist into {item: {"label", "status", "quote"}} plus maybe one finding.
+    status: present (quote verified) / missing (AI says so AND no keywords anywhere) /
+            unclear (anything doubtful) / not_checked (no policy, or too long to have been sent in full)."""
+    privacy = texts.get("privacy") or ""
+    both = _norm(privacy + " " + (texts.get("cookie") or ""))
+    whole = bool(privacy) and len(privacy) <= MAX_POLICY_CHARS   # did the AI see ALL of it?
+    raw = raw if isinstance(raw, dict) else {}
+    out = {}
+    for key, (label, keywords) in CHECKLIST.items():
+        item = raw.get(key) if isinstance(raw.get(key), dict) else {}
+        status = str(item.get("status") or "").lower()
+        quote = item.get("quote") if isinstance(item.get("quote"), str) else None
+        if not whole:
+            result = "not_checked"
+        elif status == "present" and quote and _norm(quote) in both:
+            result = "present"
+        elif status == "missing" and not re.search(keywords, both, re.IGNORECASE):
+            result, quote = "missing", None
+        else:
+            result, quote = "unclear", None            # unverified quote, or "missing" but keywords found
+        out[key] = {"label": label, "status": result, "quote": quote if result == "present" else None}
+
+    missing = [v["label"] for v in out.values() if v["status"] == "missing"]
+    finding = None
+    if missing:
+        policy_ids = [e.split(":")[0] for e in evidence if re.match(r"E\d+: Privacy policy:", e)]
+        finding = {
+            "severity": "medium" if len(missing) >= 2 else "low",
+            "ai_severity": None, "severity_note": None,
+            "title": f"Privacy policy is missing {len(missing)} required item{'s' if len(missing) > 1 else ''}",
+            "detail": "Not covered anywhere in the policy we read: " + "; ".join(missing) + ".",
+            "law": "UK GDPR Art. 13(1)-(2) (information that must be given to people)",
+            "source": "ai",
+            "evidence": policy_ids[:1],
+            "policy_quote": None,
+            "reasoning": "Checked against the Art. 13 list. Each item marked missing was reported missing by the "
+                         "AI review AND has no matching keywords anywhere in the full policy text.",
+        }
+    return out, finding
+
+
 def review(audit, texts, cost=None):
     """Run the AI legal review. Returns (ai_findings, ai_review_info).
     Never raises: if the model fails, the audit still saves with an error noted."""
@@ -262,6 +366,11 @@ def review(audit, texts, cost=None):
         info.update(summary=str(raw.get("summary") or "").strip()[:1200] or None,
                     findings_kept=len(findings), findings_dropped=dropped)
         info["evidence"] = evidence  # saved so anyone can check what E1, E2... referred to
+        checklist, policy_finding = check_policy(raw.get("policy_checklist"), texts, evidence)
+        info["policy_checklist"] = checklist
+        if policy_finding:
+            findings.append(policy_finding)
+            info["findings_kept"] = len(findings)
         return findings, info
     except Exception as e:
         info["error"] = f"{type(e).__name__}: {e}"[:300]

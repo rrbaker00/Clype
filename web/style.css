@@ -147,3 +147,20 @@ button.secondary { background: var(--panel-2); color: var(--text); border: 1px s
 .cross-num { font-size: 13px; font-variant-numeric: tabular-nums; }
 .cross-sites { padding: 6px 0 4px; word-break: break-word; }
 @media (max-width: 640px) { .cross-row summary { grid-template-columns: 1fr; gap: 4px; } }
+
+/* Art. 13 policy checklist */
+.checklist { margin-top: 12px; }
+.checklist ul { list-style: none; padding: 0; margin: 6px 0 0; font-size: 13px; }
+.checklist li { padding: 2px 0; }
+.chk-icon { display: inline-block; width: 1.2em; font-weight: 700; }
+.chk.present .chk-icon { color: var(--ok); }
+.chk.missing { color: var(--bad); }
+.chk.unclear .chk-icon, .chk.not_checked .chk-icon { color: var(--muted); }
+
+/* AI usage panel */
+.usage { margin-top: 18px; }
+.usage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 8px 0 10px; }
+.usage-tile .n { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.usage-tile .l { color: var(--muted); font-size: 12px; }
+.usage .bar { margin: 4px 0; }
+.usage .bar.warn > i { background: var(--bad); }

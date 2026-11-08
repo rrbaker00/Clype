@@ -64,6 +64,14 @@
       </div>
     </div>
 
+    <!-- AI (OpenAI) usage across every saved audit. script.js fills it from /api/usage. -->
+    <div id="usageSection" class="panel usage" hidden>
+      <div class="row"><h3>AI usage</h3><span id="usageNote" class="muted small"></span></div>
+      <div class="usage-grid" id="usageGrid"></div>
+      <div id="usageBudget"></div>
+      <div id="usageModels" class="muted small"></div>
+    </div>
+
     <!-- Cross-site tracking: which companies follow you across many of the audited sites. -->
     <div id="crossSection" class="panel cross" hidden>
       <div class="row"><h3>Followed across sites</h3><span id="crossNote" class="muted small"></span></div>

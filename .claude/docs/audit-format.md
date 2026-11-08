@@ -9,7 +9,8 @@ remove existing ones without telling the other person.
   "url": "https://example.com",
   "started_at": "2026-11-07T20:15:00Z",
   "duration_s": 42.1,
-  "cost": { "llm_calls": 3, "input_tokens": 8200, "output_tokens": 1100, "model": "..." },
+  "cost": { "llm_calls": 3, "input_tokens": 8200, "output_tokens": 1100, "model": "...",
+            "by_model": { "gpt-5.4": { "llm_calls": 1, "input_tokens": 2000, "output_tokens": 900 } } },  // by_model: newer audits only, used for the /api/usage spend estimate
 
   "consent": {
     "banner_found": true,
@@ -29,8 +30,8 @@ remove existing ones without telling the other person.
   ],
 
   "cookies": {
-    "before_consent": [ { "name": "_fbp", "domain": ".example.com", "tracker_company": "Meta" } ],
-    "after_reject":   [ { "name": "_fbp", "domain": ".example.com", "tracker_company": "Meta" } ]
+    "before_consent": [ { "name": "_fbp", "domain": ".example.com", "tracker_company": "Meta", "value_kind": "id" } ],
+    "after_reject":   [ { "name": "_fbp", "domain": ".example.com", "tracker_company": "Meta", "value_kind": "id" } ]
   },
 
   "policy": {
@@ -45,7 +46,8 @@ remove existing ones without telling the other person.
       "severity": "high",          // "high" | "medium" | "low"
       "title": "Meta tracked you after you rejected cookies",
       "detail": "12 requests to facebook.net after clicking Reject all.",
-      "law": "PECR reg. 6"
+      "law": "PECR reg. 6",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) ..."   // EU equivalent (agent/eu_law.py), or null
     }
   ],
 
@@ -67,6 +69,8 @@ Added for the AI legal review (nothing renamed):
 - `policy.cookie_policy_url`, `policy.text_chars`, `policy.chars_sent`, optional `policy.error`.
 - `ai_review`: `{ "model", "summary", "findings_kept", "findings_dropped", "evidence": ["E1: ...", ...], "error"? }`
 - `visited_pages`: pages browsed (and scrolled) after reject.
+- `fingerprinting`: list of `{technique: "canvas"|"webgl"|"audio"|"fonts", script, detail, phase}`, one per technique per script per phase (agent/fingerprint.py). `summary.fingerprinting_domains` lists the script domains.
+- `cookies.*[].value_kind`: what the cookie holds: `"empty"` (blank, or only `key=` labels), `"placeholder"` (deleted / null / 0 / false), `"id"` (looks like a unique identifier) or `"value"` (anything else). Empty and placeholder tracker cookies are not counted as tracking evidence (compare + AI review).
 
 Added for letters and email:
 - `letter` is `null` unless the audit's worst finding is `critical`/`high` (auto) or the user clicked
@@ -81,6 +85,13 @@ Added for reliability:
   (then no AI review / letter, 0 LLM calls; the reason is in `errors`).
 - `policy.format`: `"html"` or `"pdf"` (PDF policies are downloaded and read with pypdf).
 - `errors`: `[{"step", "error"}]` for any pipeline step that failed; the rest of the audit still ran.
+
+Added for extra compliance checks:
+- `consent.accept_label`: text of the one-click Accept button on the banner's first screen (looked at, never clicked), or null.
+- `consent.reject_steps`: how many clicks rejecting took (null if reject failed). Accept 1 click vs reject 2+ = finding.
+- `consent.preticked`: labels of non-essential cookie toggles already ON before we touched anything (banner first screen + "Manage preferences" panel; locked "necessary" ones excluded). Non-empty = finding.
+- `ai_review.policy_checklist`: UK GDPR Art. 13 items, each `{ "label", "status": "present"|"missing"|"unclear"|"not_checked", "quote" }`.
+  "missing" only if the whole policy was checked AND no matching keywords exist anywhere in it.
 
 Bonus fields (only if built):
 - `fingerprinting`: list of `{ "api": "canvas.toDataURL", "script": "https://..." }`

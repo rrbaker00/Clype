@@ -5,6 +5,7 @@
 
 import json   # built-in: turns JSON text into Python dicts/lists and back
 import re     # built-in: regular expressions, used to check the audit id is safe
+from datetime import datetime, timezone  # built-in: "today" for the usage panel
 from pathlib import Path  # built-in: nicer way to work with file paths than plain strings
 
 from fastapi import FastAPI, HTTPException      # FastAPI = the web framework; HTTPException = send an error back (e.g. 404)
@@ -15,6 +16,9 @@ from agent.letter import draft_letter           # drafts the complaint letter (L
 from api import jobs                            # background audit queue (runs the pipeline in the background)
 from agent.capture import base_domain           # "https://www.bbc.co.uk/news" -> "bbc.co.uk"
 from agent import llm                           # Cost tracker for the letter call
+from agent import mailer                        # sends letters (SEND_MODE decides where)
+from agent.eu_law import add_eu_law             # EU GDPR / ePrivacy equivalents for each finding
+from agent.trackers import cookie_value_kind    # empty / placeholder / id / value
 
 # __file__ is this file's path (api/main.py). .resolve() makes it absolute,
 # .parent is the api/ folder, .parent again is the project root (HTB/).
@@ -143,6 +147,7 @@ def audit_summary(f):
         "rejected": rejected,                           # for the card's status pill
         "tracker_counts": tracker_counts(a),
         "_companies": {"seen": sorted(seen), "after": sorted(after), "categories": categories},
+        "_cost": a.get("cost") or {},                   # AI usage for /api/usage
     }
     _summary_cache[f] = (mtime, summary)
     return summary
@@ -157,6 +162,58 @@ def list_audits():
         if s:
             out.append({k: v for k, v in s.items() if not k.startswith("_")})  # don't send internals
     return out  # FastAPI automatically converts the Python list to JSON for the browser
+
+
+# GET /api/usage -> AI (OpenAI) usage added up over EVERY saved audit (re-runs too: they all cost).
+# US$ is an estimate from LLM_PRICES in .env; audits from before the per-model split can't be priced.
+@app.get("/api/usage")
+def usage():
+    today = datetime.now(timezone.utc).date().isoformat()
+    keys = ("llm_calls", "input_tokens", "output_tokens")
+    total, day = dict.fromkeys(keys, 0), dict.fromkeys(keys, 0)
+    by_model, priced_usd, unpriced, audits, with_ai = {}, 0.0, 0, 0, 0
+    day_usd, day_unpriced = 0.0, 0
+    for f in AUDITS.glob("*.json"):
+        s = audit_summary(f)
+        if not s:
+            continue
+        audits += 1
+        c = s["_cost"]
+        is_today = (s.get("started_at") or "").startswith(today)
+        if c.get("llm_calls"):
+            with_ai += 1
+        for k in keys:
+            total[k] += c.get(k) or 0
+            if is_today:
+                day[k] += c.get(k) or 0
+        for model, u in (c.get("by_model") or {}).items():
+            m = by_model.setdefault(model, dict.fromkeys(keys, 0))
+            for k in keys:
+                m[k] += u.get(k, 0)
+        # Price this audit. No per-model split (older audits) or a model without a price -> unpriced.
+        usd = llm.estimate_usd(c.get("by_model")) if c.get("by_model") else None
+        if c.get("llm_calls") and usd is None:
+            unpriced += 1
+            day_unpriced += is_today
+        else:
+            priced_usd += usd or 0
+            day_usd += (usd or 0) if is_today else 0
+    for model, m in by_model.items():
+        m["usd"] = llm.estimate_usd({model: m})
+    return {
+        "audits": audits,
+        "audits_with_ai": with_ai,
+        "total": total,
+        "today": day,
+        "avg_per_audit": {k: round(total[k] / with_ai) if with_ai else 0 for k in keys},
+        "by_model": by_model,
+        "usd": round(priced_usd, 4) if llm.PRICES else None,     # None = no prices set
+        "usd_today": round(day_usd, 4) if llm.PRICES else None,
+        "unpriced_audits": unpriced,                              # left out of the US$ estimate
+        "unpriced_today": day_unpriced,
+        "budget": llm.BUDGET,
+        "call_cap_per_audit": llm.MAX_CALLS_PER_AUDIT,
+    }
 
 
 # GET /api/cross-site -> which tracker companies follow you across MANY sites.
@@ -200,6 +257,10 @@ def get_audit(audit_id: str):
         raise HTTPException(404, "not found")  # stops here and sends a 404 error to the browser
     a = json.loads(f.read_text())
     a["tracker_counts"] = tracker_counts(a)  # add the counts (in the response only, the file isn't changed)
+    add_eu_law([f for f in a.get("findings", []) if "law_eu" not in f])  # older audits: fill in EU law on the fly
+    for phase in (a.get("cookies") or {}).values():                         # older audits: label cookie values too
+        for c in phase:
+            c.setdefault("value_kind", cookie_value_kind(c.get("value")))
     return a  # send the full audit back as JSON
 
 
@@ -222,9 +283,57 @@ def create_letter(audit_id: str):
     c, new = a.setdefault("cost", {}), cost.as_dict()
     for k in ("llm_calls", "input_tokens", "output_tokens"):
         c[k] = (c.get(k) or 0) + new[k]
+    for model, u in new["by_model"].items():
+        m = c.setdefault("by_model", {}).setdefault(model, {"llm_calls": 0, "input_tokens": 0, "output_tokens": 0})
+        for k in m:
+            m[k] += u[k]
     if new["model"] and new["model"] not in (c.get("model") or ""):
         c["model"] = "+".join(filter(None, [c.get("model"), new["model"]]))
     f.write_text(json.dumps(a, indent=2))
+    return letter
+
+
+# One plain email address, nothing else (no lists, no "Name <addr>", no newlines).
+EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")
+
+
+class SendRequest(BaseModel):
+    to: str
+    subject: str
+    body: str
+
+
+# GET /api/email-status -> {"mode", "configured", "from"} so the Send button can say
+# where the email will really go (e.g. test mode = your own inbox). No secrets.
+@app.get("/api/email-status")
+def email_status():
+    return mailer.email_status()
+
+
+# POST /api/audits/{id}/letter/send -> the "Send email" button. Sends what's in the
+# To / Subject / Body boxes (so edits and a hand-typed To address are used), following
+# SEND_MODE and the same live limits as automatic sends (1 per site, 5 per day).
+# Saves the edited letter + delivery result into the audit file.
+@app.post("/api/audits/{audit_id}/letter/send")
+def send_letter_now(audit_id: str, req: SendRequest):
+    f = AUDITS / f"{audit_id}.json"
+    if not re.fullmatch(r"[\w.\-]+", audit_id) or not f.exists():
+        raise HTTPException(404, "not found")
+    to, subject, body = req.to.strip(), req.subject.strip(), req.body.strip()
+    if not EMAIL_RE.fullmatch(to):
+        raise HTTPException(400, "Enter one valid email address in To.")
+    if not subject or not body:
+        raise HTTPException(400, "Subject and body can't be empty.")
+    a = json.loads(f.read_text())
+    letter = a.get("letter") or {"kind": "complaint"}
+    letter.update(to=to, subject=subject[:200], body=body)
+    letter.pop("note", None)                      # "no DPO email found" no longer applies
+    delivery = mailer.send_letter(letter, a, trigger="manual")
+    letter["delivery"] = delivery
+    a["letter"] = letter
+    f.write_text(json.dumps(a, indent=2))
+    if not (delivery["sent"] or delivery.get("saved_to")):
+        raise HTTPException(409, delivery.get("reason") or "Not sent.")   # e.g. limit reached / SEND_MODE off
     return letter
 
 

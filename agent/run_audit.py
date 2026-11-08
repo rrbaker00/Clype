@@ -28,6 +28,8 @@ from . import trackers
 from .policy import read_policy
 from .compare import compare, SEVERITY_ORDER
 from . import legal_review
+from . import eu_law
+from . import fingerprint
 from . import letter
 from . import llm
 
@@ -36,11 +38,12 @@ PAGE_TIMEOUT_MS = 30000   # max wait for the first page to load
 
 
 def tag_cookie_trackers(cookies, site_domain):
-    """Add a tracker_company field to each cookie, per audit-format.md."""
+    """Add tracker_company and value_kind (empty / placeholder / id / value) to each cookie."""
     for c in cookies:
         domain = base_domain(c["domain"].lstrip("."))
         match = trackers.match_cookie(c["name"], domain, site_domain)  # name check catches first-party _ga, _fbp...
         c["tracker_company"] = match["company"] if match["is_tracker"] else None
+        c["value_kind"] = trackers.cookie_value_kind(c.get("value"))  # empty ones aren't tracking evidence
     return cookies
 
 
@@ -98,11 +101,15 @@ def run(url, progress=None):
     policy_texts = {"privacy": "", "cookie": ""}
     cookies_before, cookies_after, visited = [], [], []
     loaded = False
+    fp_events = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         try:
-            page = browser.new_page()
+            context = browser.new_context()
+            # Fingerprinting hooks: must be installed before the site's first script runs.
+            fp_events = step("Watching for fingerprinting", lambda: fingerprint.install(context, phase_state), [])
+            page = context.new_page()
             page.set_default_timeout(15000)          # no single click/wait can hang forever
             page.on("request", on_request)
 
@@ -148,6 +155,10 @@ def run(url, progress=None):
     cookies = {"before_consent": cookies_before, "after_reject": cookies_after}
     findings, summary = step("Comparing what we saw with the policy",
                              lambda: compare(requests_list, cookies, policy_result, consent_result), ([], {}))
+    fp_findings = step("Checking for fingerprinting", lambda: fingerprint.findings(fp_events, site_domain), [])
+    findings = sorted(findings + fp_findings, key=lambda f: SEVERITY_ORDER[f["severity"]])
+    if summary:
+        summary["fingerprinting_domains"] = sorted({base_domain(e["script"]) for e in fp_events})
     for f in findings:
         f["source"] = "observed"  # plain-code findings, straight from the evidence
 
@@ -161,6 +172,7 @@ def run(url, progress=None):
         "cookies": cookies,
         "policy": policy_result,
         "visited_pages": visited,
+        "fingerprinting": fp_events,
         "findings": findings,
         "summary": summary,
         "letter": None,
@@ -177,6 +189,7 @@ def run(url, progress=None):
         # Letter: critical -> draft + send (per SEND_MODE), high -> draft only, else None.
         audit["letter"] = step("Drafting the letter", lambda: letter.auto_letter(audit, cost=cost), None)
 
+    eu_law.add_eu_law(audit["findings"])    # "law_eu": EU GDPR / ePrivacy equivalents (plain code)
     audit["cost"] = cost.as_dict()          # final totals, including review + letter calls
     audit["duration_s"] = round(time.monotonic() - start, 2)
     audit["errors"] = errors

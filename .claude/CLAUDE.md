@@ -48,7 +48,9 @@ detection (canvas / WebGL / AudioContext hooks via `add_init_script`).
 - **Sending is limited and controlled by `SEND_MODE` in `.env`.** Only audits whose worst finding
   is `critical` are emailed automatically (agent/mailer.py, via Brevo SMTP). `test` (default) sends to our own
   Gmail; `live` sends to the real DPO, max one email per site and 5 per day; `off` = drafts only.
-  `outbox` saves .eml files instead. `high` audits are drafted, never sent. Never send from tests or debugging runs.
+  `outbox` saves .eml files instead. `high` audits are drafted, never sent automatically.
+  The dashboard's "Send email" button sends one letter after a confirm, following the same
+  SEND_MODE and live limits. Never send from tests or debugging runs.
 - **Track cost.** Log tokens used and time taken per audit into the audit
   JSON. Wordsmith judges on this.
 - Never commit `.env` or API keys.

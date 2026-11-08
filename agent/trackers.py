@@ -28,7 +28,8 @@ hosted on AWS would get "X tracked you after you rejected cookies".
 """
 import json
 import os
-from urllib.parse import urlparse
+import re
+from urllib.parse import unquote, urlparse
 
 _DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "trackers.json")
 
@@ -103,7 +104,7 @@ MIXED_COMPANY_TRACKING_DOMAINS = {
     "Google": {"google-analytics.com", "googletagmanager.com", "googletagservices.com",
                "doubleclick.net", "doubleclick.com", "googlesyndication.com",
                "googleadservices.com", "2mdn.net", "googleoptimize.com",
-               "app-measurement.com", "adtrafficquality.google",
+               "app-measurement.com",  # not adtrafficquality.google: that's ad-FRAUD detection, not tracking
                "youtube.com"},  # embedded YouTube sets tracking cookies (youtube-nocookie.com doesn't)
     "Microsoft": {"bing.com", "clarity.ms", "adnxs.com", "adnxs-simple.com", "appnexus.com",
                   "linkedin.com", "bizographics.com", "adsymptotic.com"},
@@ -154,6 +155,38 @@ FIRST_PARTY_TRACKER_COOKIES = {
     "_pcid": "Permutive", "permutive-id": "Permutive",
     "optimizelyEndUserId": "Optimizely",
 }
+
+
+# Values that mean "nothing stored" (sites often overwrite a cookie like this after you reject).
+_PLACEHOLDERS = {"deleted", "null", "undefined", "none", "false", "0", "-1", "no", "off", "[]", "{}", '""', "''"}
+# A unique ID: a run of 8+ letters/digits that mixes both (e.g. "ca770cfd...", a UUID part),
+# or 8+ digits in a row (client IDs / first-visit timestamps like GA1.1.123456789.1700000000).
+_ID_TOKEN = re.compile(r"(?=[A-Za-z0-9_-]*\d)(?=[A-Za-z0-9_-]*[A-Za-z])[A-Za-z0-9_-]{8,}|\d{8,}")
+
+
+def cookie_value_kind(value):
+    """What a cookie actually holds:
+      "empty"        nothing, or only labels with nothing after them ("DeviceID=", "a=&b=")
+      "placeholder"  a "nothing" word: deleted / null / 0 / false ...
+      "id"           looks like a unique identifier (can recognise you again)
+      "value"        something else (a word like "external", a language code, a flag)
+    Empty and placeholder cookies are NOT counted as tracking evidence."""
+    v = unquote(value or "").strip()
+    if not v:
+        return "empty"
+    # "DeviceID=" / "id=&ts=" -> keep only the parts after each "="; nothing left = empty.
+    if "=" in v:
+        parts = [p.split("=", 1)[1].strip() for p in re.split(r"[&;|]", v) if "=" in p]
+        if parts and not any(parts):
+            return "empty"
+    if v.lower() in _PLACEHOLDERS:
+        return "placeholder"
+    return "id" if _ID_TOKEN.search(v) else "value"
+
+
+def holds_value(cookie):
+    """False for empty / placeholder cookies. Old audits without value_kind count as holding a value."""
+    return cookie.get("value_kind", "value") not in ("empty", "placeholder")
 
 
 def match_cookie(name, cookie_domain, site_domain):

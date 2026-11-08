@@ -12,6 +12,7 @@ function fetchAudits() {
       renderStats(audits);
       renderCards(audits);
       fetchCrossSite();   // the cross-site view changes whenever the audits do
+      fetchUsage();       // so does the AI usage total
     })
     // Show errors on the page AND in the console, instead of failing silently.
     .catch((err) => {
@@ -90,6 +91,56 @@ function renderCards(audits) {
 
 // ---------- Cross-site tracking ----------
 let crossShowAll = false;
+
+function fetchUsage() {
+  fetch("/api/usage")
+    .then((r) => (r.ok ? r.json() : Promise.reject(`API error ${r.status}`)))
+    .then(renderUsage)
+    .catch((err) => console.error(err));
+}
+
+// 12345 -> "12.3k", 1234567 -> "1.23M"
+function fmtTokens(n) {
+  if (n >= 1e6) return (n / 1e6).toFixed(2) + "M";
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + "k";
+  return String(n);
+}
+const fmtUsd = (x) => "$" + (x < 1 ? x.toFixed(3) : x.toFixed(2));
+
+// AI usage panel: calls, tokens, estimated spend (only if LLM_PRICES is set in .env).
+function renderUsage(u) {
+  const section = document.getElementById("usageSection");
+  if (!u.audits) return (section.hidden = true);
+  section.hidden = false;
+  const tile = (n, l, sub) => el("div", { class: "usage-tile" },
+    el("div", { class: "n" }, n), el("div", { class: "l" }, l), sub ? el("div", { class: "l" }, sub) : null);
+  const priced = u.usd !== null && u.unpriced_audits < u.audits_with_ai;  // at least one audit has a real price
+  const spend = priced ? fmtUsd(u.usd) + (u.unpriced_audits ? "+" : "") : "—";   // "+" = some audits not priced
+  document.getElementById("usageGrid").replaceChildren(
+    tile(u.total.llm_calls, "AI calls", `${u.today.llm_calls} today`),
+    tile(fmtTokens(u.total.input_tokens), "Tokens in", `${fmtTokens(u.today.input_tokens)} today`),
+    tile(fmtTokens(u.total.output_tokens), "Tokens out", `${fmtTokens(u.today.output_tokens)} today`),
+    tile(spend, "Estimated spend", u.usd === null ? "set LLM_PRICES in .env"
+      : priced ? `${fmtUsd(u.usd_today)} today` : "new audits will be priced"),
+    tile(u.avg_per_audit.llm_calls, "Calls per audit (avg)",
+      `${fmtTokens(u.avg_per_audit.input_tokens + u.avg_per_audit.output_tokens)} tokens · cap ${u.call_cap_per_audit}`));
+
+  // Budget bar, only when both a budget and prices are set.
+  const budget = document.getElementById("usageBudget");
+  if (u.budget && priced) {
+    const pct = Math.min(100, (u.usd / u.budget) * 100);
+    budget.replaceChildren(el("div", { class: "bar" + (pct > 80 ? " warn" : "") }, el("i", { style: `width:${pct}%` })),
+      el("div", { class: "muted small" }, `${fmtUsd(u.usd)} of $${u.budget} budget (${pct.toFixed(1)}%)`));
+  } else budget.replaceChildren();
+
+  const models = Object.entries(u.by_model).map(([m, x]) =>
+    `${m}: ${x.llm_calls} calls, ${fmtTokens(x.input_tokens)} in / ${fmtTokens(x.output_tokens)} out` +
+    (x.usd === null ? "" : ` (${fmtUsd(x.usd)})`));
+  document.getElementById("usageModels").textContent = models.join(" · ");
+  document.getElementById("usageNote").textContent =
+    `${u.audits_with_ai} of ${u.audits} audits used AI` +
+    (u.unpriced_audits ? ` · ${u.unpriced_audits} older audit${u.unpriced_audits > 1 ? "s" : ""} not in the spend estimate` : "");
+}
 
 function fetchCrossSite() {
   fetch("/api/cross-site")

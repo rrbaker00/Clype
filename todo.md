@@ -54,6 +54,16 @@ A wrong accusation in front of judges is worse than a missed one.
 - [x] Bot-protection / HTTP 4xx pages count as "not loaded" (no AI calls, reason shown)
 - [x] Licences checked; Tracker Radar credit in data/README.md + readme.md
 
+## 1e. Extra compliance checks (aim: all automated)
+- [x] #1 Reject harder than accept (ICO cookie guidance, UK GDPR Art. 7, CMA choice architecture)
+- [x] #2 Privacy policy Art. 13 checklist (8 items, quotes verified, keyword safety net)
+- [x] #3 Pre-ticked non-essential toggles (banner + "Manage preferences"; consent.preticked → medium finding)
+- [x] #4 Fingerprinting detection (agent/fingerprint.py: canvas / WebGL / audio / fonts hooks; per-script finding, bot-protection = low)
+- [x] #5 EU GDPR + ePrivacy Art. 5(3) equivalents (agent/eu_law.py → finding.law_eu; filled in on the fly for old audits)
+- [x] Cookie contents check: cookies.value_kind (empty / placeholder / id / value); empty + placeholder tracker cookies are not evidence
+- [x] AI usage panel on the dashboard (GET /api/usage; cost.by_model; US$ estimate from LLM_PRICES, optional LLM_BUDGET bar)
+- [ ] #6 Children's Code: flag ad trackers on sites aimed at children (low confidence) (~1 h)
+
 ## 2. Pipeline reliability (P, about 1.5 h)
 - [x] `run_audit.py:89`: save as `audits/{timestamp}_{domain}.json` (no overwrites, UI sorts by name),
       path based on project root not the current folder (10 min)

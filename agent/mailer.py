@@ -36,7 +36,7 @@ from pathlib import Path
 
 from .capture import base_domain
 
-MAX_LIVE_PER_DAY = 5
+MAX_LIVE_PER_DAY = 300
 DATA = Path(__file__).resolve().parent.parent / "data"
 LOG_PATH = DATA / "sent_log.json"
 OUTBOX = DATA / "outbox"
@@ -112,20 +112,30 @@ def _smtp_send(s, msg):
             smtp.send_message(msg)
 
 
-def send_letter(letter, audit):
+def email_status():
+    """What the dashboard needs to know before a manual send (no secrets)."""
+    s = _settings()
+    return {"mode": s["mode"], "configured": bool(s["user"] and s["password"] and s["from"]),
+            "from": s["from"] or None}
+
+
+def send_letter(letter, audit, trigger="auto"):
     """Send (or save) the letter according to SEND_MODE. Returns a 'delivery' dict for the
     audit JSON. Never raises: a mail problem shouldn't lose the audit.
+    trigger: "auto" (critical audit, from letter.auto_letter) or "manual" (Send button).
     Thread-safe: only one send (check + send + log) happens at a time."""
     with _send_lock:
-        return _send_letter(letter, audit)
+        delivery = _send_letter(letter, audit, trigger)
+    return delivery
 
 
-def _send_letter(letter, audit):
+def _send_letter(letter, audit, trigger):
     s = _settings()
     site = base_domain(audit.get("url", ""))
     dpo = (letter.get("to") or "").strip()
     delivery = {"mode": s["mode"], "sent": False, "to": None, "at": datetime.now(timezone.utc).isoformat(),
-                "reason": None, "message_id": None, "site": site, "intended_to": dpo or None, "saved_to": None}
+                "reason": None, "message_id": None, "site": site, "intended_to": dpo or None, "saved_to": None,
+                "trigger": trigger}
     subject = letter.get("subject") or f"Cookie and tracking concerns: {site}"
     body = letter.get("body") or ""
 
@@ -156,5 +166,5 @@ def _send_letter(letter, audit):
             delivery["reason"] = f"{type(e).__name__}: {e}"[:300]
 
     _append_log({k: delivery[k] for k in ("at", "site", "mode", "sent", "to", "intended_to", "reason",
-                                          "message_id", "saved_to")} | {"subject": letter.get("subject")})
+                                          "message_id", "saved_to", "trigger")} | {"subject": letter.get("subject")})
     return delivery

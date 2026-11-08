@@ -18,7 +18,7 @@ Finding types, worst first:
 """
 import re
 
-from .trackers import TRACKER_COMPANIES
+from .trackers import TRACKER_COMPANIES, holds_value
 
 SEVERITY_ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}  # "critical" only comes from the AI review safeguard
 
@@ -109,10 +109,11 @@ def _group_trackers(requests, phase):
 
 
 def _tracker_cookies_by_company(cookies):
-    """{company: [cookie names]} for cookies tagged as trackers."""
+    """{company: [cookie names]} for tracker cookies that actually hold something.
+    An empty or "deleted" cookie stores nothing about you, so it isn't evidence of tracking."""
     out = {}
     for c in cookies:
-        if c.get("tracker_company"):
+        if c.get("tracker_company") and holds_value(c):
             out.setdefault(c["tracker_company"], []).append(c["name"])
     return out
 
@@ -140,14 +141,17 @@ def compare(requests, cookies, policy, consent):
         categories.setdefault(name, _CATEGORY_BY_SHOWN_NAME.get(name))
 
     # 1. Tracker cookies already on your device before you'd answered the banner.
+    before_ids = {c["name"] for c in cookies.get("before_consent", []) if c.get("value_kind") == "id"}
     for company, names in sorted(cookies_before.items()):
         category = categories.get(company)
+        ids = [n for n in names if n in before_ids]
         findings.append({
             "severity": CATEGORY_SEVERITY.get(category, "medium"),
             "title": f"{company} cookies were set before you could choose",
             "detail": f"{_plural(len(names), 'tracking cookie')} ({', '.join(sorted(names))}) "
                       f"{'was' if len(names) == 1 else 'were'} already set before the cookie banner "
-                      f"was answered ({category or 'tracker'}).",
+                      f"was answered ({category or 'tracker'})."
+                      + (f" {', '.join(sorted(ids))} {'holds' if len(ids) == 1 else 'hold'} what looks like a unique ID." if ids else ""),
             "law": _law(category, "PECR reg. 6 (consent needed before storing cookies)"),
         })
 
@@ -172,6 +176,40 @@ def compare(requests, cookies, policy, consent):
             "title": "Rejecting cookies requires paying or subscribing",
             "detail": "The only reject option found was tied to a subscription or payment, so we did not click it.",
             "law": "UK GDPR Art. 4(11) and 7(4) (consent must be freely given). ICO allows 'consent or pay' only if it's fair",
+        })
+
+    # 3b. Rejecting is harder than accepting (ICO: refusing must be as easy as accepting).
+    #     consent.py recorded the one-click Accept button (never clicked) and how many steps reject took.
+    accept = consent.get("accept_label")
+    steps = consent.get("reject_steps")
+    if accept and rejected and steps and steps >= 2:
+        findings.append({
+            "severity": "medium",
+            "title": f"Rejecting took {steps} clicks, accepting takes 1",
+            "detail": f'"{accept}" is on the banner\'s first screen, but to reject we had to click: '
+                      f'{" → ".join(consent.get("clicks") or [])}.',
+            "law": "UK GDPR Art. 4(11) and 7 (freely given consent); ICO cookie guidance (refusing must be as "
+                   "easy as accepting); CMA guidance on online choice architecture",
+        })
+    elif accept and not rejected and consent.get("method") == "failed":
+        findings.append({
+            "severity": "low",
+            "title": "Accept is one click, but we found no way to reject",
+            "detail": f'The banner offers "{accept}", but our automated check could not find any reject or '
+                      f"decline option. (This may be a limit of our check, so treat it as something to verify.)",
+            "law": "ICO cookie guidance (refusing must be as easy as accepting)",
+        })
+
+    # 3c. Non-essential cookie categories switched ON before the user chose anything.
+    preticked = consent.get("preticked") or []
+    if preticked:
+        findings.append({
+            "severity": "medium",
+            "title": f"{_plural(len(preticked), 'cookie category')} switched on by default",
+            "detail": "Before we touched anything, these non-essential toggles were already ON: "
+                      f"{'; '.join(preticked)}. A visitor who just clicks \"Save\" would be opted in.",
+            "law": "UK GDPR Art. 4(11) and recital 32 (silence or pre-ticked boxes are not consent); "
+                   "PECR reg. 6; ICO cookie guidance (no pre-enabled non-essential cookies)",
         })
 
     # 4. Companies we saw that the policy never names. Only if we actually read a policy

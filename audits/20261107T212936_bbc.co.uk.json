@@ -3,9 +3,9 @@
   "started_at": "2026-11-07T21:29:36.458960+00:00",
   "duration_s": 46.5,
   "cost": {
-    "llm_calls": 2,
-    "input_tokens": 13069,
-    "output_tokens": 1670,
+    "llm_calls": 3,
+    "input_tokens": 14283,
+    "output_tokens": 2228,
     "model": "gpt-5.4-mini+gpt-5.6-luna",
     "elapsed_s": 46.5
   },
@@ -9472,7 +9472,31 @@
       "comScore": "Analytics"
     }
   },
-  "letter": null,
+  "letter": {
+    "kind": "complaint",
+    "to": "",
+    "subject": "Concern about cookie and tracking practices on bbc.co.uk following rejection of additional cookies",
+    "body": "Dear Data Protection Officer,\n\nI am writing to raise concerns about cookie and tracking activity observed on https://www.bbc.co.uk during an automated, passive audit on 2026-11-07 21:29 UTC. Using a fresh browser, the audit detected the cookie banner, clicked \u201cReject additional cookies\u201d, then visited /news, /sport and /weather, while recording what cookies were set and what requests were still sent. I also reviewed your privacy policy at https://www.bbc.co.uk/usingthebbc/privacy-policy/.\n\nMy concerns are as follows.\n\n1. Our review suggests tracking activity appears inconsistent with the BBC\u2019s consent statement: \u201cWe\u2019ll only use them if you\u2019ve agreed.\u201d Chartbeat, Dotmetrics, Optimizely and comScore sent analytics requests before consent was answered and continued after \u201cReject additional cookies\u201d was clicked. Tracking cookies were also present before the choice, and some remained or were newly created after rejection.\n\n2. Before any choice was made, Chartbeat cookies _cb, _cb_svref and _chartbeat2 were already set.\n\n3. Before any choice was made, Dotmetrics cookies DotMetrics.DeviceKey and DotMetrics.UniqueUserIdentityCookie were already set.\n\n4. After rejection, 30 requests were still sent to dotmetrics.net.\n\n5. After rejection, 4 requests were still sent to scorecardresearch.com.\n\n6. After rejection, 4 requests were still sent to chartbeat.com and chartbeat.net, and a new tracking cookie, _chartbeat4, was set.\n\n7. After rejection, 2 requests were still sent to optimizely.com.\n\n8. I observed four tracking companies that do not appear to be named in the privacy policy: Chartbeat, Dotmetrics, Optimizely and comScore. I appreciate the policy may describe some recipients by category only.\n\n9. Our review also suggests the privacy information may be too general about analytics recipients, making it difficult for users to understand who received data sent to those providers and which recipient categories apply.\n\nPlease reply within one month and:\n\n1. Explain each point above.\n2. Confirm which cookies and trackers you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential tracking that occurs without consent.\n4. Clarify how these practices align with the statements in your cookie and privacy information.\n\nIf this matter is not resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T00:04:48.916069+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Tracking activity contradicts the BBC's consent promise",
+      "Chartbeat cookies were set before you could choose",
+      "Dotmetrics cookies were set before you could choose",
+      "Dotmetrics still received data after you rejected cookies",
+      "comScore still received data after you rejected cookies",
+      "Chartbeat still received data after you rejected cookies",
+      "Optimizely still received data after you rejected cookies",
+      "4 tracking companies not named in the privacy policy",
+      "Privacy information is too general about analytics recipients"
+    ],
+    "delivery": null,
+    "note": "No DPO email found in the policy. Add one before sending.",
+    "auto": {
+      "tier": null,
+      "reason": "Requested from the dashboard."
+    }
+  },
   "ai_review": {
     "model": "gpt-5.6-luna",
     "summary": "The audit shows substantial non-compliance risk: analytics activity and tracking identifiers appeared before the user answered the banner and continued after rejection. The strongest issue is the direct conflict with the BBC's stated promise that functional and performance cookies are used only when agreed. The policy also gives only general information about analytics providers and recipients, although the evidence does not establish the exact data shared or the location of each provider.",
