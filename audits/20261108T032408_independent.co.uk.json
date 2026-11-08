@@ -1,0 +1,3918 @@
+{
+  "url": "https://www.independent.co.uk",
+  "started_at": "2026-11-08T03:24:08.542703+00:00",
+  "duration_s": 50.88,
+  "cost": {
+    "llm_calls": 4,
+    "input_tokens": 21000,
+    "output_tokens": 3598,
+    "model": "gpt-5.4+gpt-5.6-luna",
+    "elapsed_s": 50.88,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 3,
+        "input_tokens": 19930,
+        "output_tokens": 3028
+      },
+      "gpt-5.4": {
+        "llm_calls": 1,
+        "input_tokens": 1070,
+        "output_tokens": 570
+      }
+    }
+  },
+  "consent": {
+    "banner_found": false,
+    "rejected": false,
+    "method": "failed",
+    "clicks": [],
+    "accept_label": "ACCEPT",
+    "preticked": [],
+    "reject_steps": null
+  },
+  "requests": [
+    {
+      "url": "https://www.independent.co.uk/",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/speculationrules.json",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Medium.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Medium-Italic.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Regular.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Medium.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/10/05/16/53/SAS-Small-Skyline.png?quality=75&width=312&crop=2%3A1%2Csmart&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/10/20/8/54/International.png?quality=75&width=640&crop=640%3A156%2Csmart&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/07/16/08/GIF.gif?quality=75&width=640&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/07/19/2288392408..?quality=75&width=640&trim=32%2C0%2C32%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/bombora-rtvi.342153697a4aa13391cc.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.monetizationos.com/web-components-latest.js",
+      "domain": "monetizationos.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/init-firebase.b39b0792e3dc70087c62.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-archipelago.256661e55244934019a7.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-components-base.93e88301564ad7147fd6.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/sourcepoint.b11531bde8032cc11793.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/unified/wrapperMessagingWithoutDetection.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/analytics.c50f3fbe95e455b4ad43.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/bombora.b25f9743d641172c9fc7.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://ats-wrapper.privacymanager.io/ats-modules/203e3874-5877-45ec-a8d4-5beaa84bab40/ats.js",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/main.b6bc29e1436a54ef8f92.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/section.5ce63c243b852d0e9068.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/braze-user-bundle.f2bc128387095fb14d21.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/static-assets/images/MOS+prompts/Independent+Membership+White.png",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/static-assets/images/MOS+prompts/HPPU+image_0411.png",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://vi.ml314.com/get?eid=85600&tk=8iMzpmv44Ih7diF5rdVx7hCBBeLRBbxkjS2fip6kHt9Y3d&fp=",
+      "domain": "ml314.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Regular.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/01/20/12/24/alan-rusbridger-byline.png",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/10/09/7/22/Charlie-Brinkhurst-Cuff-byline.png",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/09/25/14/00/john-rentoul-byline.png",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/06/18/31/Video-News-Graphic-Designs-(3).png?quality=75&width=640&trim=0%2C100%2C0%2C100&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/10/29/15/2302398298..?quality=75&width=640&trim=0%2C0%2C0%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/07/18/01M6TGZMGVZAP54MD2VZZFXVCH.jpg?quality=75&width=640&trim=0%2C0%2C0%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/06/13/f90833a978734992588fbd7f4d50dcb8Y29udGVudHNlYXJjaGFwaSwxNzk0MDU3OTcy-2.86368584.jpg?quality=75&width=640&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/07/18/2301856339..?quality=75&width=640&trim=0%2C0%2C0%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/01/08/13/17/GettyImages-2235128986.jpeg?quality=75&width=640&trim=0%2C0%2C0%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/05/12/3e08b917ab663458555cae6e3b91663dY29udGVudHNlYXJjaGFwaSwxNzkzOTY3MjI0-2.86329214.jpg?quality=75&width=640&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/04/15/download.-1.?quality=75&width=640&trim=0%2C0%2C0%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/07/20/12/Peros-bridge-with-boom-3-Nov-2026.jpeg?quality=75&width=640&trim=0%2C0%2C0%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/09/29/11/22/Seoul-hero-image.jpeg?quality=75&width=640&trim=2%2C0%2C2%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/07/10/20/PA-10450418-07ac23f6.jpeg?quality=75&width=640&trim=357%2C0%2C1795%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/05/10/39/IMG-20260928-WA0005.jpeg?quality=75&width=640&trim=381%2C0%2C643%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/07/20/2304019287..?quality=75&width=640&trim=0%2C0%2C0%2C0&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/05/12/04/SherylCrow_P_Credit-Victoria-Will_FromMgmt_SCowns_Alexa_SC-0708_FNL-62781d3e.jpg?quality=75&width=640&trim=713%2C592%2C2732%2C411&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/2026/11/05/16/09/Untitled-design-(1).png?quality=75&width=640&trim=0%2C272%2C0%2C28&auto=webp",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/unified/4.41.0/gdpr-tcf.e7290277d588e0de9bb9.bundle.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.independent.co.uk%2F&account_id=1746",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5XT7NPD",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610300102/pubads_impl.js?cb=122882122",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://geo.privacymanager.io/",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/ga4-shared-event-handlers.88746790d29a3ef4c9b0.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/ga4-section-event-handlers.5e1f4eb533bac90930da.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/mos-endpoints/record-homepage-popup",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/wrapper/v2/meta-data?hasCsp=true&accountId=1746&env=prod&metadata=%7B%22gdpr%22%3A%7B%7D%7D&propertyId=17483&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1746%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22gdpr%22%3A%7B%22consentStatus%22%3A%7B%7D%2C%22targetingParams%22%3A%7B%22ad_free%22%3Afalse%2C%22registered%22%3Afalse%2C%22premium%22%3Afalse%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcmpv2.independent.co.uk%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.independent.co.uk%2F%22%7D&localState=null&metadata=%7B%22gdpr%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=null&ch=530169810530169810e1f9&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://script.crazyegg.com/pages/scripts/0131/9866.js",
+      "domain": "crazyegg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Crazy Egg",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/34448457/DV1395182/pub.js",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-PZJCN8L90Z&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=18&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.independent.co.uk%2F&scrsrc=www.googletagmanager.com&rnd=1864703861.1794108252&navt=n&npa=1&gdpr=1&gdpr_consent=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA&ep.ads_data_redaction=0&gtm=45He6b41v830666029za200zd830666029xeaxf1&gcs=G100&gcd=13q3p3q3q5l1&dma_cps=-&dma=1&tcfd=1065a&tag_exp=115616986~115938465~115938468~118897920~118897930~120385423~120412528~120420414~120469145~120469153~121049589~121246026~121246034~121284208~123785233~123814183&tft=1794108251585&tfd=2654&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/index.html?hasCsp=true&message_id=1515505&consentUUID=null&consent_origin=https%3A%2F%2Fcmpv2.independent.co.uk%2Fconsent%2Ftcfv2&preload_message=true&version=v1",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.npttech.com/advertising.js",
+      "domain": "npttech.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202611050101/gpt",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/Notice.9cce2.css",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/polyfills.01516.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/Notice.fcfb9.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/consent/tcfv2/vendor-list/categories?siteId=17483",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://geo.privacymanager.io/",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/signals/ids/pub.json?ctx=34448457&cmp=DV1395182&url=https%3A%2F%2Findependent.co.uk&ids=1&token=P%2B0L%2Bg61izyJ30eNSD25cIe2Kzl020nLjMK3eMU1N4sydugiXwVqbCdxpfIze8R9eIAUfTgxY7BkzURi0OhLP67GiQW9Dmbka10Vk%2FPweIWwuNKZYtqBa7D%2Ffco6viE%2B%2BUO0lcyA3uxrulm0TNUxHyWQu2kFry0MphJw8pM%3D",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/signals/bsc/pub.json?ctx=34448457&cmp=DV1395182&url=https%3A%2F%2Findependent.co.uk&bsc=1&abs=1&cbs=1&token=P%2B0L%2Bg61izyJ30eNSD25cIe2Kzl020nLjMK3eMU1N4sydugiXwVqbCdxpfIze8R9eIAUfTgxY7BkzURi0OhLP67GiQW9Dmbka10Vk%2FPweIWwuNKZYtqBa7D%2Ffco6viE%2B%2BUO0lcyA3uxrulm0TNUxHyWQu2kFry0MphJw8pM%3D",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/consent/tcfv2/vendor-list/categories?siteId=17483&consentLanguage=en",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/static-assets/logo-no-text.svg",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Medium.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Regular.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/Agent/GA/UniversalID/IIQUniversalID.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/door.js?id=6669",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://static.chartbeat.com/js/chartbeat_video.js",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://static.chartbeat.com/js/chartbeat_mab.js",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://5d79bce7-5d2b-427e-a6c4-b89b6c7bf048.edge.permutive.app/0c92f3e4-292f-4236-9f6b-47069949b84b-web.js",
+      "domain": "permutive.app",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Permutive",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://mab.chartbeat.com/mab_strategy/headline_testing/get_strategy/?host=independent.co.uk&domain=independent.co.uk&path=%2F",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://ping.chartbeat.net/ping?h=independent.co.uk&p=%2F&u=BcD0L-Ceapg-CxdeXX&d=independent.co.uk&g=62356&g0=No%20Section&g1=No%20Author&n=1&f=00001&c=0&x=0&m=0&y=12748&o=1280&w=720&j=45&R=1&W=0&I=0&E=0&e=0&r=&PA=https%3A%2F%2Fwww.independent.co.uk%2F&b=3036&_s=%7B%22l%22%3Anull%2C%22hashed_email%22%3Anull%7D&t=lQH8WCMhp7IsEadRDo_-_kCfnykB&V=154&i=News%20%7C%20The%20Independent%20%7C%20Today%27s%20headlines%20and%20latest%20breaking%20news&tz=0&_acct=anon&sn=1&sv=xMEx5D4t9cLC-tw6bxfRUBD696LD&sr=external&sd=1&im=067b0fff&_",
+      "domain": "chartbeat.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/hit.gif?id=6669&url=https%3A%2F%2Fwww.independent.co.uk%2F&dom=www.independent.co.uk&r=1794108251969&pvs=1&ecid=82157fa2-9c17-476b-ad61-38703c4a908e&c=false&tzOffset=0&doorUrl=http%3a%2f%2fuk-script.dotmetrics.net%2fdoor.js%3fid%3d6669&dfph=&ver=374",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://rm-script.dotmetrics.net/hit.gif?id=6669&url=https%3A%2F%2Fwww.independent.co.uk%2F&dom=www.independent.co.uk&r=1794108251969&pvs=1&pvid=82157fa2-9c17-476b-ad61-38703c4a908e&c=false&tzOffset=0",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "blob:https://www.independent.co.uk/3eaca52b-cb3a-4aa7-858b-bd89b12ab0e6",
+      "domain": "blob",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/Scripts/ncs-script.js?v=374",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-PZJCN8L90Z",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-PZJCN8L90Z&gtm=45je6b41v9224384835za208zb830666029zd830666029xf1&_p=1794108251288&gcs=G100&gcd=13q3p3q3q5l1&npa=1&dma_cps=-&dma=1&tcfd=1065q&_eu=EAAAAGAC&cid=1109067944.1794108252&frm=0&ir=1&pscdl=denied&rcb=3&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814185~124013661&dr=&dt=News%20%7C%20The%20Independent%20%7C%20Today%27s%20headlines%20and%20latest%20breaking%20news&sid=1794108251&sct=1&seg=0&dl=https%3A%2F%2Fwww.independent.co.uk%2F&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.pagename=frontpage&ep.code_version=main.b6bc29e1436a54ef8f92.js&ep.logged_in_status=not%20logged%20in&epn.is_selling_page=0&ep.homepage_update_time=Sunday%2C%2008%20November%202026%2001%3A09%3A30&ep.page_type=frontpage&ep.channel_hierarchy=news&ep.site_section=news&ep.components_list=A2%2C8%2CA11&ep.sub_section=news&ep.sub_section_2=news&up.user_status=anonymous&tfd=3403",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://boot.pbstck.com/v1/tag/f900fba3-c112-4964-a356-3f78a5b90546",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.pbstck.com/user-sessions-a657a01.js",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.pbstck.com/collector-1bd8f5d.js",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/web-vitals?fcp=2060.000&tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/web-vitals?ttfb=1945.500&tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/service/privacy-policy-a6184181.html",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/page?tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/speculationrules.json",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Medium.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Medium-Italic.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Regular.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Regular-Italic.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/bombora-rtvi.342153697a4aa13391cc.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://spellknight.com/build/r4uaun_sooo0e.min.js",
+      "domain": "spellknight.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.monetizationos.com/web-components-latest.js",
+      "domain": "monetizationos.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/init-firebase.9a14817496339c0a04ba.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-archipelago.3afeaaaf7360fb5419b1.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-components-base.4129d5c61d661883f7bd.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-components-article.b12a0a559fe50e27d17f.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/sourcepoint.43df64b4441a5ed02785.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/unified/wrapperMessagingWithoutDetection.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/analytics.ff3daa859b91f02dc6a9.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/static-assets/images/MOS+prompts/Independent+Membership+White.png",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/bombora.658380453b465c437b79.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://ats-wrapper.privacymanager.io/ats-modules/203e3874-5877-45ec-a8d4-5beaa84bab40/ats.js",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/main.3cc419884365ceb2c3b1.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/init_register_wall.f6e3109344d0e14d4fb9.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/article.6f12ca77e3b8e12a209e.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/braze-user-bundle.02a760a68106eed80929.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://vi.ml314.com/get?eid=85600&tk=8iMzpmv44Ih7diF5rdVx7hCBBeLRBbxkjS2fip6kHt9Y3d&fp=",
+      "domain": "ml314.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Medium.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Regular.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/unified/4.41.0/gdpr-tcf.e7290277d588e0de9bb9.bundle.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&account_id=1746",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5XT7NPD",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610300102/pubads_impl.js?cb=122882122",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://geo.privacymanager.io/",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/ga4-shared-event-handlers.23d4a44ddfd03bfcd226.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/ga4-article-event-handlers.8d2a3ac35b751257adcf.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/wrapper/v2/meta-data?hasCsp=true&accountId=1746&env=prod&metadata=%7B%22gdpr%22%3A%7B%7D%7D&propertyId=17483&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1746%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22gdpr%22%3A%7B%22consentStatus%22%3A%7B%22hasConsentData%22%3Afalse%2C%22consentedToAll%22%3Afalse%2C%22consentedToAny%22%3Afalse%2C%22rejectedAny%22%3Afalse%7D%2C%22hasLocalData%22%3Afalse%2C%22targetingParams%22%3A%7B%22ad_free%22%3Afalse%2C%22registered%22%3Afalse%2C%22premium%22%3Afalse%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcmpv2.independent.co.uk%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html%22%7D&localState=%7B%22gdpr%22%3A%7B%22mmsCookies%22%3A%5B%22_sp_v1_ss%3D1%3AH4sIAAAAAAAAAItWqo5RKimOUbKKHqKMPBDDoDZWJ0YpFcTMK83JAbJLwAqqa0clRqCEUiwAL6W4i9gCAAA%253D%22%5D%2C%22propertyId%22%3A17483%2C%22messageId%22%3A1515505%7D%7D&metadata=%7B%22gdpr%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=%7B%22gdpr%22%3A%7B%22_sp_v1_data%22%3A%221321232%22%2C%22_sp_v1_p%22%3A%22539%22%7D%7D&ch=530169810530169810e1f9&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://delivery.adrecover.com/49102/adRecover.js",
+      "domain": "adrecover.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://client.px-cloud.net/PX5chHLpUs/main.min.js",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://delivery.adrecover.com/block.jpg",
+      "domain": "adrecover.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://aax.amazon-adsystem.com/e/dtb/bid/91475.30/0/prebid?adunitid=oaralv_300x250_9714779",
+      "domain": "amazon-adsystem.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Amazon",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://script.crazyegg.com/pages/scripts/0131/9866.js",
+      "domain": "crazyegg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Crazy Egg",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/34448457/DV1395182/pub.js",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-PZJCN8L90Z&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/signals/ids/pub.json?ctx=34448457&cmp=DV1395182&url=https%3A%2F%2Findependent.co.uk&ids=1&token=P%2B0L%2Bg61izyJ30eNSD25cIe2Kzl020nLjMK3eMU1N4sydugiXwVqbCdxpfIze8R9eIAUfTgxY7BkzURi0OhLP67GiQW9Dmbka10Vk%2FPweIWwuNKZYtqBa7D%2Ffco6viE%2B%2BUO0lcyA3uxrulm0TNUxHyWQu2kFry0MphJw8pM%3D",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/signals/bsc/pub.json?ctx=34448457&cmp=DV1395182&url=https%3A%2F%2Findependent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&bsc=1&abs=1&cbs=1&token=P%2B0L%2Bg61izyJ30eNSD25cIe2Kzl020nLjMK3eMU1N4sydugiXwVqbCdxpfIze8R9eIAUfTgxY7BkzURi0OhLP67GiQW9Dmbka10Vk%2FPweIWwuNKZYtqBa7D%2Ffco6viE%2B%2BUO0lcyA3uxrulm0TNUxHyWQu2kFry0MphJw8pM%3D",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202611050101/gpt",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://vtrk.dv.tech/?ec=dvtag&ea=content-metrics-rejection&ctx=dvtag&cmp=DV1395182&cd110=https%3A%2F%2Findependent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&cd113=41db87d9-9364-47c6-a28b-8c1ae757a0de&cm110=0&cm118=1794108256.844&cm119=1794108256.861&cm120=0&cd114=0&cd115=1&cd116=2&cd102=f6907a3&cd107=41db87d9-9364-47c6-a28b-8c1ae757a0de&cd200=com&cd105=34448457&cd106=DV1395182&cd104=www.independent.co.uk&cd199=https%3A%2F%2Findependent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&cd101=content-metrics-rejection&cm101=1&cid=743345e3-1456-4bab-916d-a957864b940d&t=event&v=1&z=743345e3-1456-4bab-916d-a957864b940d&cd160=743345e3-1456-4bab-916d-a957864b940d",
+      "domain": "dv.tech",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&scrsrc=www.googletagmanager.com&rnd=503749801.1794108257&navt=n&npa=1&gdpr=1&gdpr_consent=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA&ep.ads_data_redaction=0&gtm=45He6b41v830666029za200zd830666029xeaxf1&gcs=G100&gcd=13q3p3q3q5l1&dma_cps=-&dma=1&tcfd=1065a&tag_exp=115616986~115938466~115938468~118897920~118897930~120385422~120412526~120420414~120469145~120469153~121049589~121246026~121246034~121284208~123814185&tft=1794108256863&tfd=502&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.npttech.com/advertising.js",
+      "domain": "npttech.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/Agent/GA/UniversalID/IIQUniversalID.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.7.1.min.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/door.js?id=6669",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://static.chartbeat.com/js/chartbeat_video.js",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://static.chartbeat.com/js/chartbeat_mab.js",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://5d79bce7-5d2b-427e-a6c4-b89b6c7bf048.edge.permutive.app/0c92f3e4-292f-4236-9f6b-47069949b84b-web.js",
+      "domain": "permutive.app",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Permutive",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.taboola.com/webpush/publishers/1857141/taboola-push-sdk.js",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/prebid.ba47adb99c66add2ada8.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/iframe/native-cookiesync-frames.html",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://experianmatch.info/log.js?publisherid=MP001",
+      "domain": "experianmatch.info",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://metrics.rapidedge.io/gamera.js?ltv=1&audience=1&tpcs=1&partner=theindependent&wait=1",
+      "domain": "rapidedge.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ping.chartbeat.net/ping?h=independent.co.uk&p=%2Fservice%2Fprivacy-policy-a6184181.html&u=BcD0L-Ceapg-CxdeXX&d=independent.co.uk&g=62356&g0=mediatype_image%2Carticle-typenon-premium%2C%2Cservice%2Ctopic-user-policies&g1=No%20Author&g7=1790103113000&n=1&f=00001&c=0&x=0&m=0&y=22215&o=1280&w=720&j=45&R=1&W=0&I=0&E=0&e=0&r=&PA=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&b=577&_s=%7B%22l%22%3Anull%2C%22hashed_email%22%3Anull%7D&t=CJGWluBdxUYeBxwOI8D9jNpMDAlx1q&V=154&z=t%3DlQH8WCMhp7IsEadRDo_-_kCfnykB%26E%3D4%26x%3D0%26c%3D0.08%26y%3D12748%26w%3D720&i=Privacy%20Policy&tz=0&_acct=anon&sn=1&sv=CpYa6mBFWm4LDMSy9WC70EvOBc4F9e&sr=external&sd=1&im=067b0fff&_",
+      "domain": "chartbeat.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://mab.chartbeat.com/mab_strategy/headline_testing/get_strategy/?host=independent.co.uk&domain=independent.co.uk&path=%2Fservice%2Fprivacy-policy-a6184181.html",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "blob:https://www.independent.co.uk/61c5dd6e-383c-4a0b-badc-bdd4cebd2921",
+      "domain": "blob",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ift.px-cloud.net/ns?c=e0f3ac00-db23-11f1-9d72-5bf778cabe87",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json?date=20261108",
+      "domain": "jsdelivr.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://api.idsequoia.ai/rtd.js?siteId=ff23474a2dd11f76&session=0798f7de-5066-4687-b9ee-e6f4324ce948&r=www.independent.co.uk",
+      "domain": "idsequoia.ai",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://api-gdpr.intentiq.com/profiles_engine/ProfilesEngineServlet?at=46&mi=10&dpi=859265777&pt=17&dpn=1&jsver=6.253&iiqidtype=2&iiqpcid=4ccd551d-3b9a-0168-4776-080f35375fe5&iiqpciddate=1794108257023&jaesc=0&jafc=0&jaensc=0&iiqlocalstorageenabled=true&tsrnd=402_1794108257028&cttl=0&gpp=undefined&gdpr_consent=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA&tcfv=2&us_privacy=undefined&gdpr=1&requestRtt=0&lastDataUpdateDate=0&testGroup=A&japbjs=true&japs=false&vrref=https%3A%2F%2Fwww.independent.co.uk",
+      "domain": "intentiq.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sync-gdpr.intentiq.com/profiles_engine/ProfilesEngineServlet?at=20&mi=10&secure=1&dpi=859265777&iiqidtype=2&iiqpcid=4ccd551d-3b9a-0168-4776-080f35375fe5&iiqpciddate=1794108257023&tsrnd=354_1794108257029&jsver=6.253&testPercentage=95&testGroup=A&uh=%7B%220%22%3A%22%5C%22Not%3AA-Brand%5C%22%3Bv%3D%5C%228%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22156%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22156%5C%22%22%2C%221%22%3A%22%3F0%22%2C%222%22%3A%22%5C%22Linux%5C%22%22%2C%223%22%3A%22%5C%22x86%5C%22%22%2C%224%22%3A%22%5C%2264%5C%22%22%2C%227%22%3A%22%3F0%22%2C%228%22%3A%22%5C%22Not%3AA-Brand%5C%22%3Bv%3D%5C%228.0.0.0%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22156.0.8078.4%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22156.0.8078.4%5C%22%22%7D&vrref=https%3A%2F%2Fwww.independent.co.uk&gdpr_consent=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA&us_privacy=undefined&gpp=undefined&gpc=undefined&gdpr=1",
+      "domain": "intentiq.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/hit.gif?id=6669&url=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&dom=www.independent.co.uk&r=1794108257033&pvs=1&ecid=4fd6a27f-72e1-45a6-9ef9-6b2112193a6f&c=false&tzOffset=0&doorUrl=http%3a%2f%2fuk-script.dotmetrics.net%2fdoor.js%3fid%3d6669&dfph=&ver=374",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://rm-script.dotmetrics.net/hit.gif?id=6669&url=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&dom=www.independent.co.uk&r=1794108257033&pvs=1&pvid=4fd6a27f-72e1-45a6-9ef9-6b2112193a6f&c=false&tzOffset=0",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://delivery.adrecover.com/block.jpg?ts=1794108257042",
+      "domain": "adrecover.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sdk.ocmthood.com/sdk/ht.js?tag=NjY4PXN0N8Lw8zQ2VFIxNDY4MjE0NtYI",
+      "domain": "ocmthood.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=push_promptRolloutUser&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=arrive&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=consentCheckStarted&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=consentDataChanged&gdpr=2&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://spellknight.com/g1jg3h/ticvq6tmqov4p25c6fg",
+      "domain": "spellknight.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://experianmatch.info/log?pxl=1&fpid=&publisherid=MP001&dnt=null&domain=www.independent.co.uk&gdprApplies=true&tcString=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA",
+      "domain": "experianmatch.info",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://geo.privacymanager.io/",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.mediavoice.com/nativeads/script/esi/esi-rr-collection.js",
+      "domain": "mediavoice.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/Scripts/ncs-script.js?v=374",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://cdn.ocmtag.com/tag/NjY4PXN0N8Lw8zQ2VFIxNDY4MjE0NtYI.js",
+      "domain": "ocmtag.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://spellknight.com/g1jg3h/ticvq6tmqov4p25c6fg",
+      "domain": "spellknight.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=prompt&gdpr=2&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://api.idsequoia.ai/g",
+      "domain": "idsequoia.ai",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://api.idsequoia.ai/g",
+      "domain": "idsequoia.ai",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://polarcdn-terrax.com/nativeads/script/esi/esi-rr-collection.js",
+      "domain": "polarcdn-terrax.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-PZJCN8L90Z&gtm=45je6b41v9224384835za208zb830666029zd830666029xf1&_p=1794108256708&gcs=G100&gcd=13q3p3q3q5l1&npa=1&dma_cps=-&dma=1&tcfd=1065q&_eu=EAAAAGAC&cid=1997165762.1794108257&frm=0&ir=1&pscdl=denied&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123814183~124013660&dr=&dt=Privacy%20policy%20%7C%20The%20Independent&sid=1794108256&sct=1&seg=0&dl=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fprivacy-policy-a6184181.html&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.pagename=Privacy%20notice&ep.code_version=main.3cc419884365ceb2c3b1.js&ep.logged_in_status=not%20logged%20in&epn.is_selling_page=0&ep.page_type=Article&ep.channel_hierarchy=service&ep.site_section=service&ep.components_list=A2%2CA4%2CF1%2CD3&ep.sub_section=service&ep.sub_section_2=service&ep.article_author=&ep.article_name=privacy-policy-a6184181.html&ep.article_premium_status=free&epn.is_premium=0&ep.article_publication_date=Tuesday%2C%2022%20September%202026&ep.content_id=28738&ep.headline=Privacy%20Policy&ep.article_publication_time=18%3A51%3A53&ep.lead_media_item=image&ep.content_source=Internal%20-%20Not%20for%20syndication&epn.word_count=7066&epn.internal_link_count=0&ep.article_modification_date=Tuesday%2C%2022%20September%202026&ep.article_topic_tags=user%20policies&ep.content_type=Service&ep.headline_meta_title=Privacy%20policy&ep.headline_short=Privacy%20Policy%20-%20please%20read%20carefully&ep.headline_social=Privacy%20Policy%20-%20please%20read%20carefully&up.user_status=anonymous&tfd=1014",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://plugin.mediavoice.com/plugin.js",
+      "domain": "mediavoice.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.taboola.com/webpush/tgframe_v2.html",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-PZJCN8L90Z",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/pagead/ping?e=1",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://spellknight.com/g1jg3h/ticvq6tmqov4p25c6fg",
+      "domain": "spellknight.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://boot.pbstck.com/v1/tag/f900fba3-c112-4964-a356-3f78a5b90546",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.pbstck.com/user-sessions-a657a01.js",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.pbstck.com/collector-1bd8f5d.js",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/page?tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/web-vitals?fcp=188.000&tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/web-vitals?ttfb=107.100&tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/service/cookie-policy-a6184186.html",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/speculationrules.json",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Medium.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Medium-Italic.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Regular.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Serif-Regular-Italic.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/bombora-rtvi.342153697a4aa13391cc.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://spellknight.com/build/r4uaun_sooo0e.min.js",
+      "domain": "spellknight.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.monetizationos.com/web-components-latest.js",
+      "domain": "monetizationos.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/init-firebase.9a14817496339c0a04ba.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-archipelago.2a34c3a7a5c56550e95b.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-components-base.97d8c6f2b0418d882c0f.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/react-components-article.d3ab752530bca5cbf4a1.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/sourcepoint.43df64b4441a5ed02785.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/unified/wrapperMessagingWithoutDetection.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/analytics.5374c69c97e45b4bfc6f.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/static-assets/images/MOS+prompts/Independent+Membership+White.png",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/bombora.658380453b465c437b79.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://ats-wrapper.privacymanager.io/ats-modules/203e3874-5877-45ec-a8d4-5beaa84bab40/ats.js",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/main.56374a9ccd99a15bcb5b.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/init_register_wall.5b75830f05c7c0e41511.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/article.98e80fe9ba4f12ebbd6c.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/braze-user-bundle.02a760a68106eed80929.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://vi.ml314.com/get?eid=85600&tk=8iMzpmv44Ih7diF5rdVx7hCBBeLRBbxkjS2fip6kHt9Y3d&fp=",
+      "domain": "ml314.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Regular.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://assets.the-independent.com/fonts/Independent-Sans-Medium.woff2",
+      "domain": "the-independent.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://delivery.adrecover.com/49102/adRecover.js",
+      "domain": "adrecover.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://client.px-cloud.net/PX5chHLpUs/main.min.js",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://delivery.adrecover.com/block.jpg",
+      "domain": "adrecover.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://aax.amazon-adsystem.com/e/dtb/bid/91475.30/0/prebid?adunitid=oaralv_300x250_9714779",
+      "domain": "amazon-adsystem.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Amazon",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://ift.px-cloud.net/ns?c=e5ebcc10-db23-11f1-958d-7716b73f487f",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/unified/4.41.0/gdpr-tcf.e7290277d588e0de9bb9.bundle.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/mms/v2/get_site_data?hasCsp=true&href=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&account_id=1746",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5XT7NPD",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202610300102/pubads_impl.js?cb=122882122",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://geo.privacymanager.io/",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/ga4-shared-event-handlers.614e07c1c30929978490.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/ga4-article-event-handlers.640f712f89e1b9ea0bc6.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/wrapper/v2/meta-data?hasCsp=true&accountId=1746&env=prod&metadata=%7B%22gdpr%22%3A%7B%7D%7D&propertyId=17483&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.npttech.com/advertising.js",
+      "domain": "npttech.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cmpv2.independent.co.uk/wrapper/v2/messages?hasCsp=true&env=prod&body=%7B%22accountId%22%3A1746%2C%22campaignEnv%22%3A%22prod%22%2C%22campaigns%22%3A%7B%22gdpr%22%3A%7B%22consentStatus%22%3A%7B%22hasConsentData%22%3Afalse%2C%22consentedToAll%22%3Afalse%2C%22consentedToAny%22%3Afalse%2C%22rejectedAny%22%3Afalse%7D%2C%22hasLocalData%22%3Afalse%2C%22targetingParams%22%3A%7B%22ad_free%22%3Afalse%2C%22registered%22%3Afalse%2C%22premium%22%3Afalse%7D%7D%7D%2C%22clientMMSOrigin%22%3A%22https%3A%2F%2Fcmpv2.independent.co.uk%22%2C%22hasCSP%22%3Atrue%2C%22includeData%22%3A%7B%22localState%22%3A%7B%22type%22%3A%22string%22%7D%2C%22actions%22%3A%7B%22type%22%3A%22RecordString%22%7D%2C%22cookies%22%3A%7B%22type%22%3A%22RecordString%22%7D%7D%2C%22propertyHref%22%3A%22https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fcookie-policy-a6184186.html%22%7D&localState=%7B%22gdpr%22%3A%7B%22mmsCookies%22%3A%5B%22_sp_v1_ss%3D1%3AH4sIAAAAAAAAAItWqo5RKimOUbKKHqKMPBDDoDZWJ0YpFcTMK83JAbJLwAqqa0clRqCEkg6eZA1VPKStwmewUiwAaEnp1NUDAAA%253D%22%5D%2C%22propertyId%22%3A17483%2C%22messageId%22%3A0%7D%7D&metadata=%7B%22gdpr%22%3A%7B%22applies%22%3Atrue%7D%7D&nonKeyedLocalState=%7B%22gdpr%22%3A%7B%22_sp_v1_data%22%3A%221321232%22%2C%22_sp_v1_p%22%3A%22539%22%7D%7D&ch=530169810530169810e1f9&scriptVersion=4.41.0&scriptType=unified",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-3.7.1.min.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://script.crazyegg.com/pages/scripts/0131/9866.js",
+      "domain": "crazyegg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Crazy Egg",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/34448457/DV1395182/pub.js",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-PZJCN8L90Z&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/signals/ids/pub.json?ctx=34448457&cmp=DV1395182&url=https%3A%2F%2Findependent.co.uk&ids=1&token=P%2B0L%2Bg61izyJ30eNSD25cIe2Kzl020nLjMK3eMU1N4sydugiXwVqbCdxpfIze8R9eIAUfTgxY7BkzURi0OhLP67GiQW9Dmbka10Vk%2FPweIWwuNKZYtqBa7D%2Ffco6viE%2B%2BUO0lcyA3uxrulm0TNUxHyWQu2kFry0MphJw8pM%3D",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://pub.doubleverify.com/dvtag/signals/bsc/pub.json?ctx=34448457&cmp=DV1395182&url=https%3A%2F%2Findependent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&bsc=1&abs=1&cbs=1&token=P%2B0L%2Bg61izyJ30eNSD25cIe2Kzl020nLjMK3eMU1N4sydugiXwVqbCdxpfIze8R9eIAUfTgxY7BkzURi0OhLP67GiQW9Dmbka10Vk%2FPweIWwuNKZYtqBa7D%2Ffco6viE%2B%2BUO0lcyA3uxrulm0TNUxHyWQu2kFry0MphJw8pM%3D",
+      "domain": "doubleverify.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://spellknight.com/g1jg3h/ticvq6tmqov4p25c6fg",
+      "domain": "spellknight.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/Agent/GA/UniversalID/IIQUniversalID.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://delivery.adrecover.com/block.jpg?ts=1794108265583",
+      "domain": "adrecover.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/pagead/managed/dict/m202611050101/gpt",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://spellknight.com/g1jg3h/ticvq6tmqov4p25c6fg",
+      "domain": "spellknight.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://vtrk.dv.tech/?ec=dvtag&ea=content-metrics-rejection&ctx=dvtag&cmp=DV1395182&cd110=https%3A%2F%2Findependent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&cd113=00246a29-6b66-4e09-bf88-a251f11cc243&cm110=0&cm118=1794108265.573&cm119=1794108265.659&cm120=0&cd114=0&cd115=1&cd116=2&cd102=f6907a3&cd107=00246a29-6b66-4e09-bf88-a251f11cc243&cd200=com&cd105=34448457&cd106=DV1395182&cd104=www.independent.co.uk&cd199=https%3A%2F%2Findependent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&cd101=content-metrics-rejection&cm101=1&cid=b6afdbfd-d26b-4da7-a12f-bc12e01b295b&t=event&v=1&z=b6afdbfd-d26b-4da7-a12f-bc12e01b295b&cd160=b6afdbfd-d26b-4da7-a12f-bc12e01b295b",
+      "domain": "dv.tech",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=7&frm=0&apvc=1&ae=g&en=page_view&dl=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&scrsrc=www.googletagmanager.com&rnd=1010148450.1794108266&navt=n&npa=1&gdpr=1&gdpr_consent=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA&ep.ads_data_redaction=0&gtm=45He6b41v830666029za200zd830666029xeaxf1&gcs=G100&gcd=13q3p3q3q5l1&dma_cps=-&dma=1&tcfd=1065a&tag_exp=115938466~115938469~118897920~118897930~120385422~120412526~120420414~120469145~120469153~121049589~121246026~121246034~121284208~123630401~123814185&tft=1794108265661&tfd=520&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/door.js?id=6669",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://static.chartbeat.com/js/chartbeat_video.js",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://static.chartbeat.com/js/chartbeat_mab.js",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://5d79bce7-5d2b-427e-a6c4-b89b6c7bf048.edge.permutive.app/0c92f3e4-292f-4236-9f6b-47069949b84b-web.js",
+      "domain": "permutive.app",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Permutive",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.taboola.com/webpush/publishers/1857141/taboola-push-sdk.js",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.independent.co.uk/_build/prebid.3101d07f90fbeaf0124b.js",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.independent.co.uk/iframe/native-cookiesync-frames.html",
+      "domain": "independent.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://experianmatch.info/log.js?publisherid=MP001",
+      "domain": "experianmatch.info",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://metrics.rapidedge.io/gamera.js?ltv=1&audience=1&tpcs=1&partner=theindependent&wait=1",
+      "domain": "rapidedge.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ping.chartbeat.net/ping?h=independent.co.uk&p=%2Fservice%2Fcookie-policy-a6184186.html&u=BcD0L-Ceapg-CxdeXX&d=independent.co.uk&g=62356&g0=mediatype_image%2Carticle-typenon-premium%2C%2Cservice%2Ctopic-user-policies&g1=No%20Author&g7=1720702609000&n=1&f=00001&c=0&x=0&m=0&y=7027&o=1280&w=720&j=45&R=1&W=0&I=0&E=0&e=0&r=&PA=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&b=573&_s=%7B%22l%22%3Anull%2C%22hashed_email%22%3Anull%7D&t=Cu5W6BCkzHNSB6d6iUlkfr4DL6Z51&V=154&z=t%3DCJGWluBdxUYeBxwOI8D9jNpMDAlx1q%26E%3D5%26x%3D0%26c%3D0.14%26y%3D22215%26w%3D720&i=Cookie%20Notice&tz=0&_acct=anon&sn=1&sv=DSvB47BSvCGEBhr4BvCDD14kDPPTBF&sr=external&sd=1&im=067b0fff&_",
+      "domain": "chartbeat.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://mab.chartbeat.com/mab_strategy/headline_testing/get_strategy/?host=independent.co.uk&domain=independent.co.uk&path=%2Fservice%2Fcookie-policy-a6184186.html",
+      "domain": "chartbeat.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Chartbeat",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "blob:https://www.independent.co.uk/c1395aa6-f7b6-4e76-8a5b-55ee271f9e00",
+      "domain": "blob",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/hit.gif?id=6669&url=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&dom=www.independent.co.uk&r=1794108265730&pvs=1&ecid=60e5efa1-3a7f-4c9f-aacb-92b6e14210fe&c=false&tzOffset=0&doorUrl=http%3a%2f%2fuk-script.dotmetrics.net%2fdoor.js%3fid%3d6669&dfph=&ver=374",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://rm-script.dotmetrics.net/hit.gif?id=6669&url=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&dom=www.independent.co.uk&r=1794108265730&pvs=1&pvid=60e5efa1-3a7f-4c9f-aacb-92b6e14210fe&c=false&tzOffset=0",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://sdk.ocmthood.com/sdk/ht.js?tag=NjY4PXN0N8Lw8zQ2VFIxNDY4MjE0NtYI",
+      "domain": "ocmthood.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=push_promptRolloutUser&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=arrive&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=consentCheckStarted&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=consentDataChanged&gdpr=2&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.ocmtag.com/tag/NjY4PXN0N8Lw8zQ2VFIxNDY4MjE0NtYI.js",
+      "domain": "ocmtag.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://beacon.taboola.com/?cat=webpush&platform_type=web&v=4.0&pId=1857141&src=esimedia-pushnetwork&event=prompt&gdpr=2&features=push_prompt&rollout_features=push_prompt",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json?date=20261108",
+      "domain": "jsdelivr.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://api.idsequoia.ai/rtd.js?siteId=ff23474a2dd11f76&session=81becdb0-923c-4552-9b17-6037e2602352&r=www.independent.co.uk",
+      "domain": "idsequoia.ai",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://sync-gdpr.intentiq.com/profiles_engine/ProfilesEngineServlet?at=20&mi=10&secure=1&dpi=859265777&iiqidtype=2&iiqpcid=8c9bde87-886f-0df2-c494-871c98822772&iiqpciddate=1794108265796&tsrnd=509_1794108265801&jsver=6.253&testPercentage=95&testGroup=A&uh=%7B%220%22%3A%22%5C%22Not%3AA-Brand%5C%22%3Bv%3D%5C%228%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22156%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22156%5C%22%22%2C%221%22%3A%22%3F0%22%2C%222%22%3A%22%5C%22Linux%5C%22%22%2C%223%22%3A%22%5C%22x86%5C%22%22%2C%224%22%3A%22%5C%2264%5C%22%22%2C%227%22%3A%22%3F0%22%2C%228%22%3A%22%5C%22Not%3AA-Brand%5C%22%3Bv%3D%5C%228.0.0.0%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22156.0.8078.4%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22156.0.8078.4%5C%22%22%7D&vrref=https%3A%2F%2Fwww.independent.co.uk&gdpr_consent=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA&us_privacy=undefined&gpp=undefined&gpc=undefined&gdpr=1",
+      "domain": "intentiq.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://experianmatch.info/log?pxl=1&fpid=&publisherid=MP001&dnt=null&domain=www.independent.co.uk&gdprApplies=true&tcString=CQtXVMAQtXVMAAGABCENC4FgAAAAAEPgAAwIAAAX3gWAABgAUABYAFQALgAcABAACQAFQAMgAaAA9AB-AEUAJgATgAqgB-AEIAI4AcgA7gB4wEHAQgAiwBIgCUgGcANoAeoBMgCrAFrALzAYyAyQBlgDaAHAAOWAeSA_sCCYEZgL7gHhAAQACwCRBIAQAFwL7hQBIACgASAAqAB6APEAhAB6gGMgOWHQAQL7jwBQAAQAFAAqAB6AD8AJwA8QD1AMZAf2QAAgEiIQBwAFgBVAD8AO4AlIBtAFWEQAID-yQAEAEhKACBfcmAGAACACoAzgC1gGMgOAKAAQH9lQAoAAQAFAAqAWsAxksABAJSWgBADuAVYA.IL7sB5C5MQSFBKCJwIJoAQAQVwBgAIIAgAgAAAAABQBIQAIwEFAECAACAAAACAAIAAAAAIABIEABAQAAAAAABAAAAAEAAAAAAIAAAAAAAQABAAAAAAAAAUAAAAAAQAgAAgAAAQAIAQEgAAAAAAAAEIAAFAAAQAAAAAAAiQAAAAAAAgAgAkABAAAAAAAAAQBABEAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAABAABAAAABAAAAAAAAAAAAAAAAAAACAA.YAAAAAAAAAAA",
+      "domain": "experianmatch.info",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://geo.privacymanager.io/",
+      "domain": "privacymanager.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "LiveRamp",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.mediavoice.com/nativeads/script/esi/esi-rr-collection.js",
+      "domain": "mediavoice.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://polarcdn-terrax.com/nativeads/script/esi/esi-rr-collection.js",
+      "domain": "polarcdn-terrax.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://uk-script.dotmetrics.net/Scripts/ncs-script.js?v=374",
+      "domain": "dotmetrics.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Dotmetrics",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://plugin.mediavoice.com/plugin.js",
+      "domain": "mediavoice.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.taboola.com/webpush/tgframe_v2.html",
+      "domain": "taboola.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Taboola",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-PZJCN8L90Z",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-PZJCN8L90Z&gtm=45je6b41v9224384835za208zb830666029zd830666029xf1&_p=1794108265445&gcs=G100&gcd=13q3p3q3q5l1&npa=1&dma_cps=-&dma=1&tcfd=1065q&_eu=EAAAAGAC&cid=990520556.1794108266&frm=0&ir=1&pscdl=denied&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121246026~121246034~123814185~124013662&dr=&dt=Cookie%20Notice%20%7C%20The%20Independent&sid=1794108265&sct=1&seg=0&dl=https%3A%2F%2Fwww.independent.co.uk%2Fservice%2Fcookie-policy-a6184186.html&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.pagename=Cookie%20policies&ep.code_version=main.56374a9ccd99a15bcb5b.js&ep.logged_in_status=not%20logged%20in&epn.is_selling_page=0&ep.page_type=Article&ep.channel_hierarchy=service&ep.site_section=service&ep.components_list=A2%2CA4%2CF1%2CD3&ep.sub_section=service&ep.sub_section_2=service&ep.article_author=&ep.article_name=cookie-policy-a6184186.html&ep.article_premium_status=free&epn.is_premium=0&ep.article_publication_date=Thursday%2C%2011%20July%202024&ep.content_id=110124&ep.headline=Cookie%20Notice&ep.article_publication_time=12%3A56%3A49&ep.lead_media_item=image&ep.content_source=Internal&epn.word_count=1865&epn.internal_link_count=0&ep.article_modification_date=Thursday%2C%2011%20July%202024&ep.article_topic_tags=user%20policies&ep.content_type=Service&ep.headline_meta_title=Cookie%20Notice&ep.headline_short=Cookie%20Notice%20-%20please%20read%20carefully&ep.headline_social=Cookie%20Notice%20-%20please%20read%20carefully&up.user_status=anonymous&tfd=952",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://boot.pbstck.com/v1/tag/f900fba3-c112-4964-a356-3f78a5b90546",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.pbstck.com/user-sessions-a657a01.js",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.pbstck.com/collector-1bd8f5d.js",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/page?tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/web-vitals?fcp=152.000&tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://intake.pbstck.com/v1/intake/web-vitals?ttfb=95.700&tId=f900fba3-c112-4964-a356-3f78a5b90546&v=none&s=none&c=1",
+      "domain": "pbstck.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://collector-px5chhlpus.px-cloud.net/api/v2/collector",
+      "domain": "px-cloud.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "_pc_subscriber_origin",
+        "value": "uk",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "anon-session-id",
+        "value": "94b808507208M1ruy90dx4Z40c",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "esi-uuid",
+        "value": "f3ae71ee-5ed7-49dc-9aae-50f521f7330c",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": 1825644250.876906,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "esi-permutive-id",
+        "value": "f3ae71ee-5ed7-49dc-9aae-50f521f7330c",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "Locale",
+        "value": "UK",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "gdpr",
+        "value": "1",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "feat__piano_use_vanity_domain",
+        "value": "true",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": 1799292250.876849,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "subscriber_origin",
+        "value": "uk",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "is_mobile_or_tablet",
+        "value": "false",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": 1825644250.877001,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "placeholder"
+      },
+      {
+        "name": "feat__article_complete_tracking_commercial",
+        "value": "true",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": 1799292250.877149,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "_sp_su",
+        "value": "false",
+        "domain": ".independent.co.uk",
+        "path": "/",
+        "expires": 1825644251.544657,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "placeholder"
+      },
+      {
+        "name": "_cb",
+        "value": "BcD0L-Ceapg-CxdeXX",
+        "domain": ".independent.co.uk",
+        "path": "/",
+        "expires": 1828236251,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": "Chartbeat",
+        "value_kind": "id"
+      },
+      {
+        "name": "_chartbeat2",
+        "value": ".1794108251961.1794108251961.1.xMEx5D4t9cLC-tw6bxfRUBD696LD.1",
+        "domain": ".independent.co.uk",
+        "path": "/",
+        "expires": 1828236251,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": "Chartbeat",
+        "value_kind": "id"
+      },
+      {
+        "name": "_cb_svref",
+        "value": "external",
+        "domain": ".independent.co.uk",
+        "path": "/",
+        "expires": 1794110051,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": "Chartbeat",
+        "value_kind": "value"
+      },
+      {
+        "name": "__adblocker",
+        "value": "false",
+        "domain": "www.independent.co.uk",
+        "path": "/",
+        "expires": 1794108552,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "placeholder"
+      }
+    ],
+    "after_reject": []
+  },
+  "policy": {
+    "url": "https://www.independent.co.uk/service/privacy-policy-a6184181.html",
+    "found": true,
+    "companies_named": [
+      "LiveRamp",
+      "The Trade Desk",
+      "Amazon Publisher Services",
+      "Independent Digital News and Media LLC",
+      "Evening Standard Limited"
+    ],
+    "dpo_contact": "dpo@independent.co.uk",
+    "cookie_policy_url": "https://www.independent.co.uk/service/cookie-policy-a6184186.html",
+    "format": "html",
+    "text_chars": 38645,
+    "chars_sent": 38645
+  },
+  "visited_pages": [],
+  "fingerprinting": [
+    {
+      "technique": "audio",
+      "script": "https://client.px-cloud.net/PX5chHLpUs/main.min.js",
+      "detail": "rendered audio offline (OfflineAudioContext)",
+      "phase": "before_consent"
+    },
+    {
+      "technique": "webgl",
+      "script": "https://client.px-cloud.net/PX5chHLpUs/main.min.js",
+      "detail": "read the GPU vendor/model (UNMASKED_*_WEBGL)",
+      "phase": "before_consent"
+    }
+  ],
+  "id_leaks": [
+    {
+      "cookie": "_cb",
+      "cookie_domain": "independent.co.uk",
+      "id_preview": "BcD0L-\u2026deXX",
+      "to": "chartbeat.net",
+      "company": "Chartbeat",
+      "category": "Analytics",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://ping.chartbeat.net/ping?h=independent.co.uk&p=%2F&u=BcD0L-Ceapg-CxdeXX&d=independent.co.uk&g=62356&g0=No%20Section&g1=No%20Author&n=1&f=00001&c=0&x=0&m="
+    },
+    {
+      "cookie": "_chartbeat2",
+      "cookie_domain": "independent.co.uk",
+      "id_preview": "xMEx5D\u202696LD",
+      "to": "chartbeat.net",
+      "company": "Chartbeat",
+      "category": "Analytics",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://ping.chartbeat.net/ping?h=independent.co.uk&p=%2F&u=BcD0L-Ceapg-CxdeXX&d=independent.co.uk&g=62356&g0=No%20Section&g1=No%20Author&n=1&f=00001&c=0&x=0&m="
+    }
+  ],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "critical",
+      "ai_severity": "high",
+      "severity_note": "Raised to critical: rated high and backed by advertising or session-replay evidence.",
+      "title": "Advertising trackers ran before consent was obtained",
+      "detail": "Requests to Amazon, Google, LiveRamp, Permutive and Taboola occurred before the user had answered a cookie banner, and no banner or reject option was found. These services are identified in the evidence as advertising trackers.",
+      "law": "PECR reg. 6; UK GDPR Art. 5(1)(a) and Art. 7",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E5",
+        "E9",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "policy_quote": "If you wish to browse The Independent for free, you can choose to consent to the use of cookies and similar technologies which we will use to serve relevant personalised advertising and to improve our service (including the use of analytics).",
+      "reasoning": "Advertising-related tracking appears to have started before consent, contrary to the policy's stated consent model and the PECR requirement for prior consent. This is high severity because the evidence shows advertising tracking before any choice was made and the policy directly describes consent as the condition for that processing.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 5(1)(a) and Art. 7"
+    },
+    {
+      "severity": "critical",
+      "ai_severity": "high",
+      "severity_note": "Raised to critical: rated high and backed by advertising or session-replay evidence.",
+      "title": "Session-replay tracking ran before consent",
+      "detail": "Three requests to Crazy Egg, identified as a session-replay tracker, occurred before the user had answered a cookie banner. No banner or reject option was found.",
+      "law": "PECR reg. 6; UK GDPR Art. 5(1)(a) and Art. 7",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E7"
+      ],
+      "policy_quote": "If you wish to browse The Independent for free, you can choose to consent to the use of cookies and similar technologies which we will use to serve relevant personalised advertising and to improve our service (including the use of analytics).",
+      "reasoning": "Session replay normally involves reading or collecting information about a user's browsing activity and therefore may require prior consent under PECR. The high severity reflects the evidence that this tracking began before any consent choice; the precise data collected cannot be confirmed from URLs alone.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 5(1)(a) and Art. 7"
+    },
+    {
+      "severity": "medium",
+      "title": "Chartbeat cookies were set before you could choose",
+      "detail": "3 tracking cookies (_cb, _cb_svref, _chartbeat2) were already set before the cookie banner was answered (Analytics). _cb, _chartbeat2 hold what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies). Some audience-measurement analytics may be exempt under the Data (Use and Access) Act 2025",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "medium",
+      "title": "6 tracking companies not named in the privacy policy",
+      "detail": "The policy names 5 companies. We saw these and found no mention: Chartbeat, Crazy Egg, Dotmetrics, Google, Permutive, Taboola. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "law": "UK GDPR Art. 13(1)(e) (you must be told who receives your data)",
+      "source": "observed",
+      "law_eu": "EU GDPR Art. 13(1)(e)"
+    },
+    {
+      "severity": "medium",
+      "title": "Your ID was sent to Chartbeat before you answered the cookie banner",
+      "detail": "The value of _cb, _chartbeat2 (an ID unique to this browser) was sent to chartbeat.net in the request address. This lets Chartbeat recognise this browser on later visits.",
+      "law": "PECR reg. 6 (reading an identifier stored on your device and sending it on is 'access' and needs consent); UK GDPR Art. 4(1) (an online identifier is personal data); the 2025 statistics exemption (PECR Sch. A1 para 5) doesn't cover sharing with a third party for its own purposes",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 4(1)"
+    },
+    {
+      "severity": "medium",
+      "ai_severity": "medium",
+      "severity_note": null,
+      "title": "Analytics requests occurred before the consent choice",
+      "detail": "Twelve requests to Dotmetrics, identified as an analytics tracker, occurred before the user had answered a cookie banner. The cookie policy describes analytics as part of the cookie-based service for which users can consent.",
+      "law": "PECR reg. 6; UK GDPR Art. 5(1)(a)",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E8"
+      ],
+      "policy_quote": "If you wish to browse The Independent for free, you can choose to consent to the use of cookies and similar technologies which we will use to serve relevant personalised advertising and to improve our service (including the use of analytics).",
+      "reasoning": "Analytics before consent is a likely PECR issue, but the statutory analytics exception may be relevant depending on the precise processing and safeguards, which are not shown here. The medium severity reflects that uncertainty while noting the policy presents analytics as consent-based.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 5(1)(a)"
+    },
+    {
+      "severity": "low",
+      "title": "Accept is one click, but we found no way to reject",
+      "detail": "The banner offers \"ACCEPT\", but our automated check could not find any reject or decline option. (This may be a limit of our check, so treat it as something to verify.)",
+      "law": "ICO cookie guidance (refusing must be as easy as accepting)",
+      "source": "observed",
+      "law_eu": "EDPB Guidelines 05/2020 on consent; EDPB Cookie Banner Taskforce report (2023)"
+    },
+    {
+      "severity": "low",
+      "title": "px-cloud.net fingerprinted your device (audio, WebGL (GPU model))",
+      "detail": "Scripts from px-cloud.net (https://client.px-cloud.net/PX5chHLpUs/main.min.js) used audio, WebGL (GPU model) fingerprinting before you answered the cookie banner. This may be fraud or bot protection, which can count as strictly necessary.",
+      "law": "PECR reg. 6 (consent needed to access information on a device, not just cookies); ICO guidance on fingerprinting",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EDPB Guidelines 05/2020 on consent; EDPB Cookie Banner Taskforce report (2023)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 8,
+    "companies_in_policy": 5,
+    "companies_not_disclosed": [
+      "Chartbeat",
+      "Crazy Egg",
+      "Dotmetrics",
+      "Google",
+      "Permutive",
+      "Taboola"
+    ],
+    "companies_after_reject": [],
+    "companies_with_cookies_before_consent": [
+      "Chartbeat"
+    ],
+    "categories": {
+      "Amazon": "Advertising",
+      "Chartbeat": "Analytics",
+      "Crazy Egg": "Session replay",
+      "Dotmetrics": "Analytics",
+      "Google": "Advertising",
+      "LiveRamp": "Advertising",
+      "Permutive": "Advertising",
+      "Taboola": "Advertising"
+    },
+    "fingerprinting_domains": [
+      "px-cloud.net"
+    ],
+    "id_leak_companies": [
+      "Chartbeat"
+    ]
+  },
+  "letter": {
+    "kind": "complaint",
+    "to": "dpo@independent.co.uk",
+    "subject": "Concern about cookie and tracking practices on independent.co.uk",
+    "body": "Dear Data Protection Officer,\n\nI am writing to raise concerns about cookie and tracking activity observed on https://www.independent.co.uk during an automated, passive audit on 2026-11-08 03:24 UTC. The audit used a fresh browser session, attempted to locate a cookie banner, and recorded what was sent before any consent choice could be made. In this case, no cookie banner or reject option was found.\n\nThe points I would like you to explain are:\n\n1. Our review suggests that advertising trackers ran before consent was obtained. Requests to Amazon, Google, LiveRamp, Permutive and Taboola occurred before the user had answered any cookie banner, and no banner or reject option was found. The evidence identifies these services as advertising trackers. Your privacy policy states: \"If you wish to browse The Independent for free, you can choose to consent to the use of cookies and similar technologies which we will use to serve relevant personalised advertising and to improve our service (including the use of analytics).\"\n\n2. Our review suggests that session-replay tracking ran before consent. Three requests to Crazy Egg, identified in the evidence as a session-replay tracker, occurred before any consent choice, and no banner or reject option was found.\n\n3. Chartbeat cookies were set before any choice could be made. Three tracking cookies, _cb, _cb_svref and _chartbeat2, were already set before any cookie banner was answered. _cb and _chartbeat2 held what appeared to be a unique ID.\n\n4. Six tracking companies observed during the audit do not appear to be named in the privacy policy: Chartbeat, Crazy Egg, Dotmetrics, Google, Permutive and Taboola. I appreciate the policy may refer to some recipients only by category.\n\n5. The value of _cb and _chartbeat2, an identifier unique to this browser, was sent to chartbeat.net in the request address before any consent choice could be made.\n\n6. Our review suggests that analytics requests also occurred before consent. Twelve requests to Dotmetrics, identified in the evidence as an analytics tracker, occurred before the user had answered any cookie banner. Your policy describes analytics as part of the cookie-based service for which users can consent.\n\nPlease:\n\n1. Explain each of the points above.\n2. Confirm which cookies and trackers you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential tracking without consent.\n4. Reply within one month.\n\nIf this matter cannot be resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T03:24:53.539345+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Advertising trackers ran before consent was obtained",
+      "Session-replay tracking ran before consent",
+      "Chartbeat cookies were set before you could choose",
+      "6 tracking companies not named in the privacy policy",
+      "Your ID was sent to Chartbeat before you answered the cookie banner",
+      "Analytics requests occurred before the consent choice"
+    ],
+    "delivery": {
+      "mode": "live",
+      "sent": true,
+      "to": "dpo@independent.co.uk",
+      "at": "2026-11-08T04:05:00.256987+00:00",
+      "reason": null,
+      "message_id": "<179411070026.576880.17567913833872145518@clype.local>",
+      "site": "independent.co.uk",
+      "intended_to": "dpo@independent.co.uk",
+      "saved_to": null,
+      "trigger": "manual"
+    },
+    "auto": {
+      "tier": "critical",
+      "reason": "Audit's worst finding is critical."
+    }
+  },
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit shows multiple advertising and session-replay trackers operating before the user had made a consent choice, with no cookie banner or reject option detected. This conflicts with the site's stated consent model and raises a clear PECR issue for advertising and profiling-related tracking. The analytics evidence is also concerning, although a limited analytics exception may be arguable and cannot be assessed fully from the available request data.",
+    "findings_kept": 3,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: False. Reject clicked successfully: False. Method: failed. Buttons clicked: none.",
+      "E2: Fingerprinting by scripts from px-cloud.net: audio, webgl; phases: before_consent.",
+      "E3: ID sent to another company: the value of cookie _cb (unique to this browser) was sent to chartbeat.net (Chartbeat, Analytics) in the request address, before the banner was answered.",
+      "E4: ID sent to another company: the value of cookie _chartbeat2 (unique to this browser) was sent to chartbeat.net (Chartbeat, Analytics) in the request address, before the banner was answered.",
+      "E5: Tracker Amazon (Advertising): 2 requests before consent, 0 after reject, to amazon-adsystem.com.",
+      "E6: Tracker Chartbeat (Analytics): 12 requests before consent, 0 after reject, to chartbeat.com, chartbeat.net.",
+      "E7: Tracker Crazy Egg (Session replay): 3 requests before consent, 0 after reject, to crazyegg.com.",
+      "E8: Tracker Dotmetrics (Analytics): 12 requests before consent, 0 after reject, to dotmetrics.net.",
+      "E9: Tracker Google (Advertising): 25 requests before consent, 0 after reject, to doubleclick.net, google-analytics.com, googlesyndication.com, googletagmanager.com.",
+      "E10: Tracker LiveRamp (Advertising): 9 requests before consent, 0 after reject, to privacymanager.io.",
+      "E11: Tracker Permutive (Advertising): 3 requests before consent, 0 after reject, to permutive.app.",
+      "E12: Tracker Taboola (Advertising): 14 requests before consent, 0 after reject, to taboola.com.",
+      "E13: Tracking cookie _cb from Chartbeat on .independent.co.uk present before the banner was answered; expires in 395 days; holds what looks like a unique ID.",
+      "E14: Tracking cookie _chartbeat2 from Chartbeat on .independent.co.uk present before the banner was answered; expires in 395 days; holds what looks like a unique ID.",
+      "E15: Tracking cookie _cb_svref from Chartbeat on .independent.co.uk present before the banner was answered; expires in 0 days.",
+      "E16: Privacy policy: https://www.independent.co.uk/service/privacy-policy-a6184181.html. Companies it names: LiveRamp, The Trade Desk, Amazon Publisher Services, Independent Digital News and Media LLC, Evening Standard Limited. Contact email found: dpo@independent.co.uk.",
+      "E17: Cookie policy: https://www.independent.co.uk/service/cookie-policy-a6184186.html.",
+      "E18: Automated check (medium): Chartbeat cookies were set before you could choose. 3 tracking cookies (_cb, _cb_svref, _chartbeat2) were already set before the cookie banner was answered (Analytics). _cb, _chartbeat2 hold what looks like a unique ID.",
+      "E19: Automated check (medium): 6 tracking companies not named in the privacy policy. The policy names 5 companies. We saw these and found no mention: Chartbeat, Crazy Egg, Dotmetrics, Google, Permutive, Taboola. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "E20: Automated check (medium): Your ID was sent to Chartbeat before you answered the cookie banner. The value of _cb, _chartbeat2 (an ID unique to this browser) was sent to chartbeat.net in the request address. This lets Chartbeat recognise this browser on later visits.",
+      "E21: Automated check (low): Accept is one click, but we found no way to reject. The banner offers \"ACCEPT\", but our automated check could not find any reject or decline option. (This may be a limit of our check, so treat it as something to verify.)",
+      "E22: Automated check (low): px-cloud.net fingerprinted your device (audio, WebGL (GPU model)). Scripts from px-cloud.net (https://client.px-cloud.net/PX5chHLpUs/main.min.js) used audio, WebGL (GPU model) fingerprinting before you answered the cookie banner. This may be fraud or bot protection, which can count as strictly necessary."
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "In this policy \u2018we\u2019 and \u2018our\u2019 means Independent Digital News and Media Limited."
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "We may tailor advertising you see on our website based on the type of articles you read, so it is more relevant to your interests."
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "present",
+        "quote": "The legal grounds may be one of the following:"
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "We may disclose your personal information to our sister companies: Independent Digital News and Media LLC and Evening Standard Limited."
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "We retain cookie data and corresponding third party data for 13 months from when it was collected from your device."
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "present",
+        "quote": "Right to object \u2013 you can object to us using your data where we are relying on a legitimate interest to use it."
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "You can withdraw your consent at any time by clicking on the \u2018Privacy Settings\u2019 in the footer of any page."
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "present",
+        "quote": "If you\u2019re still not satisfied with our response, you have the right to complain to the Information Commissioner\u2019s Office (ICO)"
+      }
+    }
+  }
+}

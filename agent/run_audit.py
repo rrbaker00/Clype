@@ -30,11 +30,37 @@ from .compare import compare, SEVERITY_ORDER
 from . import legal_review
 from . import eu_law
 from . import fingerprint
+from . import crosssite
 from . import letter
 from . import llm
 
 AUDITS_DIR = Path(__file__).resolve().parent.parent / "audits"   # project root, not the current folder
 PAGE_TIMEOUT_MS = 30000   # max wait for the first page to load
+
+
+def fresh_landing_cookies(browser, url):
+    """Cookies a brand-new browser gets from the landing page (no clicks). Compared with the audit's
+    cookies to tell per-browser IDs from values everyone gets."""
+    context = browser.new_context()
+    try:
+        page = context.new_page()
+        page.goto(url, wait_until="domcontentloaded", timeout=PAGE_TIMEOUT_MS)
+        page.wait_for_timeout(3000)
+        return serialize_cookies(context.cookies())
+    finally:
+        context.close()
+
+
+def find_id_leaks(requests, cookies, fresh_cookies, site_domain):
+    """(id_leaks, id_syncs). Without the fresh-browser cookies we can't tell IDs from constants,
+    so we only look for syncs then (they don't need it)."""
+    syncs = crosssite.find_syncs(requests)
+    if not fresh_cookies:
+        return [], syncs
+    all_cookies = list({(c["domain"], c["name"]): c
+                        for c in cookies["before_consent"] + cookies["after_reject"]}.values())
+    ids = crosssite.find_ids(all_cookies, fresh_cookies)
+    return crosssite.find_leaks(requests, ids, site_domain), syncs
 
 
 def tag_cookie_trackers(cookies, site_domain):
@@ -102,6 +128,7 @@ def run(url, progress=None):
     cookies_before, cookies_after, visited = [], [], []
     loaded = False
     fp_events = []
+    fresh_cookies = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -144,6 +171,10 @@ def run(url, progress=None):
                 if consent_result["rejected"]:
                     cookies_after = step("Recording cookies after reject",
                                          lambda: serialize_cookies(page.context.cookies()), [])
+                # ID check: load the landing page once more in a FRESH browser (no clicks, no AI).
+                # Cookie values that differ between the two browsers are per-browser IDs.
+                fresh_cookies = step("Checking which cookie values are IDs",
+                                     lambda: fresh_landing_cookies(browser, url), [])
         finally:
             browser.close()                          # even if something above blew up
 
@@ -159,6 +190,16 @@ def run(url, progress=None):
     findings = sorted(findings + fp_findings, key=lambda f: SEVERITY_ORDER[f["severity"]])
     if summary:
         summary["fingerprinting_domains"] = sorted({base_domain(e["script"]) for e in fp_events})
+    # Cross-site evidence (A): our per-browser IDs sent to other companies + ad-tech ID matching.
+    id_leaks, id_syncs = step("Looking for IDs sent to other companies",
+                              lambda: find_id_leaks(requests_list, cookies, fresh_cookies, site_domain), ([], []))
+    findings = sorted(findings + step("Turning ID leaks into findings",
+                                      lambda: crosssite.findings(id_leaks, id_syncs), []),
+                      key=lambda f: SEVERITY_ORDER[f["severity"]])
+    for r in requests_list:
+        r.pop("_post", None)          # request bodies were only needed for the check above
+    if summary:
+        summary["id_leak_companies"] = sorted({l["company"] for l in id_leaks if l["company"]})
     for f in findings:
         f["source"] = "observed"  # plain-code findings, straight from the evidence
 
@@ -173,6 +214,8 @@ def run(url, progress=None):
         "policy": policy_result,
         "visited_pages": visited,
         "fingerprinting": fp_events,
+        "id_leaks": [{k: v for k, v in l.items() if k != "_id"} for l in id_leaks],
+        "id_syncs": id_syncs,
         "findings": findings,
         "summary": summary,
         "letter": None,

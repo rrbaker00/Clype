@@ -1,0 +1,6189 @@
+{
+  "url": "https://unilever.co.uk",
+  "started_at": "2026-11-08T04:06:07.979019+00:00",
+  "duration_s": 34.07,
+  "cost": {
+    "llm_calls": 2,
+    "input_tokens": 1795,
+    "output_tokens": 373,
+    "model": "gpt-5.6-luna",
+    "elapsed_s": 34.07,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 2,
+        "input_tokens": 1795,
+        "output_tokens": 373
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "selector",
+    "clicks": [
+      "Decline"
+    ],
+    "accept_label": "Accept",
+    "preticked": [],
+    "reject_steps": 1
+  },
+  "requests": [
+    {
+      "url": "https://unilever.co.uk/",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshLayoutHelpers.astro_astro_type_script_index_0_lang.oUo7kFzu.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshScrollbarWidth.astro_astro_type_script_index_0_lang.CE8ZEpCi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireRegular.A9PaIzz5.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireBold.D1YY3pwG.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSpinner.d3nr78mm.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UcoLayoutBase.UYeveVgU.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_..Dmukg9Ca.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFeature.BjrqA81o.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UdfStoryPalmOil.4h4KW9NZ.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSection.DT7QYvx6.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/page.DzLQVwDm.js",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-wordmark.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/a8855265e377b37ac0cdd4e54eaa982712ba68f4-1920x1080.jpg?w=1600&h=900&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/441d69c9d472cc268c3fa657762b179c03ba46cc-4750x2672.png?rect=2,0,4747,2672&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/googleAnalyticsBody.astro_astro_type_script_index_0_lang.LsBw-w_p.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/analyticsBody.astro_astro_type_script_index_0_lang.D_b9jcD4.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/90c210e4-7adc-40af-ae0e-d8d167a1c355.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "domain": "onetrust.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.CQTKsGl3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/client.gSHUSpmJ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/contrast.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/down-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/verify-tick.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/sun.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/moon.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/external-link.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/globe.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/hamburger.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/right-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/left-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/search.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-top.D4CZon9b.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-footer.DfdLlbvo.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireSemiBold.DCdGbHS_.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/33cd20e739f51a8ee6445ecc4500eefc314d17b3-1920x1080.png?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/aacb8969a5aefc5a42e8bb45c102db3d5bd8dc11-1920x1080.jpg?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/8468842d15597ed81875e854df363644a457af5f-1920x1080.png?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/15ad8147c66f68e7a08fbe977643e65f6443626d-1920x1080.jpg?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/48545362cd61c6ca0967582943617780187ad152-1920x1080.jpg?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/37438abb4d18c83c5351aa53adfc923ccc69a5f9-1920x1080.jpg?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0f6894241b247193b165e30ae0aed5192b5714bf-1920x1080.jpg?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7de9e120c4c26c0078da93ccd90fbbf4b2b6424f-1920x1080.png?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pop-out.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/close.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.Cygq31em.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/arrow-up.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/share.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/facebook.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/x.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/linkedin.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/email.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/youtube.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/instagram.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.DHPwxmYW.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/97f6d9736db2f3ad633ea35da85351218ccac6ee-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/512d3b73efacf28f3d2c382aa09b3dade9c81bf4-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f33b7c1e11789843316a2beb0196c17e9c1cba97-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/715ece548aa4ba3ed1d0b96a104e4bac750b7e88-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/cc1995ce0b6abb137e609e9ce3d7cddb837a6f9b-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/db6ccc1377f95f20c08a68813b75ae633481d397-1800x2196.jpg?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/2b138776fff52909a9ba32945bcd4cfcedafbed6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7032fa3c1feeb642cf9cc72a73acd235403887e6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/595f48c64d96a2275b9e7f231bdfc6e6f388bf56-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/23795bf1f44f27ab93d8890a7e2f0c045ef714c5-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/021b6961b3fd94c69476b3680801aacf7fad2e99-1080x1080.jpg?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c16d99d9aabf9481ff36352365249dc4ee2af03a-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f4a9c7cda3fec1653296156623648ad605114235-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/ab57cdd6d4d8e2025b5b55fe57a2ee20a81a242d-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/41b2992deef361d032e0ba07bd954c17866d1262-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f668d3f82d919b150af1eef3d85efe3964cc9e8b-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/4ae5ce3d731ef7ff2ffec6ca75ef970c1892f19e-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/98a621bdbf8c1f09d8970b48966fbdc30386bfa6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/fa727538ffd80ec0214d6d978c9fbe0f7708f8a6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/8817a7555bfa419bb5403da07e358d6926d91416-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0d41176f9ae54fedf36935cc9cf80df7e7ac0f3d-1080x1080.jpg?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/3fad08e000eb2bad74d7cc67bfe61ea3649c4eed-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c65e98b55840e2688ae11de047f05a8e9f1ac451-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/74fa6e77949cbee746582300be5c4505bc774b07-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/616ebfda0fd87cc6432017728750a3831a18e4ce-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/4c913bc6bf684a88b4860c0a2a8498a8066ee772-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7a2bc3dff79be8d4b3aadc4097e79bd3753a1e74-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/79b09d7f796d4e4b9288a8cb29cf5fe778196b95-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/ef331851d4cd981997ba7159ab095ff288a20617-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0cc73d2202405ad8f82c223c910a352d75acd182-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/bfba1b4793140e543455568c0f456fef44f8dc9d-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/9e0d7497ab173d6b06ac62a8cbf87887ee6b265f-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/bca49847b51640fa0543859b7e9be99efdff3f17-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0bf4a2c688e49d60704906090eaca7fe8d698971-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/886c36d7b3a9e6808f2d76028a180f5b0409b17d-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/5b06c7a351b0e1c449bfb53712374ffc7a80565d-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/b8848d13bae50d31afadd74ce29d585409235061-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/cdf3d4968838daa57611b4b711846f6e2b5e0424-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c4ca4df1d75111c5d135d1ed2ba5ea994844e8d7-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0425e4ccd843f431433a04cde7ee344b99aa4a88-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/bbba036871feda9ed89b53363327e072cb4bb567-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/2cb603eb429b89f86e2df884d869a6f6cf3c2932-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/aec8edcac0d2008a63b9fb152034fd53c6a5c00b-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/608dbaf578f154073be3e0da22125ee8ae5c320d-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/ed2d868f708a89218891053c7b96dd08c37fcf9c-450x549.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0d36731af3b15037909ecf76a28c873bddbdec49-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/dbc8dfe5d1fbc6ddd5995fb28061e8cbfc884d0f-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/e898937153cdd51278afdafd5d17be113308e012-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0ecf7c7b4353531275d948856f3baeb3fd501273-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/8401ac458089110e790eea7c5564df37f40e0940-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/4a24bdf430a19664c83b9c40caac1739f07b1dee-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/09a5ca86a01c4113c7fcfd867d695ce3999e136d-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/64ba33c4b07b9ba479da8b764b91c328f2e976cb-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.zbtBGgeD.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/vue.runtime.esm-bundler.EekZODFZ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/useTheme.DivXl6HQ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_plugin-vue_export-helper.BDNMzG2s.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/preload-helper.DHhhL8Zf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.ChPIz1EA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.types.4eJnTeRi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/getAttributeValue.DKJ-GfqT.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.DCrGLxWw.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.B5L306L3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormInput.CqkyXMrI.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormLabel.BPW_nTQE.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolTitleBanner.DsbUuw-Y.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/019e444d-4363-7473-8570-7f430f8aad67/en-gb.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/triggerEvent.B5eNCE1G.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolModal.B9dUIwCf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/rolldown-runtime.BCiCTKAo.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.B-nKjFIO.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.C9qzNHHx.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/promoDialog.serializer.BwmM7En4.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.V9iQiGQ_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/019e444d-4363-7473-8570-7f430f8aad67/bLayout-en-gb.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.CwwpN_8h.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.BQqe7T-e.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolVideo.NzvYDteG.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSvgIcon.CxisOv-6.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/focus-trap-vue.esm-browser.By-q1Qn9.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.7HmLQVwA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/atom.DYke8KLa.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/lib.DrXkPq5q.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolCard.Cksizynn.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolMediaGroup.D2wDJPBk.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.CunWD0W_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.C8dJVD8v.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.D4FkEDqd.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSkip.ez4mks-7.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/replaceTokens.B5YBFh86.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.CZ9mnNwU.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolVideo.COOzobrr.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/hasSlotContent.8QwaF3Jo.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/vue.CIXRLDgj.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolYoutubeVideo.p5GyU8Gn.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.D1adE8ig.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolCookieContentBlocker.C7ato4sd.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/play.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/441d69c9d472cc268c3fa657762b179c03ba46cc-4750x2672.png?rect=2,0,4747,2672&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7de9e120c4c26c0078da93ccd90fbbf4b2b6424f-1920x1080.png?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/files/92ui5egz/production/515943fc996d2db46065e12f9f28fec7449b2391.mp4",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pause.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f6f56a67e513d347d04111703539d7576b2dba38-1920x1080.jpg?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/e3af48a589c5c442b60bb5805c00abfd48ccc19c-1920x1080.jpg?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/396a5d1fc098b540794e58153fcdb609a233fb2c-1920x1080.png?rect=3,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/6ae5900b3e9df224ba698cdd57c0c773a096400f-1920x1080.png?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/e32aa7ce4bd022663c5514c1467c0e201d7cc8c3-4500x3000.jpg?rect=0,233,4500,2535&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/play.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.cvn6jmji.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-static-white.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.Ca_Cxj5a.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pause.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/18b3715a52ed0df7b4a6524c97418b4745d63d11-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/5e80c50feadfe2f8c0a2521352270b6bbe90e6a8-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c8bbbcb0153fa5688c0bfd5ef650c536712c32bf-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/13d0c8d393ee5b788a9dac5704439c249baf10fa-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/a5affe290886c90e60b436ef19b5d5c4befff78f-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c4b9dd5511dbd6f354a5e4aabd3b3dff901a95c0-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/4e512bc9412a213ae1e28e13de7fd1fbfb24f634-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/e256e303eb3fd3b638b69ec8b252defa180afebf-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/89b01d73c7defeed859180986ba69ce1e2f0a13b-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/e7622aada66c2ce4dc79673a5d739da22425fc3b-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/b629c2235190c1e142bdb8d979734dfb84677725-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/839afc512671fa2762ff38d2c47e0506e8b887aa-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7f97f56f80cb1a9a10ea0a81c51602eaacc4d35e-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f7dee3f5ba509d68a8b5fe033990c082daba4e85-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/86f9ea86e93a2a65b4596f1aa3edd32d01c76268-600x600.svg?w=1400&h=1400&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.B-UsD9e6.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pop-out.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/close.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/left-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/right-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/97f6d9736db2f3ad633ea35da85351218ccac6ee-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/512d3b73efacf28f3d2c382aa09b3dade9c81bf4-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f33b7c1e11789843316a2beb0196c17e9c1cba97-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/715ece548aa4ba3ed1d0b96a104e4bac750b7e88-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/cc1995ce0b6abb137e609e9ce3d7cddb837a6f9b-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/db6ccc1377f95f20c08a68813b75ae633481d397-1800x2196.jpg?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/2b138776fff52909a9ba32945bcd4cfcedafbed6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7032fa3c1feeb642cf9cc72a73acd235403887e6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/595f48c64d96a2275b9e7f231bdfc6e6f388bf56-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/23795bf1f44f27ab93d8890a7e2f0c045ef714c5-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/021b6961b3fd94c69476b3680801aacf7fad2e99-1080x1080.jpg?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c16d99d9aabf9481ff36352365249dc4ee2af03a-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f4a9c7cda3fec1653296156623648ad605114235-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/ab57cdd6d4d8e2025b5b55fe57a2ee20a81a242d-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/41b2992deef361d032e0ba07bd954c17866d1262-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f668d3f82d919b150af1eef3d85efe3964cc9e8b-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/4ae5ce3d731ef7ff2ffec6ca75ef970c1892f19e-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/98a621bdbf8c1f09d8970b48966fbdc30386bfa6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/fa727538ffd80ec0214d6d978c9fbe0f7708f8a6-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0d41176f9ae54fedf36935cc9cf80df7e7ac0f3d-1080x1080.jpg?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/3fad08e000eb2bad74d7cc67bfe61ea3649c4eed-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c65e98b55840e2688ae11de047f05a8e9f1ac451-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/74fa6e77949cbee746582300be5c4505bc774b07-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7a2bc3dff79be8d4b3aadc4097e79bd3753a1e74-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/79b09d7f796d4e4b9288a8cb29cf5fe778196b95-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/ef331851d4cd981997ba7159ab095ff288a20617-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/bfba1b4793140e543455568c0f456fef44f8dc9d-1080x1080.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/9e0d7497ab173d6b06ac62a8cbf87887ee6b265f-1800x2196.png?w=1400&h=1708&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/49e228840c6bcee5b84ff952122082b3a6295121-1000x1000.png?w=600&h=600&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/unilever-in-the-uk/",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshLayoutHelpers.astro_astro_type_script_index_0_lang.oUo7kFzu.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshScrollbarWidth.astro_astro_type_script_index_0_lang.CE8ZEpCi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireRegular.A9PaIzz5.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireBold.D1YY3pwG.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSpinner.d3nr78mm.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UcoLayoutBase.UYeveVgU.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_..Dmukg9Ca.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFeature.BjrqA81o.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UdfStoryPalmOil.4h4KW9NZ.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSection.DT7QYvx6.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/page.DzLQVwDm.js",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-wordmark.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/a8855265e377b37ac0cdd4e54eaa982712ba68f4-1920x1080.jpg?w=1600&h=900&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/27e534875aa16d5db08e0a32457dc1f274076f10-300x300.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0625bbc477c0ce7985f660f241529104157087bb-300x300.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c189b8183a99e90c7ea2931b2966feb1b29d3408-300x300.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/ec5fbaa5c153a7b574165dddf8bf5ef8f887500f-300x300.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/91d0c13b50686d2e2d94adb3f4350cb27988375d-300x300.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/36e2c9684b2c1157a5d9cdd978a548b0bac06c57-300x300.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0a4b5f23afd2e48cdcb25b3d609587bd10e40f62-1920x1080.png?w=1600&h=900&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/googleAnalyticsBody.astro_astro_type_script_index_0_lang.LsBw-w_p.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/analyticsBody.astro_astro_type_script_index_0_lang.D_b9jcD4.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/90c210e4-7adc-40af-ae0e-d8d167a1c355.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "domain": "onetrust.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/019e444d-4363-7473-8570-7f430f8aad67/en-gb.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.CQTKsGl3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/client.gSHUSpmJ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/contrast.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/down-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/verify-tick.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/sun.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/moon.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/external-link.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/globe.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/hamburger.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/right-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/left-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/search.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/close.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/arrow-up.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/share.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/facebook.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/x.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/linkedin.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/email.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/youtube.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/instagram.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pop-out.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.zbtBGgeD.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-top.D4CZon9b.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-footer.DfdLlbvo.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireSemiBold.DCdGbHS_.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/abdd9ae9261e16a62bc1dbb812f5797f804d1863-1920x1080.jpg?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/4558dd4ca5defefb799f0914b1c6b5c998232b9a-1920x1080.png?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/e81f972a4630ba5409bf8f1fb5ab3305e2a1ff35-1920x1080.jpg?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.ChPIz1EA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.types.4eJnTeRi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/getAttributeValue.DKJ-GfqT.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.DHPwxmYW.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/vue.runtime.esm-bundler.EekZODFZ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/useTheme.DivXl6HQ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_plugin-vue_export-helper.BDNMzG2s.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/preload-helper.DHhhL8Zf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/triggerEvent.B5eNCE1G.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.B5L306L3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolModal.B9dUIwCf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolTitleBanner.DsbUuw-Y.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/rolldown-runtime.BCiCTKAo.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.B-nKjFIO.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.V9iQiGQ_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.CwwpN_8h.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.DCrGLxWw.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/focus-trap-vue.esm-browser.By-q1Qn9.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.BQqe7T-e.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolVideo.NzvYDteG.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSvgIcon.CxisOv-6.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/lib.DrXkPq5q.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.CunWD0W_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.C8dJVD8v.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.D4FkEDqd.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormInput.CqkyXMrI.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormLabel.BPW_nTQE.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSkip.ez4mks-7.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/replaceTokens.B5YBFh86.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.7HmLQVwA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.CZ9mnNwU.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolVideo.COOzobrr.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.D1adE8ig.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/play.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/files/92ui5egz/production/515943fc996d2db46065e12f9f28fec7449b2391.mp4",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pause.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/3fb1f2db44a26c816a7d875e7db5393e4b74df6a-1920x1080.jpg?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.BrqX1G6i.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/play.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/feature.serializer.m4omappB.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFeature.D-XMTvgq.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/close.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/information.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/play.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/files/92ui5egz/production/2feef041ac2f8a1d40d46fd295afd2781affe475.mp4",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/files/92ui5egz/production/2feef041ac2f8a1d40d46fd295afd2781affe475.mp4",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/files/92ui5egz/production/2feef041ac2f8a1d40d46fd295afd2781affe475.mp4",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-static-white.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/news/2026/how-design-is-driving-desire-across-unilevers-personal-care-portfolio/",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshLayoutHelpers.astro_astro_type_script_index_0_lang.oUo7kFzu.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshScrollbarWidth.astro_astro_type_script_index_0_lang.CE8ZEpCi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireRegular.A9PaIzz5.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireBold.D1YY3pwG.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSpinner.d3nr78mm.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UcoLayoutBase.UYeveVgU.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_..Dmukg9Ca.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFeature.BjrqA81o.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UdfStoryPalmOil.4h4KW9NZ.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSection.DT7QYvx6.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/page.DzLQVwDm.js",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-wordmark.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/33cd20e739f51a8ee6445ecc4500eefc314d17b3-1920x1080.png?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.CQTKsGl3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/client.gSHUSpmJ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/contrast.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/down-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/verify-tick.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/sun.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/moon.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/external-link.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/globe.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/hamburger.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/right-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/left-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/search.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/information.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/arrow-up.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/share.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/facebook.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/x.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/linkedin.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/email.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/facebook.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/x.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/youtube.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/linkedin.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/instagram.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/external-link.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pop-out.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.zbtBGgeD.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/googleAnalyticsBody.astro_astro_type_script_index_0_lang.LsBw-w_p.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/analyticsBody.astro_astro_type_script_index_0_lang.D_b9jcD4.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-top.D4CZon9b.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-footer.DfdLlbvo.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireSemiBold.DCdGbHS_.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/a6f6bdd3b00888ccb55c7589ac4bc4096a2634b5-1920x1080.png?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/9316a9d83a3f117d307d6ff2fd62bfbb56ca1ce7-1920x1080.png?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/vue.runtime.esm-bundler.EekZODFZ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/useTheme.DivXl6HQ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_plugin-vue_export-helper.BDNMzG2s.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/preload-helper.DHhhL8Zf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/triggerEvent.B5eNCE1G.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.B5L306L3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolModal.B9dUIwCf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.ChPIz1EA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.types.4eJnTeRi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/getAttributeValue.DKJ-GfqT.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/rolldown-runtime.BCiCTKAo.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.CwwpN_8h.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.DCrGLxWw.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/focus-trap-vue.esm-browser.By-q1Qn9.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.BQqe7T-e.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/90c210e4-7adc-40af-ae0e-d8d167a1c355.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.7HmLQVwA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSvgIcon.CxisOv-6.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.CZ9mnNwU.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.D4FkEDqd.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/019e444d-4363-7473-8570-7f430f8aad67/en-gb.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.B-nKjFIO.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.B1ezuUFX.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.V9iQiGQ_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/lib.DrXkPq5q.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.CunWD0W_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.C8dJVD8v.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormInput.CqkyXMrI.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormLabel.BPW_nTQE.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSkip.ez4mks-7.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/replaceTokens.B5YBFh86.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.D1adE8ig.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolAccordion.Dl9PSGb6.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/727b226a99afed9e58e58273829fe07907898987-1920x1080.png?rect=2,0,1917,1080&w=600&h=338&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-static-white.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/brands/",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshLayoutHelpers.astro_astro_type_script_index_0_lang.oUo7kFzu.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UshScrollbarWidth.astro_astro_type_script_index_0_lang.CE8ZEpCi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireRegular.A9PaIzz5.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireBold.D1YY3pwG.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSpinner.d3nr78mm.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UcoLayoutBase.UYeveVgU.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_..Dmukg9Ca.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFeature.BjrqA81o.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UdfStoryPalmOil.4h4KW9NZ.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSection.DT7QYvx6.css",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/page.DzLQVwDm.js",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-wordmark.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0a4b5f23afd2e48cdcb25b3d609587bd10e40f62-1920x1080.png?w=1600&h=900&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.CQTKsGl3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/client.gSHUSpmJ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/contrast.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/down-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/verify-tick.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/sun.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/moon.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/external-link.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/globe.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/hamburger.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/right-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/left-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/search.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/close.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/report-security-incident.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/down-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-top.D4CZon9b.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/Aurora-footer.DfdLlbvo.webp",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UnileverDesireSemiBold.DCdGbHS_.woff2",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7c988d949528fa416ed58969d0ea72739432a21f-1920x1080.png?bg=fff&w=1400&h=788&fit=fillmax",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/b1dab67c0ba4f611d6a7efde80608995db605be3-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/7b0bea3949c8fa265e5db94b8c4dfa5f4d243b83-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/c95abcc42481a7560048b9a4ac2b5a14cf4ac25a-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/621f28500ccc17291ebee59fd6db4122a2396860-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/0ff8c400e7a16f2b14048078d715297017c41787-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/744e8d876a9e7939fcf12d7377649d2475d42630-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/ffa060f47e856434bd3a3622e02ecda419ef7109-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/5f76fe0f16e4279e91ed9cbfa15bdb60a1534e3a-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/vue.runtime.esm-bundler.EekZODFZ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/useTheme.DivXl6HQ.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/_plugin-vue_export-helper.BDNMzG2s.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/preload-helper.DHhhL8Zf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/down-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UcoSearch.DjjcGUTN.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.DHPwxmYW.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/1b450a8017ce3abb0dca038c6bcf15e0fbd799ca-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/4e6586cb6490ae5163e4de8acb81bd5180cb2ebd-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f59c24abcb52c9d18d6434ad8dfac2a4634fcb03-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/516115ef56772dba918e5e7211e555327006e7fa-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/73ebbc02f015f061b6d5adfa4e9e8a85c7dab313-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/50f6f4330448e62551b36eeab91b2db258fafebc-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/1c6d7c59c42eacbb82588740aa66e9d5c7d46517-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/14933a4ae3095b07b4a4d7068bfd50d2a8964697-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/f8180c1afef2f5602291fc38ed43942b05f82a87-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/9e4c702e32da3b13577e29c7ce31cb9178459788-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/50cafca80a7636ed4d1e269692ffed7f09f743a6-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/25f4ef8241d5003957a2ba2a96cba5dcf91dafc8-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/51c10b1cc6f8a058f4159704db8fac0cc14f269b-1920x1080.png?rect=1,0,1919,1080&w=1400&h=788&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/3d1b2208de6925bc887adfd138ee4236b4299239-1920x1080.jpg?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/content-images/92ui5egz/production/825dfbf45a355845532418f84497c526f726d8fe-1920x1080.jpg?rect=1,0,1919,1080&w=700&h=394&fit=crop&auto=format",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/arrow-up.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/share.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/facebook.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/x.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/linkedin.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/email.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/youtube.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/social/instagram.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/external-link.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pop-out.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.zbtBGgeD.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/googleAnalyticsBody.astro_astro_type_script_index_0_lang.LsBw-w_p.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/analyticsBody.astro_astro_type_script_index_0_lang.D_b9jcD4.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/rolldown-runtime.BCiCTKAo.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolTitleBanner.DsbUuw-Y.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.ChPIz1EA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/getAttributeValue.DKJ-GfqT.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/oneTrust.types.4eJnTeRi.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/triggerEvent.B5eNCE1G.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.B5L306L3.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolModal.B9dUIwCf.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UcoSearch.BJubNCi0.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.7HmLQVwA.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.BQqe7T-e.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolVideo.NzvYDteG.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.DCrGLxWw.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSvgIcon.CxisOv-6.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolButton.CwwpN_8h.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/focus-trap-vue.esm-browser.By-q1Qn9.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/app.D4FkEDqd.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolVideo.COOzobrr.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolPicture.CZ9mnNwU.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/90c210e4-7adc-40af-ae0e-d8d167a1c355.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/replaceTokens.B5YBFh86.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/90c210e4-7adc-40af-ae0e-d8d167a1c355/019e444d-4363-7473-8570-7f430f8aad67/en-gb.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.B-nKjFIO.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/index.V9iQiGQ_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/information.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/play.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/lib.DrXkPq5q.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/definedProps.CunWD0W_.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.C8dJVD8v.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormInput.CqkyXMrI.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormLabel.BPW_nTQE.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSkip.ez4mks-7.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSection.CNGE8BjO.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/formatBytes.CCmR0e4u.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/hasSlotContent.8QwaF3Jo.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolCard.Cksizynn.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLinkList.67OYbJi5.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormSelect.0utuldop.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolAccordion.Dl9PSGb6.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolFormCheckbox.C5e5Ks1q.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolNotification.CsOVPw9C.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/files/92ui5egz/production/2feef041ac2f8a1d40d46fd295afd2781affe475.mp4",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolLink.D1adE8ig.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/files/92ui5egz/production/2feef041ac2f8a1d40d46fd295afd2781affe475.mp4",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/assets/UolSection.B5HK6Vbm.js?dpl=dpl_4t8eY3XSKBUT97Lk2uWUtxfWNfWa",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/api/search/uol-h-1563344271-202611",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/search.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/pause.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/close.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/down-arrow.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/logos/logo-static-white.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilever.co.uk/core-assets/icons/functional/play.svg",
+      "domain": "unilever.co.uk",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilevernotices.com/privacy-notices/united-kingdom-english.html",
+      "domain": "unilevernotices.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.unilevernotices.com/cookie-notices/united-kingdom-english.html",
+      "domain": "unilevernotices.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "OptanonConsent",
+        "value": "isGpcEnabled=0&datestamp=Sun+Nov+08+2026+04%3A06%3A09+GMT%2B0000+(GMT%2B00%3A00)&version=202608.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=130133f2-84a7-4cc7-b56e-0ebef9219a46&interactionCount=0&isAnonUser=1&prevHadToken=0&landingPath=https%3A%2F%2Fwww.unilever.co.uk%2F&groups=C0001%3A1%2CC0004%3A0",
+        "domain": ".unilever.co.uk",
+        "path": "/",
+        "expires": 1825646769,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "OptanonAlertBoxClosed",
+        "value": "2026-11-08T04:06:12.284Z",
+        "domain": ".unilever.co.uk",
+        "path": "/",
+        "expires": 1825646772,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "OptanonConsent",
+        "value": "isGpcEnabled=0&datestamp=Sun+Nov+08+2026+04%3A06%3A25+GMT%2B0000+(GMT%2B00%3A00)&version=202608.1.0&browserGpcFlag=0&isDntEnabled=0&isIABGlobal=false&hosts=&consentId=130133f2-84a7-4cc7-b56e-0ebef9219a46&interactionCount=1&isAnonUser=1&prevHadToken=0&landingPath=NotLandingPage&groups=C0001%3A1%2CC0004%3A0&fclco=&lastConsentTs=1794110772&intType=2&geolocation=GB%3BSCT&AwaitingReconsent=false",
+        "domain": ".unilever.co.uk",
+        "path": "/",
+        "expires": 1825646785,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      }
+    ]
+  },
+  "policy": {
+    "url": "https://www.unilevernotices.com/privacy-notices/united-kingdom-english.html",
+    "found": true,
+    "companies_named": [],
+    "dpo_contact": null,
+    "cookie_policy_url": "https://www.unilevernotices.com/cookie-notices/united-kingdom-english.html",
+    "format": "html",
+    "text_chars": 246,
+    "chars_sent": 246
+  },
+  "visited_pages": [
+    "https://www.unilever.co.uk/unilever-in-the-uk/",
+    "https://www.unilever.co.uk/news/2026/how-design-is-driving-desire-across-unilevers-personal-care-portfolio/",
+    "https://www.unilever.co.uk/brands/"
+  ],
+  "fingerprinting": [],
+  "id_leaks": [],
+  "id_syncs": [],
+  "findings": [],
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 0,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": [],
+    "companies_after_reject": [],
+    "companies_with_cookies_before_consent": [],
+    "categories": {},
+    "fingerprinting_domains": [],
+    "id_leak_companies": []
+  },
+  "letter": null,
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The evidence confirms that a cookie banner was displayed and that the Decline option was successfully clicked, but it does not show any cookies, device storage, tracking requests, advertising, profiling or session replay. The privacy and cookie policy pages were inaccessible to the crawler, so the site's policy disclosures could not be assessed.",
+    "findings_kept": 0,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: True. Method: selector. Buttons clicked: Decline.",
+      "E2: Pages browsed and scrolled after reject: https://www.unilever.co.uk/unilever-in-the-uk/, https://www.unilever.co.uk/news/2026/how-design-is-driving-desire-across-unilevers-personal-care-portfolio/, https://www.unilever.co.uk/brands/.",
+      "E3: Privacy policy: https://www.unilevernotices.com/privacy-notices/united-kingdom-english.html. Companies it names: none extracted. Contact email found: None.",
+      "E4: Cookie policy: https://www.unilevernotices.com/cookie-notices/united-kingdom-english.html."
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "unclear",
+        "quote": null
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "unclear",
+        "quote": null
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "unclear",
+        "quote": null
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "unclear",
+        "quote": null
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "unclear",
+        "quote": null
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "unclear",
+        "quote": null
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "unclear",
+        "quote": null
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "unclear",
+        "quote": null
+      }
+    }
+  }
+}

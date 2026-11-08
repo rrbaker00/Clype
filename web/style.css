@@ -164,3 +164,19 @@ button.secondary { background: var(--panel-2); color: var(--text); border: 1px s
 .usage-tile .l { color: var(--muted); font-size: 12px; }
 .usage .bar { margin: 4px 0; }
 .usage .bar.warn > i { background: var(--bad); }
+
+/* Per-site timeline at the top of an audit */
+.timeline { padding: 10px 16px; margin-bottom: 14px; }
+.timeline-toggle { font-size: 13px; }
+.timeline-list { list-style: none; margin: 10px 0 0; padding: 0; }
+.timeline-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 7px 0; border-top: 1px solid var(--line); }
+.timeline-list li.current { font-weight: 600; }
+.timeline-list .tl-date { min-width: 150px; font-variant-numeric: tabular-nums; }
+.timeline-list .okc { color: var(--ok); }
+.chip.sev-critical, .chip.sev-high { color: var(--bad); border-color: var(--bad); }
+.chip.sev-medium { color: var(--warn); border-color: var(--warn); }
+
+/* Cross-site proof box */
+.proof { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
+.proof h4 { margin: 0; }
+.proof-link { padding: 8px 10px; margin: 6px 0; border-left: 3px solid var(--bad); background: var(--panel-2); border-radius: 6px; }

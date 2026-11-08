@@ -22,6 +22,9 @@ from .trackers import TRACKER_COMPANIES
 from .capture import base_domain
 
 MAX_POLICY_CHARS = 60000      # privacy policy sent in full up to this (~15k tokens), so the Art. 13 check sees all of it
+MIN_FULL_POLICY_CHARS = 3000  # shorter = a hub / links page or a page that didn't render, not a full Art. 13
+                              # policy (sky.com's privacy hub: 1,412 chars, mostly menu). Present items still
+                              # count; nothing is called "missing".
 MAX_COOKIE_CHARS = 20000      # cookie policy, after keeping the relevant parts (~5k tokens)
 MAX_FINDINGS = 8              # keep the report focused
 SEVERITIES = ("high", "medium", "low")   # what the AI may answer; "critical" is only ever set by regrade()
@@ -139,6 +142,15 @@ def build_evidence(audit):
         g[0].add(e["technique"]); g[1].add(e["phase"])
     for d, (techniques, phases) in sorted(fp.items()):
         add(f"Fingerprinting by scripts from {d}: {', '.join(sorted(techniques))}; phases: {', '.join(sorted(phases))}.")
+    for l in audit.get("id_leaks") or []:          # agent/crosssite.py: our per-browser IDs sent elsewhere
+        if l.get("company") and l.get("confidence") == "confirmed":
+            add(f"ID sent to another company: the value of cookie {l['cookie']} (unique to this browser) was sent to "
+                f"{l['to']} ({l['company']}, {l.get('category')}) in the request {l['in']}, "
+                f"{'after reject' if l['phase'] == 'after_reject' else 'before the banner was answered'}.")
+    for s in audit.get("id_syncs") or []:
+        add(f"{s['type']} request to {s['to']} "
+            f"{'after reject' if s['phase'] == 'after_reject' else 'before the banner was answered'}"
+            f"{'; shared ID systems: ' + ', '.join(s['sources']) if s.get('sources') else ''}.")
     if c.get("preticked"):
         add(f"Non-essential cookie toggles already ON before any choice: {'; '.join(c['preticked'])}.")
 
@@ -217,6 +229,10 @@ def _norm(text):
 
 
 MIN_REQUESTS_FOR_CRITICAL = 3   # a single stray request isn't enough to accuse anyone automatically
+# Tag LOADERS: they deliver other scripts but collect nothing themselves. Requests ONLY to these
+# don't prove ad tracking (sky.com: 4 hits to googletagmanager.com were rated critical).
+# Any real tracking they trigger shows up separately (google-analytics.com, doubleclick.net...).
+TAG_LOADER_DOMAINS = {"googletagmanager.com", "adobedtm.com", "tealiumiq.com"}
 
 
 def strong_evidence_ids(evidence_lines):
@@ -229,9 +245,13 @@ def strong_evidence_ids(evidence_lines):
     with nothing else (iana.org: one hit to an ad-fraud check) is not enough."""
     strong = set()
     for line in evidence_lines:
-        m = re.match(r"(E\d+): Tracker .+? \(([^)]+)\): (\d+) requests before consent, (\d+) after reject", line)
+        m = re.match(r"(E\d+): Tracker .+? \(([^)]+)\): (\d+) requests before consent, (\d+) after reject, "
+                     r"to (.+?)\.(?:\s|$)", line)   # domain list ends at ". " or the end
         if m and m.group(2) in STRONG_CATEGORIES:
             before, after = int(m.group(3)), int(m.group(4))
+            domains = {d.strip() for d in m.group(5).split(",")}
+            if domains <= TAG_LOADER_DOMAINS:
+                continue                       # only a tag loader: not evidence of ad tracking on its own
             if after > 0 or before + after >= MIN_REQUESTS_FOR_CRITICAL:
                 strong.add(m.group(1))
             continue
@@ -250,7 +270,8 @@ def regrade(severity, evidence_ids, strong_ids):
     if set(evidence_ids) & strong_ids:
         return "critical", "Raised to critical: rated high and backed by advertising or session-replay evidence."
     return "medium", ("Lowered from high: no substantial advertising or session-replay evidence cited "
-                      "(a tracking cookie, activity after reject, or 3+ requests), "
+                      "(a tracking cookie, activity after reject, or 3+ requests to an actual tracking domain; "
+                      "a tag loader like Google Tag Manager alone doesn't count), "
                       "so an exemption or innocent explanation is plausible.")
 
 
@@ -318,6 +339,7 @@ def check_policy(raw, texts, evidence):
     privacy = texts.get("privacy") or ""
     both = _norm(privacy + " " + (texts.get("cookie") or ""))
     whole = bool(privacy) and len(privacy) <= MAX_POLICY_CHARS   # did the AI see ALL of it?
+    full_policy = len(privacy) >= MIN_FULL_POLICY_CHARS          # long enough to be the real policy?
     raw = raw if isinstance(raw, dict) else {}
     out = {}
     for key, (label, keywords) in CHECKLIST.items():
@@ -328,7 +350,7 @@ def check_policy(raw, texts, evidence):
             result = "not_checked"
         elif status == "present" and quote and _norm(quote) in both:
             result = "present"
-        elif status == "missing" and not re.search(keywords, both, re.IGNORECASE):
+        elif status == "missing" and full_policy and not re.search(keywords, both, re.IGNORECASE):
             result, quote = "missing", None
         else:
             result, quote = "unclear", None            # unverified quote, or "missing" but keywords found

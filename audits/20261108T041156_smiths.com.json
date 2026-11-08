@@ -1,0 +1,3845 @@
+{
+  "url": "https://smiths.com",
+  "started_at": "2026-11-08T04:11:56.560746+00:00",
+  "duration_s": 55.6,
+  "cost": {
+    "llm_calls": 3,
+    "input_tokens": 13475,
+    "output_tokens": 2201,
+    "model": "gpt-5.4+gpt-5.6-luna",
+    "elapsed_s": 55.6,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 2,
+        "input_tokens": 12851,
+        "output_tokens": 1774
+      },
+      "gpt-5.4": {
+        "llm_calls": 1,
+        "input_tokens": 624,
+        "output_tokens": 427
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "selector",
+    "clicks": [
+      "Reject non-essential cookies"
+    ],
+    "accept_label": "Allow all cookies",
+    "preticked": [],
+    "reject_steps": 1
+  },
+  "requests": [
+    {
+      "url": "https://smiths.com/",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/uc.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/js/219999.js",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/086bf3ec-a3d1-4c5d-87e9-01e46e184301.css",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/css/bundle.min.css?v=3NzsDMhkmEYIRH60Wi87u5m2EBo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/r10ll2bx/smiths-group-plc-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/5msgs5gl/175-years-header-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-close.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/Black/chevron-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav-back.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXZD6PF",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/smiths.com/configuration.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/settings.json",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/cc.js?renew=false&referer=www.smiths.com&dnt=false&init=false",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=086bf3ec-a3d1-4c5d-87e9-01e46e184301",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-burger-menu.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Arrows/Black/arrow-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-play-triangle.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-doc-download.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-download.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/style.min.css?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js?dnt=1",
+      "domain": "vimeo.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/umbracoforms.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/asnjy4ef/x-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/pfff4ad3/linkedin-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/js/bundle.min.js?v=yXr1C9ZIDsOL2CaJdchRu-FFCJo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/sdk/bc-v5.min.html",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/nd4hgiyu/sizzle-reel-group.mp4",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-NK0MVQ52W6&cx=c&gtm=4e6b50h2",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINLight_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINMedium_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINRegular_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINBold_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/nekbhufk/smiths175_rotating-gif.gif?width=895&height=549&quality=100&v=1dca71e151f42e0&hmac=4efe4b4d082c56c368c70c9d27468ed669a7a23388ec9343c92f3547de69a218",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/dydevej2/artemis-ii-at-the-pad.jpg?width=896&height=504&format=webp&quality=80&v=1dcc2a4aed40d70&hmac=b427af1056665dfb059bf92765e0ba117b7fa178a9037e3845e22d5eebc06cb0",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/uqofdi5s/h2-zero-emission-pipes.jpg?width=432&height=648&format=webp&quality=80&v=1db52f69bf2ba90&hmac=a44907a0781e70b516a261843ff254b905bba374f4a24cd9175a75fed556699f",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/unabsnwf/flex-tek-product-viewed-behind-red-metal-grid.jpg?width=432&height=648&format=webp&quality=80&v=1dd4a7dd96427d0&hmac=78310c917ad317f0735574822866ad89eebc1d25393873491f189acd7050b87c",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-NK0MVQ52W6&gtm=45je6b50h2v9103803918za20ozb847611728zd847611728xf1&_p=1794111117909&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dMWZhNz&cid=1595095050.1794111119&frm=0&ngs=1&pscdl=denied&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123785233~123814185~124013662&sid=1794111118&sct=1&seg=0&dl=https%3A%2F%2Fwww.smiths.com%2F&dt=Smiths%20Group%3A%20Engineering%20a%20better%20future&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2193",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/js/219999.js",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Smiths%20Group%3A%20Engineering%20a%20better%20future&trk_loc=https%3A%2F%2Fwww.smiths.com%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNP7ZFAZ12ZG8SK22R4F29&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Smiths%20Group%3A%20Engineering%20a%20better%20future&trk_loc=https%3A%2F%2Fwww.smiths.com%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNP7ZFAZ12ZG8SK22R4F29&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js?dnt=1",
+      "domain": "vimeo.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/umbracoforms.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/js/bundle.min.js?v=yXr1C9ZIDsOL2CaJdchRu-FFCJo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/lib/slick/ajax-loader.gif",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/logconsent.ashx?action=decline&nocache=1794111121820&cbid=1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b&cbt=inlineoptin&method=strict&hasdata=true&usercountry=GB&referer=https%3A%2F%2Fwww.smiths.com&rc=false",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/state.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/zzjmpxef/welder-wearing-protective-clothes-at-a-workbench.jpg?width=895&height=549&format=webp&quality=80&v=1dd4a7e98f15370&hmac=e983eb092023432874cfef2c5d59ea431f41342a95704924c8139dadbea10019",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/olpht3xx/john-crane-colleague-wearing-yellow-satefy-hat.jpg?height=640&format=webp&quality=80&v=1dc38f3abcdc570&hmac=4ffab8a91b463ef22c8a9e5640046a26b4596e205c6b0580a25eae9425d788fb",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/fsre0ywj/green-trees-grass-in-front-of-buildings.jpg?height=640&format=webp&quality=80&v=1daa6caad2a0df0&hmac=894fa151523072753d5acb374e85532ff3fc0f370a17e28fb1f26e9faa2506c9",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/vdup3dr2/john-crane-employee-working-at-machine.jpg?height=640&format=webp&quality=80&v=1dc6a825a64f210&hmac=352fa889921576acbd655b751a83e39ed25348dda3e420d914304c3377c3a88e",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/booj5mgt/geanco.jpg?height=640&format=webp&quality=80&v=1da79f52b1006f0&hmac=d42a242433d3d4d25d13c9cfae89869b5d467a1593ef52f278564f4679f3a47e",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/zxzmthry/early-careers-colleagues-with-kini-pathmanathan.jpg?width=601&height=335&format=webp&quality=80&v=1dd6c3c3eba0980&hmac=e3a1658ab3149126c8d8ba4b183279bd2a446f79d6724e90e4a43706b33e54f9",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/4whpspvn/earth-view.jpg?format=webp&quality=80&v=1da4ac5bdea1ba0&hmac=2a917e91422725e9e7df390914b7724e737a6de08e0859bccfb4d80c7f5ebfb0",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/r1hpxk0x/hawker-siddeley-hs-121-trident.jpg?width=601&height=335&format=webp&quality=80&v=1dd678a5578a2a0&hmac=c2f9e6e3f41c3c1c939c88dfed222e9ae54dd849ba70b3c83bef07127ee0af78",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/lxebspwn/heritage.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/fmrdg4yd/smiths-foundation-geanco-foundation-in-nigeria-cropped.png?width=601&height=335&format=webp&quality=80&v=1dd606a05186e70&hmac=a63f45ebaed0ab89aa7aae89224817fa46ef38c0e564dd629a1dfd4356f9fa0e",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/u52dh5mo/drc-welder.jpg?width=601&height=335&format=webp&quality=80&v=1dd4b3925cd8d30&hmac=e547772aa87a266d90f9a36d3493f0dc19becdd5740c037386768e7c85b51508",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/l05pt50v/new-opportunities-in-thermal-solutions.jpg?width=601&height=335&format=webp&quality=80&v=1dd4776b89fb410&hmac=30f2e1ac1822a7b8c54caeeeead5bc1bc5078ccfe22144e7a0cc12ab59447ecc",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/tw0hupef/innovationatsmiths-icon-black.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/ca1ngo5a/siobhan-andrews.jpg?rxy=0.5085156049675498,0.2589778162631026&width=601&height=335&format=webp&quality=80&v=1dd41ef72b90460&hmac=144a90a9c9db7fa0c5c411bed396b7fb38ae21e0d359f599df42d00be3249a3e",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/zbohz0uh/icon-peopleofsmiths.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/guxli0af/wattco-engineering-explained.png?width=601&height=700&format=webp&quality=80&v=1dd66c9cd34c470&hmac=8e5c0552699e3327256b9e2d82d066ac23b00d98567827fbaf7ad709d3ef9e32",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/nnelxkie/icon-engineering-explained.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/qt5lggs5/2026-report-cover-without-writing.jpg?width=601&height=700&format=webp&quality=80&v=1dd4a57f417e600&hmac=6e91b17e8b7fd5f99af33cbfb1e38ee0af5aa53872dfb01927417aa5ff8b39d0",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/fyyh4cvw/flex-tek-image.jpg?width=601&height=700&format=webp&quality=80&v=1dd3457a58ea110&hmac=d61430abe3cfe1db17fa299fadf346afb4e8c0e24beda8b8d73972c74fe2f5a1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/qt5lggs5/2026-report-cover-without-writing.jpg?format=webp&quality=60&v=1dd4a57f417e600&hmac=cf6f8476fcc42292d769746a1129ea8187541bd3671edc41d154d80b71ac23ba",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/images/icons/icon-press-release.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-external-link.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/images/icons/icon-slides.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/images/icons/icon-transcripts.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/images/icons/icon-webcast.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/n1nd5hvr/smiths-175-footer-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/our-businesses",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/uc.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/js/219999.js",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/086bf3ec-a3d1-4c5d-87e9-01e46e184301.css",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/css/bundle.min.css?v=3NzsDMhkmEYIRH60Wi87u5m2EBo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/r10ll2bx/smiths-group-plc-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/5msgs5gl/175-years-header-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-close.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/Black/chevron-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav-back.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-burger-menu.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/arapa0bo/highly-engineered-products.jpg?width=1728&height=972&format=webp&quality=80&v=1db0e8390da6ca0&hmac=113369060b5961d169e1fd3a4954fac5dd15fef8efeb7534bfff558057e866b6",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Arrows/Black/arrow-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js?dnt=1",
+      "domain": "vimeo.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/umbracoforms.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/style.min.css?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/asnjy4ef/x-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/pfff4ad3/linkedin-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/js/bundle.min.js?v=yXr1C9ZIDsOL2CaJdchRu-FFCJo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXZD6PF",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/smiths.com/configuration.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/settings.json",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/uqofdi5s/h2-zero-emission-pipes.jpg?width=432&height=648&format=webp&quality=80&v=1db52f69bf2ba90&hmac=a44907a0781e70b516a261843ff254b905bba374f4a24cd9175a75fed556699f",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/unabsnwf/flex-tek-product-viewed-behind-red-metal-grid.jpg?width=432&height=648&format=webp&quality=80&v=1dd4a7dd96427d0&hmac=78310c917ad317f0735574822866ad89eebc1d25393873491f189acd7050b87c",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=086bf3ec-a3d1-4c5d-87e9-01e46e184301",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/n1nd5hvr/smiths-175-footer-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-NK0MVQ52W6&cx=c&gtm=4e6b50h2",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINLight_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINRegular_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINMedium_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-NK0MVQ52W6&gtm=45je6b50h2v9103803918za20ozb847611728zd847611728xf1&_p=1794111125925&gcs=G100&gcd=13q3q3q3q5l1&npa=1&dma_cps=-&dma=0&cid=1833944664.1794111126&frm=0&ngs=1&pscdl=denied&rcb=12&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185~124013660&sid=1794111125&sct=1&seg=0&dl=https%3A%2F%2Fwww.smiths.com%2Four-businesses&dt=Our%20businesses%2C%20leading%20markets%20with%20distinctive%20engineering%20%7C%20Smiths%20Group&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=259",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/sdk/bc-v5.min.html",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Our%20businesses%2C%20leading%20markets%20with%20distinctive%20engineering%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Four-businesses&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPEH6Q0ZGGQMV1C7ZD94B&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Our%20businesses%2C%20leading%20markets%20with%20distinctive%20engineering%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Four-businesses&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPEH6Q0ZGGQMV1C7ZD94B&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/state.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/sustainability-and-impact",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/uc.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/js/219999.js",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/086bf3ec-a3d1-4c5d-87e9-01e46e184301.css",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/css/bundle.min.css?v=3NzsDMhkmEYIRH60Wi87u5m2EBo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/r10ll2bx/smiths-group-plc-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/5msgs5gl/175-years-header-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-close.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/Black/chevron-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav-back.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-burger-menu.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/3kdph0zv/two-john-crane-workers-walking-outside-surrounded-by-trees.jpg?width=1728&height=780&format=webp&quality=80&v=1dd0e1366518950&hmac=af2f400505e81d4480045fec074e90bb055e88ab969fcbb7f147152cc260dec0",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Arrows/Black/arrow-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/u41lxbzw/msci-esg-ratings-logo.jpg?width=780&format=webp&quality=80&v=1dc99d22b20e430&hmac=3b9db7eb530098e126797f54e137ddf4da720d3463d91faf5abc75e80e143aed",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/dwzfxlyt/iss-corporate-rating.png?width=780&format=webp&quality=80&v=1dc99d22b3137e0&hmac=739bd09e56613bb0917d1ce647abacc33458ddc3957d13e7cf1875ec112a5874",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js?dnt=1",
+      "domain": "vimeo.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/umbracoforms.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/style.min.css?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/asnjy4ef/x-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/pfff4ad3/linkedin-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/js/bundle.min.js?v=yXr1C9ZIDsOL2CaJdchRu-FFCJo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXZD6PF",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/smiths.com/configuration.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/settings.json",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=086bf3ec-a3d1-4c5d-87e9-01e46e184301",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/n1nd5hvr/smiths-175-footer-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-NK0MVQ52W6&cx=c&gtm=4e6b50h2",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-NK0MVQ52W6&gtm=45je6b50h2v9103803918za20ozb847611728zd847611728xf1&_p=1794111130554&gcs=G100&gcd=13q3q3q3q5l1&npa=1&dma_cps=-&dma=0&cid=1032761670.1794111131&frm=0&ngs=1&pscdl=denied&rcb=16&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814185&sid=1794111130&sct=1&seg=0&dl=https%3A%2F%2Fwww.smiths.com%2Fsustainability-and-impact&dt=Our%20approach%20to%20sustainability%20and%20impact%20%7C%20Smiths%20Group&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=250",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINRegular_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINLight_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINMedium_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/o3vkeagk/gastite-colleagues-smilling-wearing-saftey-goggles.jpg?width=432&height=648&format=webp&quality=80&v=1dc38f33a84eab0&hmac=7bec5d89c90526b2708cee253e94f3ea2b2f15f15fd1e3368ac8855ad247b56e",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/npsi34tg/sts-aerospace-exhibition-booth.jpg?width=432&height=648&format=webp&quality=80&v=1dd355d7a6430c0&hmac=ef8e495020f7e03f99a7ffe94b37080d7e806dd338cce6052346e82cf16843c2",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/bkqhom3n/person-with-curly-hair-sitting-on-fork-lift.jpg?width=432&height=648&format=webp&quality=80&v=1dd355d7aa24b30&hmac=5f63a3cebc0f033511e72600c3452c7e9550d8d3fa558389f49d4fe3210a962f",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/booj5mgt/geanco.jpg?width=895&height=549&format=webp&quality=80&v=1da79f52b1006f0&hmac=1f3f65dab4a2a5f1410291c26af1cca4e250b506f3261e49c64a9ea60304da34",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/vlrbmzdh/geanco-foundation-in-nigeria.jpg?width=896&height=520&format=webp&quality=80&v=1dd354228731fd0&hmac=c71c2f88bc1160032c6ce4af566692360c730969b45540d71a8686665fde7df1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/fdclulkh/sustainabilityatsmiths-logo-white.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/2ttl0e2z/people-of-smiths-sophie-darlington-2.jpg?rxy=0.4497784592227332,0.28196900183894025&width=896&height=520&format=webp&quality=80&v=1dcd3cb45ba4790&hmac=8bc5e63e5b3f9f2612210482850090a005c303130c5a34f99a981f4c12ef4ca6",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/cqvafwod/peopleofsmiths-logo-white.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/gxbdyxax/circular-economy.webp?width=896&height=520&format=webp&quality=80&v=1dc3c17f4d42350&hmac=4f112133d6a77091777790a39caa18da4bf08ae50a0a0ad392d8c82a113660f1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/pi3jfoc4/smithsleadersblog-logo-white.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/xmqjsg2g/solar-panels-on-grey-building.jpg?width=896&height=520&format=webp&quality=80&v=1dc312c2662bf40&hmac=b27dd8aeb7c0fa019afbee667c782c4756cab7a1944f862c02079775c16e7b67",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/dhodqrwm/a-modern-residential-home-with-a-modern-hvac-unit.jpg?width=896&height=520&format=webp&quality=80&v=1dbf0ae122434a0&hmac=1643c1aeff20f3141f823cc45fb6974cadb1e6426275fc7bc74981a95c9a3c32",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/nyxp5z2k/engineeringexplained-logo-white.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/oaodwrzc/smiths-detection-products.jpg?width=896&height=520&format=webp&quality=80&v=1db1af8a9593910&hmac=99a417026fff95fceecddd43e2c935e07522cbd81d354524fa35deb0c7bb62e0",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/o5xf4a2z/hydrogen.jpg?width=896&height=520&format=webp&quality=80&v=1dc38f33af0a4d0&hmac=ce9e9c20eb881d87562fecd3484a4237a59752b80b3ca73eb107c5f2f529e31c",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/sdk/bc-v5.min.html",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/state.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Our%20approach%20to%20sustainability%20and%20impact%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fsustainability-and-impact&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPK1Z3NBC0V2NB8CZKX3V&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Our%20approach%20to%20sustainability%20and%20impact%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fsustainability-and-impact&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPK1Z3NBC0V2NB8CZKX3V&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/a0xpdkp2/jc-113.jpg?width=896&height=520&format=webp&quality=80&v=1daa1313b2d1290&hmac=7a0ba2273747768264f2db8fbf99ab1870553bc3ebb31119815eeb6b009a08be",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/xlaag2jz/shutterstock_2431453639.jpg?width=896&height=520&format=webp&quality=80&v=1db14f5c8688e40&hmac=b3c23ca6286f93d16315dbe9b22b1e46541a43c7348d4b70ebd74119bd9d4034",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/bafcxrlr/smiths-detection.jpg?width=896&height=520&format=webp&quality=80&v=1db18d03bc9b2a0&hmac=0c31c8887679fcbba7b8453d70fa9bac5cee42431f2992f12ee141a336ac887a",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/lib/slick/ajax-loader.gif",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/lib/slick/fonts/slick.woff",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/news-and-insights",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/uc.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/js/219999.js",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/086bf3ec-a3d1-4c5d-87e9-01e46e184301.css",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/css/bundle.min.css?v=3NzsDMhkmEYIRH60Wi87u5m2EBo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/r10ll2bx/smiths-group-plc-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/5msgs5gl/175-years-header-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-close.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/Black/chevron-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav-back.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-burger-menu.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/iruhwm1k/photographs-being-taken-of-colleagues-at-john-crane-site.jpg?cc=0,0,0.1771730914588057,0.4431004629629629&width=1728&height=780&format=webp&quality=80&v=1dd355eeee9a370&hmac=a318b8a4f4ba9bb557b7a64de1622b5f3d5ba6bd917777e1dd116f3ed8c44d27",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Arrows/Black/arrow-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://elfsightcdn.com/platform.js",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js?dnt=1",
+      "domain": "vimeo.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/umbracoforms.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/style.min.css?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/asnjy4ef/x-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/pfff4ad3/linkedin-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/js/bundle.min.js?v=yXr1C9ZIDsOL2CaJdchRu-FFCJo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXZD6PF",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/smiths.com/configuration.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/settings.json",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/n1nd5hvr/smiths-175-footer-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=086bf3ec-a3d1-4c5d-87e9-01e46e184301",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/lib/slick/fonts/slick.woff",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-NK0MVQ52W6&cx=c&gtm=4e6b50h2",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-NK0MVQ52W6&gtm=45je6b50h2v9103803918za20ozb847611728zd847611728xf1&_p=1794111135173&gcs=G100&gcd=13q3q3q3q5l1&npa=1&dma_cps=-&dma=0&cid=170451079.1794111135&frm=0&ngs=1&pscdl=denied&rcb=14&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814185&sid=1794111135&sct=1&seg=0&dl=https%3A%2F%2Fwww.smiths.com%2Fnews-and-insights&dt=News%2C%20broadcast%20interviews%20and%20insights%C2%A0%C2%A0%20%7C%20Smiths%20Group&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=201",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINRegular_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINLight_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINMedium_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/uw1l1o2m/john-crane-worker-using-machine.jpg?rxy=0.6776864221962624,0.5074033600103202&width=664&height=884&format=webp&quality=80&v=1dd2f231412f350&hmac=5f9c64edb1d0abf9e450485278c23664d257954c486d28005ebf94bf6ddd4871",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/h1lj2hl4/engineering-explained.jpg?width=664&height=884&format=webp&quality=80&v=1dc6a82e1a0b250&hmac=d1a4a78c0435a5f5c6d18ea6fa856964c283d51f551b97e36780aa96837b229a",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/qiklembd/man-wearing-safety-glasses-and-gloves-inspecting-product.jpg?width=431&height=214&format=webp&quality=80&v=1dd4a7d9e6b1c10&hmac=59b45219bc00a7cdf468477c58f354e5ab7fa7079d06784b1029bf037e2fd1a7",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/takaup1r/john-crane-worker-welding-metal.jpg?width=431&height=214&format=webp&quality=80&v=1dd2f2314a680c0&hmac=a2cdad36753f38b76cd824ad3ecb7103982a58506101c7ad726cf012f11a6da6",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/dwokbmeh/smiling-woman-holding-products-in-factory.jpg?rxy=0.4853667105509043,0.5002968451382075&width=431&height=214&format=webp&quality=80&v=1dd2f2313ca5190&hmac=060549813702b307650185ef8290683af68c267f7ff30017314fb33cd1e54585",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/sdk/bc-v5.min.html",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=News%2C%20broadcast%20interviews%20and%20insights%C2%A0%C2%A0%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fnews-and-insights&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPQJ3JYJFQBGP8NB2FB15&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=News%2C%20broadcast%20interviews%20and%20insights%C2%A0%C2%A0%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fnews-and-insights&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPQJ3JYJFQBGP8NB2FB15&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/state.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://core.service.elfsight.com/p/boot/?page=https%3A%2F%2Fwww.smiths.com%2Fnews-and-insights&w=e55559f1-5244-458d-9369-04ed0c0851b5",
+      "domain": "elfsight.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://universe-static.elfsightcdn.com/app-releases/linkedin-feed/stable/v2.66.1/6d2d2c8fc7f1854a9a008000f4f4d5df454699a2/widget/linkedinFeed.js",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://universe-static.elfsightcdn.com/app-releases/linkedin-feed/stable/v2.66.1/6d2d2c8fc7f1854a9a008000f4f4d5df454699a2/widget/languages/en.json",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://widget-data.service.elfsight.com/api/posts?sources%5B%5D=%7B%22pid%22%3A%22e1d09b14-f3fd-4dad-80eb-ad92b382e535%22%2C%22filters%22%3A%5B%7B%22type%22%3A%22exclude%22%2C%22post_type%22%3A%22repost%22%7D%5D%7D&limit=100",
+      "domain": "elfsight.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://widget-data.service.elfsight.com/api/linkedin/author?company=smithsgroupplc",
+      "domain": "elfsight.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.elfsight.com/icons/app-social-feed-linkedin-verified-icon-multicolor.svg",
+      "domain": "elfsight.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://static.elfsight.com/icons/app-social-feed-sources-linkedin.svg",
+      "domain": "elfsight.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E22AQFkaUFaf6LaCg%2Ffeedshare-shrink_480%2FB4EaGwumIIGwAY-%2F0%2F1793966367484%3Fe%3D1795651200%26v%3Dbeta%26t%3DBYvtB_kLYxLVEFfhv2-YTXa6Zgy-IcIvNepR_uLPWyA",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E05AQHG-GPVRBUAbA%2Fvideocover-high%2FB4EaGrEBTQIEBM-%2F0%2F1793871327792%3Fe%3D1794538800%26v%3Dbeta%26t%3DU8jfFPkBkFIVBH2PPz7PQgzgWTJh00PKsc-pdnbiTUM",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E1FAQE1j5aOTpakDg%2Ffeedshare-document-cover-images_1920%2FB4EaGl5yyaG8BU-%2F0%2F1793784754877%3Fe%3D1794538800%26v%3Dbeta%26t%3DOPNZgVDujGzcaQsX2itqbdcFRhk8RWWLBOD3VQ03g8E",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E0BAQHCmGQDFHrIIA%2Fcompany-logo_400_400%2Fcompany-logo_400_400%2F0%2F1688477173120%2Fsmithsgroupplc_logo%3Fe%3D1795651200%26v%3Dbeta%26t%3DnLrjR04R6kKfndkAeiuIQpHSWO15zUpCxmjoCfw60DU",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E22AQEvekieKs2L2A%2Ffeedshare-image-high-res%2FB4EaGhD1Z7JUAU-%2F0%2F1793703499871%3Fe%3D1795651200%26v%3Dbeta%26t%3DSzDmO2wd1Nwfuk6VrdoWrNpZKfd6kBdywArSAci41Pk",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E1FAQHs5xJoWl4ZtQ%2Ffeedshare-document-cover-images_1920%2FB4EaGHLppIHUBQ-%2F0%2F1793269342915%3Fe%3D1794020400%26v%3Dbeta%26t%3DoeH9wVDOdlGOUUGh6Sy8FhCLH4jFhn0mX5bJmoWrJUo",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fdms.licdn.com%2Fplaylist%2Fvid%2Fv2%2FD4E05AQE6xt3Ain5wXA%2Fthumbnail-shrink_720_1280%2FB4EaGCPnc3KUAk-%2F0%2F1793186496258%3Fe%3D1793847600%26v%3Dbeta%26t%3DuIB2RAmB9UEb5FDVJ_wrwkv4OwW6nHvFVbsk8MlcA7c",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fdms.licdn.com%2Fplaylist%2Fvid%2Fv2%2FD4E05AQHE92u1LlRJJg%2Fthumbnail-shrink_720_1280%2FB4EaF8oMfTHUAg-%2F0%2F1793092276134%3Fe%3D1793847600%26v%3Dbeta%26t%3D2WKcyoYXd1Lz1Sf4Gn8SFsDu0sDxmERZWTLDvcUit6Q",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://phosphor.utils.elfsightcdn.com/?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2Fv2%2FD4E22AQEtIrM0JtZSNQ%2Ffeedshare-image-high-res%2FB4EaF4fwkGJoAU-%2F0%2F1793022954019%3Fe%3D1794441600%26v%3Dbeta%26t%3DQwvSpF6ZIuvj3SK86PQXYWJKtcmyICrxRu1C3ceSdHU",
+      "domain": "elfsightcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/privacy",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/uc.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/js/219999.js",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/086bf3ec-a3d1-4c5d-87e9-01e46e184301.css",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/css/bundle.min.css?v=3NzsDMhkmEYIRH60Wi87u5m2EBo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/r10ll2bx/smiths-group-plc-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/5msgs5gl/175-years-header-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-close.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/Black/chevron-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav-back.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-burger-menu.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/41jjfljq/documents.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-download.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Arrows/Black/arrow-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js?dnt=1",
+      "domain": "vimeo.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/umbracoforms.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/style.min.css?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/asnjy4ef/x-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/pfff4ad3/linkedin-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/js/bundle.min.js?v=yXr1C9ZIDsOL2CaJdchRu-FFCJo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXZD6PF",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/smiths.com/configuration.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/settings.json",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=086bf3ec-a3d1-4c5d-87e9-01e46e184301",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/lib/slick/fonts/slick.woff",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/n1nd5hvr/smiths-175-footer-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-NK0MVQ52W6&cx=c&gtm=4e6b50h2",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-NK0MVQ52W6&gtm=45je6b50h2v9103803918za20ozb847611728zd847611728xf1&_p=1794111140275&gcs=G100&gcd=13q3q3q3q5l1&npa=1&dma_cps=-&dma=0&cid=1547672858.1794111140&frm=0&ngs=1&pscdl=denied&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183~124013660&sid=1794111140&sct=1&seg=0&dl=https%3A%2F%2Fwww.smiths.com%2Fprivacy&dt=Privacy%20%7C%20Smiths%20Group&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=214",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINRegular_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINLight_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINMedium_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/sdk/bc-v5.min.html",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Privacy%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fprivacy&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPWHCQW2132AGFQVWXSTV&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Privacy%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fprivacy&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNPWHCQW2132AGFQVWXSTV&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/state.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/cookies",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/uc.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/js/219999.js",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/086bf3ec-a3d1-4c5d-87e9-01e46e184301.css",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/css/bundle.min.css?v=3NzsDMhkmEYIRH60Wi87u5m2EBo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/r10ll2bx/smiths-group-plc-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/5msgs5gl/175-years-header-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-close.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/Black/chevron-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Chevrons/chevron-nav-back.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/icon-burger-menu.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Icons/Black/icon-search.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/cd.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/Images/Arrows/Black/arrow-right.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://player.vimeo.com/api/player.js?dnt=1",
+      "domain": "vimeo.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/umbracoforms.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/themes/default/style.min.css?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.1",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/asnjy4ef/x-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/pfff4ad3/linkedin-icon.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/js/bundle.min.js?v=yXr1C9ZIDsOL2CaJdchRu-FFCJo",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TXZD6PF",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/smiths.com/configuration.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/settings.json",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/media/n1nd5hvr/smiths-175-footer-logo.svg",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=086bf3ec-a3d1-4c5d-87e9-01e46e184301",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.smiths.com/lib/slick/fonts/slick.woff",
+      "domain": "smiths.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-NK0MVQ52W6&cx=c&gtm=4e6b50h2",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-NK0MVQ52W6&gtm=45je6b50h2v9103803918za20ozb847611728zd847611728xf1&_p=1794111148083&gcs=G100&gcd=13q3q3q3q5l1&npa=1&dma_cps=-&dma=0&cid=337574363.1794111148&frm=0&ngs=1&pscdl=denied&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814183&sid=1794111148&sct=1&seg=0&dl=https%3A%2F%2Fwww.smiths.com%2Fcookies&dt=Cookies%20%7C%20Smiths%20Group&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=196",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINRegular_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINLight_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/kit/086bf3ec-a3d1-4c5d-87e9-01e46e184301/FFDIN/FFDINMedium_normal_normal.woff2",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consent.cookiebot.com/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/cdreport.js?referer=www.smiths.com",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/sdk/bc-v5.min.html",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://secure.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Cookies%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fcookies&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNQ45R4A00E6FT6G1ST7EY&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.leadforensics.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=219999&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Cookies%20%7C%20Smiths%20Group&trk_loc=https%3A%2F%2Fwww.smiths.com%2Fcookies&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.smiths.com&trk_cookie=NA&trk_culid=01M6WNQ45R4A00E6FT6G1ST7EY&trk_dt=false",
+      "domain": "leadforensics.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://consentcdn.cookiebot.com/consentconfig/1c5dd8a4-e68d-4c1c-b225-a1bf0a100f8b/state.js",
+      "domain": "cookiebot.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "ARRAffinity",
+        "value": "af35fd721a9f591822ede9d19f74d9e66b0cd0e0648774056a8046a86293dbd2",
+        "domain": ".smiths.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ARRAffinitySameSite",
+        "value": "af35fd721a9f591822ede9d19f74d9e66b0cd0e0648774056a8046a86293dbd2",
+        "domain": ".smiths.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": ".AspNetCore.Antiforgery.cdV5uW_Ejgc",
+        "value": "CfDJ8BdplLW6g8xLn4btpHaPXGXk_-SAau4KtJOpxAijeuwpwHWq2T5nTaXqZZ2YnNbApgqwDoDCiQH1YYt-2dZ0qCVmQ3EDIg77cwKJHibZuzX10iER2_G5UDlxb0nueSiblapS72_fHBHHLcBKeKeQIeQ",
+        "domain": "www.smiths.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Strict",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "9TMet_RypiJ53gE5DkiNrxFQAMG56yzUzLScZrgDiHM-1794111117.9869256-1.0.1.1-ypDdzJgUcMysM0Bip9C5hze1uTZqyOevJL3bKihGPEoRm0nZSxMc.hDJuYNh5QCpxUcnvObjtOnhwjmbN8vqUdk8PpOaGHW7avwTJ2AVAOUAtWOiifq2B5Mu4V2KQ9W0",
+        "domain": ".fonts.net",
+        "path": "/",
+        "expires": 1794112918.00123,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "0UZ.R1hjwfcm1nY2UKtktwLj87pISd_YtG29QWPW0Mk-1794111118.1884422-1.0.1.1-O0z4p2AemZLqT2vBk5Z1FqgaeEUVyEuCWuqhAVgHNXKSzZZJqVkFMOIptrgiEC2JNeV_BjD70Mil.ViGRFH55_LEHNw_eUrdGVGciw1oxywZJiZdyvRTzVhyI1mx19xC",
+        "domain": ".vimeo.com",
+        "path": "/",
+        "expires": 1794112918.204408,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "ARRAffinity",
+        "value": "af35fd721a9f591822ede9d19f74d9e66b0cd0e0648774056a8046a86293dbd2",
+        "domain": ".smiths.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ARRAffinitySameSite",
+        "value": "af35fd721a9f591822ede9d19f74d9e66b0cd0e0648774056a8046a86293dbd2",
+        "domain": ".smiths.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": ".AspNetCore.Antiforgery.cdV5uW_Ejgc",
+        "value": "CfDJ8BdplLW6g8xLn4btpHaPXGXk_-SAau4KtJOpxAijeuwpwHWq2T5nTaXqZZ2YnNbApgqwDoDCiQH1YYt-2dZ0qCVmQ3EDIg77cwKJHibZuzX10iER2_G5UDlxb0nueSiblapS72_fHBHHLcBKeKeQIeQ",
+        "domain": "www.smiths.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Strict",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "9TMet_RypiJ53gE5DkiNrxFQAMG56yzUzLScZrgDiHM-1794111117.9869256-1.0.1.1-ypDdzJgUcMysM0Bip9C5hze1uTZqyOevJL3bKihGPEoRm0nZSxMc.hDJuYNh5QCpxUcnvObjtOnhwjmbN8vqUdk8PpOaGHW7avwTJ2AVAOUAtWOiifq2B5Mu4V2KQ9W0",
+        "domain": ".fonts.net",
+        "path": "/",
+        "expires": 1794112918.00123,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "0UZ.R1hjwfcm1nY2UKtktwLj87pISd_YtG29QWPW0Mk-1794111118.1884422-1.0.1.1-O0z4p2AemZLqT2vBk5Z1FqgaeEUVyEuCWuqhAVgHNXKSzZZJqVkFMOIptrgiEC2JNeV_BjD70Mil.ViGRFH55_LEHNw_eUrdGVGciw1oxywZJiZdyvRTzVhyI1mx19xC",
+        "domain": ".vimeo.com",
+        "path": "/",
+        "expires": 1794112918.204408,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "CookieConsent",
+        "value": "{stamp:%2783T9WiDPFyJgBonp9z7V42xasSKvUSeKqoDpf4BeQgB3jgPvGNoYjg==%27%2Cnecessary:true%2Cpreferences:false%2Cstatistics:false%2Cmarketing:false%2Cmethod:%27explicit%27%2Cver:1%2Cutc:1794111121833%2Cregion:%27gb%27}",
+        "domain": "www.smiths.com",
+        "path": "/",
+        "expires": 1825647121,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "_cfuvid",
+        "value": "9U8G0FRmt8yCLBCUsSQwp9SpaHtPKtgRrFtrCzTSnJ0-1794111136.8737333-1.0.1.1-CP33WAQwv.2cIBma35GPDDF.sWy5SSx_bXvRMI.kEqw",
+        "domain": ".elfsight.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      }
+    ]
+  },
+  "policy": {
+    "url": "https://www.smiths.com/media/zssh42em/applicant-privacy-notice-finnish-2026.pdf",
+    "found": true,
+    "companies_named": [],
+    "dpo_contact": "dataprotection@smiths.com",
+    "cookie_policy_url": "https://www.smiths.com/cookies",
+    "format": "pdf",
+    "text_chars": 13204,
+    "chars_sent": 13204
+  },
+  "visited_pages": [
+    "https://www.smiths.com/our-businesses",
+    "https://www.smiths.com/sustainability-and-impact",
+    "https://www.smiths.com/news-and-insights"
+  ],
+  "fingerprinting": [],
+  "id_leaks": [],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "critical",
+      "ai_severity": "high",
+      "severity_note": "Raised to critical: rated high and backed by advertising or session-replay evidence.",
+      "title": "Google tracking conflicted with the cookie policy's consent promise",
+      "detail": "Google requests were recorded both before the banner decision and after the user rejected non-essential cookies. This conflicts with the cookie policy's statement that non-essential cookies require permission.",
+      "law": "PECR reg. 6; UK GDPR Art. 5(1)(a)",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "policy_quote": "For all other types of cookies we need your permission.",
+      "reasoning": "The policy expressly says permission is needed for non-essential cookies, while the audit recorded Google-related requests before consent and after rejection. The direct contradiction creates a transparency and fairness problem, supporting high severity even without seeing the request contents.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 5(1)(a)"
+    },
+    {
+      "severity": "high",
+      "title": "Google still received data after you rejected cookies",
+      "detail": "15 requests to google-analytics.com, googletagmanager.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "medium",
+      "title": "1 tracking company not named in the privacy policy",
+      "detail": "The policy names 0 companies. We saw these and found no mention: Google. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "law": "UK GDPR Art. 13(1)(e) (you must be told who receives your data)",
+      "source": "observed",
+      "law_eu": "EU GDPR Art. 13(1)(e)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 15,
+    "companies_seen": 1,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": [
+      "Google"
+    ],
+    "companies_after_reject": [
+      "Google"
+    ],
+    "companies_with_cookies_before_consent": [],
+    "categories": {
+      "Google": "Advertising"
+    },
+    "fingerprinting_domains": [],
+    "id_leak_companies": []
+  },
+  "letter": {
+    "kind": "complaint",
+    "to": "dataprotection@smiths.com",
+    "subject": "Concern about cookie and tracking practices on smiths.com",
+    "body": "Dear Data Protection Officer,\n\nI am writing to raise concerns identified during an automated, passive privacy audit of https://smiths.com on 2026-11-08 04:11 UTC. Using a fresh browser session, the audit detected the cookie banner, clicked \u201cReject non-essential cookies\u201d, then browsed the site and recorded what was still sent.\n\nThe pages visited after rejection were:\n1. https://www.smiths.com/our-businesses\n2. https://www.smiths.com/sustainability-and-impact\n3. https://www.smiths.com/news-and-insights\n\nWe also reviewed the privacy policy at:\n1. https://www.smiths.com/media/zssh42em/applicant-privacy-notice-finnish-2026.pdf\n\nOur concerns are as follows:\n1. Our review suggests that Google tracking conflicted with the site\u2019s consent promise. Google requests were recorded both before the banner decision and after the user rejected non-essential cookies. This appears to conflict with the policy statement: \u201cFor all other types of cookies we need your permission.\u201d\n2. We observed that Google still received data after cookies were rejected. After clicking \u201cReject non-essential cookies\u201d, 15 requests were made to google-analytics.com and googletagmanager.com.\n3. We observed one tracking company that did not appear to be named in the privacy policy reviewed. The policy names 0 companies, and we saw Google. We recognise the policy may describe recipients only by category.\n\nPlease would you:\n1. Explain each of the points above.\n2. Confirm which cookies, trackers or similar technologies you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential tracking that is set or triggered without consent.\n4. Reply within one month.\n\nIf this matter is not resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T04:12:46.914238+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Google tracking conflicted with the cookie policy's consent promise",
+      "Google still received data after you rejected cookies",
+      "1 tracking company not named in the privacy policy"
+    ],
+    "delivery": {
+      "mode": "live",
+      "sent": false,
+      "to": null,
+      "at": "2026-11-08T04:14:22.033164+00:00",
+      "reason": "SMTPDataError: (502, b'5.7.0 Your SMTP account is not yet activated. Please contact us at contact@sendinblue.com to request activation.')",
+      "message_id": null,
+      "site": "smiths.com",
+      "intended_to": "dataprotection@smiths.com",
+      "saved_to": null,
+      "trigger": "manual"
+    },
+    "auto": {
+      "tier": "critical",
+      "reason": "Audit's worst finding is critical."
+    }
+  },
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit found a significant consent-control issue: Google-related requests occurred before the banner decision and continued after non-essential cookies were rejected. This directly conflicts with the cookie policy's statement that permission is required for non-essential cookies. The supplied privacy notice is an applicant notice rather than a clearly general website privacy notice, although it covers most of the listed Article 13 topics.",
+    "findings_kept": 1,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: True. Method: selector. Buttons clicked: Reject non-essential cookies.",
+      "E2: Tracker Google (Advertising): 3 requests before consent, 15 after reject, to google-analytics.com, googletagmanager.com. Example after-reject requests: https://www.googletagmanager.com/gtm.js?id=GTM-TXZD6PF | https://www.googletagmanager.com/gtag/js?id=G-NK0MVQ52W6&cx=c&gtm=4e6b50h2",
+      "E3: Pages browsed and scrolled after reject: https://www.smiths.com/our-businesses, https://www.smiths.com/sustainability-and-impact, https://www.smiths.com/news-and-insights.",
+      "E4: Privacy policy: https://www.smiths.com/media/zssh42em/applicant-privacy-notice-finnish-2026.pdf. Companies it names: none extracted. Contact email found: dataprotection@smiths.com.",
+      "E5: Cookie policy: https://www.smiths.com/cookies.",
+      "E6: Automated check (high): Google still received data after you rejected cookies. 15 requests to google-analytics.com, googletagmanager.com after you clicked reject (Advertising).",
+      "E7: Automated check (medium): 1 tracking company not named in the privacy policy. The policy names 0 companies. We saw these and found no mention: Google. (The policy may describe them only by category, e.g. 'advertising partners'.)"
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "Kyseist\u00e4 ty\u00f6paikkaa rekrytoiva Smiths-yksikk\u00f6 on henkil\u00f6tietojesi rekisterinpit\u00e4j\u00e4."
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "Miksi k\u00e4yt\u00e4mme henkil\u00f6tietojasi"
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "present",
+        "quote": "Oikeusperusteemme ovat: toimenpiteiden toteuttaminen pyynn\u00f6st\u00e4si ennen ty\u00f6sopimuksen solmimista, lakis\u00e4\u00e4teisten velvoitteiden noudattaminen, oikeutetut etumme tehokkaan ja turvallisen rekrytointiprosessin toteuttamisessa sek\u00e4 suostumus, kun se on asianmukaista."
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "Voimme jakaa asiaankuuluvia henkil\u00f6tietoja valtuutetuille Smithsin ty\u00f6ntekij\u00f6ille ja konserniyhti\u00f6ille, rekrytointi- ja teknologiapalvelujen tarjoajien, ammatillisten neuvonantajien, suosittelijoiden, taustatarkistusten suorittajien, s\u00e4\u00e4ntelyviranomaisten ja julkisten viranomaisten kanssa."
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "S\u00e4ilyt\u00e4mme hakijoiden tietoja vain niin kauan kuin on tarpeen rekrytointiprosessin, lakis\u00e4\u00e4teisten tai s\u00e4\u00e4ntelyvaatimusten sek\u00e4 vaatimusten esitt\u00e4misen tai puolustamisen kannalta, s\u00e4ilytysk\u00e4yt\u00e4nt\u00f6mme ja sovellettavan paikallisen lains\u00e4\u00e4d\u00e4nn\u00f6n mukaisesti."
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "present",
+        "quote": "Sovellettavan lains\u00e4\u00e4d\u00e4nn\u00f6n mukaan voit pyyt\u00e4\u00e4 meit\u00e4 antamaan sinulle p\u00e4\u00e4syn henkil\u00f6tietoihisi, oikaisemaan tai poistamaan niit\u00e4, rajoittamaan niiden k\u00e4ytt\u00f6\u00e4, vastustamaan niiden k\u00e4sittely\u00e4 tai toimittamaan tiettyj\u00e4 tietoja siirrett\u00e4v\u00e4ss\u00e4 muodossa."
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "You can at any time change or withdraw your consent from the Cookie Declaration on our website- see link at end of each page."
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "present",
+        "quote": "tehd\u00e4 valituksen Yhdistyneen kuningaskunnan tietosuojavaltuutetun toimistoon (Information Commissioner\u2019s Office) tai muulle asianomaiselle viranomaiselle."
+      }
+    }
+  }
+}

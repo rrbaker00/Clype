@@ -14,18 +14,68 @@ fetch("/api/audits/" + encodeURIComponent(id))
 // Build the whole page from the audit JSON, top to bottom.
 function renderAudit(a) {
   document.title = host(a.url) + " · Clype";
-  document.getElementById("out").replaceChildren(
+  const panels = [
     headerSection(a),
+    timelineSection(a),                // older audits of the same site (filled in after a fetch)
     statsSection(a),
     findingsPanel(a),
     companiesPanel(a),
     el("div", { class: "grid2" }, consentPanel(a), policyPanel(a)),  // side by side
     cookiesPanel(a),
-    fingerprintPanel(a),
+    fingerprintPanel(a),               // null when nothing was caught
+    idLeakPanel(a),                    // null when no IDs were sent to other companies
     requestsPanel(a),
     letterPanel(a),
     rawPanel(a),
-  );
+  ];
+  // replaceChildren() would print a null panel as the text "null", so leave those out.
+  document.getElementById("out").replaceChildren(...panels.filter(Boolean));
+}
+
+// Timeline: shown only when this site was audited more than once. Collapsed to one line;
+// clicking it lists every audit of the site (newest first) with links to the older ones.
+function timelineSection(a) {
+  const box = el("div", { class: "panel timeline", hidden: true });
+  fetch(`/api/audits/${encodeURIComponent(a.id ?? id)}/history`)
+    .then((r) => (r.ok ? r.json() : Promise.reject(`API error ${r.status}`)))
+    .then((runs) => {
+      if (runs.length < 2) return;                       // only this audit: nothing to show
+      const current = a.id ?? id;
+      const list = el("ol", { class: "timeline-list", hidden: true }, runs.map((r, i) => {
+        const older = runs[i + 1];                       // the run before this one (list is newest first)
+        const after = r.tracker_counts?.after ?? 0;
+        const change = older && r.loaded !== false && older.loaded !== false
+          ? after - (older.tracker_counts?.after ?? 0) : 0;
+        const label = el("span", { class: "tl-date" }, fmtDate(r.started_at));
+        return el("li", { class: r.id === current ? "current" : "" },
+          r.id === current ? label : el("a", { href: "audit.html?id=" + encodeURIComponent(r.id) }, label),
+          runPill(r),
+          r.worst ? el("span", { class: `chip sev-${r.worst}` }, r.worst) : null,
+          el("span", { class: "muted small" }, `${r.findings_count} finding${r.findings_count === 1 ? "" : "s"}`),
+          r.loaded === false ? null : el("span", { class: after ? "hot small" : "muted small" },
+            `${after} tracking after reject`,
+            change ? el("span", { class: change > 0 ? "hot" : "okc" }, ` (${change > 0 ? "+" : ""}${change})`) : null),
+          r.id === current ? el("span", { class: "chip" }, "viewing") : null);
+      }));
+      const toggle = el("button", { type: "button", class: "secondary timeline-toggle" },
+        `Audited ${runs.length} times · show timeline`);
+      toggle.onclick = () => {
+        list.hidden = !list.hidden;
+        toggle.textContent = `Audited ${runs.length} times · ${list.hidden ? "show" : "hide"} timeline`;
+      };
+      box.replaceChildren(toggle, list);
+      box.hidden = false;
+    })
+    .catch((err) => console.error(err));                 // the timeline is extra: never break the page
+  return box;
+}
+
+// Same rules as the dashboard cards' status pill.
+function runPill(r) {
+  if (r.loaded === false) return el("span", { class: "pill warn" }, "Blocked");
+  if (r.rejected !== true) return el("span", { class: "pill warn" }, "Reject failed");
+  if ((r.tracker_counts?.after ?? 0) > 0) return el("span", { class: "pill bad" }, "Ignored your no");
+  return el("span", { class: "pill ok" }, "Respected your choice");
 }
 
 // Site name, date, and the cost numbers (Wordsmith judges these, so they're up top).
@@ -222,6 +272,31 @@ function valueKind(kind) {
   const label = { id: "Unique ID", value: "A value", empty: "Empty", placeholder: "Nothing (placeholder)" }[kind];
   if (!label) return "—";
   return el("span", { class: kind === "id" ? "chip hot" : kind === "value" ? "chip" : "chip muted" }, label);
+}
+
+// Our per-browser IDs found in requests to OTHER companies (agent/crosssite.py). Hidden if none.
+function idLeakPanel(a) {
+  const leaks = a.id_leaks ?? [], syncs = a.id_syncs ?? [];
+  if (leaks.length === 0 && syncs.length === 0) return null;
+  const when = { before_consent: "Before choice", after_reject: "After reject" };
+  return el("div", { class: "panel" },
+    el("h3", {}, `IDs sent to other companies (${leaks.length})`),
+    el("p", { class: "muted small" }, "A value unique to this browser (it differed in a second, fresh browser) "
+      + "found in a request to another company. \"Likely\" = the fresh browser didn't get that cookie, so we "
+      + "couldn't double-check it; those aren't used for findings."),
+    leaks.length ? el("table", {},
+      el("tr", {}, el("th", {}, "Cookie"), el("th", {}, "ID"), el("th", {}, "Sent to"), el("th", {}, "When"),
+        el("th", {}, "Where"), el("th", {}, "Checked")),
+      leaks.map((l) => el("tr", {},
+        el("td", {}, l.cookie),
+        el("td", { class: "muted" }, l.id_preview),
+        el("td", {}, l.company ? el("b", {}, l.company) : null, " ", el("span", { class: "muted" }, l.to)),
+        el("td", { class: l.phase === "after_reject" ? "hot" : "" }, when[l.phase] ?? l.phase),
+        el("td", { class: "muted" }, l.in + (l.encoding !== "raw" ? ` (${l.encoding})` : "")),
+        el("td", {}, l.confidence === "confirmed" ? "Confirmed" : el("span", { class: "muted" }, "Likely"))))) : null,
+    syncs.length ? el("div", {}, el("h4", {}, "Ad-tech ID matching"),
+      syncs.map((x) => el("div", { class: "small" }, `${x.type} → ${x.to} (${when[x.phase] ?? x.phase})`
+        + (x.sources?.length ? `: ${x.sources.join(", ")}` : "")))) : null);
 }
 
 // Every request, with filters. Redraws the table when a filter changes.

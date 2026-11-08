@@ -1,0 +1,65 @@
+{
+  "started_at": "2026-11-08T03:34:53.448694+00:00",
+  "duration_s": 40.8,
+  "sites": [
+    {
+      "site": "bbc.co.uk",
+      "url": "https://www.bbc.co.uk",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "channel4.com",
+      "url": "https://www.channel4.com",
+      "loaded": true,
+      "rejected": true
+    },
+    {
+      "site": "independent.co.uk",
+      "url": "https://www.independent.co.uk",
+      "loaded": true,
+      "rejected": false
+    }
+  ],
+  "requests": 650,
+  "links": [
+    {
+      "company": "Dotmetrics",
+      "category": "Analytics",
+      "via": "cookie DotMetrics.UniqueUserIdentityCookie",
+      "id_preview": "232ed21d\u2026",
+      "sites": {
+        "bbc.co.uk": {
+          "phases": [
+            "after_reject",
+            "before_consent"
+          ],
+          "example": "https://uk-script.dotmetrics.net/Scripts/script.js?v=374"
+        },
+        "independent.co.uk": {
+          "phases": [
+            "before_consent"
+          ],
+          "example": "https://uk-script.dotmetrics.net/door.js?id=6669"
+        }
+      },
+      "after_reject_on": [
+        "bbc.co.uk"
+      ]
+    }
+  ],
+  "cost": {
+    "llm_calls": 1,
+    "input_tokens": 353,
+    "output_tokens": 11,
+    "model": "gpt-5.6-luna",
+    "elapsed_s": 40.79,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 1,
+        "input_tokens": 353,
+        "output_tokens": 11
+      }
+    }
+  }
+}

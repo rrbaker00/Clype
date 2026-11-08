@@ -62,6 +62,11 @@ A wrong accusation in front of judges is worse than a missed one.
 - [x] #5 EU GDPR + ePrivacy Art. 5(3) equivalents (agent/eu_law.py → finding.law_eu; filled in on the fly for old audits)
 - [x] Cookie contents check: cookies.value_kind (empty / placeholder / id / value); empty + placeholder tracker cookies are not evidence
 - [x] AI usage panel on the dashboard (GET /api/usage; cost.by_model; US$ estimate from LLM_PRICES, optional LLM_BUDGET bar)
+- [x] Sky fixes: tag loaders (GTM, adobedtm, tealiumiq) alone never back "critical"; policy pages < 3000 chars (hub pages) never produce "missing" checklist items or "not named in policy" findings
+- [x] Per-site timeline on the audit page (GET /api/audits/{id}/history) + fixed stray "null" text under the cookie tables
+- [x] Dashboard: one card per site (newest audit, "N runs" chip)
+- [x] Cross-site A: ID leaks in every audit (agent/crosssite.py; fresh-browser ID check; id_leaks / id_syncs; findings for confirmed IDs to known trackers)
+- [x] Cross-site B: "Proof of cross-site tracking" button (linkage pass in one browser; linkage/*.json)
 - [ ] #6 Children's Code: flag ad trackers on sites aimed at children (low confidence) (~1 h)
 
 ## 2. Pipeline reliability (P, about 1.5 h)

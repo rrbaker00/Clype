@@ -8,10 +8,12 @@ function fetchAudits() {
   fetch("/api/audits")
     // If the server answered OK, read the JSON. Otherwise jump to .catch with an error message.
     .then((r) => (r.ok ? r.json() : Promise.reject(`API error ${r.status}`)))
-    .then((audits) => {
+    .then((all) => {
+      const audits = latestPerSite(all);   // one card per site: its newest audit
       renderStats(audits);
       renderCards(audits);
       fetchCrossSite();   // the cross-site view changes whenever the audits do
+      fetchProof();       // and so do the suggested sites for the cross-site proof
       fetchUsage();       // so does the AI usage total
     })
     // Show errors on the page AND in the console, instead of failing silently.
@@ -19,6 +21,18 @@ function fetchAudits() {
       console.error(err);
       document.getElementById("cards").replaceChildren(el("p", { class: "muted" }, "Could not load audits: " + err));
     });
+}
+
+// Keep only the newest audit of each site (the API lists newest first), and remember how
+// many runs each site has so the card can say "3 runs". Older runs: the audit page's timeline.
+function latestPerSite(all) {
+  const latest = new Map();
+  for (const a of all) {
+    const key = a.site || host(a.url);
+    if (latest.has(key)) latest.get(key).runs += 1;
+    else latest.set(key, { ...a, runs: 1 });
+  }
+  return [...latest.values()];
 }
 
 // Fill the 4 big numbers.
@@ -59,7 +73,8 @@ function makeCard(a) {
   const hidden = a.summary?.companies_not_disclosed ?? [];  // companies the policy didn't mention
   return el("a", { class: "card" + (isSevere(a) ? " severe" : ""), href: "audit.html?id=" + encodeURIComponent(a.id) },
     el("div", { class: "row" }, el("span", { class: "host" }, host(a.url)), statusPill(a)),
-    el("div", { class: "date" }, fmtDate(a.started_at)),
+    el("div", { class: "date" }, fmtDate(a.started_at), " ",
+      a.runs > 1 ? el("span", { class: "chip", title: "Older runs are in the timeline on the audit page" }, `${a.runs} runs`) : null),
     el("div", { class: "mini" },
       el("div", {}, el("b", {}, show(t.seen)), el("span", {}, "found")),
       el("div", { class: "ok" }, el("b", {}, show(t.stopped)), el("span", {}, "stopped")),
@@ -140,6 +155,59 @@ function renderUsage(u) {
   document.getElementById("usageNote").textContent =
     `${u.audits_with_ai} of ${u.audits} audits used AI` +
     (u.unpriced_audits ? ` · ${u.unpriced_audits} older audit${u.unpriced_audits > 1 ? "s" : ""} not in the spend estimate` : "");
+}
+
+// ---- Cross-site proof: one browser visits a few audited sites; same ID reaching a tracker = proof ----
+let proofTimer = null;
+
+function fetchProof() {
+  fetch("/api/cross-site/proof")
+    .then((r) => (r.ok ? r.json() : Promise.reject(`API error ${r.status}`)))
+    .then(renderProof)
+    .catch((err) => console.error(err));
+}
+
+function startProof(sites) {
+  if (!confirm(`Visit ${sites.join(", ")} in one shared browser (rejecting each cookie banner) and check `
+    + "whether any tracker gets the same ID from more than one of them? Takes about 30 s per site.")) return;
+  fetch("/api/cross-site/prove", { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ sites }) })
+    .then((r) => (r.ok ? r.json() : r.json().then((e) => Promise.reject(e.detail ?? `API error ${r.status}`))))
+    .then(fetchProof)
+    .catch((err) => alert(err));
+}
+
+function renderProof(p) {
+  const box = document.getElementById("proofBox");
+  clearTimeout(proofTimer);
+  if (p.status === "running") proofTimer = setTimeout(fetchProof, 3000);   // poll while it runs
+  const when = (phases) => phases.includes("after_reject") ? el("span", { class: "hot" }, " after you rejected cookies")
+    : el("span", { class: "muted" }, " before a cookie choice");
+  const r = p.result;
+  const links = r?.links ?? [];
+  // Wrapped in el(): it skips nulls and flattens lists (replaceChildren would print "null").
+  box.replaceChildren(el("div", {},
+    el("div", { class: "row" },
+      el("h4", {}, "Proof of cross-site tracking"),
+      p.status === "running"
+        ? el("span", { class: "muted small" }, `Running on ${p.sites.join(", ")}: ${p.progress ?? ""}`)
+        : p.suggested_sites.length >= 2
+          ? el("button", { type: "button", onclick: () => startProof(p.suggested_sites) },
+              `Check ${p.suggested_sites.join(" + ")}`)
+          : el("span", { class: "muted small" }, "Audit 2+ sites that share a tracker to check this")),
+    el("p", { class: "muted small" },
+      "The list above shows which companies are present. This check opens the sites in one browser and looks "
+      + "for the same ID reaching the same company from different sites, which is what lets it link your visits."),
+    p.error ? el("p", { class: "hot small" }, "Last run failed: " + p.error) : null,
+    r ? el("div", { class: "muted small" }, `Last check ${fmtDate(r.started_at)} on `
+      + r.sites.map((s) => s.site + (s.loaded ? (s.rejected ? " (rejected)" : " (no reject found)") : " (didn't load)")).join(", ")
+      + ` · ${r.duration_s} s`) : null,
+    r && links.length === 0 ? el("p", { class: "small" }, "No shared IDs found between these sites.") : null,
+    links.map((l) => el("div", { class: "proof-link" },
+      el("b", {}, l.company), l.category ? el("span", { class: "chip" }, l.category) : null,
+      ` got the same ID (${l.id_preview}, via ${l.via}) from `,
+      Object.entries(l.sites).map(([site, v], i) => [i ? " and " : "", el("b", {}, site), when(v.phases)]),
+      ". It can link your visits across these sites."))));
 }
 
 function fetchCrossSite() {

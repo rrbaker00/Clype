@@ -1,0 +1,5427 @@
+{
+  "url": "https://intertek.com",
+  "started_at": "2026-11-08T04:12:52.157690+00:00",
+  "duration_s": 55.11,
+  "cost": {
+    "llm_calls": 3,
+    "input_tokens": 10909,
+    "output_tokens": 2483,
+    "model": "gpt-5.4+gpt-5.6-luna",
+    "elapsed_s": 55.11,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 2,
+        "input_tokens": 9759,
+        "output_tokens": 1944
+      },
+      "gpt-5.4": {
+        "llm_calls": 1,
+        "input_tokens": 1150,
+        "output_tokens": 539
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "selector",
+    "clicks": [
+      "Reject All"
+    ],
+    "accept_label": "Accept All Cookies",
+    "preticked": [],
+    "reject_steps": 1
+  },
+  "requests": [
+    {
+      "url": "https://intertek.com/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/js/813707.js",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0-intertek-20250905-font500.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/44e8afbd-c38f-4d1c-a016-7103c1ad09af.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/css/opti-custom.css?v=5",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ip.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-assurance.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-testing.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-inspection.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-certification.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/globalassets/_media/co-branded-logos/itk-sustainability-logo.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-company-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-leadership-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-careers-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/world-map-nav.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/0e4b13a63fa446699b1ff6964fdd8c25/homepage-loop-v6-sml.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/929d5cb55cd44662b1e76382a7a5a263/manager-with-transparent-smart-tablet-in-warehouse-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/6830d4c120584c9c8ad26ac236ac9798/man-with-safety-vest-and-helmpet-monitoring-cargo-container-transfer-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/chemicals-and-pharma/chemicals-woman-on-assembly-line.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/building-and-construction/modern-glass-building-thinkstockphotos-491448043_card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/cargo-and-analytical-assessment/lng-terminal-pipes.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/21f2916f774c41bda8d32252a1e0fd4b/tomatoes-in-basket_card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/people-assurance/gettyimages-554995551_card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/government-and-trade-services/banner-image_r3.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/products/retail-rack-of-yellow-clothes-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/transportation-tech/transportation-engine-testing.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/transportation-tech/assurance-cerello2x.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/demo/testing-grey2x.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/demo/inspection-blue2x.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/demo/certification-white2x.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/social/2026q4/contact-you-cant-see.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/social/2026q4/see-beyond-the-pane.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/social/2026q4/beneath-the-surface.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/social/2026q4/trick-or-treat.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/demo.js?v=aPkI-NeZV5CrrcfQCmw14fuj8WOgqblh9bfXzy7jY9M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/milestone.js?v=cvWGESC80vWRWfUt5pLl0VqQ2xh0xJiI96oHXNhQh5M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-1.12.4.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/Util/Find/epi-util/find.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/admin/intertek.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/89e2a7df-934e-4301-b9ea-55da51e6c45a.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Intertek&trk_loc=https%3A%2F%2Fwww.intertek.com%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNQWK1YB1KFVFK66B5KY3J&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Intertek&trk_loc=https%3A%2F%2Fwww.intertek.com%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNQWK1YB1KFVFK66B5KY3J&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5KTGQHGH",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=44e8afbd-c38f-4d1c-a016-7103c1ad09af",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "domain": "onetrust.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js",
+      "domain": "azure.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-symbol.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/flags.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-stack.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fast.fonts.net/t/1.css?apiType=css&projectid=undefined",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Medium.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Light-v2.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_500.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/media/home/2023/homepage-loop-v6-sml.mp4",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/media/video/2025/amazing-intertek-w-tagline-spotlight-clean.mp4",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/api/formdata/postdata",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/media/video/2025/amazing-intertek-w-tagline-spotlight-clean.mp4",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/a199c09a-211c-4fdc-a866-43be630166c1/en.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-2NP31Y6QYW&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ia.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otFlat.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/v2/otPcCenter.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://api.usea01.idio.episerver.net/1.0/users/idio_visitor_id:9b29db77-51a8-4973-9a2e-ba20955da6aa/content?include_topics&callback=idio.r0&key=GZ5LCQKZI3HK11UBXTPN&session[]=https%3A%2F%2Fwww.intertek.com%2F&session[]=https%3A%2F%2Fwww.intertek.com%2F&rpp=3",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458300b37444dbd60beb4464cd3c5&d=1172&a=consume&u=https%3A%2F%2Fwww.intertek.com%2F&l=1794111173531&z=0.5756440961892918",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/ot_close.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_400.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/bbd17ffb-3f16-4f3a-afd3-d8d4f56cb512/69ebd729-56f1-425c-9875-2f0f9905936d/8445e0c0-f8ca-4009-a75f-95de83a82b11/mobileLogo_rt.png",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111173218&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AAAAACAC&cid=1579551068.1794111174&ec_mode=a&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183&sid=1794111173&sct=1&seg=0&dl=https%3A%2F%2Fwww.intertek.com%2F&dt=Intertek&en=page_view&_fv=1&_nsi=1&_ss=1&ep.intertek_gbl=Untagged&ep.intertek_business=Untagged&ep.intertek_custom=Untagged&ep.intertek_brand=Untagged&tfd=1181",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-2NP31Y6QYW&cid=1579551068.1794111174&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&rcb=0&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.google.co.uk/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-2NP31Y6QYW&cid=1579551068.1794111174&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&rcb=0&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183&z=576468629",
+      "domain": "google.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794111173739&pageLoadId=a28ce682-c83b-488c-97d0-787cd54f77c7&url=https%3A%2F%2Fwww.intertek.com%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/1153296569248889?v=2.9.438&r=stable&domain=www.intertek.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111173218&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AAAAACQC&cid=1579551068.1794111174&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183&sid=1794111173&sct=1&seg=0&dl=https%3A%2F%2Fwww.intertek.com%2F&dt=Intertek&_s=2&tfd=6463",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311za20gzb9226005754zd9226005754xf1&_p=1794111173218&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AEAAACQC&ae=a&cid=1579551068.1794111174&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=3&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183&sid=1794111173&sct=1&seg=0&dl=https%3A%2F%2Fwww.intertek.com%2F&dt=Intertek&en=scroll&epn.percent_scrolled=90&_et=2&tfd=6468",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/industries/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/js/813707.js",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0-intertek-20250905-font500.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/44e8afbd-c38f-4d1c-a016-7103c1ad09af.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/css/opti-custom.css?v=5",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-assurance.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-testing.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-inspection.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-certification.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/globalassets/_media/co-branded-logos/itk-sustainability-logo.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-company-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-leadership-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-careers-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/world-map-nav.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/chemicals-and-pharma/chemicals-woman-on-assembly-line.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/building-and-construction/modern-glass-building-thinkstockphotos-491448043_card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/cargo-and-analytical-assessment/lng-terminal-pipes.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/21f2916f774c41bda8d32252a1e0fd4b/tomatoes-in-basket_card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/government-and-trade-services/banner-image_r3.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/people-assurance/gettyimages-554995551_card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/products/retail-rack-of-yellow-clothes-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/industries/transportation-tech/transportation-engine-testing.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/demo.js?v=aPkI-NeZV5CrrcfQCmw14fuj8WOgqblh9bfXzy7jY9M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/milestone.js?v=cvWGESC80vWRWfUt5pLl0VqQ2xh0xJiI96oHXNhQh5M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-1.12.4.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/Util/Find/epi-util/find.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/admin/intertek.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ip.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/89e2a7df-934e-4301-b9ea-55da51e6c45a.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Industries&trk_loc=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNR3VK280VAFH3FVD6MTTC&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Industries&trk_loc=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNR3VK280VAFH3FVD6MTTC&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5KTGQHGH",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=44e8afbd-c38f-4d1c-a016-7103c1ad09af",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location",
+      "domain": "onetrust.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-2NP31Y6QYW&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111180659&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AAAAACQC&cid=1579551068.1794111174&ec_mode=a&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=17&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120412526~120420416~120469145~120469153~121246026~121246034~123814183&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&dt=Industries&en=page_view&ep.intertek_gbl=Multi-Business%20Line&ep.intertek_business=Untagged&ep.intertek_custom=Untagged&ep.intertek_brand=Untagged&_et=1&tfd=265",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Light-v2.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Medium.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_500.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_400.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js",
+      "domain": "azure.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-symbol.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/flags.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-stack.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fast.fonts.net/t/1.css?apiType=css&projectid=undefined",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/hero-svgs/About-Intertek--Our-Brand.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ia.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.intertek.com/api/formdata/postdata",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/a199c09a-211c-4fdc-a866-43be630166c1/en.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otFlat.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/v2/otPcCenter.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/bbd17ffb-3f16-4f3a-afd3-d8d4f56cb512/69ebd729-56f1-425c-9875-2f0f9905936d/8445e0c0-f8ca-4009-a75f-95de83a82b11/mobileLogo_rt.png",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458300b37444dbd60beb4464cd3c5&d=1172&a=consume&u=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&l=1794111180780&z=0.8804587466635727",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/1153296569248889?v=2.9.438&r=stable&domain=www.intertek.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794111180791&pageLoadId=3a3f4167-1459-41b6-b0e1-347a61d416d4&url=https%3A%2F%2Fwww.intertek.com%2Findustries%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=1153296569248889&ev=PageView&dl=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&rl=&if=false&ts=1794111180795&iw=false&sw=1280&sh=720&v=2.9.438&r=stable&ec=0&o=69788&aems=0%3B0&fbp=fb.1.1794111173802.127374802803549675&ler=empty&bfs[b]=1&plt=320.8999999910593&it=1794111180784&coo=false&expv2[0]=mr1&expv2[1]=pl0&expv2[2]=el3&expv2[3]=bc1&expv2[4]=ra0&expv2[5]=rp0&expv2[6]=ct2&expv2[7]=hf0&expv2[8]=dp1&expv2[9]=fw1&expv2[10]=cn1&expv2[11]=tz1&expv2[12]=pe1&expv2[13]=ee1&expv2[14]=bu1&expv2[15]=ta1&expv2[16]=ot1&expv2[17]=hv1&expv2[18]=ep1&expv2[19]=rh0&expv2[20]=ah0&expv2[21]=nv0&expv2[22]=oq0&rqm=GET",
+      "domain": "facebook.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311za20gzb9226005754zd9226005754xf1&_p=1794111180659&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AEAAACQC&ae=a&cid=1579551068.1794111174&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=17&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=2&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120412526~120420416~120469145~120469153~121246026~121246034~123814183&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&dt=Industries&en=scroll&epn.percent_scrolled=90&_et=17&tfd=827",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/industries-services/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/js/813707.js",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0-intertek-20250905-font500.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/44e8afbd-c38f-4d1c-a016-7103c1ad09af.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/css/opti-custom.css?v=5",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ip.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/89e2a7df-934e-4301-b9ea-55da51e6c45a.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Industries%20%26%20Services&trk_loc=https%3A%2F%2Fwww.intertek.com%2Findustries-services%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNR8BPXACD4GJBHBW5BAFN&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Industries%20%26%20Services&trk_loc=https%3A%2F%2Fwww.intertek.com%2Findustries-services%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNR8BPXACD4GJBHBW5BAFN&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5KTGQHGH",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=44e8afbd-c38f-4d1c-a016-7103c1ad09af",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-assurance.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-testing.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-inspection.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-certification.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/globalassets/_media/co-branded-logos/itk-sustainability-logo.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-company-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-leadership-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-careers-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/world-map-nav.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/demo.js?v=aPkI-NeZV5CrrcfQCmw14fuj8WOgqblh9bfXzy7jY9M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/milestone.js?v=cvWGESC80vWRWfUt5pLl0VqQ2xh0xJiI96oHXNhQh5M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-1.12.4.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/Util/Find/epi-util/find.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/admin/intertek.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-2NP31Y6QYW&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/a199c09a-211c-4fdc-a866-43be630166c1/en.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111185270&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AAAAACQC&cid=1579551068.1794111174&ec_mode=a&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=2&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814183~124013661&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Findustries-services%2F&dt=Industries%20%26%20Services&en=page_view&ep.intertek_gbl=Untagged&ep.intertek_business=Untagged&ep.intertek_custom=Untagged&ep.intertek_brand=Untagged&_et=2&tfd=243",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Light-v2.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Medium.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_500.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_400.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js",
+      "domain": "azure.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-symbol.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/flags.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-stack.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fast.fonts.net/t/1.css?apiType=css&projectid=undefined",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/cdbda6b838f540d5be4ecaf4e818ec80/intertekservices.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otFlat.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/v2/otPcCenter.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ia.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.intertek.com/api/formdata/postdata",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/bbd17ffb-3f16-4f3a-afd3-d8d4f56cb512/69ebd729-56f1-425c-9875-2f0f9905936d/8445e0c0-f8ca-4009-a75f-95de83a82b11/mobileLogo_rt.png",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458300b37444dbd60beb4464cd3c5&d=1172&a=consume&u=https%3A%2F%2Fwww.intertek.com%2Findustries-services%2F&l=1794111185407&z=0.6077655842242762",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/1153296569248889?v=2.9.438&r=stable&domain=www.intertek.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794111185414&pageLoadId=dba4e29a-6f24-4e36-87ab-00c39bdeeed3&url=https%3A%2F%2Fwww.intertek.com%2Findustries-services%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311za20gzb9226005754zd9226005754xf1&_p=1794111185270&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AEAAACQC&ae=a&cid=1579551068.1794111174&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=2&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=2&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814183~124013661&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Findustries-services%2F&dt=Industries%20%26%20Services&en=scroll&epn.percent_scrolled=90&_et=9&tfd=784",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/chemicals/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/js/813707.js",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0-intertek-20250905-font500.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/44e8afbd-c38f-4d1c-a016-7103c1ad09af.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/css/opti-custom.css?v=5",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ip.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/89e2a7df-934e-4301-b9ea-55da51e6c45a.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Chemicals&trk_loc=https%3A%2F%2Fwww.intertek.com%2Fchemicals%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNRD5JR8H3EH6G5SBTNM1G&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Chemicals&trk_loc=https%3A%2F%2Fwww.intertek.com%2Fchemicals%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNRD5JR8H3EH6G5SBTNM1G&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5KTGQHGH",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=44e8afbd-c38f-4d1c-a016-7103c1ad09af",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-2NP31Y6QYW&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/a199c09a-211c-4fdc-a866-43be630166c1/en.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111190194&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AAAAACQC&cid=1579551068.1794111174&ec_mode=a&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120412526~120420416~120469145~120469153~121246026~121246034~123814185&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Fchemicals%2F&dt=Chemicals&en=page_view&ep.intertek_gbl=Multi-Business%20Line&ep.intertek_business=Untagged&ep.intertek_custom=Untagged&ep.intertek_brand=Untagged&_et=2&tfd=532",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Light-v2.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Medium.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_500.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_400.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js",
+      "domain": "azure.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-symbol.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otFlat.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/v2/otPcCenter.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ia.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458300b37444dbd60beb4464cd3c5&d=1172&a=consume&u=https%3A%2F%2Fwww.intertek.com%2Fchemicals%2F&l=1794111190279&z=0.40349264760680215",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/1153296569248889?v=2.9.438&r=stable&domain=www.intertek.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794111190287&pageLoadId=cf846438-3243-45d7-ab91-b2944f1d9e6e&url=https%3A%2F%2Fwww.intertek.com%2Fchemicals%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-assurance.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-testing.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-inspection.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-certification.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/globalassets/_media/co-branded-logos/itk-sustainability-logo.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-company-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-leadership-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-careers-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/world-map-nav.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/flags.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-stack.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/social/2026q1/where-trace-matters.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/9ff9ac21415e4c739dd01aa61719a6af/agrochemicals-pesticides-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/8d9b054cebb84dc6997a8d1cf15bd767/chimie-de-base-et-industrielle-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/24fd4dccee054e00b9d33afb294be1af/dyes-detergents-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/26ed1fbfa1a04486bf785b5dcfcbef8b/grease-and-lubricants-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/96fde0454f35457bab7ffb41c1bab5ae/nanomaterials-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/c9cff5701c1e4dacbc32e16778d7bd53/petrochemicals-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/016e7410ee0e48e7abfa79362d1ffd16/polymer-testing-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/contentassets/790ba7ae4fe8459aa92fda6abaecd5b2/specialty-chemicals-card.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/_media/_images/cpg/science_bois.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/demo.js?v=aPkI-NeZV5CrrcfQCmw14fuj8WOgqblh9bfXzy7jY9M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/milestone.js?v=cvWGESC80vWRWfUt5pLl0VqQ2xh0xJiI96oHXNhQh5M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fast.fonts.net/t/1.css?apiType=css&projectid=undefined",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-1.12.4.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/globalassets/images-make-a-copy-to-your-own-site/industries/chemicals/gettyimages-485206429.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/Util/Find/epi-util/find.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/admin/intertek.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/bbd17ffb-3f16-4f3a-afd3-d8d4f56cb512/69ebd729-56f1-425c-9875-2f0f9905936d/8445e0c0-f8ca-4009-a75f-95de83a82b11/mobileLogo_rt.png",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/api/formdata/postdata",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311za20gzb9226005754zd9226005754xf1&_p=1794111190194&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AEAAACQC&ae=a&cid=1579551068.1794111174&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=2&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120412526~120420416~120469145~120469153~121246026~121246034~123814185&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Fchemicals%2F&dt=Chemicals&en=scroll&epn.percent_scrolled=90&_et=10&tfd=2332",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/privacy/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/privacy-policy/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/js/813707.js",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0-intertek-20250905-font500.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/44e8afbd-c38f-4d1c-a016-7103c1ad09af.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/css/opti-custom.css?v=5",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-assurance.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-testing.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-inspection.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-certification.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/globalassets/_media/co-branded-logos/itk-sustainability-logo.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-company-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-leadership-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-careers-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/world-map-nav.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ip.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/89e2a7df-934e-4301-b9ea-55da51e6c45a.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Privacy%20Policy&trk_loc=https%3A%2F%2Fwww.intertek.com%2Fprivacy-policy%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNRJ37AES0ZSC7HV8EY1QJ&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Privacy%20Policy&trk_loc=https%3A%2F%2Fwww.intertek.com%2Fprivacy-policy%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNRJ37AES0ZSC7HV8EY1QJ&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5KTGQHGH",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=44e8afbd-c38f-4d1c-a016-7103c1ad09af",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-2NP31Y6QYW&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/a199c09a-211c-4fdc-a866-43be630166c1/en.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111195239&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AAAAACQC&cid=1579551068.1794111174&ec_mode=a&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=12&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814183&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Fprivacy-policy%2F&dt=Privacy%20Policy&en=page_view&ep.intertek_gbl=Corporate&ep.intertek_business=Untagged&ep.intertek_custom=Untagged&ep.intertek_brand=Untagged&_et=2&tfd=404",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Light-v2.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Medium.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_500.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_400.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js",
+      "domain": "azure.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-symbol.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/flags.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-stack.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/demo.js?v=aPkI-NeZV5CrrcfQCmw14fuj8WOgqblh9bfXzy7jY9M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/milestone.js?v=cvWGESC80vWRWfUt5pLl0VqQ2xh0xJiI96oHXNhQh5M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fast.fonts.net/t/1.css?apiType=css&projectid=undefined",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-1.12.4.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otFlat.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/v2/otPcCenter.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/Util/Find/epi-util/find.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/admin/intertek.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ia.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458300b37444dbd60beb4464cd3c5&d=1172&a=consume&u=https%3A%2F%2Fwww.intertek.com%2Fprivacy-policy%2F&l=1794111195360&z=0.1528306885191535",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/1153296569248889?v=2.9.438&r=stable&domain=www.intertek.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.intertek.com/api/formdata/postdata",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/bbd17ffb-3f16-4f3a-afd3-d8d4f56cb512/69ebd729-56f1-425c-9875-2f0f9905936d/8445e0c0-f8ca-4009-a75f-95de83a82b11/mobileLogo_rt.png",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794111195393&pageLoadId=66d9ae0c-ea72-4060-9fd1-162ef9732470&url=https%3A%2F%2Fwww.intertek.com%2Fprivacy-policy%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/cookie-policy/",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/js/813707.js",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/style-bootstrap-5-3-0-intertek-20250905-font500.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/44e8afbd-c38f-4d1c-a016-7103c1ad09af.css",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/css/opti-custom.css?v=5",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ip.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/89e2a7df-934e-4301-b9ea-55da51e6c45a.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Cookie%20Policy&trk_loc=https%3A%2F%2Fwww.intertek.com%2Fcookie-policy%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNRPFSCJFST8SNSHQVXGM0&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ipv6.enterpriseinsightinspiration.com/Track/Capture.aspx?retType=js&trk_jshv=1&trk_uid=&trk_user=813707&trk_sw=1280&trk_sh=720&trk_ref=&trk_tit=Cookie%20Policy&trk_loc=https%3A%2F%2Fwww.intertek.com%2Fcookie-policy%2F&trk_agn=Netscape&trk_agv=Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F156.0.8078.4%20Safari%2F537.36&trk_dom=www.intertek.com&trk_cookie=NA&trk_culid=01M6WNRPFSCJFST8SNSHQVXGM0&trk_dt=false",
+      "domain": "enterpriseinsightinspiration.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5KTGQHGH",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.fonts.net/t/1.css?apiType=css&projectid=44e8afbd-c38f-4d1c-a016-7103c1ad09af",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/otBannerSdk.js",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-assurance.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-testing.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-inspection.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/nav-ATIC-icon-certification.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/globalassets/_media/co-branded-logos/itk-sustainability-logo.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-company-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-leadership-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/mega-careers-spotlight.jpg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.intertek.com/www-intertek-com/images/world-map-nav.png",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-2NP31Y6QYW&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/demo.js?v=aPkI-NeZV5CrrcfQCmw14fuj8WOgqblh9bfXzy7jY9M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/js/milestone.js?v=cvWGESC80vWRWfUt5pLl0VqQ2xh0xJiI96oHXNhQh5M",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/jquery-1.12.4.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
+      "domain": "jquery.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/Util/Find/epi-util/find.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/siteassets/admin/intertek.js",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/consent/89e2a7df-934e-4301-b9ea-55da51e6c45a/a199c09a-211c-4fdc-a866-43be630166c1/en.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111199738&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AAAAACQC&cid=1579551068.1794111174&ec_mode=a&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123814185~124013660&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Fcookie-policy%2F&dt=Cookie%20Policy&en=page_view&ep.intertek_gbl=Corporate&ep.intertek_business=Untagged&ep.intertek_custom=Untagged&ep.intertek_brand=Untagged&_et=2&tfd=232",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Light-v2.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/fonts/NeoSansPro-Medium.ttf",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_500.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/css/NeoSans/NeoSansPro_normal_normal_400.woff2",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://js.monitor.azure.com/scripts/b/ai.2.gbl.min.js",
+      "domain": "azure.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-symbol.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/flags.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/images/icons-stack.svg",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fast.fonts.net/t/1.css?apiType=css&projectid=undefined",
+      "domain": "fonts.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otFlat.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/v2/otPcCenter.json",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/scripttemplates/202311.1.0/assets/otCommonStyles.css",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.intertek.com/api/formdata/postdata",
+      "domain": "intertek.com",
+      "third_party": false,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s.usea01.idio.episerver.net/ia.js",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/bbd17ffb-3f16-4f3a-afd3-d8d4f56cb512/69ebd729-56f1-425c-9875-2f0f9905936d/8445e0c0-f8ca-4009-a75f-95de83a82b11/mobileLogo_rt.png",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.cookielaw.org/logos/static/ot_guard_logo.svg",
+      "domain": "cookielaw.org",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458300b37444dbd60beb4464cd3c5&d=1172&a=consume&u=https%3A%2F%2Fwww.intertek.com%2Fcookie-policy%2F&l=1794111199836&z=0.49193622983473884",
+      "domain": "episerver.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/1153296569248889?v=2.9.438&r=stable&domain=www.intertek.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=5831250&time=1794111199840&pageLoadId=31e073b2-39f3-4081-9b9d-eefaaf3d80fa&url=https%3A%2F%2Fwww.intertek.com%2Fcookie-policy%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311za20gzb9226005754zd9226005754xf1&_p=1794111199738&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1855605332&_eu=AEAAACQC&ae=a&cid=1579551068.1794111174&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=18&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=2&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121246026~121246034~123814185~124013660&sid=1794111173&sct=1&seg=1&dl=https%3A%2F%2Fwww.intertek.com%2Fcookie-policy%2F&dt=Cookie%20Policy&en=scroll&epn.percent_scrolled=90&_et=7&tfd=721",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://dc.services.visualstudio.com/v2/track",
+      "domain": "visualstudio.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "TiPMix",
+        "value": "4.383270253350213",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": 1794114773.102198,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "x-ms-routing-name",
+        "value": "self",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": 1794114773.10231,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "EPiStateMarker",
+        "value": "true",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "ARRAffinity",
+        "value": "35f33190c00c8e0f952d599b91bd8384ed2e6ea3fe9e107a2b82d43a8bfbf3a6",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ARRAffinitySameSite",
+        "value": "35f33190c00c8e0f952d599b91bd8384ed2e6ea3fe9e107a2b82d43a8bfbf3a6",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "c_WyX5ny32EVaxT3ON.h9yrxQbnt.ZXUyACcYT8pvcQ-1794111173.2697723-1.0.1.1-D4zz9cZthAjQFhgokm3842pljAvCiyCDWVT1bIqnkzjOZEftDpoQDDbsCfXoddc1GYy.pVN7SZIXsziob_mO12OKAPFK_IqVmb0qzMOt8eW.a0oQGVxZCGHAvl_1Mj8a",
+        "domain": ".fonts.net",
+        "path": "/",
+        "expires": 1794112973.287179,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ai_user",
+        "value": "1tThwYalOTGLWkmN2OyzVK|2026-11-08T04:12:53.473Z",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": 1825647173.473539,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "is",
+        "value": "11770a23-18f9-4f56-9f71-766120f59330",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1794112973,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "iv",
+        "value": "9b29db77-51a8-4973-9a2e-ba20955da6aa",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1828671173.531162,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ai_session",
+        "value": "hHY/CARkdHkKJfLbVFfNqT|1794111173569|1794111173569",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": 1794112973.569881,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": ".AspNetCore.Session",
+        "value": "CfDJ8Cfa3SU%2F4qxKo2xyVNDMpADnh43Kmq1Qj2OrbypJvg8cTkq9mVKcU0b0mqsLAO0QOteQ2CAbZSDNuCS6djnVw1rbtEzXbAHNSe40FeALplVtteGSaziInGkAlhyG7ez73vZv9NkJcExXO8cxgB%2BDYvs7rbHEwQEcCO9saD%2FZ8Lxx",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "OptanonConsent",
+        "value": "isGpcEnabled=0&datestamp=Sun+Nov+08+2026+04%3A12%3A53+GMT%2B0000+(GMT%2B00%3A00)&version=202311.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=https%3A%2F%2Fwww.intertek.com%2F&groups=C0001%3A1%2CC0003%3A1%2CC0002%3A1",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": 1825647173,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "_ga_2NP31Y6QYW",
+        "value": "GS2.1.s1794111173$o1$g0$t1794111173$j60$l0$h1855605332",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1828671173.723759,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.1579551068.1794111174",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1828671173.723981,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "_fbp",
+        "value": "fb.1.1794111173802.127374802803549675",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1801887173,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Facebook",
+        "value_kind": "id"
+      },
+      {
+        "name": "bcookie",
+        "value": "\"v=2&1d89f5d5-c075-4f62-8943-aa4bc2937c1a\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1825647173.953781,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "li_gc",
+        "value": "MTswOzE3OTQxMTExNzM7MjswMjExvg9hhDWIGJ2cXrR3Libqag5wYivadhuwKTsyEPZWOw==",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1809663173.953867,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "lidc",
+        "value": "\"b=OGST02:s=O:r=O:a=O:p=O:g=3866:u=1:x=1:i=1794111173:t=1794197573:v=2:sig=AQGHciOwyQ25DqWaGpocm9qyQs1_EXdd\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794197573.95391,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "AD1K8kD6nXkFIc9rnpa9inyOZgSwBB0iQZ5hmlQrIv8-1794111173.7895055-1.0.1.1-QvflDyeFKeK3qDWUAAk0RE7ngZ_eqNPuonUvmTO49nz3y9JHmg5m.KzkQ9FfNK.NZUSyd5I3s_jqquUIRnbcTx98j3d9XNBzGAKRFDiXgOLiq.AsMj5ZQtaT2Aw_f.xk",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794112973.953926,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "TiPMix",
+        "value": "4.383270253350213",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": 1794114773.102198,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "x-ms-routing-name",
+        "value": "self",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": 1794114773.10231,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "EPiStateMarker",
+        "value": "true",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "ARRAffinity",
+        "value": "35f33190c00c8e0f952d599b91bd8384ed2e6ea3fe9e107a2b82d43a8bfbf3a6",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ARRAffinitySameSite",
+        "value": "35f33190c00c8e0f952d599b91bd8384ed2e6ea3fe9e107a2b82d43a8bfbf3a6",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "c_WyX5ny32EVaxT3ON.h9yrxQbnt.ZXUyACcYT8pvcQ-1794111173.2697723-1.0.1.1-D4zz9cZthAjQFhgokm3842pljAvCiyCDWVT1bIqnkzjOZEftDpoQDDbsCfXoddc1GYy.pVN7SZIXsziob_mO12OKAPFK_IqVmb0qzMOt8eW.a0oQGVxZCGHAvl_1Mj8a",
+        "domain": ".fonts.net",
+        "path": "/",
+        "expires": 1794112973.287179,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ai_user",
+        "value": "1tThwYalOTGLWkmN2OyzVK|2026-11-08T04:12:53.473Z",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": 1825647173.473539,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": ".AspNetCore.Session",
+        "value": "CfDJ8Cfa3SU%2F4qxKo2xyVNDMpADnh43Kmq1Qj2OrbypJvg8cTkq9mVKcU0b0mqsLAO0QOteQ2CAbZSDNuCS6djnVw1rbtEzXbAHNSe40FeALplVtteGSaziInGkAlhyG7ez73vZv9NkJcExXO8cxgB%2BDYvs7rbHEwQEcCO9saD%2FZ8Lxx",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.1579551068.1794111174",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1828671199.773,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "_fbp",
+        "value": "fb.1.1794111173802.127374802803549675",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1801887199,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Facebook",
+        "value_kind": "id"
+      },
+      {
+        "name": "bcookie",
+        "value": "\"v=2&1d89f5d5-c075-4f62-8943-aa4bc2937c1a\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1825647173.953781,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "li_gc",
+        "value": "MTswOzE3OTQxMTExNzM7MjswMjExvg9hhDWIGJ2cXrR3Libqag5wYivadhuwKTsyEPZWOw==",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1809663173.953867,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "lidc",
+        "value": "\"b=OGST02:s=O:r=O:a=O:p=O:g=3866:u=1:x=1:i=1794111173:t=1794197573:v=2:sig=AQGHciOwyQ25DqWaGpocm9qyQs1_EXdd\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794197573.95391,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "AD1K8kD6nXkFIc9rnpa9inyOZgSwBB0iQZ5hmlQrIv8-1794111173.7895055-1.0.1.1-QvflDyeFKeK3qDWUAAk0RE7ngZ_eqNPuonUvmTO49nz3y9JHmg5m.KzkQ9FfNK.NZUSyd5I3s_jqquUIRnbcTx98j3d9XNBzGAKRFDiXgOLiq.AsMj5ZQtaT2Aw_f.xk",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794112973.953926,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "OptanonAlertBoxClosed",
+        "value": "2026-11-08T04:12:56.561Z",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": 1825647176,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "OptanonConsent",
+        "value": "isGpcEnabled=0&datestamp=Sun+Nov+08+2026+04%3A13%3A19+GMT%2B0000+(GMT%2B00%3A00)&version=202311.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A0%2CC0002%3A0&geolocation=GB%3BSCT&AwaitingReconsent=false",
+        "domain": ".www.intertek.com",
+        "path": "/",
+        "expires": 1825647199,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "is",
+        "value": "11770a23-18f9-4f56-9f71-766120f59330",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1794112999,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "iv",
+        "value": "9b29db77-51a8-4973-9a2e-ba20955da6aa",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1828671199.836002,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "ai_session",
+        "value": "hHY/CARkdHkKJfLbVFfNqT|1794111173569|1794111200196",
+        "domain": "www.intertek.com",
+        "path": "/",
+        "expires": 1794113000.196984,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "_ga_2NP31Y6QYW",
+        "value": "GS2.1.s1794111173$o1$g1$t1794111200$j33$l0$h1855605332",
+        "domain": ".intertek.com",
+        "path": "/",
+        "expires": 1828671200.262837,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      }
+    ]
+  },
+  "policy": {
+    "url": "https://www.intertek.com/privacy-policy/",
+    "found": true,
+    "companies_named": [],
+    "dpo_contact": "privacy@intertek.com",
+    "cookie_policy_url": "https://www.intertek.com/cookie-policy/",
+    "format": "html",
+    "text_chars": 16014,
+    "chars_sent": 16014
+  },
+  "visited_pages": [
+    "https://www.intertek.com/industries/",
+    "https://www.intertek.com/industries-services/",
+    "https://www.intertek.com/chemicals/"
+  ],
+  "fingerprinting": [],
+  "id_leaks": [
+    {
+      "cookie": "iv",
+      "cookie_domain": "intertek.com",
+      "id_preview": "9b29db\u2026a6aa",
+      "to": "episerver.net",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://api.usea01.idio.episerver.net/1.0/users/idio_visitor_id:9b29db77-51a8-4973-9a2e-ba20955da6aa/content?include_topics&callback=idio.r0&key=GZ5LCQKZI3HK11U"
+    },
+    {
+      "cookie": "is",
+      "cookie_domain": "intertek.com",
+      "id_preview": "11770a\u20269330",
+      "to": "episerver.net",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "intertek.com",
+      "id_preview": "157955\u20261174",
+      "to": "google.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111173218&_gaz=1&g"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "intertek.com",
+      "id_preview": "157955\u20261174",
+      "to": "doubleclick.net",
+      "company": "Google",
+      "category": "Advertising",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-2NP31Y6QYW&cid=1579551068.1794111174&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd922600"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "intertek.com",
+      "id_preview": "157955\u20261174",
+      "to": "google.co.uk",
+      "company": "Google",
+      "category": "Advertising",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://www.google.co.uk/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-2NP31Y6QYW&cid=1579551068.1794111174&gtm=45je6b41v882102311z89226005754za20gz"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "intertek.com",
+      "id_preview": "157955\u20261174",
+      "to": "visualstudio.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "body",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://dc.services.visualstudio.com/v2/track"
+    },
+    {
+      "cookie": "ai_session",
+      "cookie_domain": "intertek.com",
+      "id_preview": "CARkdH\u2026fNqT",
+      "to": "visualstudio.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "body",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://dc.services.visualstudio.com/v2/track"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "intertek.com",
+      "id_preview": "157955\u20261174",
+      "to": "google.com",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://region1.analytics.google.com/g/collect?v=2&tid=G-2NP31Y6QYW&gtm=45je6b41v882102311z89226005754za20gzb9226005754zd9226005754xf1&_p=1794111173218&gcd=13l3"
+    },
+    {
+      "cookie": "iv",
+      "cookie_domain": "intertek.com",
+      "id_preview": "9b29db\u2026a6aa",
+      "to": "episerver.net",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458"
+    },
+    {
+      "cookie": "is",
+      "cookie_domain": "intertek.com",
+      "id_preview": "11770a\u20269330",
+      "to": "episerver.net",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://a.usea01.idio.episerver.net/ia.gif?r=&s=11770a23-18f9-4f56-9f71-766120f59330&x%5Bidio_visitor_id%5D%5B0%5D=9b29db77-51a8-4973-9a2e-ba20955da6aa&c=68f458"
+    },
+    {
+      "cookie": "_fbp",
+      "cookie_domain": "intertek.com",
+      "id_preview": "127374\u20269675",
+      "to": "facebook.com",
+      "company": "Facebook",
+      "category": "Advertising",
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://www.facebook.com/tr/?id=1153296569248889&ev=PageView&dl=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&rl=&if=false&ts=1794111180795&iw=false&sw=1280&sh"
+    },
+    {
+      "cookie": "_fbp",
+      "cookie_domain": "intertek.com",
+      "id_preview": "179411\u20269675",
+      "to": "facebook.com",
+      "company": "Facebook",
+      "category": "Advertising",
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://www.facebook.com/tr/?id=1153296569248889&ev=PageView&dl=https%3A%2F%2Fwww.intertek.com%2Findustries%2F&rl=&if=false&ts=1794111180795&iw=false&sw=1280&sh"
+    },
+    {
+      "cookie": "ai_session",
+      "cookie_domain": "intertek.com",
+      "id_preview": "CARkdH\u2026fNqT",
+      "to": "visualstudio.com",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "body",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://dc.services.visualstudio.com/v2/track"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "intertek.com",
+      "id_preview": "157955\u20261174",
+      "to": "visualstudio.com",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "body",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://dc.services.visualstudio.com/v2/track"
+    }
+  ],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "critical",
+      "ai_severity": "high",
+      "severity_note": "Raised to critical: rated high and backed by advertising or session-replay evidence.",
+      "title": "Tracking contradicted the policy's stated consent requirement",
+      "detail": "The audit recorded advertising identifiers being sent before the banner was answered and after \u201cReject All\u201d was clicked, including to Google and Facebook. This conflicts directly with the cookie policy's statement that the site seeks consent before using these cookies.",
+      "law": "PECR reg. 6; UK GDPR Articles 5(1)(a) and 7",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E2",
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "policy_quote": "By using this Platform, we are seeking to obtain your consent to use these various cookies.",
+      "reasoning": "This is a direct contradiction between the site's stated consent position and the observed use of advertising trackers before a choice and after rejection. The severity is high because the evidence concerns advertising identifiers and transmission to advertising companies, rather than an uncertain analytics exemption.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Articles 5(1)(a) and 7"
+    },
+    {
+      "severity": "high",
+      "title": "Facebook cookies were set before you could choose",
+      "detail": "1 tracking cookie (_fbp) was already set before the cookie banner was answered (Advertising). _fbp holds what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Google cookies were set before you could choose",
+      "detail": "2 tracking cookies (_ga, _ga_2NP31Y6QYW) were already set before the cookie banner was answered (Advertising). _ga, _ga_2NP31Y6QYW hold what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Microsoft cookies were set before you could choose",
+      "detail": "4 tracking cookies (__cf_bm, bcookie, li_gc, lidc) were already set before the cookie banner was answered (Advertising). __cf_bm, bcookie, li_gc, lidc hold what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Microsoft still received data after you rejected cookies",
+      "detail": "16 requests to licdn.com, linkedin.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Facebook still received data after you rejected cookies",
+      "detail": "11 requests to facebook.com, facebook.net after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Google still received data after you rejected cookies",
+      "detail": "10 requests to googletagmanager.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Your ID was sent to Facebook after you rejected cookies",
+      "detail": "The value of _fbp (an ID unique to this browser) was sent to facebook.com in the request address. This lets Facebook recognise this browser on later visits.",
+      "law": "PECR reg. 6 (reading an identifier stored on your device and sending it on is 'access' and needs consent); UK GDPR Art. 4(1) (an online identifier is personal data)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 4(1)"
+    },
+    {
+      "severity": "high",
+      "title": "Your ID was sent to Google before you answered the cookie banner",
+      "detail": "The value of _ga (an ID unique to this browser) was sent to doubleclick.net, google.co.uk in the request address. This lets Google recognise this browser on later visits.",
+      "law": "PECR reg. 6 (reading an identifier stored on your device and sending it on is 'access' and needs consent); UK GDPR Art. 4(1) (an online identifier is personal data)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 4(1)"
+    },
+    {
+      "severity": "medium",
+      "title": "3 tracking companies not named in the privacy policy",
+      "detail": "The policy names 0 companies. We saw these and found no mention: Facebook, Google, Microsoft. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "law": "UK GDPR Art. 13(1)(e) (you must be told who receives your data)",
+      "source": "observed",
+      "law_eu": "EU GDPR Art. 13(1)(e)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 37,
+    "companies_seen": 3,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": [
+      "Facebook",
+      "Google",
+      "Microsoft"
+    ],
+    "companies_after_reject": [
+      "Facebook",
+      "Google",
+      "Microsoft"
+    ],
+    "companies_with_cookies_before_consent": [
+      "Facebook",
+      "Google",
+      "Microsoft"
+    ],
+    "categories": {
+      "Facebook": "Advertising",
+      "Google": "Advertising",
+      "Microsoft": "Advertising"
+    },
+    "fingerprinting_domains": [],
+    "id_leak_companies": [
+      "Facebook",
+      "Google"
+    ]
+  },
+  "letter": {
+    "kind": "complaint",
+    "to": "privacy@intertek.com",
+    "subject": "Concern about cookie and tracking practices on intertek.com",
+    "body": "Dear Data Protection Officer,\n\nI am writing to raise concerns about cookie and tracking practices on https://intertek.com.\n\nThe concerns below arise from an automated, passive audit carried out on 2026-11-08 04:12 UTC using a fresh browser. The audit detected the cookie banner, clicked \u201cReject All\u201d, then visited https://www.intertek.com/industries/, https://www.intertek.com/industries-services/, and https://www.intertek.com/chemicals/, while recording what cookies were set and what requests were still sent.\n\n1. Our review suggests the observed tracking conflicts with your privacy policy\u2019s stated consent requirement. Your policy says: \u201cBy using this Platform, we are seeking to obtain your consent to use these various cookies.\u201d However, the audit recorded advertising identifiers being sent before the banner was answered and after \u201cReject All\u201d was clicked, including to Google and Facebook.\n\n2. Before any choice was made on the banner, the following advertising cookies were already set: _fbp; _ga and _ga_2NP31Y6QYW; and __cf_bm, bcookie, li_gc, lidc. These appeared to contain unique identifiers.\n\n3. After \u201cReject All\u201d was clicked, advertising-related requests were still sent to Microsoft (16 requests to licdn.com and linkedin.com), Facebook (11 requests to facebook.com and facebook.net), and Google (10 requests to googletagmanager.com).\n\n4. After rejection, the value of _fbp, described by the audit as an identifier unique to that browser, was sent to facebook.com in the request address.\n\n5. Before the banner was answered, the value of _ga, described by the audit as an identifier unique to that browser, was sent to doubleclick.net and google.co.uk in the request address.\n\n6. Our review also suggests there may be a transparency issue. The privacy policy reviewed at https://www.intertek.com/privacy-policy/ names 0 companies, while the audit observed Facebook, Google and Microsoft receiving data.\n\nPlease:\n\n1. Explain each of the points above.\n2. Confirm which cookies and trackers you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential cookies or tracking operating before consent or after rejection.\n4. Reply within one month.\n\nIf this matter cannot be resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T04:13:41.054986+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Tracking contradicted the policy's stated consent requirement",
+      "Facebook cookies were set before you could choose",
+      "Google cookies were set before you could choose",
+      "Microsoft cookies were set before you could choose",
+      "Microsoft still received data after you rejected cookies",
+      "Facebook still received data after you rejected cookies",
+      "Google still received data after you rejected cookies",
+      "Your ID was sent to Facebook after you rejected cookies",
+      "Your ID was sent to Google before you answered the cookie banner",
+      "3 tracking companies not named in the privacy policy"
+    ],
+    "delivery": {
+      "mode": "live",
+      "sent": false,
+      "to": null,
+      "at": "2026-11-08T04:13:46.796199+00:00",
+      "reason": "SMTPDataError: (502, b'5.7.0 Your SMTP account is not yet activated. Please contact us at contact@sendinblue.com to request activation.')",
+      "message_id": null,
+      "site": "intertek.com",
+      "intended_to": "privacy@intertek.com",
+      "saved_to": null,
+      "trigger": "auto"
+    },
+    "auto": {
+      "tier": "critical",
+      "reason": "Audit's worst finding is critical."
+    }
+  },
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit indicates a serious consent and transparency problem: advertising-related identifiers and tracker requests were observed before the visitor answered the banner and continued after rejection. That conduct conflicts with the cookie policy's express statement that consent is being sought for these cookies. The privacy policy does contain information about purposes, rights, retention and international processing, but the observed behaviour undermines the fairness and transparency of the consent process.",
+    "findings_kept": 1,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: True. Method: selector. Buttons clicked: Reject All.",
+      "E2: ID sent to another company: the value of cookie _ga (unique to this browser) was sent to doubleclick.net (Google, Advertising) in the request address, before the banner was answered.",
+      "E3: ID sent to another company: the value of cookie _ga (unique to this browser) was sent to google.co.uk (Google, Advertising) in the request address, before the banner was answered.",
+      "E4: ID sent to another company: the value of cookie _fbp (unique to this browser) was sent to facebook.com (Facebook, Advertising) in the request address, after reject.",
+      "E5: ID sent to another company: the value of cookie _fbp (unique to this browser) was sent to facebook.com (Facebook, Advertising) in the request address, after reject.",
+      "E6: Tracker Facebook (Advertising): 2 requests before consent, 11 after reject, to facebook.com, facebook.net. Example after-reject requests: https://connect.facebook.net/en_US/fbevents.js | https://connect.facebook.net/signals/config/1153296569248889?v=2.9.438&r=stable&domain=www.intertek.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b33...",
+      "E7: Tracker Google (Advertising): 4 requests before consent, 10 after reject, to doubleclick.net, google.co.uk, googletagmanager.com. Example after-reject requests: https://www.googletagmanager.com/gtm.js?id=GTM-5KTGQHGH | https://www.googletagmanager.com/gtag/js?id=G-2NP31Y6QYW&cx=c&gtm=4e6b41",
+      "E8: Tracker Microsoft (Advertising): 3 requests before consent, 16 after reject, to licdn.com, linkedin.com. Example after-reject requests: https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g | https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "E9: Tracking cookie _ga_2NP31Y6QYW from Google on .intertek.com present before the banner was answered; expires in 400 days; holds what looks like a unique ID.",
+      "E10: Tracking cookie _ga from Google on .intertek.com present before the banner was answered; expires in 400 days; holds what looks like a unique ID.",
+      "E11: Tracking cookie _fbp from Facebook on .intertek.com present before the banner was answered; expires in 90 days; holds what looks like a unique ID.",
+      "E12: Tracking cookie bcookie from Microsoft on .linkedin.com present before the banner was answered; expires in 365 days; holds what looks like a unique ID.",
+      "E13: Tracking cookie li_gc from Microsoft on .linkedin.com present before the banner was answered; expires in 180 days; holds what looks like a unique ID.",
+      "E14: Tracking cookie lidc from Microsoft on .linkedin.com present before the banner was answered; expires in 1 days; holds what looks like a unique ID.",
+      "E15: Tracking cookie __cf_bm from Microsoft on .linkedin.com present before the banner was answered; expires in 0 days; holds what looks like a unique ID.",
+      "E16: Tracking cookie _ga from Google on .intertek.com present after reject; expires in 400 days; holds what looks like a unique ID.",
+      "E17: Tracking cookie _fbp from Facebook on .intertek.com present after reject; expires in 90 days; holds what looks like a unique ID.",
+      "E18: Tracking cookie bcookie from Microsoft on .linkedin.com present after reject; expires in 365 days; holds what looks like a unique ID.",
+      "E19: Tracking cookie li_gc from Microsoft on .linkedin.com present after reject; expires in 180 days; holds what looks like a unique ID.",
+      "E20: Tracking cookie lidc from Microsoft on .linkedin.com present after reject; expires in 1 days; holds what looks like a unique ID.",
+      "E21: Tracking cookie __cf_bm from Microsoft on .linkedin.com present after reject; expires in 0 days; holds what looks like a unique ID.",
+      "E22: Tracking cookie _ga_2NP31Y6QYW from Google on .intertek.com present after reject; expires in 400 days; holds what looks like a unique ID.",
+      "E23: Pages browsed and scrolled after reject: https://www.intertek.com/industries/, https://www.intertek.com/industries-services/, https://www.intertek.com/chemicals/.",
+      "E24: Privacy policy: https://www.intertek.com/privacy-policy/. Companies it names: none extracted. Contact email found: privacy@intertek.com.",
+      "E25: Cookie policy: https://www.intertek.com/cookie-policy/.",
+      "E26: Automated check (high): Facebook cookies were set before you could choose. 1 tracking cookie (_fbp) was already set before the cookie banner was answered (Advertising). _fbp holds what looks like a unique ID.",
+      "E27: Automated check (high): Google cookies were set before you could choose. 2 tracking cookies (_ga, _ga_2NP31Y6QYW) were already set before the cookie banner was answered (Advertising). _ga, _ga_2NP31Y6QYW hold what looks like a unique ID.",
+      "E28: Automated check (high): Microsoft cookies were set before you could choose. 4 tracking cookies (__cf_bm, bcookie, li_gc, lidc) were already set before the cookie banner was answered (Advertising). __cf_bm, bcookie, li_gc, lidc hold what looks like a unique ID.",
+      "E29: Automated check (high): Microsoft still received data after you rejected cookies. 16 requests to licdn.com, linkedin.com after you clicked reject (Advertising).",
+      "E30: Automated check (high): Facebook still received data after you rejected cookies. 11 requests to facebook.com, facebook.net after you clicked reject (Advertising).",
+      "E31: Automated check (high): Google still received data after you rejected cookies. 10 requests to googletagmanager.com after you clicked reject (Advertising).",
+      "E32: Automated check (high): Your ID was sent to Facebook after you rejected cookies. The value of _fbp (an ID unique to this browser) was sent to facebook.com in the request address. This lets Facebook recognise this browser on later visits.",
+      "E33: Automated check (high): Your ID was sent to Google before you answered the cookie banner. The value of _ga (an ID unique to this browser) was sent to doubleclick.net, google.co.uk in the request address. This lets Google recognise this browser on later visits.",
+      "E34: Automated check (medium): 3 tracking companies not named in the privacy policy. The policy names 0 companies. We saw these and found no mention: Facebook, Google, Microsoft. (The policy may describe them only by category, e.g. 'advertising partners'.)"
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "The Platform is operated by Intertek Group plc (we, our, us), a company having offices at 33 Cavendish Square, London W1G 0PS with registered number 4267576."
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "This Privacy Policy explains our information collection practices on the Platform, such as the types of information we collect regarding visitors to the Platform and the ways in which we may use that information."
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "present",
+        "quote": "By using this Platform, we are seeking to obtain your consent to use these various cookies."
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "we may employ the services of a third party to help us in certain areas, such as in relation to e-mail marketing, call centres or website hosting."
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "We will only retain your personal information for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements."
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "present",
+        "quote": "object to the processing of your information where we are relying on a legitimate interest (or those of a third party)"
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "If you choose to disable cookies or Flash cookies on your computer or device, some features of the Platform may not function properly."
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "present",
+        "quote": "If you are not satisfied with our response or believe we are processing your personal data not in accordance with the law you can complain to the Information Commissioner\u2019s Office (ICO), the UK supervisory authority for data protection issues."
+      }
+    }
+  }
+}

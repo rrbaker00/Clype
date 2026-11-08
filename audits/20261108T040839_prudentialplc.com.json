@@ -1,0 +1,5079 @@
+{
+  "url": "https://prudentialplc.com",
+  "started_at": "2026-11-08T04:08:39.760265+00:00",
+  "duration_s": 52.24,
+  "cost": {
+    "llm_calls": 3,
+    "input_tokens": 6238,
+    "output_tokens": 1852,
+    "model": "gpt-5.4+gpt-5.6-luna",
+    "elapsed_s": 52.24,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 2,
+        "input_tokens": 5496,
+        "output_tokens": 1373
+      },
+      "gpt-5.4": {
+        "llm_calls": 1,
+        "input_tokens": 742,
+        "output_tokens": 479
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "selector",
+    "clicks": [
+      "Decline"
+    ],
+    "accept_label": "Accept",
+    "preticked": [],
+    "reject_steps": 1
+  },
+  "requests": [
+    {
+      "url": "https://prudentialplc.com/",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/en/",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-3c3f5dd55b9ba40f3a512eeabe9e111c-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-1ede74f8f6ba4ffd17fa9174e6263f39-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Prudential-Logo.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Contact%20Us.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/others/light/lightbulb-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/bar-chart-2-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/slideshow-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/light/file-list-3-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/briefcase-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/light/newspaper-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/users/light/team-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/finance/light/hand-heart-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/others/light/leaf-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/light/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/HY26_Animated_video_EN_subtitles-AVS?ts=1787751689250",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/red/send-plane-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/prudentialLogo.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/dropdown-arrow.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/submit-icon.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/facebook.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/twitter.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/linkedin.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/youtube.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/dark/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-singapore/components/content/customhtmlpacs/v1/customhtml/clientlibs.lc-c58b756525fb71f27bbf2c22864f106b-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-plt/components/content/customhtmlplt/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs/external-link-modal.lc-b23ae20f2ff3647fa9a0ad3b4b222f3d-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-01dd92e42aa4f22b2189137633a06ae1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-c80012aca40a2b1794606ed65d73e36f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=946155221",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TNLTHWX",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/html/?companycode=uk-pru&v=new&lang=en-GB",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/header_toggle_down_arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/search-headerbar.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-left-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/nav-left-icon-dark-red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/nav-right-icon-dark-red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/right-arrow-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-600-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-300-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/content/prudentialholdingsprod/HY26_Animated_video_EN_subtitles-0x720-3000k",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/granite/csrf/token.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/_Incapsula_Resource?SWKMTFSR=1&e=0.5081188515779811",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-brand-mid.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Ribbon-large.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-up-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-italic.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/cq/i18n/dict.en.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/language.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/dropdown-arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/Careers-themed-open-positions?qlt=85&wid=1600&ts=1763115124977&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/our-value-thumbnail?qlt=85&wid=1600&ts=1763112320245&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/deib-banner-zoom?qlt=85&wid=1600&ts=1763112320290&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/prudential-aem-plc/hk/en/jcr:content/root/containerextension/column0/containerextension_317436224/column0/containerextension_5/column0/upcomingevents.model.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/E03%20C22%20Our%20Purpose%20and%20Vision%20Hero%20Image%20for%20homepage?dpr=on&ts=1763115124884&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/half-year-results-v2?dpr=on&ts=1763445169865&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/2027-strategy-banner-desktop?dpr=on&ts=1763115124932&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/sustainability_v2?dpr=on&ts=1763115124963&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/experience-fragments/prudential-aem-plc/hk/en/market-site-selector/cambodia/jcr:content/root.html",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/HY26_Banner_item_4.4b_(2000%20x%201331)_withPlayButton?qlt=85&wid=1600&ts=1787876243091&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/brand-proposition?qlt=85&wid=1600&ts=1764062271018&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/banner?qlt=85&wid=1600&ts=1784201473864&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/EurolandIFrameAutoHeight/EurolandToolAutoSizeObject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/highcharts?v=v9_75ir8I6i6HmuWLjtZh7WNUSvUyAk11EdAuChS4Ho1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/static.js?v=gkGp78HZ9qFcLK9Drsv8BZDW06tDjZx0CK8yQM73Rpw1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scripts/ScrollingTicker/realtime.extension.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/red/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Black.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-TGBX5LZFVH&cx=c&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-M2P3HXP&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-TGBX5LZFVH&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&_p=1794110921559&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&cid=1156785891.1794110923&frm=0&pscdl=noapi&rcb=11&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183~124013662&sid=1794110922&sct=1&seg=0&dl=https%3A%2F%2Fwww.prudentialplc.com%2Fen%2F&dt=We%20are%20Partners%20and%20Protectors%20%7C%20Prudential%20plc&uid=&en=page_view&_fv=1&_nsi=1&_ss=1&ep.page_name=%2F&ep.page_language=en&ep.referrer_page_name=&ep.digital_property_env=CWS%20-%20PROD&ep.navigation_link_clicked=&ep.template_id=T08&ep.template_name=PLC%20Homepage&ep.navigation_category_level1=Home&up.user_type=&up.sf_id=&tfd=2456",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-TGBX5LZFVH&cid=1156785891.1794110923&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&rcb=11&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183~124013662",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "POST",
+      "type": "ping",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.google.co.uk/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-TGBX5LZFVH&cid=1156785891.1794110923&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&rcb=11&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183~124013662&z=1070803141",
+      "domain": "google.co.uk",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.6607958606160802&instrumentID=18921&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Eastern%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.3300866957977979&instrumentID=132583&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Singapore%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.22653061545550746&instrumentID=77937&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=China%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.4838165888380427&instrumentID=3036&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=GMT%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "domain": "gstatic.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/E11%20C04%20-%20GettyImages-2178545831?qlt=85&wid=1600&ts=1763115124899&$FullWidth$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.analytics.google.com/g/collect?v=2&tid=G-TGBX5LZFVH&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&_p=1794110921559&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQ&cid=1156785891.1794110923&frm=0&pscdl=noapi&rcb=11&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=2&tag_exp=115616985~115938465~115938468~118897920~118897930~120213116~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814183~124013662&cu=USD&sid=1794110922&sct=1&seg=0&dl=https%3A%2F%2Fwww.prudentialplc.com%2Fen%2F&dt=We%20are%20Partners%20and%20Protectors%20%7C%20Prudential%20plc&en=view_promotion&ep.page_name=%2F&ep.page_language=en&ep.referrer_page_name=&ep.digital_property_env=CWS%20-%20PROD&ep.template_id=T08&ep.template_name=PLC%20Homepage&ep.component_id=C22&ep.component_name=Hero%20Banner&ep.creative_name=E03%20C22%20Our%20Purpose%20and%20Vision%20Hero%20Image%20for%20homepage&ep.creative_slot=1&ep.promotion_id=herobanner-55c1aa33b4-1&ep.promotion_name=We%20are%20partners%20and%20protectors&ep.content_id=herobanner-55c1aa33b4&_et=175&tfd=7633",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/zh-hant/",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-3c3f5dd55b9ba40f3a512eeabe9e111c-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-1ede74f8f6ba4ffd17fa9174e6263f39-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Prudential-Logo.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Contact%20Us.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/others/light/lightbulb-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/bar-chart-2-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/slideshow-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/light/file-list-3-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/briefcase-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/light/newspaper-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/users/light/team-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/finance/light/hand-heart-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/others/light/leaf-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/light/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/HY26_Animated_video_EN_subtitles-AVS?ts=1787751689250",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/red/send-plane-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/prudentialLogo.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/dropdown-arrow.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/submit-icon.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/facebook.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/twitter.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/linkedin.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/youtube.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-singapore/components/content/customhtmlpacs/v1/customhtml/clientlibs.lc-c58b756525fb71f27bbf2c22864f106b-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-plt/components/content/customhtmlplt/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs/external-link-modal.lc-b23ae20f2ff3647fa9a0ad3b4b222f3d-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/dark/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-01dd92e42aa4f22b2189137633a06ae1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-c80012aca40a2b1794606ed65d73e36f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TNLTHWX",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/html/?companycode=uk-pru&v=new&lang=zh-TW",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/Careers-themed-open-positions?qlt=85&wid=1600&ts=1763115124977&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/our-value-thumbnail?qlt=85&wid=1600&ts=1763112320245&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/deib-banner-zoom?qlt=85&wid=1600&ts=1763112320290&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-300-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-italic.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-600-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/header_toggle_down_arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/search-headerbar.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-left-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/nav-left-icon-dark-red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/nav-right-icon-dark-red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/right-arrow-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-brand-mid.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Ribbon-large.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-up-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/HY26_Banner_item_4.4b_(2000%20x%201331)_withPlayButton?qlt=85&wid=1600&ts=1787876596701&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/brand-proposition?qlt=85&wid=1600&ts=1763115124851&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/banner?qlt=85&wid=1600&ts=1780283782922&$FullWidth$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/content/prudentialholdingsprod/HY26_Animated_video_EN_subtitles-0x720-3000k",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/cq/i18n/dict.zh-HK.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/language.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/dropdown-arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/prudential-aem-plc/hk/zh_hk/jcr:content/root/containerextension/column0/containerextension_317436224/column0/containerextension_5/column0/upcomingevents.model.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/E03%20C22%20Our%20Purpose%20and%20Vision%20Hero%20Image%20for%20homepage?dpr=on&ts=1763115124884&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/half-year-results-v2?dpr=on&ts=1763445169865&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/2027-strategy-banner-desktop?dpr=on&ts=1763115124932&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/sustainability_v2?dpr=on&ts=1763115124963&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/experience-fragments/prudential-aem-plc/hk/zh_hk/market-site-selector/cambodia/jcr:content/root.html",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/EurolandIFrameAutoHeight/EurolandToolAutoSizeObject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/highcharts?v=v9_75ir8I6i6HmuWLjtZh7WNUSvUyAk11EdAuChS4Ho1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/static.js?v=gkGp78HZ9qFcLK9Drsv8BZDW06tDjZx0CK8yQM73Rpw1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scripts/ScrollingTicker/realtime.extension.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/granite/csrf/token.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-TGBX5LZFVH&cx=c&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "domain": "gstatic.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/red/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.5585070251386071&instrumentID=18921&lang=zh-TW&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Eastern%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.980799009504506&instrumentID=132583&lang=zh-TW&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Singapore%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.9292025879801813&instrumentID=77937&lang=zh-TW&decimalMarket=.&thousandGroupMarker=%2C&timeZone=China%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.3581168411309972&instrumentID=3036&lang=zh-TW&decimalMarket=.&thousandGroupMarker=%2C&timeZone=GMT%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Black.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/E11%20C04%20-%20GettyImages-2178545831?qlt=85&wid=1600&ts=1763115124899&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/zh-cn/",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-3c3f5dd55b9ba40f3a512eeabe9e111c-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-1ede74f8f6ba4ffd17fa9174e6263f39-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Prudential-Logo.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Contact%20Us.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/others/light/lightbulb-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/bar-chart-2-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/slideshow-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/light/file-list-3-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/light/briefcase-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/light/newspaper-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/users/light/team-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/finance/light/hand-heart-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/others/light/leaf-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/light/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/HY26_Animated_video_EN_subtitles-AVS?ts=1787751689250",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/red/send-plane-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/prudentialLogo.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/dropdown-arrow.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/submit-icon.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/facebook.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/twitter.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/linkedin.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/youtube.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/dark/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-singapore/components/content/customhtmlpacs/v1/customhtml/clientlibs.lc-c58b756525fb71f27bbf2c22864f106b-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-plt/components/content/customhtmlplt/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs/external-link-modal.lc-b23ae20f2ff3647fa9a0ad3b4b222f3d-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-01dd92e42aa4f22b2189137633a06ae1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-c80012aca40a2b1794606ed65d73e36f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TNLTHWX",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/html/?companycode=uk-pru&v=new&lang=zh-CN",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/brand-proposition?qlt=85&wid=1600&ts=1763115124851&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/Careers-themed-open-positions?qlt=85&wid=1600&ts=1763115124977&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/our-value-thumbnail?qlt=85&wid=1600&ts=1763112320245&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/deib-banner-zoom?qlt=85&wid=1600&ts=1763112320290&$Cards$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/E11%20C04%20-%20GettyImages-2178545831?qlt=85&wid=1600&ts=1763115124899&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-300-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-italic.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-600-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/header_toggle_down_arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/search-headerbar.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-left-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/nav-left-icon-dark-red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/nav-right-icon-dark-red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/right-arrow-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-brand-mid.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Ribbon-large.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-up-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/HY26_Banner_item_4.4b_(2000%20x%201331)_withPlayButton?qlt=85&wid=1600&ts=1787876635057&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/banner?qlt=85&wid=1600&ts=1780284154007&$FullWidth$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/content/prudentialholdingsprod/HY26_Animated_video_EN_subtitles-0x720-3000k",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/cq/i18n/dict.zh-CN.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/language.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/dropdown-arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/prudential-aem-plc/hk/zh_cn/jcr:content/root/containerextension/column0/containerextension_317436224/column0/containerextension_5/column0/upcomingevents.model.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/E03%20C22%20Our%20Purpose%20and%20Vision%20Hero%20Image%20for%20homepage?dpr=on&ts=1763115124884&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/half-year-results-v2?dpr=on&ts=1763445169865&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/2027-strategy-banner-desktop?dpr=on&ts=1763115124932&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/sustainability_v2?dpr=on&ts=1763115124963&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/experience-fragments/prudential-aem-plc/hk/zh_cn/market-site-selector/cambodia/jcr:content/root.html",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/EurolandIFrameAutoHeight/EurolandToolAutoSizeObject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/highcharts?v=v9_75ir8I6i6HmuWLjtZh7WNUSvUyAk11EdAuChS4Ho1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/static.js?v=gkGp78HZ9qFcLK9Drsv8BZDW06tDjZx0CK8yQM73Rpw1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scripts/ScrollingTicker/realtime.extension.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/granite/csrf/token.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-TGBX5LZFVH&cx=c&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "domain": "gstatic.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.33499286850146803&instrumentID=18921&lang=zh-CN&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Eastern%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.836514874051944&instrumentID=132583&lang=zh-CN&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Singapore%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.3323028917619675&instrumentID=77937&lang=zh-CN&decimalMarket=.&thousandGroupMarker=%2C&timeZone=China%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.8430488220729528&instrumentID=3036&lang=zh-CN&decimalMarket=.&thousandGroupMarker=%2C&timeZone=GMT%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/red/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Black.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/en/investors/overview/",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-3c3f5dd55b9ba40f3a512eeabe9e111c-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-1ede74f8f6ba4ffd17fa9174e6263f39-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Prudential-Logo.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Contact%20Us.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/red/article-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/red/slideshow-2-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/finance/red/boost-savings-1.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/media/red/video-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/red/file-text-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/light/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/prudentialLogo.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/dropdown-arrow.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/submit-icon.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/facebook.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/twitter.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/linkedin.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/youtube.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/dark/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-singapore/components/content/customhtmlpacs/v1/customhtml/clientlibs.lc-c58b756525fb71f27bbf2c22864f106b-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-plt/components/content/customhtmlplt/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs/external-link-modal.lc-b23ae20f2ff3647fa9a0ad3b4b222f3d-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-01dd92e42aa4f22b2189137633a06ae1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-c80012aca40a2b1794606ed65d73e36f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TNLTHWX",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/html/?companycode=uk-pru&v=new&lang=en-GB",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-300-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-italic.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-600-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/header_toggle_down_arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/search-headerbar.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/right-arrow-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Red.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/Plus_Button_Black.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-white.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-right-line-brand-mid.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/add-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-up-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-700-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/cq/i18n/dict.en.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/language.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/prudential-aem-plc/hk/en/investors/overview/jcr:content/root/containerextension/column0/containerextension/column0/containerextension_c_1189048394/column0/upcomingevents.model.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/investors-overview?dpr=on&ts=1767696588793&$HeroBanner$",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/HY26_Banner_item_4.3a_(2000%20x%201331)?qlt=85&wid=1600&ts=1787765562208&$FullWidth$&dpr=off",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/granite/csrf/token.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/common/EurolandIFrameAutoHeight/EurolandToolAutoSizeObject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/highcharts?v=v9_75ir8I6i6HmuWLjtZh7WNUSvUyAk11EdAuChS4Ho1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/bundles/static.js?v=gkGp78HZ9qFcLK9Drsv8BZDW06tDjZx0CK8yQM73Rpw1",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scripts/ScrollingTicker/realtime.extension.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-TGBX5LZFVH&cx=c&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-M2P3HXP&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Solutions/ScrollingTicker/uk-pru/style_new.css",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+      "domain": "gstatic.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.730444465331518&instrumentID=18921&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Eastern%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.21462400519257274&instrumentID=132583&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=Singapore%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.7534996627907895&instrumentID=77937&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=China%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://asia.tools.euroland.com/tools/ticker/Scrolling/GetInstrumentData/?sid=0.3772301687089996&instrumentID=3036&lang=en-GB&decimalMarket=.&thousandGroupMarker=%2C&timeZone=GMT%20Standard%20Time&defaultNumberFormat=%23%2C%23%230.00&companycode=uk-pru&getCleanData=false&IsCard=false&PeriodJumpValue=0&CurrencyConvert=&v=new",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/red/bar-chart-2-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/document/red/file-list-3-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/business/red/calendar-event-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/en/site-services/privacy-notice/",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/.rum/@adobe/helix-rum-js@%5E2/dist/micro.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-3c3f5dd55b9ba40f3a512eeabe9e111c-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery.lc-7842899024219bcbdb5e72c946870b79-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/utils.lc-e7bf340a353e643d198b25d0c8ccce47-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-dependencies.lc-d41d8cd98f00b204e9800998ecf8427e-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-1ede74f8f6ba4ffd17fa9174e6263f39-lc.min.css",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/v2/clientlibs/core.wcm.components.commons.datalayer.v2.lc-1e0136bad0acfb78be509234578e44f9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/datalayer/acdl/core.wcm.components.commons.datalayer.acdl.lc-bf921af342fd2c40139671dbf0920a1f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Prudential-Logo.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/header/Contact%20Us.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/prudentialLogo.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/dropdown-arrow.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/images/icons/submit-icon.png",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/facebook.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/twitter.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/linkedin.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-plc/footer/youtube.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/content/dam/prudential-aem-common/icons/system/dark/arrow-right-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-singapore/components/content/customhtmlpacs/v1/customhtml/clientlibs.lc-c58b756525fb71f27bbf2c22864f106b-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-plt/components/content/customhtmlplt/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs.lc-2a8c19f3a6878333c2173258484547e9-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-lbu-ref/components/content/customhtmlphkl/v1/customhtml/clientlibs/external-link-modal.lc-b23ae20f2ff3647fa9a0ad3b4b222f3d-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/clientlibs/granite/jquery/granite/csrf.lc-652a558c3774088b61b0530c184710d1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-base.lc-01dd92e42aa4f22b2189137633a06ae1-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site.lc-c80012aca40a2b1794606ed65d73e36f-lc.min.js",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TNLTHWX",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-300-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-italic.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-400-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-600-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/fonts/open-sans-latin-700-normal.woff2",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/header_toggle_down_arrow.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/search-headerbar.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/arrow-up-s-line.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/placeholder?dpr=off&qlt=85&fmt=webp&ts=1763112809849&fit=wrap&wid=1600",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/libs/granite/csrf/token.json",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.prudentialplc.com/etc.clientlibs/prudential-aem-common/clientlibs/clientlib-site/resources/icons/language.svg",
+      "domain": "prudentialplc.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://s7ap1.scene7.com/is/image/prudentialholdingsprod/placeholder?dpr=on&ts=1763112809849",
+      "domain": "scene7.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-TGBX5LZFVH&cx=c&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-M2P3HXP&gtm=4e6b41h1",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "affinity",
+        "value": "\"ceac3d437b5a1d99\"",
+        "domain": "www.prudentialplc.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "visid_incap_2482969",
+        "value": "p4pe+ZsES7Omeigg1vkP7cf172oAAAAAQUIPAAAAAAB/N+TG6y4OGJjfSbmuDba2",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": 1825625955.388924,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "incap_ses_577_2482969",
+        "value": "p5Q1Z77KLW8qb3aQzuoBCMj172oAAAAA92E+QrZ28XpXv7EK22BEMg==",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "nlbi_2482969",
+        "value": "YoeSCkh0oSzz9CnamWe8fAAAAACWxmbWi/OK1LzZAtmd++m5",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.1156785891.1794110923",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": 1828670922.583737,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "_ga_TGBX5LZFVH",
+        "value": "GS2.1.s1794110922$o1$g0$t1794110922$j60$l0$h0",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": 1828670922.761858,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "affinity",
+        "value": "\"ceac3d437b5a1d99\"",
+        "domain": "www.prudentialplc.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "visid_incap_2482969",
+        "value": "p4pe+ZsES7Omeigg1vkP7cf172oAAAAAQUIPAAAAAAB/N+TG6y4OGJjfSbmuDba2",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": 1825625955.388924,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "incap_ses_577_2482969",
+        "value": "p5Q1Z77KLW8qb3aQzuoBCMj172oAAAAA92E+QrZ28XpXv7EK22BEMg==",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "nlbi_2482969",
+        "value": "YoeSCkh0oSzz9CnamWe8fAAAAACWxmbWi/OK1LzZAtmd++m5",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "_ga",
+        "value": "GA1.1.1156785891.1794110923",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": 1828670945.919119,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "noConsent",
+        "value": "true",
+        "domain": "www.prudentialplc.com",
+        "path": "/",
+        "expires": 1794112725,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "_ga_TGBX5LZFVH",
+        "value": "GS2.1.s1794110922$o1$g0$t1794110945$j37$l0$h0",
+        "domain": ".prudentialplc.com",
+        "path": "/",
+        "expires": 1828670945.919018,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      }
+    ]
+  },
+  "policy": {
+    "url": "https://www.prudentialplc.com/en/site-services/privacy-notice/",
+    "found": true,
+    "companies_named": [
+      "Google Analytics",
+      "Google, Inc."
+    ],
+    "dpo_contact": "GHO.dataprotection@prudentialplc.com",
+    "cookie_policy_url": null,
+    "format": "html",
+    "text_chars": 8215,
+    "chars_sent": 8215
+  },
+  "visited_pages": [
+    "https://www.prudentialplc.com/zh-hant/",
+    "https://www.prudentialplc.com/zh-cn/",
+    "https://www.prudentialplc.com/en/investors/overview/"
+  ],
+  "fingerprinting": [],
+  "id_leaks": [
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "1156785891",
+      "to": "google.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://region1.analytics.google.com/g/collect?v=2&tid=G-TGBX5LZFVH&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&_p=1794110921559&_gaz=1&gc"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "115678\u20260923",
+      "to": "google.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://region1.analytics.google.com/g/collect?v=2&tid=G-TGBX5LZFVH&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&_p=1794110921559&_gaz=1&gc"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "1156785891",
+      "to": "doubleclick.net",
+      "company": "Google",
+      "category": "Advertising",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-TGBX5LZFVH&cid=1156785891.1794110923&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&rcb=1"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "115678\u20260923",
+      "to": "doubleclick.net",
+      "company": "Google",
+      "category": "Advertising",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-TGBX5LZFVH&cid=1156785891.1794110923&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&rcb=1"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "1156785891",
+      "to": "google.co.uk",
+      "company": "Google",
+      "category": "Advertising",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://www.google.co.uk/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-TGBX5LZFVH&cid=1156785891.1794110923&gtm=45je6b41h1v889346110z8831251664za20gzb831251664z"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "115678\u20260923",
+      "to": "google.co.uk",
+      "company": "Google",
+      "category": "Advertising",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://www.google.co.uk/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&tid=G-TGBX5LZFVH&cid=1156785891.1794110923&gtm=45je6b41h1v889346110z8831251664za20gzb831251664z"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "1156785891",
+      "to": "google.com",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://region1.analytics.google.com/g/collect?v=2&tid=G-TGBX5LZFVH&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&_p=1794110921559&gcd=13l3l"
+    },
+    {
+      "cookie": "_ga",
+      "cookie_domain": "prudentialplc.com",
+      "id_preview": "115678\u20260923",
+      "to": "google.com",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "confirmed",
+      "example": "https://region1.analytics.google.com/g/collect?v=2&tid=G-TGBX5LZFVH&gtm=45je6b41h1v889346110z8831251664za20gzb831251664zd831251664xf1&_p=1794110921559&gcd=13l3l"
+    }
+  ],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "critical",
+      "ai_severity": "high",
+      "severity_note": "Raised to critical: rated high and backed by advertising or session-replay evidence.",
+      "title": "Advertising data sharing conflicts with the stated cookie purpose",
+      "detail": "Before the banner was answered, the unique _ga identifier was sent to doubleclick.net, which the audit identifies as Google advertising. This conflicts with the policy statement that the information is used only to analyse website use and guide improvements.",
+      "law": "UK GDPR Art. 5(1)(a); PECR reg. 6",
+      "source": "ai",
+      "evidence": [
+        "E2",
+        "E6"
+      ],
+      "policy_quote": "We use this information only to analyse the use of our website to help guide improvements.",
+      "reasoning": "The evidence indicates advertising-related sharing rather than use limited to website analytics. This is high severity because it directly contradicts a specific statement in the site's own policy, creating a transparency and fairness problem as well as a potential PECR consent issue.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 5(1)(a)"
+    },
+    {
+      "severity": "high",
+      "title": "Google cookies were set before you could choose",
+      "detail": "2 tracking cookies (_ga, _ga_TGBX5LZFVH) were already set before the cookie banner was answered (Advertising). _ga, _ga_TGBX5LZFVH hold what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Google still received data after you rejected cookies",
+      "detail": "10 requests to googletagmanager.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Your ID was sent to Google before you answered the cookie banner",
+      "detail": "The value of _ga (an ID unique to this browser) was sent to doubleclick.net, google.co.uk in the request address. This lets Google recognise this browser on later visits.",
+      "law": "PECR reg. 6 (reading an identifier stored on your device and sending it on is 'access' and needs consent); UK GDPR Art. 4(1) (an online identifier is personal data)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 4(1)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 10,
+    "companies_seen": 1,
+    "companies_in_policy": 2,
+    "companies_not_disclosed": [],
+    "companies_after_reject": [
+      "Google"
+    ],
+    "companies_with_cookies_before_consent": [
+      "Google"
+    ],
+    "categories": {
+      "Google": "Advertising"
+    },
+    "fingerprinting_domains": [],
+    "id_leak_companies": [
+      "Google"
+    ]
+  },
+  "letter": {
+    "kind": "complaint",
+    "to": "GHO.dataprotection@prudentialplc.com",
+    "subject": "Complaint regarding cookie and tracking practices on prudentialplc.com",
+    "body": "Dear Data Protection Officer,\n\nI am writing to raise concerns about cookie and tracking activity observed on https://prudentialplc.com during an automated, passive audit on 2026-11-08 04:08 UTC. The audit used a fresh browser, clicked the cookie banner\u2019s reject option (\u201cDecline\u201d), and recorded what was still stored or sent while browsing https://www.prudentialplc.com/zh-hant/, https://www.prudentialplc.com/zh-cn/, and https://www.prudentialplc.com/en/investors/overview/. I also reviewed your privacy notice at https://www.prudentialplc.com/en/site-services/privacy-notice/.\n\nPlease explain the following points:\n\n1. Our review suggests there is a conflict between observed advertising-related data sharing and the statement in your privacy notice that, \u201cWe use this information only to analyse the use of our website to help guide improvements.\u201d Before the banner was answered, the unique _ga identifier was sent to doubleclick.net, which the audit identifies as Google advertising. This appears inconsistent with the stated purpose.\n\n2. Two Google cookies, _ga and _ga_TGBX5LZFVH, were already set before any choice was made on the cookie banner. These cookies held what appears to be a unique identifier.\n\n3. After the reject option was clicked, 10 requests were still made to googletagmanager.com.\n\n4. Before the cookie banner was answered, the value of _ga, appearing to be an identifier unique to this browser, was sent to doubleclick.net and google.co.uk in the request address. This appears capable of allowing Google to recognise the browser on later visits.\n\nIn light of the above, please:\n\n1. Explain each of the points above.\n2. Confirm which cookies and trackers you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential cookies or tracking technologies from being set, accessed, or used without consent.\n4. Reply within one month.\n\nIf this matter is not resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T04:09:26.498161+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Advertising data sharing conflicts with the stated cookie purpose",
+      "Google cookies were set before you could choose",
+      "Google still received data after you rejected cookies",
+      "Your ID was sent to Google before you answered the cookie banner"
+    ],
+    "delivery": {
+      "mode": "live",
+      "sent": true,
+      "to": "GHO.dataprotection@prudentialplc.com",
+      "at": "2026-11-08T04:09:31.576888+00:00",
+      "reason": null,
+      "message_id": "<179411097157.576880.9050350199521384452@clype.local>",
+      "site": "prudentialplc.com",
+      "intended_to": "GHO.dataprotection@prudentialplc.com",
+      "saved_to": null,
+      "trigger": "auto"
+    },
+    "auto": {
+      "tier": "critical",
+      "reason": "Audit's worst finding is critical."
+    }
+  },
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit found Google identifiers and advertising-related requests before the user answered the banner and after rejection, as recorded in the automated checks. In addition, the policy says cookie information is used only for website analysis, which conflicts with the observed advertising-related sharing. The privacy notice covers several UK GDPR transparency items, but does not clearly describe this advertising disclosure or provide a specific cookie-policy explanation.",
+    "findings_kept": 1,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: True. Method: selector. Buttons clicked: Decline.",
+      "E2: ID sent to another company: the value of cookie _ga (unique to this browser) was sent to doubleclick.net (Google, Advertising) in the request address, before the banner was answered.",
+      "E3: ID sent to another company: the value of cookie _ga (unique to this browser) was sent to doubleclick.net (Google, Advertising) in the request address, before the banner was answered.",
+      "E4: ID sent to another company: the value of cookie _ga (unique to this browser) was sent to google.co.uk (Google, Advertising) in the request address, before the banner was answered.",
+      "E5: ID sent to another company: the value of cookie _ga (unique to this browser) was sent to google.co.uk (Google, Advertising) in the request address, before the banner was answered.",
+      "E6: Tracker Google (Advertising): 5 requests before consent, 10 after reject, to doubleclick.net, google.co.uk, googletagmanager.com. Example after-reject requests: https://www.googletagmanager.com/gtm.js?id=GTM-TNLTHWX | https://www.googletagmanager.com/gtag/js?id=G-TGBX5LZFVH&cx=c&gtm=4e6b41h1",
+      "E7: Tracking cookie _ga from Google on .prudentialplc.com present before the banner was answered; expires in 400 days; holds what looks like a unique ID.",
+      "E8: Tracking cookie _ga_TGBX5LZFVH from Google on .prudentialplc.com present before the banner was answered; expires in 400 days; holds what looks like a unique ID.",
+      "E9: Tracking cookie _ga from Google on .prudentialplc.com present after reject; expires in 400 days; holds what looks like a unique ID.",
+      "E10: Tracking cookie _ga_TGBX5LZFVH from Google on .prudentialplc.com present after reject; expires in 400 days; holds what looks like a unique ID.",
+      "E11: Pages browsed and scrolled after reject: https://www.prudentialplc.com/zh-hant/, https://www.prudentialplc.com/zh-cn/, https://www.prudentialplc.com/en/investors/overview/.",
+      "E12: Privacy policy: https://www.prudentialplc.com/en/site-services/privacy-notice/. Companies it names: Google Analytics, Google, Inc.. Contact email found: GHO.dataprotection@prudentialplc.com.",
+      "E13: Cookie policy: not found.",
+      "E14: Automated check (high): Google cookies were set before you could choose. 2 tracking cookies (_ga, _ga_TGBX5LZFVH) were already set before the cookie banner was answered (Advertising). _ga, _ga_TGBX5LZFVH hold what looks like a unique ID.",
+      "E15: Automated check (high): Google still received data after you rejected cookies. 10 requests to googletagmanager.com after you clicked reject (Advertising).",
+      "E16: Automated check (high): Your ID was sent to Google before you answered the cookie banner. The value of _ga (an ID unique to this browser) was sent to doubleclick.net, google.co.uk in the request address. This lets Google recognise this browser on later visits."
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "the data controller of your personal information is Prudential plc."
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "We use this information only to analyse the use of our website to help guide improvements."
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "present",
+        "quote": "We collect personal information from you that is necessary for us to either provide you with the product or service you\u2019ve requested or to comply with statutory or contractual requirements."
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "We\u2019ll share your personal information within the Prudential Group and our vendor who support the upkeep of this website."
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "We won\u2019t keep your personal data for any longer than is necessary, either to comply with the law or to ensure that we are complying with our obligations to you and other third parties."
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "present",
+        "quote": "request a copy of your personal information for free"
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "limit how we use your personal information or withdraw your consents"
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "present",
+        "quote": "complain to a data protection authority or another independent regulator about how we\u2019re using it."
+      }
+    }
+  }
+}

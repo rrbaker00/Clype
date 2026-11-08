@@ -1,0 +1,4035 @@
+{
+  "url": "https://sse.com",
+  "started_at": "2026-11-08T04:15:42.163473+00:00",
+  "duration_s": 62.34,
+  "cost": {
+    "llm_calls": 4,
+    "input_tokens": 11269,
+    "output_tokens": 3036,
+    "model": "gpt-5.4+gpt-5.6-luna",
+    "elapsed_s": 62.34,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 3,
+        "input_tokens": 10192,
+        "output_tokens": 2450
+      },
+      "gpt-5.4": {
+        "llm_calls": 1,
+        "input_tokens": 1077,
+        "output_tokens": 586
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "llm",
+    "clicks": [
+      "Disable all"
+    ],
+    "accept_label": "Allow all",
+    "preticked": [],
+    "reject_steps": 1
+  },
+  "requests": [
+    {
+      "url": "https://sse.com/",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-300.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-700.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-500.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7JihtlmtdC-VpJ1PpP6TljjIamef7JM&callback=Function.prototype",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/js/cas-tool-helper.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/jsdist/global.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/cssdist/style.min.css?v=YZYF3dGHAHmdycVDzE9AFRRqysMhPXVJgaEGmyAaSWo",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/y0mp4fmh/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/uxed23ul/logo-dark.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/q51nb3w0/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/c2hjzfa2/201700_ssecomhomepagebannerupdate_tablet_oldsize_651x473px.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/d5jh1vzc/image3-transmissiontower.jpg?width=1366&height=910&v=1dc6ac1c3126fb0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KV9D89F",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/images/content/banner-texture.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/3xahjpjh/homepage-ssen-t-3.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/qold2pbq/image-06-11-2026-at-0924.png?width=454&height=290&v=1dd6dd0bfd5d4f0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/lpxc4koe/the-seaway-alfa-lift-at-invergordon-in-northern-scotland.jpg?width=454&height=290&v=1dd605c285575d0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/2lbjhene/cadeler-a-class-vessel.jpg?width=454&height=290&v=1dd6bd8f38c9e90",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/1k2bjopl/entrance-to-the-12km-long-exploratory-tunnel-at-coire-glas-built-into-the-hillside-above-loch-lochy-to-gather-vital-geological-data-and-inform-the-project-s-main-design-1.jpg?width=454&height=290&v=1dd685b2e6904d0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/o3og0wja/viking-energy-wind-farm_2-c-sse-renewables.jpg?width=454&height=290&v=1dab8d7f77880c0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/mlrfmew3/sse-kill-10-lt-790.jpg?width=454&height=290&v=1dd6093443388f0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/2nehmqq2/sse-we-power-change-image-resized-2.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/mt2lprgb/jasmine-turbine-smaller.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/images/content/All-businesses-desktop.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2?t=1793803377891",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-900.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.ads-twitter.com/uwt.js",
+      "domain": "ads-twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/destination?id=AW-544897598&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-4964036.js?sv=7",
+      "domain": "hotjar.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Hotjar",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://t.co/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=739d7c77-3ff3-42ea-b5f2-bfdd00a63652&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=a4262fb0-23ef-4e6e-ad58-c2957a5135ed&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2F&tw_engaged_ms=6&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111343511-796791557&tw_session_start=1&twpid=tw.1794111343511.176753506149522811&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "t.co",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=739d7c77-3ff3-42ea-b5f2-bfdd00a63652&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=a4262fb0-23ef-4e6e-ad58-c2957a5135ed&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2F&tw_engaged_ms=6&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111343511-796791557&tw_session_start=1&twpid=tw.1794111343511.176753506149522811&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1424105&time=1794111343579&pageLoadId=5436fa94-800d-4837-b029-7a3cb5073d8b&url=https%3A%2F%2Fwww.sse.com%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/225958949509722?v=2.9.438&r=stable&domain=www.sse.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-56QX3K8VPE&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=3&frm=0&apvc=0&ae=g&tid=AW-544897598&dl=https%3A%2F%2Fwww.sse.com%2F&scrsrc=www.googletagmanager.com&rnd=1194147581.1794111344&navt=n&npa=1&_tu=CA&gtm=45be6b41z8831447612za20gzb831447612zd831447612xeaxf1&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938466~115938468~118897920~118897930~120385423~120412528~120420414~120469145~120469153~121246026~121246034~123814185&tft=1794111344071&tfd=1590&tids=AW-544897598&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-56QX3K8VPE&gtm=45je6b41v9126841564za20ozb831447612zd831447612xf1&_p=1794111343097&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&_eu=EAAAAGAC&cid=831533102.1794111345&frm=0&ir=1&pscdl=denied&rcb=17&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814183~124013662&sid=1794111344&sct=1&seg=0&dl=https%3A%2F%2Fwww.sse.com%2F&dt=We%20power%20change%20%7C%20SSE&en=page_view&_fv=1&_nsi=1&_ss=1&ep.page_category=engagement&ep.persona=unidentified&tfd=2163",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://t.co/i/adsct?bci=3&cv=100%261&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=c47edc91-9d3a-47e4-be5e-1220992e0053&events=%5B%5B%22autobuttonclick%22%2C%7B%22value%22%3A%22Disable%20all%22%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=a4262fb0-23ef-4e6e-ad58-c2957a5135ed&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2F&tw_engaged_ms=3847&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1794111343511-796791557&twpid=tw.1794111343511.176753506149522811&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "t.co",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://analytics.twitter.com/i/adsct?bci=3&cv=100%261&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=c47edc91-9d3a-47e4-be5e-1220992e0053&events=%5B%5B%22autobuttonclick%22%2C%7B%22value%22%3A%22Disable%20all%22%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=a4262fb0-23ef-4e6e-ad58-c2957a5135ed&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2F&tw_engaged_ms=3847&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1794111343511-796791557&twpid=tw.1794111343511.176753506149522811&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disclaimerAccepted%5C%22%2C%5C%22UMB-XSRF-TOKEN%5C%22%2C%5C%22show-popup%5C%22%2C%5C%22ignore-geolocation%5C%22%2C%5C%22UMB-XSRF-V%5C%22%2C%5C%22UMB_CONTEXT%5C%22%2C%5C%22ASP.NET_SessionId%5C%22%2C%5C%22CookieControl%5C%22%5D%2C%5C%22optionalCookies%5C%22%3A%7B%5C%22analytics%5C%22%3A%5C%22revoked%5C%22%2C%5C%22marketing%5C%22%3A%5C%22revoked%5C%22%7D%2C%5C%22statement%5C%22%3A%7B%5C%22shown%5C%22%3Atrue%2C%5C%22updated%5C%22%3A%5C%2221%2F11%2F2019%5C%22%7D%2C%5C%22consentDate%5C%22%3A1794111347354%2C%5C%22consentExpiry%5C%22%3A90%2C%5C%22interactedWith%5C%22%3Atrue%2C%5C%22user%5C%22%3A%5C%221DBEDBD6-ABB4-40E2-BFA0-A873CF097672%5C%22%7D%22",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/13d/common.js",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/13d/util.js",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/our-technologies/",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-300.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-700.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-500.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7JihtlmtdC-VpJ1PpP6TljjIamef7JM&callback=Function.prototype",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/js/cas-tool-helper.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/jsdist/global.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/cssdist/style.min.css?v=YZYF3dGHAHmdycVDzE9AFRRqysMhPXVJgaEGmyAaSWo",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/y0mp4fmh/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/uxed23ul/logo-dark.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/q51nb3w0/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/alxgwovl/offshore-turbine-jacket-foundation-installation-at-beatrice-offshore-wind-farm-scotland-developed-by-sse-renewables-1.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/ykup55c2/onshore-wind-web-image-text.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/ivth1sjj/hydro-web-image-text.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/3cwhhs23/solar-image-text-web.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/f0xa0spr/battery-storage-image-text-web.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/eqwfe0my/thermal-image-text-web.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/yjff4pi0/ccs-image-text-web.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/gpvdpuae/thermal-image-text-web-2.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/ch0ckp2l/transmission-image-text-web.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/cxzbc3ed/distribution-image-text-web.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-player@2.0.12/dist/lottie-player.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-interactivity@1.6.2/dist/lottie-interactivity.min.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KV9D89F",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2?t=1793803377891",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-900.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/1qbpiwhq/keadby2.jpg?width=1920&height=800&v=1dbc4dcfb676c70",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/shqlgox3/power-change.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.ads-twitter.com/uwt.js",
+      "domain": "ads-twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/destination?id=AW-544897598&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-4964036.js?sv=7",
+      "domain": "hotjar.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Hotjar",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1424105&time=1794111351715&pageLoadId=20c76e74-62f6-4222-aac3-5234a3557958&url=https%3A%2F%2Fwww.sse.com%2Four-technologies%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/225958949509722?v=2.9.438&r=stable&domain=www.sse.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://t.co/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=5d538325-004b-48ea-b47c-a4fe6014fd57&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=8c7c2fb1-ecf2-4410-8a22-4147a6465a49&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Four-technologies%2F&tw_engaged_ms=4&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111351809-141254679&tw_session_start=1&twpid=tw.1794111351809.255903846444417647&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "t.co",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=5d538325-004b-48ea-b47c-a4fe6014fd57&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=8c7c2fb1-ecf2-4410-8a22-4147a6465a49&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Four-technologies%2F&tw_engaged_ms=4&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111351809-141254679&tw_session_start=1&twpid=tw.1794111351809.255903846444417647&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-56QX3K8VPE&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-56QX3K8VPE&gtm=45je6b41v9126841564za20ozb831447612zd831447612xf1&_p=1794111351446&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&_eu=EAAAAGAC&cid=563804767.1794111353&frm=0&ir=1&pscdl=denied&rcb=7&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123785232~123814185&sid=1794111352&sct=1&seg=0&dl=https%3A%2F%2Fwww.sse.com%2Four-technologies%2F&dt=SSE%20technologies%20%7C%20SSE&en=page_view&_fv=1&_nsi=1&_ss=1&ep.page_category=engagement&ep.page_type=our%20technologies&ep.persona=unidentified&tfd=1278",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=15&frm=0&apvc=0&ae=g&tid=AW-544897598&dl=https%3A%2F%2Fwww.sse.com%2Four-technologies%2F&scrsrc=www.googletagmanager.com&rnd=498438700.1794111353&navt=n&npa=1&_tu=CA&gtm=45be6b41z8831447612za20gzb831447612zd831447612xeaxf1&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814185&tft=1794111352517&tfd=1279&tids=AW-544897598&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/investors/",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-300.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-700.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-500.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7JihtlmtdC-VpJ1PpP6TljjIamef7JM&callback=Function.prototype",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/js/cas-tool-helper.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/jsdist/global.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/cssdist/style.min.css?v=YZYF3dGHAHmdycVDzE9AFRRqysMhPXVJgaEGmyAaSWo",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/y0mp4fmh/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/uxed23ul/logo-dark.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/q51nb3w0/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/dojepjgc/transformation-for-growth.gif",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/jykbaqaj/thumb.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KV9D89F",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2?t=1793803377891",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-900.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/0yxfp3ae/trans_2_people_v4.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/images/content/Waves-white.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/zklm0s3q/sse-investors-banner-ar25.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/famp3rwc/ssen_transmission_power_line_upgrade_powmill_kinross_100_1600x900.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/fntlpaif/solar-png.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/osug3m4z/sloy_dam_autumn_2023_dji_0844-banner.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/dltdcg3r/perths.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/ewmfnxcd/sse_ar26_front_cover-copy.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/hjzlyome/thumbnail_image-1.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/xcblntog/thumbnail_image.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/rrdf4oem/poweringchange-transmission.png?width=454&height=290&v=1db89c899f20080",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/igga2pxp/perthsignage-august2021.jpg?width=454&height=290&v=1d7940fd44aa140",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/t1neocly/ssen-transmission_the-alyth-tealing-project-will-involve-uprating-the-existing-transmission-line-from-275kv-to-400kv.jpg?width=454&height=290&v=1dc3dcb496edd10",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/rlzp5jvy/perth-signage.jpg?width=454&height=290&v=1db892c4f46d4d0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/rirhnsnw/sse-cfd-for-berwick-bank-wind-farm.jpg?width=454&height=290&v=1dc856a01f4f2d0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.ads-twitter.com/uwt.js",
+      "domain": "ads-twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/destination?id=AW-544897598&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-4964036.js?sv=7",
+      "domain": "hotjar.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Hotjar",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1424105&time=1794111356246&pageLoadId=2d1b6f43-2082-400e-8d16-e4ecd5e5d4c5&url=https%3A%2F%2Fwww.sse.com%2Finvestors%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/225958949509722?v=2.9.438&r=stable&domain=www.sse.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://t.co/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=5029febb-0925-424c-a3b3-b67a2d3a009a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=b4e74a62-9c6f-4ef4-a5a9-0fa3433129b7&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Finvestors%2F&tw_engaged_ms=7&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=2&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111351809-141254679&twpid=tw.1794111351809.255903846444417647&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "t.co",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=5029febb-0925-424c-a3b3-b67a2d3a009a&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=b4e74a62-9c6f-4ef4-a5a9-0fa3433129b7&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Finvestors%2F&tw_engaged_ms=7&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=2&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111351809-141254679&twpid=tw.1794111351809.255903846444417647&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net//log/error?p=pixel&pn=SmartSetup&sl=1&v=2.9.438&e=Error%3A%20%5BSmartSetup%5D%20Rule%20processing%20issues&s=Error%3A%20%5BSmartSetup%5D%20Rule%20processing%20issues%0A%20%20%20%20at%20r%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F225958949509722%3Fv%3D2.9.438%26r%3Dstable%26domain%3Dwww.sse.com%26hme%3D4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703%26ex_m%3D118%252C242%252C171%252C27%252C82%252C83%252C162%252C78%252C77%252C11%252C181%252C102%252C20%252C153%252C141%252C46%252C85%252C90%252C149%252C176%252C183%252C8%252C4%252C5%252C7%252C6%252C3%252C103%252C115%252C161%252C72%252C185%252C110%252C184%252C211%252C263%252C37%252C84%252C283%252C282%252C281%252C14%252C25%252C28%252C40%252C62%252C117%252C68%252C10%252C73%252C111%252C112%252C113%252C119%252C144%252C38%252C36%252C146%252C147%252C148%252C143%252C142%252C172%252C86%252C175%252C173%252C174%252C57%252C69%252C67%252C137%252C19%252C179%252C52%252C333%252C334%252C335%252C332%252C32%252C17%252C31%252C18%252C33%252C34%252C35%252C55%252C163%252C87%252C126%252C22%252C24%252C51%252C47%252C49%252C48%252C95%252C104%252C108%252C124%252C160%252C164%252C53%252C125%252C29%252C26%252C133%252C79%252C43%252C166%252C165%252C167%252C157%252C155%252C30%252C42%252C66%252C123%252C178%252C80%252C21%252C128%252C93%252C76%252C23%252C97%252C98%252C130%252C96%252C151%252C150%252C154%252C109%252C177%252C180%252C41%252C349%252C371%252C256%252C238%252C70%252C239%252C237%252C374%252C365%252C59%252C257%252C121%252C145%252C92%252C135%252C61%252C54%252C56%252C127%252C134%252C140%252C139%252C65%252C74%252C168%252C88%252C89%252C129%252C44%252C39%252C60%252C63%252C114%252C182%252C1%252C138%252C16%252C136%252C12%252C2%252C64%252C105%252C15%252C75%252C71%252C132%252C101%252C100%252C187%252C188%252C106%252C107%252C9%252C116%252C186%252C58%252C158%252C99%252C91%252C81%252C131%252C120%252C169%252C50%252C159%252C0%252C94%252C152%252C156%252C170%252C45%252C122%252C13%252C189%3A50%3A237)%0A%20%20%20%20at%20Ve%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F225958949509722%3Fv%3D2.9.438%26r%3Dstable%26domain%3Dwww.sse.com%26hme%3D4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703%26ex_m%3D118%252C242%252C171%252C27%252C82%252C83%252C162%252C78%252C77%252C11%252C181%252C102%252C20%252C153%252C141%252C46%252C85%252C90%252C149%252C176%252C183%252C8%252C4%252C5%252C7%252C6%252C3%252C103%252C115%252C161%252C72%252C185%252C110%252C184%252C211%252C263%252C37%252C84%252C283%252C282%252C281%252C14%252C25%252C28%252C40%252C62%252C117%252C68%252C10%252C73%252C111%252C112%252C113%252C119%252C144%252C38%252C36%252C146%252C147%252C148%252C143%252C142%252C172%252C86%252C175%252C173%252C174%252C57%252C69%252C67%252C137%252C19%252C179%252C52%252C333%252C334%252C335%252C332%252C32%252C17%252C31%252C18%252C33%252C34%252C35%252C55%252C163%252C87%252C126%252C22%252C24%252C51%252C47%252C49%252C48%252C95%252C104%252C108%252C124%252C160%252C164%252C53%252C125%252C29%252C26%252C133%252C79%252C43%252C166%252C165%252C167%252C157%252C155%252C30%252C42%252C66%252C123%252C178%252C80%252C21%252C128%252C93%252C76%252C23%252C97%252C98%252C130%252C96%252C151%252C150%252C154%252C109%252C177%252C180%252C41%252C349%252C371%252C256%252C238%252C70%252C239%252C237%252C374%252C365%252C59%252C257%252C121%252C145%252C92%252C135%252C61%252C54%252C56%252C127%252C134%252C140%252C139%252C65%252C74%252C168%252C88%252C89%252C129%252C44%252C39%252C60%252C63%252C114%252C182%252C1%252C138%252C16%252C136%252C12%252C2%252C64%252C105%252C15%252C75%252C71%252C132%252C101%252C100%252C187%252C188%252C106%252C107%252C9%252C116%252C186%252C58%252C158%252C99%252C91%252C81%252C131%252C120%252C169%252C50%252C159%252C0%252C94%252C152%252C156%252C170%252C45%252C122%252C13%252C189%3A205%3A18533)%0A%20%20%20%20at%20je%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F225958949509722%3Fv%3D2.9.438%26r%3Dstable%26domain%3Dwww.sse.com%26hme%3D4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703%26ex_m%3D118%252C242%252C171%252C27%252C82%252C83%252C162%252C78%252C77%252C11%252C181%252C102%252C20%252C153%252C141%252C46%252C85%252C90%252C149%252C176%252C183%252C8%252C4%252C5%252C7%252C6%252C3%252C103%252C115%252C161%252C72%252C185%252C110%252C184%252C211%252C263%252C37%252C84%252C283%252C282%252C281%252C14%252C25%252C28%252C40%252C62%252C117%252C68%252C10%252C73%252C111%252C112%252C113%252C119%252C144%252C38%252C36%252C146%252C147%252C148%252C143%252C142%252C172%252C86%252C175%252C173%252C174%252C57%252C69%252C67%252C137%252C19%252C179%252C52%252C333%252C334%252C335%252C332%252C32%252C17%252C31%252C18%252C33%252C34%252C35%252C55%252C163%252C87%252C126%252C22%252C24%252C51%252C47%252C49%252C48%252C95%252C104%252C108%252C124%252C160%252C164%252C53%252C125%252C29%252C26%252C133%252C79%252C43%252C166%252C165%252C167%252C157%252C155%252C30%252C42%252C66%252C123%252C178%252C80%252C21%252C128%252C93%252C76%252C23%252C97%252C98%252C130%252C96%252C151%252C150%252C154%252C109%252C177%252C180%252C41%252C349%252C371%252C256%252C238%252C70%252C239%252C237%252C374%252C365%252C59%252C257%252C121%252C145%252C92%252C135%252C61%252C54%252C56%252C127%252C134%252C140%252C139%252C65%252C74%252C168%252C88%252C89%252C129%252C44%252C39%252C60%252C63%252C114%252C182%252C1%252C138%252C16%252C136%252C12%252C2%252C64%252C105%252C15%252C75%252C71%252C132%252C101%252C100%252C187%252C188%252C106%252C107%252C9%252C116%252C186%252C58%252C158%252C99%252C91%252C81%252C131%252C120%252C169%252C50%252C159%252C0%252C94%252C152%252C156%252C170%252C45%252C122%252C13%252C189%3A205%3A18893)%0A%20%20%20%20at%20Object.%3Canonymous%3E%20(https%3A%2F%2Fconnect.facebook.net%2Fsignals%2Fconfig%2F225958949509722%3Fv%3D2.9.438%26r%3Dstable%26domain%3Dwww.sse.com%26hme%3D4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703%26ex_m%3D118%252C242%252C171%252C27%252C82%252C83%252C162%252C78%252C77%252C11%252C181%252C102%252C20%252C153%252C141%252C46%252C85%252C90%252C149%252C176%252C183%252C8%252C4%252C5%252C7%252C6%252C3%252C103%252C115%252C161%252C72%252C185%252C110%252C184%252C211%252C263%252C37%252C84%252C283%252C282%252C281%252C14%252C25%252C28%252C40%252C62%252C117%252C68%252C10%252C73%252C111%252C112%252C113%252C119%252C144%252C38%252C36%252C146%252C147%252C148%252C143%252C142%252C172%252C86%252C175%252C173%252C174%252C57%252C69%252C67%252C137%252C19%252C179%252C52%252C333%252C334%252C335%252C332%252C32%252C17%252C31%252C18%252C33%252C34%252C35%252C55%252C163%252C87%252C126%252C22%252C24%252C51%252C47%252C49%252C48%252C95%252C104%252C108%252C124%252C160%252C164%252C53%252C125%252C29%252C26%252C133%252C79%252C43%252C166%252C165%252C167%252C157%252C155%252C30%252C42%252C66%252C123%252C178%252C80%252C21%252C128%252C93%252C76%252C23%252C97%252C98%252C130%252C96%252C151%252C150%252C154%252C109%252C177%252C180%252C41%252C349%252C371%252C256%252C238%252C70%252C239%252C237%252C374%252C365%252C59%252C257%252C121%252C145%252C92%252C135%252C61%252C54%252C56%252C127%252C134%252C140%252C139%252C65%252C74%252C168%252C88%252C89%252C129%252C44%252C39%252C60%252C63%252C114%252C182%252C1%252C138%252C16%252C136%252C12%252C2%252C64%252C105%252C15%252C75%252C71%252C132%252C101%252C100%252C187%252C188%252C106%252C107%252C9%252C116%252C186%252C58%252C158%252C99%252C91%252C81%252C131%252C120%252C169%252C50%252C159%252C0%252C94%252C152%252C156%252C170%252C45%252C122%252C13%252C189%3A217%3A921)%0A%20%20%20%20at%20https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A66%3A803%0A%20%20%20%20at%20b%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A368%3A1706)%0A%20%20%20%20at%20e.value%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A66%3A677)%0A%20%20%20%20at%20tt%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A475%3A12739)%0A%20%20%20%20at%20ot%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A475%3A14339)%0A%20%20%20%20at%20b.fbq.b.fbq.Xe%20(https%3A%2F%2Fconnect.facebook.net%2Fen_US%2Ffbevents.js%3A475%3A11514)&ue=0&rs=stable&ed=%5B%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%221098314706467240%22%5D%2C%22key%22%3A%22author_article_name%22%7D%2C%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%221401752105265029%22%5D%2C%22key%22%3A%22author_published_date%22%7D%2C%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%221423790116314162%22%5D%2C%22key%22%3A%22event_name%22%7D%2C%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%221825019212096874%22%2C%221805300940756308%22%5D%2C%22key%22%3A%22entity_name%22%7D%2C%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%2229503001955959130%22%5D%2C%22key%22%3A%22page_description%22%7D%2C%7B%22category%22%3A%22no_values%22%2C%22ids%22%3A%5B%222185989878678500%22%5D%2C%22key%22%3A%22page_keywords%22%7D%2C%7B%22category%22%3A%22css_selector_error%22%2C%22ids%22%3A%5B%221537985791453026(img.logo__image--dark%3A%3Aattr(alt)%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Docu)%22%5D%2C%22key%22%3A%22entity_brand%22%2C%22message%22%3A%22img.logo__image--dark%3A%3Aattr(alt)%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27img.logo__image--dark%3A%3Aattr(alt)%27%20is%20not%20a%20valid%20selector.%22%7D%2C%7B%22category%22%3A%22css_selector_error%22%2C%22ids%22%3A%5B%221692077775881151(img.logo__image.logo__image--dark%3A%3Aattr(alt)%20%7C%20Failed%20to%20execute%20%27querySelectorA)%22%5D%2C%22key%22%3A%22author_owner%22%2C%22message%22%3A%22img.logo__image.logo__image--dark%3A%3Aattr(alt)%20%7C%20Failed%20to%20execute%20%27querySelectorAll%27%20on%20%27Document%27%3A%20%27img.logo__image.logo__image--dark%3A%3Aattr(alt)%27%20is%20not%20a%20valid%20selector.%22%7D%5D&rqm=FGET",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=18&frm=0&apvc=0&ae=g&tid=AW-544897598&dl=https%3A%2F%2Fwww.sse.com%2Finvestors%2F&scrsrc=www.googletagmanager.com&rnd=311628047.1794111357&navt=n&npa=1&_tu=CA&gtm=45be6b41z8831447612za20gzb831447612zd831447612xeaxf1&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814183&tft=1794111356757&tfd=775&tids=AW-544897598&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-56QX3K8VPE&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-56QX3K8VPE&gtm=45je6b41v9126841564za20ozb831447612zd831447612xf1&_p=1794111356124&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&_eu=EAAAAGAC&cid=1604162525.1794111358&frm=0&ir=1&pscdl=denied&rcb=7&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385422~120412526~120420416~120469145~120469153~121246026~121246034~123814185~124013661&sid=1794111357&sct=1&seg=0&dl=https%3A%2F%2Fwww.sse.com%2Finvestors%2F&dt=Investors%20%7C%20SSE&en=page_view&_fv=1&_nsi=1&_ss=1&ep.page_category=engagement&ep.page_type=investors&ep.persona=investor&tfd=1851",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/sustainability/",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-300.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-700.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-500.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7JihtlmtdC-VpJ1PpP6TljjIamef7JM&callback=Function.prototype",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/js/cas-tool-helper.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/jsdist/global.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/cssdist/style.min.css?v=YZYF3dGHAHmdycVDzE9AFRRqysMhPXVJgaEGmyAaSWo",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/y0mp4fmh/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/uxed23ul/logo-dark.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/q51nb3w0/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/uv5burdd/co2-down.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/glgdhxc1/renewables-up-mint.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/dc3grsdq/low-carbon-gen-dark-blue.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/srwn3jic/just-transition-grey.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/j1liczxm/sse-sustainability-2026-cover-copy.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/he2ftnmc/jasmine-report.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KV9D89F",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2?t=1793803377891",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-900.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/malbva4u/sse-sustainability-banner-feb2022.jpg?width=1920&height=800&v=1dbb3757b442290",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/5rwamsaz/susaintability-thumb.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/sf5hfn03/dom-cust-service-ssen.png",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/malbva4u/sse-sustainability-banner-feb2022.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/y5ccdplw/male-and-female-engineer.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/zkmbp1ye/ssen-extends-support-to-those-most-vulnerable-during-the-coronavirus-pandemic.jpeg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/dltdcg3r/perths.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/k4nlkh2y/ssen_linesmen_and_engineers_tomatin_inverness.jpg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/gsefvnzs/clyde-wind-farm-29.jpg?width=330&height=180&v=1dd0aca2226e9b0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/z4jesszf/sse-sustainability-banner-feb2022.jpg?width=330&height=180&v=1daa07cf762ff20",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/i25lbwaq/sse-bhlaraidh-30_732x399px_homepage.jpg?width=330&height=180&v=1dbdb6af5ddc610",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.ads-twitter.com/uwt.js",
+      "domain": "ads-twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/destination?id=AW-544897598&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-4964036.js?sv=7",
+      "domain": "hotjar.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Hotjar",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1424105&time=1794111360975&pageLoadId=a5c31699-d66f-4e30-9924-d99f11985455&url=https%3A%2F%2Fwww.sse.com%2Fsustainability%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/225958949509722?v=2.9.438&r=stable&domain=www.sse.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://t.co/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=e2ee930f-1688-4983-8c4f-5ba54fcd6936&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=4fca0e6d-4265-4a6a-b1fb-1b728612676e&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Fsustainability%2F&tw_engaged_ms=5&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111351809-141254679&twpid=tw.1794111361008.368020771270160161&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "t.co",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=e2ee930f-1688-4983-8c4f-5ba54fcd6936&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=4fca0e6d-4265-4a6a-b1fb-1b728612676e&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Fsustainability%2F&tw_engaged_ms=5&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111351809-141254679&twpid=tw.1794111361008.368020771270160161&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-56QX3K8VPE&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-56QX3K8VPE&gtm=45je6b41v9126841564za20ozb831447612zd831447612xf1&_p=1794111360861&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&_eu=EAAAAGAC&cid=935244079.1794111362&frm=0&ir=1&pscdl=denied&rcb=6&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121246026~121246034~123814185&sid=1794111361&sct=1&seg=0&dl=https%3A%2F%2Fwww.sse.com%2Fsustainability%2F&dt=Sustainability%20at%20SSE%20%7C%20Net%20Zero%2C%20SDGs%20and%202030%20Goals%20%7C%20SSE&en=page_view&_fv=1&_nsi=1&_ss=1&ep.persona=investor&tfd=1293",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=7&frm=0&apvc=0&ae=g&tid=AW-544897598&dl=https%3A%2F%2Fwww.sse.com%2Fsustainability%2F&scrsrc=www.googletagmanager.com&rnd=1532705521.1794111362&navt=n&npa=1&_tu=CA&gtm=45be6b41z8831447612za20gzb831447612zd831447612xeaxf1&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120385423~120412526~120420416~120469145~120469153~121246026~121246034~123814185~124013660&tft=1794111361994&tfd=1295&tids=AW-544897598&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/privacy-notice/",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-300.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-700.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-500.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7JihtlmtdC-VpJ1PpP6TljjIamef7JM&callback=Function.prototype",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/js/cas-tool-helper.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/jsdist/global.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/cssdist/style.min.css?v=YZYF3dGHAHmdycVDzE9AFRRqysMhPXVJgaEGmyAaSWo",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js",
+      "domain": "unpkg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/y0mp4fmh/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/uxed23ul/logo-dark.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/q51nb3w0/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KV9D89F",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2?t=1793803377891",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-900.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/gwshhxuz/banner.jpg?width=1920&height=800&v=1d60daeef9fb4a0",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.ads-twitter.com/uwt.js",
+      "domain": "ads-twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/destination?id=AW-544897598&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-4964036.js?sv=7",
+      "domain": "hotjar.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Hotjar",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1424105&time=1794111365540&pageLoadId=79c4837d-10a4-465d-8af6-bb7ce78f2162&url=https%3A%2F%2Fwww.sse.com%2Fprivacy-notice%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/225958949509722?v=2.9.438&r=stable&domain=www.sse.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://t.co/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=4c6fe78c-a7f7-4a29-b9e7-4131ff49a602&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=12ea5934-9fa1-4095-9729-a9c162c7d76a&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Fprivacy-notice%2F&tw_engaged_ms=6&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111365589-222175325&tw_session_start=1&twpid=tw.1794111365589.41399027580821688&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "t.co",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=4c6fe78c-a7f7-4a29-b9e7-4131ff49a602&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=12ea5934-9fa1-4095-9729-a9c162c7d76a&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Fprivacy-notice%2F&tw_engaged_ms=6&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=1&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111365589-222175325&tw_session_start=1&twpid=tw.1794111365589.41399027580821688&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-56QX3K8VPE&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-56QX3K8VPE&gtm=45je6b41v9126841564za20ozb831447612zd831447612xf1&_p=1794111365453&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&_eu=EAAAAGAC&cid=965720662.1794111366&frm=0&ir=1&pscdl=denied&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115938465~115938469~118012008~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121246026~121246034~123814183~124013660&sid=1794111365&sct=1&seg=0&dl=https%3A%2F%2Fwww.sse.com%2Fprivacy-notice%2F&dt=Privacy%20Notice%20%7C%20How%20SSE%20Uses%20and%20Protects%20Personal%20Data%20%7C%20SSE&en=page_view&_fv=1&_nsi=1&_ss=1&ep.page_category=information&ep.page_type=hygiene&ep.page_topic=privacy%20notice&ep.persona=investor&tfd=901",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=18&frm=0&apvc=0&ae=g&tid=AW-544897598&dl=https%3A%2F%2Fwww.sse.com%2Fprivacy-notice%2F&scrsrc=www.googletagmanager.com&rnd=1555296575.1794111366&navt=n&npa=1&_tu=CA&gtm=45be6b41z8831447612za20gzb831447612zd831447612xeaxf1&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814183~124013660&tft=1794111366249&tfd=902&tids=AW-544897598&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/13d/common.js",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/13d/util.js",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/cookie-notice/",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-300.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-700.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-500.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7JihtlmtdC-VpJ1PpP6TljjIamef7JM&callback=Function.prototype",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/js/cas-tool-helper.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/jsdist/global.min.js",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/cssdist/style.min.css?v=YZYF3dGHAHmdycVDzE9AFRRqysMhPXVJgaEGmyAaSWo",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/App_Plugins/UmbracoForms/assets/aspnet-client-validation/dist/aspnet-validation.min.js?v=17.6.2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/y0mp4fmh/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/uxed23ul/logo-dark.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/media/q51nb3w0/logo-white-mobile.svg",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KV9D89F",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/svgicons.woff2?t=1793803377891",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.sse.com/assets/fonts/MuseoSans-900.woff2",
+      "domain": "sse.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "domain": "licdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.ads-twitter.com/uwt.js",
+      "domain": "ads-twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/destination?id=AW-544897598&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-4964036.js?sv=7",
+      "domain": "hotjar.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Hotjar",
+        "category": "Session replay"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=1424105&time=1794111371364&pageLoadId=14f8b9c7-238e-4cd7-84af-4977a995ca77&url=https%3A%2F%2Fwww.sse.com%2Fcookie-notice%2F",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/225958949509722?v=2.9.438&r=stable&domain=www.sse.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b339727247a7703&ex_m=118%2C242%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C161%2C72%2C185%2C110%2C184%2C211%2C263%2C37%2C84%2C283%2C282%2C281%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C333%2C334%2C335%2C332%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C349%2C371%2C256%2C238%2C70%2C239%2C237%2C374%2C365%2C59%2C257%2C121%2C145%2C92%2C135%2C61%2C54%2C56%2C127%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189",
+      "domain": "facebook.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Facebook",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://t.co/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=a22f81f4-6fab-418b-8c55-0decd777637f&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=6cfbe7e4-1017-4611-bca6-05ac22fbbb5d&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Fcookie-notice%2F&tw_engaged_ms=4&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=2&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111365589-222175325&twpid=tw.1794111365589.41399027580821688&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "t.co",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=a22f81f4-6fab-418b-8c55-0decd777637f&events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=6cfbe7e4-1017-4611-bca6-05ac22fbbb5d&tw_ch_fvl=Not%3AA-Brand%2F8.0.0.0%2CChromium%2F156.0.8078.4%2CHeadlessChrome%2F156.0.8078.4&tw_document_href=https%3A%2F%2Fwww.sse.com%2Fcookie-notice%2F&tw_engaged_ms=4&tw_iframe_status=0&tw_order_quantity=0&tw_pid_src=2&tw_sale_amount=0&tw_session_count=1&tw_session_id=1794111365589-222175325&twpid=tw.1794111365589.41399027580821688&txn_id=o1vmg&type=javascript&version=2.4.12",
+      "domain": "twitter.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Twitter",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g",
+      "domain": "linkedin.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Microsoft",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-56QX3K8VPE&cx=c&gtm=4e6b41",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-56QX3K8VPE&gtm=45je6b41v9126841564za20ozb831447612zd831447612xf1&_p=1794111371295&gcs=G100&gcd=13p3p3p3p5l1&npa=1&dma_cps=-&dma=0&_eu=EAAAAGAC&cid=225491199.1794111372&frm=0&ir=1&pscdl=denied&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&gaf=2&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121246026~121246034~123814185~124013662&sid=1794111371&sct=1&seg=0&dl=https%3A%2F%2Fwww.sse.com%2Fcookie-notice%2F&dt=Cookie%20Notice%20%7C%20SSE&en=page_view&_fv=1&_nsi=1&_ss=1&ep.page_category=information&ep.page_type=hygiene&ep.page_topic=cookie%20notice&ep.persona=investor&tfd=824",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://pagead2.googlesyndication.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&tid=AW-544897598&dl=https%3A%2F%2Fwww.sse.com%2Fcookie-notice%2F&scrsrc=www.googletagmanager.com&rnd=1708845178.1794111372&navt=n&npa=1&_tu=CA&gtm=45be6b41z8831447612za20gzb831447612zd831447612xeaxf1&gcs=G100&gcd=13p3p3p3p5l1&dma_cps=-&dma=0&tag_exp=115938465~115938468~118897920~118897930~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123814185&tft=1794111372045&tfd=825&tids=AW-544897598&fmt=8",
+      "domain": "googlesyndication.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/13d/common.js",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://maps.googleapis.com/maps-api-v3/api/js/66/13d/util.js",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "personalization_id",
+        "value": "\"v1_jODdjVXdRS7ONPDFikM6OA==\"",
+        "domain": ".twitter.com",
+        "path": "/",
+        "expires": 1828671343.675728,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "HMW.lgB77yUsgQ8POdqji4Akjzg9mpsIsVu49oqt188-1794111343.5666966-1.0.1.1-SaLJnHXomJ725.ZLpwSgzriwwWtRWxwkGN6QA_FS1SQkpz3TrUC9bucJOswYnmr6Ci8EB0FZVFVoT27cBMM6oscV5_prZjmLtw.YYPiKvDUE9mYLhnKoHhv0dZte8ocS",
+        "domain": ".twitter.com",
+        "path": "/",
+        "expires": 1794113143.675819,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "muc_ads",
+        "value": "307e3770-e33e-4471-af80-3e58e35f5195",
+        "domain": ".t.co",
+        "path": "/",
+        "expires": 1828671343.686686,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "r3VRl_f6535AjQZBMTuQGMK7qSxLtBFDEuPoouvA6nw-1794111343.566365-1.0.1.1-9JB1enijQmHUYv2MgDqxSJbBh_0_vZ9sd34jJtUxV21qlNZYFVfxgNcYw8e3vyntxWd7HSM26FFYxxHXBV0nQp5j6yhTp0TG_L8J8V8KddXJX.Rtfk_Gg2QurjBhqyLK",
+        "domain": ".t.co",
+        "path": "/",
+        "expires": 1794113143.68676,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "bcookie",
+        "value": "\"v=2&37933ab9-c8b9-4958-879d-c0bf56386304\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1825647343.770742,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "li_gc",
+        "value": "MTswOzE3OTQxMTEzNDM7MjswMjH45sOye/tLfJthsQH0f38wjKDQNgIIkSBN8dTEIlykOA==",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1809663343.770825,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "lidc",
+        "value": "\"b=TGST02:s=T:r=T:a=T:p=T:g=3857:u=1:x=1:i=1794111343:t=1794197743:v=2:sig=AQGXjQIx6DcTnH19EiHY21Cqs18K5qyR\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794197743.770846,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "503ZLgrO7PZVuEjyQEl0HFaAB4tbmKPtMPYgzhuxyGw-1794111343.6265872-1.0.1.1-Fr2JEK5Y6qjCTzI6CFtXGxtyBwki_zMOHf3TzUtS.8RNpdeVvmtVX8xO5F0.7PGeE4KS6rZvJ3NjcdeohOvHlymy5xUW5Cpc.ISxN0by0GJFZrycPRFP8yXJrRniwTNM",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794113143.770861,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "_fbp",
+        "value": "fb.1.1794111343986.800356264634333863",
+        "domain": ".sse.com",
+        "path": "/",
+        "expires": 1801887343,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": "Facebook",
+        "value_kind": "id"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "personalization_id",
+        "value": "\"v1_jODdjVXdRS7ONPDFikM6OA==\"",
+        "domain": ".twitter.com",
+        "path": "/",
+        "expires": 1828671343.675728,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "HMW.lgB77yUsgQ8POdqji4Akjzg9mpsIsVu49oqt188-1794111343.5666966-1.0.1.1-SaLJnHXomJ725.ZLpwSgzriwwWtRWxwkGN6QA_FS1SQkpz3TrUC9bucJOswYnmr6Ci8EB0FZVFVoT27cBMM6oscV5_prZjmLtw.YYPiKvDUE9mYLhnKoHhv0dZte8ocS",
+        "domain": ".twitter.com",
+        "path": "/",
+        "expires": 1794113143.675819,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "muc_ads",
+        "value": "307e3770-e33e-4471-af80-3e58e35f5195",
+        "domain": ".t.co",
+        "path": "/",
+        "expires": 1828671343.686686,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "r3VRl_f6535AjQZBMTuQGMK7qSxLtBFDEuPoouvA6nw-1794111343.566365-1.0.1.1-9JB1enijQmHUYv2MgDqxSJbBh_0_vZ9sd34jJtUxV21qlNZYFVfxgNcYw8e3vyntxWd7HSM26FFYxxHXBV0nQp5j6yhTp0TG_L8J8V8KddXJX.Rtfk_Gg2QurjBhqyLK",
+        "domain": ".t.co",
+        "path": "/",
+        "expires": 1794113143.68676,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Twitter",
+        "value_kind": "id"
+      },
+      {
+        "name": "bcookie",
+        "value": "\"v=2&37933ab9-c8b9-4958-879d-c0bf56386304\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1825647343.770742,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "li_gc",
+        "value": "MTswOzE3OTQxMTEzNDM7MjswMjH45sOye/tLfJthsQH0f38wjKDQNgIIkSBN8dTEIlykOA==",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1809663343.770825,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "lidc",
+        "value": "\"b=TGST02:s=T:r=T:a=T:p=T:g=3857:u=1:x=1:i=1794111343:t=1794197743:v=2:sig=AQGXjQIx6DcTnH19EiHY21Cqs18K5qyR\"",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794197743.770846,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "__cf_bm",
+        "value": "503ZLgrO7PZVuEjyQEl0HFaAB4tbmKPtMPYgzhuxyGw-1794111343.6265872-1.0.1.1-Fr2JEK5Y6qjCTzI6CFtXGxtyBwki_zMOHf3TzUtS.8RNpdeVvmtVX8xO5F0.7PGeE4KS6rZvJ3NjcdeohOvHlymy5xUW5Cpc.ISxN0by0GJFZrycPRFP8yXJrRniwTNM",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1794113143.770861,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Microsoft",
+        "value_kind": "id"
+      },
+      {
+        "name": "CookieControl",
+        "value": "{\"necessaryCookies\":[\"disclaimerAccepted\",\"UMB-XSRF-TOKEN\",\"show-popup\",\"ignore-geolocation\",\"UMB-XSRF-V\",\"UMB_CONTEXT\",\"ASP.NET_SessionId\",\"CookieControl\"],\"optionalCookies\":{\"analytics\":\"revoked\",\"marketing\":\"revoked\"},\"statement\":{\"shown\":true,\"updated\":\"21/11/2019\"},\"consentDate\":1794111347354,\"consentExpiry\":90,\"interactedWith\":true,\"user\":\"1DBEDBD6-ABB4-40E2-BFA0-A873CF097672\"}",
+        "domain": ".sse.com",
+        "path": "/",
+        "expires": 1801887347,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      }
+    ]
+  },
+  "policy": {
+    "url": "https://www.sse.com/privacy-notice/",
+    "found": true,
+    "companies_named": [
+      "Ofgem",
+      "Planning Inspectorate",
+      "Health and Safety Executive (HSE)"
+    ],
+    "dpo_contact": "GroupDPO@sse.com",
+    "cookie_policy_url": "https://www.sse.com/cookie-notice/",
+    "format": "html",
+    "text_chars": 11099,
+    "chars_sent": 11099
+  },
+  "visited_pages": [
+    "https://www.sse.com/our-technologies/",
+    "https://www.sse.com/investors/",
+    "https://www.sse.com/sustainability/"
+  ],
+  "fingerprinting": [],
+  "id_leaks": [
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "analytics",
+      "to": "twitter.com",
+      "company": "Twitter",
+      "category": "Advertising",
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&e"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "Cookie\u2026trol",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "statement",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "discla\u2026pted",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "NET_Se\u2026onId",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "consen\u2026piry",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "show-popup",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "analytics",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "marketing",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "ignore\u2026tion",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "consentDate",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "1DBEDB\u20267672",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "UMB-XSRF-V",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "UMB-XS\u2026OKEN",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "UMB_CONTEXT",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "intera\u2026With",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "option\u2026kies",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "necess\u2026kies",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=54ff297c00d49282bddc2b83a5df709a92a7734c&d=www.sse.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22disc"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "Cookie\u2026trol",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://apikeys.civiccomputing.com/c/v?d=www.sse.com&p=CookieControl%20Multi-Site&v=9&k=54ff297c00d49282bddc2b83a5df709a92a7734c&format=json"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "sse.com",
+      "id_preview": "analytics",
+      "to": "twitter.com",
+      "company": "Twitter",
+      "category": "Advertising",
+      "phase": "after_reject",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://analytics.twitter.com/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&e"
+    }
+  ],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "critical",
+      "ai_severity": "high",
+      "severity_note": "Raised to critical: rated high and backed by advertising or session-replay evidence.",
+      "title": "Tracking continued despite the stated opt-out choice",
+      "detail": "The audit successfully clicked \u201cDisable all\u201d, but advertising and session-replay services continued making requests after rejection, and advertising cookies were present before the banner was answered. This conflicts with the cookie notice's description of an opt-in/opt-out cookie manager.",
+      "law": "PECR reg. 6; UK GDPR Articles 5(1)(a), 7 and 13",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E11",
+        "E15",
+        "E16",
+        "E20",
+        "E24",
+        "E26"
+      ],
+      "policy_quote": "Through the cookie manager, you can choose to opt-in or opt-out of the types of cookies active on our sites.",
+      "reasoning": "This is a direct contradiction of the site's stated choice mechanism, not merely a question about whether a limited analytics exception might apply. The evidence shows advertising and session-replay activity before a choice and after rejection, so high severity is appropriate.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Articles 5(1)(a), 7 and 13"
+    },
+    {
+      "severity": "high",
+      "title": "Facebook cookies were set before you could choose",
+      "detail": "1 tracking cookie (_fbp) was already set before the cookie banner was answered (Advertising). _fbp holds what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Microsoft cookies were set before you could choose",
+      "detail": "4 tracking cookies (__cf_bm, bcookie, li_gc, lidc) were already set before the cookie banner was answered (Advertising). __cf_bm, bcookie, li_gc, lidc hold what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Twitter cookies were set before you could choose",
+      "detail": "4 tracking cookies (__cf_bm, __cf_bm, muc_ads, personalization_id) were already set before the cookie banner was answered (Advertising). __cf_bm, __cf_bm, muc_ads, personalization_id hold what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Google still received data after you rejected cookies",
+      "detail": "25 requests to google-analytics.com, googlesyndication.com, googletagmanager.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Microsoft still received data after you rejected cookies",
+      "detail": "16 requests to licdn.com, linkedin.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Twitter still received data after you rejected cookies",
+      "detail": "15 requests to ads-twitter.com, t.co, twitter.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Facebook still received data after you rejected cookies",
+      "detail": "11 requests to facebook.net after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Hotjar still received data after you rejected cookies",
+      "detail": "5 requests to hotjar.com after you clicked reject (Session replay).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "medium",
+      "title": "5 tracking companies not named in the privacy policy",
+      "detail": "The policy names 3 companies. We saw these and found no mention: Facebook, Google, Hotjar, Microsoft, Twitter. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "law": "UK GDPR Art. 13(1)(e) (you must be told who receives your data)",
+      "source": "observed",
+      "law_eu": "EU GDPR Art. 13(1)(e)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 72,
+    "companies_seen": 5,
+    "companies_in_policy": 3,
+    "companies_not_disclosed": [
+      "Facebook",
+      "Google",
+      "Hotjar",
+      "Microsoft",
+      "Twitter"
+    ],
+    "companies_after_reject": [
+      "Facebook",
+      "Google",
+      "Hotjar",
+      "Microsoft",
+      "Twitter"
+    ],
+    "companies_with_cookies_before_consent": [
+      "Facebook",
+      "Microsoft",
+      "Twitter"
+    ],
+    "categories": {
+      "Facebook": "Advertising",
+      "Google": "Advertising",
+      "Hotjar": "Session replay",
+      "Microsoft": "Advertising",
+      "Twitter": "Advertising"
+    },
+    "fingerprinting_domains": [],
+    "id_leak_companies": [
+      "Twitter"
+    ]
+  },
+  "letter": {
+    "kind": "complaint",
+    "to": "GroupDPO@sse.com",
+    "subject": "Concerns regarding cookie and tracking practices on sse.com",
+    "body": "Dear Data Protection Officer,\n\nI am writing about concerns identified on https://sse.com during an automated, passive audit on 2026-11-08 04:15 UTC. Using a fresh browser, the audit visited the site, clicked the cookie banner option \u201cDisable all\u201d, then browsed https://www.sse.com/our-technologies/, https://www.sse.com/investors/ and https://www.sse.com/sustainability/, while recording what cookies and network requests were still sent. I also reviewed your privacy notice at https://www.sse.com/privacy-notice/.\n\nThe main points are as follows.\n\n1. Our automated review suggests tracking continued despite the stated opt-out choice. The audit successfully clicked \u201cDisable all\u201d, but advertising and session-replay services continued making requests after rejection, and advertising cookies were present before the banner was answered. This appears to conflict with the cookie notice statement: \u201cThrough the cookie manager, you can choose to opt-in or opt-out of the types of cookies active on our sites.\u201d\n\n2. Before any choice was made on the banner, advertising cookies were already set:\n   a) Facebook: 1 cookie, _fbp.\n   b) Microsoft: 4 cookies, __cf_bm, bcookie, li_gc, lidc.\n   c) Twitter: 4 cookies, __cf_bm, __cf_bm, muc_ads, personalization_id.\n   These values appeared to contain unique identifiers.\n\n3. After \u201cDisable all\u201d was clicked, third parties still received requests:\n   a) Google: 25 requests to google-analytics.com, googlesyndication.com, googletagmanager.com.\n   b) Microsoft: 16 requests to licdn.com, linkedin.com.\n   c) Twitter: 15 requests to ads-twitter.com, t.co, twitter.com.\n   d) Facebook: 11 requests to facebook.net.\n   e) Hotjar: 5 requests to hotjar.com.\n\n4. The privacy notice appears not to name five tracking companies observed in the audit: Facebook, Google, Hotjar, Microsoft and Twitter. I appreciate the policy may refer to categories such as advertising partners, but our review suggests the recipients may not be clearly identified.\n\nPlease would you:\n\n1. Explain each of the points above.\n2. Confirm which cookies and trackers you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential cookies or tracking operating without consent.\n4. Reply within one month.\n\nIf this matter cannot be resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T04:16:37.173601+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Tracking continued despite the stated opt-out choice",
+      "Facebook cookies were set before you could choose",
+      "Microsoft cookies were set before you could choose",
+      "Twitter cookies were set before you could choose",
+      "Google still received data after you rejected cookies",
+      "Microsoft still received data after you rejected cookies",
+      "Twitter still received data after you rejected cookies",
+      "Facebook still received data after you rejected cookies",
+      "Hotjar still received data after you rejected cookies",
+      "5 tracking companies not named in the privacy policy"
+    ],
+    "delivery": {
+      "mode": "live",
+      "sent": false,
+      "to": null,
+      "at": "2026-11-08T04:16:43.434916+00:00",
+      "reason": "SMTPDataError: (502, b'5.7.0 Your SMTP account is not yet activated. Please contact us at contact@sendinblue.com to request activation.')",
+      "message_id": null,
+      "site": "sse.com",
+      "intended_to": "GroupDPO@sse.com",
+      "saved_to": null,
+      "trigger": "auto"
+    },
+    "auto": {
+      "tier": "critical",
+      "reason": "Audit's worst finding is critical."
+    }
+  },
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit found substantial non-compliance risk because advertising and session-replay activity occurred before the user answered the banner and continued after the user selected \u201cDisable all\u201d. The continued activity is also inconsistent with the cookie notice's stated opt-in/opt-out process, creating a transparency and fairness problem in addition to the PECR consent issue.",
+    "findings_kept": 1,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: True. Method: llm. Buttons clicked: Disable all.",
+      "E2: Tracker Facebook (Advertising): 2 requests before consent, 11 after reject, to facebook.net. Example after-reject requests: https://connect.facebook.net/en_US/fbevents.js | https://connect.facebook.net/signals/config/225958949509722?v=2.9.438&r=stable&domain=www.sse.com&hme=4453c87d489b6902031c012cadd2731893cd69feb64fe8a61b33972724...",
+      "E3: Tracker Google (Advertising): 5 requests before consent, 25 after reject, to google-analytics.com, googlesyndication.com, googletagmanager.com. Example after-reject requests: https://www.googletagmanager.com/gtm.js?id=GTM-KV9D89F | https://www.googletagmanager.com/gtag/destination?id=AW-544897598&cx=c&gtm=4e6b41",
+      "E4: Tracker Hotjar (Session replay): 1 requests before consent, 5 after reject, to hotjar.com. Example after-reject requests: https://static.hotjar.com/c/hotjar-4964036.js?sv=7 | https://static.hotjar.com/c/hotjar-4964036.js?sv=7",
+      "E5: Tracker Microsoft (Advertising): 3 requests before consent, 16 after reject, to licdn.com, linkedin.com. Example after-reject requests: https://px.ads.linkedin.com/wa/?medium=fetch&fmt=g | https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "E6: Tracker Twitter (Advertising): 5 requests before consent, 15 after reject, to ads-twitter.com, t.co, twitter.com. Example after-reject requests: https://static.ads-twitter.com/uwt.js | https://t.co/i/adsct?bci=3&dv=Europe%2FLondon%26en-GB%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%2620%2624%261280%26720%260%26na%261&eci=2&event_id=5d5...",
+      "E7: Tracking cookie personalization_id from Twitter on .twitter.com present before the banner was answered; expires in 400 days; holds what looks like a unique ID.",
+      "E8: Tracking cookie __cf_bm from Twitter on .twitter.com present before the banner was answered; expires in 0 days; holds what looks like a unique ID.",
+      "E9: Tracking cookie muc_ads from Twitter on .t.co present before the banner was answered; expires in 400 days; holds what looks like a unique ID.",
+      "E10: Tracking cookie __cf_bm from Twitter on .t.co present before the banner was answered; expires in 0 days; holds what looks like a unique ID.",
+      "E11: Tracking cookie bcookie from Microsoft on .linkedin.com present before the banner was answered; expires in 365 days; holds what looks like a unique ID.",
+      "E12: Tracking cookie li_gc from Microsoft on .linkedin.com present before the banner was answered; expires in 180 days; holds what looks like a unique ID.",
+      "E13: Tracking cookie lidc from Microsoft on .linkedin.com present before the banner was answered; expires in 1 days; holds what looks like a unique ID.",
+      "E14: Tracking cookie __cf_bm from Microsoft on .linkedin.com present before the banner was answered; expires in 0 days; holds what looks like a unique ID.",
+      "E15: Tracking cookie _fbp from Facebook on .sse.com present before the banner was answered; expires in 90 days; holds what looks like a unique ID.",
+      "E16: Tracking cookie personalization_id from Twitter on .twitter.com present after reject; expires in 400 days; holds what looks like a unique ID.",
+      "E17: Tracking cookie __cf_bm from Twitter on .twitter.com present after reject; expires in 0 days; holds what looks like a unique ID.",
+      "E18: Tracking cookie muc_ads from Twitter on .t.co present after reject; expires in 400 days; holds what looks like a unique ID.",
+      "E19: Tracking cookie __cf_bm from Twitter on .t.co present after reject; expires in 0 days; holds what looks like a unique ID.",
+      "E20: Tracking cookie bcookie from Microsoft on .linkedin.com present after reject; expires in 365 days; holds what looks like a unique ID.",
+      "E21: Tracking cookie li_gc from Microsoft on .linkedin.com present after reject; expires in 180 days; holds what looks like a unique ID.",
+      "E22: Tracking cookie lidc from Microsoft on .linkedin.com present after reject; expires in 1 days; holds what looks like a unique ID.",
+      "E23: Tracking cookie __cf_bm from Microsoft on .linkedin.com present after reject; expires in 0 days; holds what looks like a unique ID.",
+      "E24: Pages browsed and scrolled after reject: https://www.sse.com/our-technologies/, https://www.sse.com/investors/, https://www.sse.com/sustainability/.",
+      "E25: Privacy policy: https://www.sse.com/privacy-notice/. Companies it names: Ofgem, Planning Inspectorate, Health and Safety Executive (HSE). Contact email found: GroupDPO@sse.com.",
+      "E26: Cookie policy: https://www.sse.com/cookie-notice/.",
+      "E27: Automated check (high): Facebook cookies were set before you could choose. 1 tracking cookie (_fbp) was already set before the cookie banner was answered (Advertising). _fbp holds what looks like a unique ID.",
+      "E28: Automated check (high): Microsoft cookies were set before you could choose. 4 tracking cookies (__cf_bm, bcookie, li_gc, lidc) were already set before the cookie banner was answered (Advertising). __cf_bm, bcookie, li_gc, lidc hold what looks like a unique ID.",
+      "E29: Automated check (high): Twitter cookies were set before you could choose. 4 tracking cookies (__cf_bm, __cf_bm, muc_ads, personalization_id) were already set before the cookie banner was answered (Advertising). __cf_bm, __cf_bm, muc_ads, personalization_id hold what looks like a unique ID.",
+      "E30: Automated check (high): Google still received data after you rejected cookies. 25 requests to google-analytics.com, googlesyndication.com, googletagmanager.com after you clicked reject (Advertising).",
+      "E31: Automated check (high): Microsoft still received data after you rejected cookies. 16 requests to licdn.com, linkedin.com after you clicked reject (Advertising).",
+      "E32: Automated check (high): Twitter still received data after you rejected cookies. 15 requests to ads-twitter.com, t.co, twitter.com after you clicked reject (Advertising).",
+      "E33: Automated check (high): Facebook still received data after you rejected cookies. 11 requests to facebook.net after you clicked reject (Advertising).",
+      "E34: Automated check (high): Hotjar still received data after you rejected cookies. 5 requests to hotjar.com after you clicked reject (Session replay).",
+      "E35: Automated check (medium): 5 tracking companies not named in the privacy policy. The policy names 3 companies. We saw these and found no mention: Facebook, Google, Hotjar, Microsoft, Twitter. (The policy may describe them only by category, e.g. 'advertising partners'.)"
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "For the purposes of the General Data Protection Regulation 2016/679, the Data Controller is SSE PLC (SC117119)"
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "Make our website as easy and intuitive as possible for you to use"
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "present",
+        "quote": "where you have consented to receiving marketing communications from us"
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "We may have to share your personal data with:"
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "We will keep your information only for as long as necessary, depending on the purpose for which it was provided."
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "present",
+        "quote": "You have the following rights regarding your information:"
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "If you have given your consent to anything we do with your personal data, you have the right to withdraw your consent at any time"
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "present",
+        "quote": "If you are not satisfied with our response to your data protection complaint, you can make a complaint to:"
+      }
+    }
+  }
+}

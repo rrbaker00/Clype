@@ -1,0 +1,146 @@
+{
+  "url": "https://lloydsbankinggroup.com",
+  "started_at": "2026-11-08T04:08:29.062140+00:00",
+  "duration_s": 10.7,
+  "cost": {
+    "llm_calls": 2,
+    "input_tokens": 1435,
+    "output_tokens": 190,
+    "model": "gpt-5.6-luna",
+    "elapsed_s": 10.7,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 2,
+        "input_tokens": 1435,
+        "output_tokens": 190
+      }
+    }
+  },
+  "consent": {
+    "banner_found": false,
+    "rejected": false,
+    "method": "failed",
+    "clicks": [],
+    "accept_label": null,
+    "preticked": [],
+    "reject_steps": null
+  },
+  "requests": [
+    {
+      "url": "https://lloydsbankinggroup.com/",
+      "domain": "lloydsbankinggroup.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.lloydsbankinggroup.com/",
+      "domain": "lloydsbankinggroup.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.lloydsbankinggroup.com/ruxitagentjs_ICA27SVfhjoqrux_10187200323152418.js",
+      "domain": "lloydsbankinggroup.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [],
+    "after_reject": []
+  },
+  "policy": {
+    "url": null,
+    "found": false,
+    "companies_named": [],
+    "dpo_contact": null,
+    "cookie_policy_url": null
+  },
+  "visited_pages": [],
+  "fingerprinting": [],
+  "id_leaks": [],
+  "id_syncs": [],
+  "findings": [],
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 0,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": [],
+    "companies_after_reject": [],
+    "companies_with_cookies_before_consent": [],
+    "categories": {},
+    "fingerprinting_domains": [],
+    "id_leak_companies": []
+  },
+  "letter": null,
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "No finding is raised because the evidence does not show any cookies, device storage, tracking requests, or other data collection. The audit did not locate a privacy or cookie policy, but that absence alone is not sufficient to establish a UK law violation without tracking evidence.",
+    "findings_kept": 0,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: False. Reject clicked successfully: False. Method: failed. Buttons clicked: none.",
+      "E2: Privacy policy: not found. Companies it names: none extracted. Contact email found: None.",
+      "E3: Cookie policy: not found."
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "not_checked",
+        "quote": null
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "not_checked",
+        "quote": null
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "not_checked",
+        "quote": null
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "not_checked",
+        "quote": null
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "not_checked",
+        "quote": null
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "not_checked",
+        "quote": null
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "not_checked",
+        "quote": null
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "not_checked",
+        "quote": null
+      }
+    }
+  }
+}

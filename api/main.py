@@ -3,6 +3,7 @@
 #   "api.main" = the file api/main.py, ":app" = the variable called app below.
 #   --reload   = restart automatically whenever you save a .py file.
 
+import threading  # built-in: runs the cross-site check in the background
 import json   # built-in: turns JSON text into Python dicts/lists and back
 import re     # built-in: regular expressions, used to check the audit id is safe
 from datetime import datetime, timezone  # built-in: "today" for the usage panel
@@ -19,6 +20,7 @@ from agent import llm                           # Cost tracker for the letter ca
 from agent import mailer                        # sends letters (SEND_MODE decides where)
 from agent.eu_law import add_eu_law             # EU GDPR / ePrivacy equivalents for each finding
 from agent.trackers import cookie_value_kind    # empty / placeholder / id / value
+from agent.compare import SEVERITY_ORDER         # worst finding first
 
 # __file__ is this file's path (api/main.py). .resolve() makes it absolute,
 # .parent is the api/ folder, .parent again is the project root (HTB/).
@@ -148,6 +150,10 @@ def audit_summary(f):
         "tracker_counts": tracker_counts(a),
         "_companies": {"seen": sorted(seen), "after": sorted(after), "categories": categories},
         "_cost": a.get("cost") or {},                   # AI usage for /api/usage
+        # For the per-site timeline: worst finding + how many findings.
+        "worst": min((f.get("severity") for f in a.get("findings", [])),
+                     key=lambda s: SEVERITY_ORDER.get(s, 9), default=None),
+        "findings_count": len(a.get("findings", [])),
     }
     _summary_cache[f] = (mtime, summary)
     return summary
@@ -245,7 +251,96 @@ def cross_site():
     return {"sites_audited": total, "sites_rejected": rejected_sites, "companies": rows}
 
 
+# ---- Proving cross-site links (agent/crosssite.py linkage_pass) ----
+# The panel above only shows PRESENCE (each audit uses a fresh browser, so a tracker sees a new ID on
+# every site). The linkage pass visits a few sites in ONE browser and checks whether a tracker gets
+# the same ID from each. One run at a time, in a background thread; results saved in linkage/.
+LINKAGE = ROOT / "linkage"
+_proof = {"status": "idle", "progress": None, "sites": [], "error": None}
+_proof_lock = threading.Lock()
+
+
+def _latest_by_site():
+    latest = {}
+    for f in sorted(AUDITS.glob("*.json")):            # oldest first, so newer audits overwrite
+        s = audit_summary(f)
+        if s and s["loaded"] and s["site"]:
+            latest[s["site"]] = s
+    return latest
+
+
+def pick_proof_sites(limit=4):
+    """Audited sites most likely to share a tracker: score = shared tracker companies (x2 if they
+    kept going after reject on that site). Only companies seen on 2+ sites count."""
+    data = cross_site()
+    score = {}
+    for c in data["companies"]:
+        if len(c["sites"]) < 2:
+            continue
+        for site in c["sites"]:
+            score[site] = score.get(site, 0) + (2 if site in c["sites_after_reject"] else 1)
+    return sorted(score, key=lambda x: (-score[x], x))[:limit]
+
+
+class ProofRequest(BaseModel):
+    sites: list[str] | None = None     # audited site names; omitted = pick automatically
+
+
+def _run_proof(urls):
+    from agent.consent import reject_cookies
+    from agent import crosssite
+    try:
+        result = crosssite.linkage_pass(urls, reject_cookies, cost=llm.Cost(),
+                                        progress=lambda text: _proof.update(progress=text))
+        LINKAGE.mkdir(exist_ok=True)
+        name = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S") + ".json"
+        (LINKAGE / name).write_text(json.dumps(result, indent=2))
+        _proof.update(status="idle", progress=None, error=None)
+    except Exception as e:
+        _proof.update(status="idle", progress=None, error=f"{type(e).__name__}: {e}"[:200])
+
+
+@app.post("/api/cross-site/prove")
+def prove_links(req: ProofRequest):
+    latest = _latest_by_site()
+    sites = req.sites or pick_proof_sites()
+    if not 2 <= len(sites) <= 5 or any(s not in latest for s in sites):
+        raise HTTPException(400, "Pick 2-5 sites that have been audited")   # never arbitrary URLs
+    with _proof_lock:
+        if _proof["status"] == "running":
+            raise HTTPException(409, "A cross-site check is already running")
+        _proof.update(status="running", progress="Starting", sites=sites, error=None)
+    threading.Thread(target=_run_proof, args=([latest[s]["url"] for s in sites],), daemon=True).start()
+    return {"status": "running", "sites": sites}
+
+
+@app.get("/api/cross-site/proof")
+def proof_status():
+    """Current run status + the newest saved result (or None)."""
+    files = sorted(LINKAGE.glob("*.json")) if LINKAGE.exists() else []
+    latest = json.loads(files[-1].read_text()) if files else None
+    return {**_proof, "suggested_sites": pick_proof_sites(), "result": latest}
+
+
 # {audit_id} in the path is a variable: GET /api/audits/abc puts "abc" into audit_id.
+# GET /api/audits/<id>/history -> every audit of the SAME site, newest first (for the timeline).
+@app.get("/api/audits/{audit_id}/history")
+def audit_history(audit_id: str):
+    f = AUDITS / f"{audit_id}.json"
+    if not re.fullmatch(r"[\w.\-]+", audit_id) or not f.exists():
+        raise HTTPException(404, "not found")
+    me = audit_summary(f)
+    if not me:
+        raise HTTPException(404, "not found")
+    out = []
+    for g in sorted(AUDITS.glob("*.json"), reverse=True):   # file names start with a timestamp
+        s = audit_summary(g)
+        if s and s["site"] == me["site"]:
+            out.append({k: s[k] for k in ("id", "started_at", "loaded", "rejected", "tracker_counts",
+                                          "worst", "findings_count")})
+    return out
+
+
 @app.get("/api/audits/{audit_id}")
 def get_audit(audit_id: str):
     f = AUDITS / f"{audit_id}.json"  # build the path, e.g. audits/abc.json

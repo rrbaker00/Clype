@@ -1,0 +1,6527 @@
+{
+  "url": "https://gsk.com",
+  "started_at": "2026-11-08T04:05:36.405183+00:00",
+  "duration_s": 31.57,
+  "cost": {
+    "llm_calls": 4,
+    "input_tokens": 6768,
+    "output_tokens": 1738,
+    "model": "gpt-5.6-luna",
+    "elapsed_s": 31.57,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 4,
+        "input_tokens": 6768,
+        "output_tokens": 1738
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": false,
+    "method": "failed",
+    "clicks": [
+      "CUSTOMIZE"
+    ],
+    "preticked": [],
+    "accept_label": "ACCEPT ALL",
+    "reject_steps": null
+  },
+  "requests": [
+    {
+      "url": "https://gsk.com/",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://gsk.com/en-gb/",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/en-gb/",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/fonts.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/SiteHeaderMobile.zZZre-gB.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NavSearch.DlHjfk9X.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/simplebar.D46R3JXY.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NavSwitch.QK4c_i-y.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/SiteHeaderDesktop.j6EeZUtr.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Sequencer.D0hF0VK4.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/swiper.B8i7_MKo.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/AnimationSwitchInline.xUcsYWX1.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/LinkItem.CXISYSd-.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-light.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-regular.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-bold.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-regularitalic.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BSUz9WCS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/hePW80VL.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BCPex0ud.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/0QRgU4uu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BEMNfUB5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BILy-rjL.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/rxhDcyfF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C0xEPdBi.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DHl0hExH.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DSJ9I3OW.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dl07uGq1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DDtkwrOW.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dn9lcDqX.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B_-7BFXM.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-EAjRGf9.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BodFCsfl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/cOHrS99a.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BpBvNM1w.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bpo1Bv0r.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D98DrMjv.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Ma4tmxWu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CsvJn4AE.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D8bRm4gE.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BvUamYTi.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ck78IlED.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C78xhgPk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C1c-AGX0.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/YHbUmaye.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D96MPUF4.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/01OVrPks.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/OQNDdehM.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/MbIcaYmt.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/e9_kEXS5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CvAXcBZO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D_yiDmgI.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/fe0IgDEt.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DdiVTts9.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D_892xah.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CvDoa17S.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CoDGSXxz.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DgelnGgb.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Caas0AI_.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-MAqkKwh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D7aEkqha.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-Jzp6jln.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/LHfj4E3K.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BUk5rG_h.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DU0bJPeR.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C8hlBPxJ.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/SH4z9NI1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CtyI1c7f.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/7lCJBoXK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D3K2l5Zq.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D52Mac02.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B66R3Cl0.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BEnK7Xtb.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-j3U_7kK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DO3UeReU.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CdjMkuQJ.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bj4AS__v.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DtZ4hAMt.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DRUt_xaj.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/wQ2H538E.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/i5_BLh3n.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BZ_muZ2h.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BiToUXf5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Figures.iR2HhyKa.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B-v_k9xs.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DEy0fWIu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Filter.DxaMZBfq.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CB3SkrBS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CUh2Hpxs.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Filters.CV4D_ehC.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DnzrYthj.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BzBO3Fgl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/MagazineArticleGrid.TdXdCJbf.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Modal.-TFB3zz5.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/6Z_TWLW-.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DNR8ZG6e.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Pagination.C7X6Ulvr.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C3IUBQTk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/r6UcvCYk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Cobumq7q.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/StandaloneAudioPlayer.CV3SDK5-.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C6LHqQLc.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Video.IBHL7Xez.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BScMwaFm.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CXSxb8Kj.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BONpYWZf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CNalBf7w.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BWitMg4v.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CiczwRGK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BntCgvFg.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BWtcm-B-.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DEmV9hek.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BpDnCL4Y.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BIAWExh6.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Hicl-ygx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DKknK7tf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CkUqkblV.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CnALSnOB.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/sM_UJ5uk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C8ETiATD.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BSFECeJ4.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CtNykHXd.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/3JiA6Jib.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CeAj4kg1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D0M5t09T.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DQy5E5pR.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CWCSK379.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BZmeTCpK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Mk2tXiGO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C-Z2IN9l.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bzzkubeh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DfjC76zY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/X6I8h7TO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CasNeJcF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D01z1ZC2.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Ccn4iTzn.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dwo1v2wh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C5SIJpfl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B9DY3XO8.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D7p3j0-i.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CrZc2itn.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CVXaJEGc.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BlXU0GbG.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/COPKKUNh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/AAmM5O-i.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dt0i6CRY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CFg0f8ly.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DN3gktrI.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NkU6yurf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BJBDY8_2.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bth20Hgy.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CSrF68kS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/XQpLGuIx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/P6mWa5nx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CLfT4mhU.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/PQywXMuY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/vGEDdnRC.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Jj-Y047I.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Cbmnuh1R.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CLfjddfF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/images/gif_logo_opt.gif",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/img/icon-external-white.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/img/twist-right-mask.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/img/fold.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/img/twist-mask.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/img/icon-continue.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/0jwou3xu/gsk-logo.png?width=104&format=webp&quality=100&v=1dbf4b05a4e6470&hmac=88eee08ffc4c7e7b930ebd265a76bc829fe24564389a8e6d463f844dfe83fef8",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/icon-external-alt.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/linkedin.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/twitter.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/bluesky.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/instagram.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/facebook.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/youtube.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/rss.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/icons.woff?e79pko",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/3mwjnika/bts-hep-b-explainer-hero.webp?rxy=0.5,0.5026666259765625&width=300&height=375&format=webp&quality=100&v=1dd6ba57e686690&hmac=3ab1330e25390a70510b9105f27803bb8b76e5722278bff2203b88dcd02bec96",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/uednxud3/kevin-rsv-and-copd-patient-image.jpg?width=300&height=375&format=webp&quality=100&v=1dd6b94f87a2830&hmac=7aa47fc07325afa2bed3fc891b53cbf715203578d6b8bea4a6e1f634b0589527",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/nw3bs2hf/bts-hero-image-adcs.webp?rxy=0.716,0.5146666259765625&width=300&height=375&format=webp&quality=100&v=1dd6537c62b0e20&hmac=7265fcfc33cd8409ccab4e09f9e1ba4220f34aa6181eb372c2f2cec5fb20f013",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/2ajg5prv/hero-cropped.png?rxy=0.692,0.8323428213950579&width=300&height=375&format=webp&quality=100&v=1dd1b8029cc4680&hmac=0af9c5f99e0bd8465ada245cc7a7151ef662270535914f6347d2e0c16366dc85",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/ixngszd1/01_viiv_zim_zvandri_high_res-84.jpg?width=300&height=375&format=webp&quality=100&v=1dd04aa2c0528f0&hmac=25073ea4bd67b30f8627828ae473b00079d1a615bc0b561190b476596e15591e",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/vcum21bs/at-gate-low.jpg?width=300&height=375&format=webp&quality=100&v=1dced1b8f6fa1f0&hmac=ea3637b819f2ab1ba54c4e97626635142d8d2f54b8d2affe7ce5828a0966ce05",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/jlsdfeti/vaccine-manufacturing-production-line-2.jpg?width=300&height=375&format=webp&quality=100&v=1dba2eb951aafd0&hmac=578e8cb3b193658a06cc551c1e5240fc5d561244e51e0a2ff7edb5a4ab1eef5b",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/xcpfcack/lab-two-scientists-collaborating-at-a-computer.jpg?width=300&height=375&format=webp&quality=100&v=1dc6b5f86b44ae0&hmac=7cb5499fd6cef49b7a9248c3d3aac4a73e24f41ee5ee4390af144e86b390812b",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/o2qlfvn0/ware-lab.jpg?width=300&height=375&format=webp&quality=100&v=1dc3f88cc1b0fe0&hmac=3a8eaaaa35bfc4c76be7f77a660a79bea5c3eff16da3c8038b6602e1526de023",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Breadcrumb.CVsctlXK.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Footer.C2bhKdqW.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Nav.VLv8AcXx.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/HeroBanner.DoO9oHSe.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CardsWithImageVideoBackground.BWOGfWR_.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/navigation.CCW0hlvZ.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/scrollbar.DcXS5eva.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/MagazineArticleCarousel.nAnfx_Ae.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/VariedModuleRow.ClWzG--n.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BackToTop._TSmYx6n.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/entry.DFP45Lr9.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ExternalLinkModal.CAsVAiE5.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/PriceShareBox.M7T5bFp-.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CuratedPromoBoxGradient.DymNy38z.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/umbraco/api/sharepricecomponent/getfeedcache/?nodeid=9029",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/umbraco/api/sharepricecomponent/getfeedcache/?nodeid=9030",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tags.tiqcdn.com/utag/gsk/profile-rx-gb/prod/utag.js",
+      "domain": "tiqcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Tealium",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/uyeb3uc4/hep_b_hp-hero-preview-video.mp4",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/j5lfzjwz/respiratory-syncytial-virus-rsv-science-animation-16x9-gskcom-only.mp4",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/vqsmcs35/behind-the-science-podcast_hep-b_28s-srt.vtt",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "texttrack",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://akamai.tiqcdn.com/location/location.js",
+      "domain": "tiqcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Tealium",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://tags.tiqcdn.com/utag/gsk/profile-rx-gb/prod/utag.v.js?a=gsk/profile-rx-gb/202611050659&cb=1794110737958",
+      "domain": "tiqcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Tealium",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/builds/meta/51c6b19b-22d7-46fc-b845-c54bbfb193ba.json",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/en-gb/investors/shareholder-information/privacy-notice-for-ordinary-shareholders/",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/fonts.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/SiteHeaderMobile.zZZre-gB.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NavSearch.DlHjfk9X.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/simplebar.D46R3JXY.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NavSwitch.QK4c_i-y.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/SiteHeaderDesktop.j6EeZUtr.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-light.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-regular.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-bold.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-regularitalic.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BSUz9WCS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/hePW80VL.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BCPex0ud.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/0QRgU4uu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BEMNfUB5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BILy-rjL.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/rxhDcyfF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C0xEPdBi.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DHl0hExH.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DSJ9I3OW.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dl07uGq1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DDtkwrOW.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dn9lcDqX.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B_-7BFXM.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-EAjRGf9.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BodFCsfl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/cOHrS99a.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BpBvNM1w.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bpo1Bv0r.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D98DrMjv.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Ma4tmxWu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CsvJn4AE.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D8bRm4gE.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BvUamYTi.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ck78IlED.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C78xhgPk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C1c-AGX0.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/YHbUmaye.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D96MPUF4.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/01OVrPks.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/OQNDdehM.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/MbIcaYmt.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/e9_kEXS5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CvAXcBZO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D_yiDmgI.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/fe0IgDEt.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DdiVTts9.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D_892xah.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CvDoa17S.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CoDGSXxz.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DgelnGgb.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Caas0AI_.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ZhqDHAj1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/YzWFj2hh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DK41qLZi.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C8ETiATD.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-MAqkKwh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D7aEkqha.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-Jzp6jln.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/i5_BLh3n.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BZ_muZ2h.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BiToUXf5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/AnimationSwitchInline.xUcsYWX1.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CtyI1c7f.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C8hlBPxJ.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Figures.iR2HhyKa.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/LinkItem.CXISYSd-.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B-v_k9xs.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/7lCJBoXK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DEy0fWIu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Filter.DxaMZBfq.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CB3SkrBS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CUh2Hpxs.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Filters.CV4D_ehC.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DnzrYthj.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BzBO3Fgl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/MagazineArticleGrid.TdXdCJbf.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Modal.-TFB3zz5.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/6Z_TWLW-.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DNR8ZG6e.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Pagination.C7X6Ulvr.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C3IUBQTk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/r6UcvCYk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Cobumq7q.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Sequencer.D0hF0VK4.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BUk5rG_h.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/StandaloneAudioPlayer.CV3SDK5-.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C6LHqQLc.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Video.IBHL7Xez.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BScMwaFm.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CXSxb8Kj.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BONpYWZf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CNalBf7w.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BWitMg4v.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CiczwRGK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BntCgvFg.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BWtcm-B-.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DEmV9hek.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BpDnCL4Y.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BIAWExh6.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Hicl-ygx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DKknK7tf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CkUqkblV.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CnALSnOB.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/sM_UJ5uk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BSFECeJ4.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CtNykHXd.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/3JiA6Jib.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CeAj4kg1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D0M5t09T.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/swiper.B8i7_MKo.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DQy5E5pR.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CWCSK379.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DU0bJPeR.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B66R3Cl0.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BEnK7Xtb.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CdjMkuQJ.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DO3UeReU.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BZmeTCpK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Mk2tXiGO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C-Z2IN9l.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bzzkubeh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DfjC76zY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-j3U_7kK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/X6I8h7TO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CasNeJcF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D01z1ZC2.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Ccn4iTzn.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dwo1v2wh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C5SIJpfl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B9DY3XO8.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D7p3j0-i.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CrZc2itn.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CVXaJEGc.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BlXU0GbG.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/COPKKUNh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/AAmM5O-i.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dt0i6CRY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CFg0f8ly.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DN3gktrI.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NkU6yurf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BJBDY8_2.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bth20Hgy.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CSrF68kS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/XQpLGuIx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/P6mWa5nx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CLfT4mhU.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/PQywXMuY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/vGEDdnRC.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Jj-Y047I.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Cbmnuh1R.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CLfjddfF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/icons.woff?e79pko",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/images/gif_logo_opt.gif",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/icon-external-alt.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/img/icon-continue.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/0jwou3xu/gsk-logo.png?width=104&format=webp&quality=100&v=1dbf4b05a4e6470&hmac=88eee08ffc4c7e7b930ebd265a76bc829fe24564389a8e6d463f844dfe83fef8",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/linkedin.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/twitter.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/bluesky.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/instagram.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/facebook.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/youtube.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/rss.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Breadcrumb.CVsctlXK.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Footer.C2bhKdqW.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Nav.VLv8AcXx.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/LandingPageIntro.BwVqgvb7.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/RichText.ByYqtV_w.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Spacer.CqxxGLHg.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/VariedSignpostGrid.DqfAU7kN.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BackToTop._TSmYx6n.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/entry.DFP45Lr9.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ExternalLinkModal.CAsVAiE5.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tags.tiqcdn.com/utag/gsk/profile-rx-gb/prod/utag.js",
+      "domain": "tiqcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Tealium",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://akamai.tiqcdn.com/location/location.js",
+      "domain": "tiqcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Tealium",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/builds/meta/51c6b19b-22d7-46fc-b845-c54bbfb193ba.json",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/en-gb/cookie-policy/",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/fonts.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/SiteHeaderMobile.zZZre-gB.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NavSearch.DlHjfk9X.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/simplebar.D46R3JXY.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NavSwitch.QK4c_i-y.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/SiteHeaderDesktop.j6EeZUtr.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-light.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-regular.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-bold.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/gsk-regularitalic.woff",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BSUz9WCS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/hePW80VL.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BCPex0ud.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/0QRgU4uu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BEMNfUB5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BILy-rjL.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/rxhDcyfF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C0xEPdBi.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DHl0hExH.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DSJ9I3OW.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dl07uGq1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DDtkwrOW.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dn9lcDqX.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B_-7BFXM.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-EAjRGf9.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BodFCsfl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/cOHrS99a.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BpBvNM1w.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bpo1Bv0r.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D98DrMjv.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Ma4tmxWu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CsvJn4AE.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D8bRm4gE.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BvUamYTi.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ck78IlED.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C78xhgPk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C1c-AGX0.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/YHbUmaye.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D96MPUF4.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/01OVrPks.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/OQNDdehM.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/MbIcaYmt.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/e9_kEXS5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CvAXcBZO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D_yiDmgI.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/fe0IgDEt.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DdiVTts9.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D_892xah.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CvDoa17S.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CoDGSXxz.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DgelnGgb.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Caas0AI_.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ZhqDHAj1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C8ETiATD.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-MAqkKwh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D7aEkqha.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-Jzp6jln.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/i5_BLh3n.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BZ_muZ2h.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BiToUXf5.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/AnimationSwitchInline.xUcsYWX1.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CtyI1c7f.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C8hlBPxJ.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Figures.iR2HhyKa.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/LinkItem.CXISYSd-.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B-v_k9xs.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/7lCJBoXK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DEy0fWIu.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Filter.DxaMZBfq.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CB3SkrBS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CUh2Hpxs.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Filters.CV4D_ehC.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DnzrYthj.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BzBO3Fgl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/MagazineArticleGrid.TdXdCJbf.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Modal.-TFB3zz5.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/6Z_TWLW-.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DNR8ZG6e.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Pagination.C7X6Ulvr.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C3IUBQTk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/r6UcvCYk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Cobumq7q.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Sequencer.D0hF0VK4.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BUk5rG_h.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/StandaloneAudioPlayer.CV3SDK5-.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C6LHqQLc.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Video.IBHL7Xez.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BScMwaFm.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CXSxb8Kj.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BONpYWZf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CNalBf7w.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BWitMg4v.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CiczwRGK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BntCgvFg.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BWtcm-B-.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DEmV9hek.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BpDnCL4Y.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BIAWExh6.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Hicl-ygx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DKknK7tf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CkUqkblV.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CnALSnOB.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/sM_UJ5uk.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BSFECeJ4.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CtNykHXd.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/3JiA6Jib.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CeAj4kg1.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D0M5t09T.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/swiper.B8i7_MKo.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DQy5E5pR.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CWCSK379.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DU0bJPeR.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B66R3Cl0.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BEnK7Xtb.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CdjMkuQJ.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DO3UeReU.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BZmeTCpK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Mk2tXiGO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C-Z2IN9l.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bzzkubeh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DfjC76zY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/-j3U_7kK.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/X6I8h7TO.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CasNeJcF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D01z1ZC2.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Ccn4iTzn.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dwo1v2wh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/C5SIJpfl.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/B9DY3XO8.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/D7p3j0-i.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CrZc2itn.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CVXaJEGc.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BlXU0GbG.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/COPKKUNh.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/AAmM5O-i.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Dt0i6CRY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CFg0f8ly.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/DN3gktrI.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/NkU6yurf.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BJBDY8_2.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Bth20Hgy.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CSrF68kS.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/XQpLGuIx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/P6mWa5nx.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CLfT4mhU.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/PQywXMuY.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/vGEDdnRC.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Jj-Y047I.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Cbmnuh1R.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/CLfjddfF.js",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/8135/cookiebutton.jpg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/fonts/icons.woff?e79pko",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/images/gif_logo_opt.gif",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/icon-external-alt.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/0jwou3xu/gsk-logo.png?width=104&format=webp&quality=100&v=1dbf4b05a4e6470&hmac=88eee08ffc4c7e7b930ebd265a76bc829fe24564389a8e6d463f844dfe83fef8",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/linkedin.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/twitter.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/bluesky.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/instagram.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/facebook.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/youtube.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/nuxtassets/icons/rss.svg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Breadcrumb.CVsctlXK.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Footer.C2bhKdqW.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/Nav.VLv8AcXx.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/LandingPageIntro.BwVqgvb7.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/RichText.ByYqtV_w.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/BackToTop._TSmYx6n.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/entry.DFP45Lr9.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/ExternalLinkModal.CAsVAiE5.css",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tags.tiqcdn.com/utag/gsk/profile-rx-gb/prod/utag.js",
+      "domain": "tiqcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Tealium",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://www.gsk.com/media/nsgjkzzt/cookiebutton.jpg",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://akamai.tiqcdn.com/location/location.js",
+      "domain": "tiqcdn.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Tealium",
+        "category": "Analytics"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.gsk.com/_nuxt/builds/meta/51c6b19b-22d7-46fc-b845-c54bbfb193ba.json",
+      "domain": "gsk.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "GSK_CONSENTMGR",
+        "value": "c1:0%7Cc2:0%7Cc3:0%7Cc4:0%7Cc5:0%7Cc6:0%7Cc7:0%7Cc8:0%7Cc9:0%7Cc10:0%7Cc11:0%7Cc12:0%7Cc13:0%7Cc14:0%7Cc15:0%7Cc16:0%7Cts:1794110737842%7Cconsent:false",
+        "domain": ".www.gsk.com",
+        "path": "/en-gb/",
+        "expires": 1825646737,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "viewport",
+        "value": "desktop",
+        "domain": "www.gsk.com",
+        "path": "/",
+        "expires": 1825646737,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Strict",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "utag_main_v_id",
+        "value": "01a1b9554db300062bcecca8177400070001a068007e8",
+        "domain": ".www.gsk.com",
+        "path": "/",
+        "expires": 1825646737,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "utag_main__sn",
+        "value": "1",
+        "domain": ".www.gsk.com",
+        "path": "/",
+        "expires": 1825646737,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "utag_main__se",
+        "value": "1%3Bexp-session",
+        "domain": ".www.gsk.com",
+        "path": "/",
+        "expires": 1794112537,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "utag_main__ss",
+        "value": "1%3Bexp-session",
+        "domain": ".www.gsk.com",
+        "path": "/",
+        "expires": 1794112537,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "utag_main__st",
+        "value": "1794112537843%3Bexp-session",
+        "domain": ".www.gsk.com",
+        "path": "/",
+        "expires": 1794112537,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "utag_main_ses_id",
+        "value": "1794110737843%3Bexp-session",
+        "domain": ".www.gsk.com",
+        "path": "/",
+        "expires": 1794112537,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "utag_main__pn",
+        "value": "1%3Bexp-session",
+        "domain": ".www.gsk.com",
+        "path": "/",
+        "expires": 1794112537,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "s_fid",
+        "value": "53584913B876C9AF-02C727372837F4B9",
+        "domain": "www.gsk.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      }
+    ],
+    "after_reject": []
+  },
+  "policy": {
+    "url": "https://www.gsk.com/en-gb/investors/shareholder-information/privacy-notice-for-ordinary-shareholders/",
+    "found": true,
+    "companies_named": [
+      "Computershare Investor Services PLC",
+      "Computershare Group entities"
+    ],
+    "dpo_contact": "dataprotection@computershare.co.uk",
+    "cookie_policy_url": "https://www.gsk.com/en-gb/cookie-policy/",
+    "format": "html",
+    "text_chars": 8260,
+    "chars_sent": 8260
+  },
+  "visited_pages": [],
+  "fingerprinting": [],
+  "id_leaks": [],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "medium",
+      "title": "2 tracking companies not named in the privacy policy",
+      "detail": "The policy names 2 companies. We saw these and found no mention: Google, Tealium. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "law": "UK GDPR Art. 13(1)(e) (you must be told who receives your data)",
+      "source": "observed",
+      "law_eu": "EU GDPR Art. 13(1)(e)"
+    },
+    {
+      "severity": "medium",
+      "ai_severity": "high",
+      "severity_note": "Lowered from high: no substantial advertising or session-replay evidence cited (a tracking cookie, activity after reject, or 3+ requests to an actual tracking domain; a tag loader like Google Tag Manager alone doesn't count), so an exemption or innocent explanation is plausible.",
+      "title": "Google advertising tracking started before consent",
+      "detail": "Three Google advertising-tracker requests were recorded before the visitor had given consent. This indicates non-essential advertising tracking began without prior consent.",
+      "law": "PECR reg. 6; UK GDPR Articles 5(1)(a) and 7",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "policy_quote": "Advertising cookies (requires consent)",
+      "reasoning": "PECR generally requires prior consent for advertising cookies or similar tracking. The site's cookie policy expressly says advertising cookies require consent, so the observed pre-consent advertising requests also create a direct contradiction with the site's own policy. This is high severity because the evidence identifies the activity as advertising tracking.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Articles 5(1)(a) and 7"
+    },
+    {
+      "severity": "medium",
+      "ai_severity": "medium",
+      "severity_note": null,
+      "title": "Analytics tracking started before consent",
+      "detail": "Seven Tealium analytics-tracker requests were recorded before the visitor had given consent. The audit cannot show from the URLs alone whether information was stored or read on the device, but the activity appears inconsistent with the site's stated consent requirement for performance cookies.",
+      "law": "PECR reg. 6; UK GDPR Articles 5(1)(a) and 7",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "policy_quote": "Performance cookies (requires consent)",
+      "reasoning": "Analytics may in some circumstances fall within a limited statutory exception, but that cannot be confirmed from the evidence and the site says consent is required. Medium severity is appropriate because an innocent technical explanation or an applicable analytics exception remains plausible.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Articles 5(1)(a) and 7"
+    },
+    {
+      "severity": "low",
+      "title": "Accept is one click, but we found no way to reject",
+      "detail": "The banner offers \"ACCEPT ALL\", but our automated check could not find any reject or decline option. (This may be a limit of our check, so treat it as something to verify.)",
+      "law": "ICO cookie guidance (refusing must be as easy as accepting)",
+      "source": "observed",
+      "law_eu": "EDPB Guidelines 05/2020 on consent; EDPB Cookie Banner Taskforce report (2023)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 0,
+    "companies_seen": 2,
+    "companies_in_policy": 2,
+    "companies_not_disclosed": [
+      "Google",
+      "Tealium"
+    ],
+    "companies_after_reject": [],
+    "companies_with_cookies_before_consent": [],
+    "categories": {
+      "Google": "Advertising",
+      "Tealium": "Analytics"
+    },
+    "fingerprinting_domains": [],
+    "id_leak_companies": []
+  },
+  "letter": null,
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit indicates that Google advertising tracking and Tealium analytics activity began before consent was obtained. The advertising activity is a high-severity concern because it is clearly identified as advertising tracking and contradicts the cookie policy's consent requirement; the analytics issue is medium because the precise device-level activity and any applicable exception cannot be confirmed from the listed URLs. The rejection option could not be successfully tested, but that automated issue is not repeated here.",
+    "findings_kept": 2,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: False. Method: failed. Buttons clicked: CUSTOMIZE.",
+      "E2: Tracker Google (Advertising): 3 requests before consent, 0 after reject, to googletagmanager.com.",
+      "E3: Tracker Tealium (Analytics): 7 requests before consent, 0 after reject, to tiqcdn.com.",
+      "E4: Privacy policy: https://www.gsk.com/en-gb/investors/shareholder-information/privacy-notice-for-ordinary-shareholders/. Companies it names: Computershare Investor Services PLC, Computershare Group entities. Contact email found: dataprotection@computershare.co.uk.",
+      "E5: Cookie policy: https://www.gsk.com/en-gb/cookie-policy/.",
+      "E6: Automated check (medium): 2 tracking companies not named in the privacy policy. The policy names 2 companies. We saw these and found no mention: Google, Tealium. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "E7: Automated check (low): Accept is one click, but we found no way to reject. The banner offers \"ACCEPT ALL\", but our automated check could not find any reject or decline option. (This may be a limit of our check, so treat it as something to verify.)"
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "GSK plc is the controller of your personal information."
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "This information is processed so that we can:"
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "present",
+        "quote": "The information is processed to allow us to comply with our legal obligations or to allow us to fulfil contractual obligations with shareholders or where we have a legitimate interest to process the information so that we can communicate effectively with shareholders."
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "Your personal information will also be shared with Computershare and may be shared with other trusted third parties engaged by us, such as our professional advisors or parties engaged to perform processing activities on our behalf."
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "Your personal information will be kept for as long as is reasonably required to achieve the purposes for which it was collected."
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "present",
+        "quote": "Subject to certain exceptions, you have the right to request to access your personal information that we hold, to request that your information is rectified."
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "You can manage your cookie choices at any time by:"
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "present",
+        "quote": "Where processing of your personal information is covered by EU law, you have the right to complain to the corresponding data protection supervisory authority in your country of residence."
+      }
+    }
+  }
+}

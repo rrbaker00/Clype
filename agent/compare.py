@@ -20,6 +20,7 @@ import re
 
 from .trackers import TRACKER_COMPANIES, holds_value
 
+MIN_FULL_POLICY_CHARS = 3000   # same threshold as legal_review.py's Art. 13 checklist
 SEVERITY_ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}  # "critical" only comes from the AI review safeguard
 
 # How bad a tracker is, by category (from trackers.py).
@@ -216,7 +217,10 @@ def compare(requests, cookies, policy, consent):
     #    (found it AND extracted it without an error), otherwise "not named" would just
     #    mean "we couldn't read the policy".
     seen = sorted(set(before) | set(after) | set(cookies_before) | set(cookies_after))
-    policy_read = policy.get("found") and not policy.get("error")
+    # A very short page (a privacy "hub" of links, or one that didn't render; sky.com: 1,412 chars)
+    # isn't the real policy, so "not named" would just mean "we read the wrong page".
+    long_enough = (policy.get("text_chars") or MIN_FULL_POLICY_CHARS) >= MIN_FULL_POLICY_CHARS  # old audits: no field
+    policy_read = policy.get("found") and not policy.get("error") and long_enough
     not_disclosed = [c for c in seen if company_key(c) not in named_keys] if policy_read else []
     if not_disclosed:
         findings.append({

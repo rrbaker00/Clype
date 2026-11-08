@@ -1,0 +1,5112 @@
+{
+  "url": "https://hikma.com",
+  "started_at": "2026-11-08T04:10:11.340653+00:00",
+  "duration_s": 50.82,
+  "cost": {
+    "llm_calls": 4,
+    "input_tokens": 17957,
+    "output_tokens": 2024,
+    "model": "gpt-5.4+gpt-5.6-luna",
+    "elapsed_s": 50.82,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 3,
+        "input_tokens": 17100,
+        "output_tokens": 1487
+      },
+      "gpt-5.4": {
+        "llm_calls": 1,
+        "input_tokens": 857,
+        "output_tokens": 537
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "llm",
+    "clicks": [
+      "I do not accept"
+    ],
+    "accept_label": "I accept",
+    "preticked": [],
+    "reject_steps": 1
+  },
+  "requests": [
+    {
+      "url": "https://hikma.com/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/css/style.min.css?v=639292307880000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/global.min.js?v=639292308040000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ma3j3uhz/logocoral.svg?width=145&height=40&v=133426217345700000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/cwnc2fnc/hikma-brand-film-thumbnail.jpg?width=1600&height=900&v=134328128258570000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/lgfnungz/image-1-21.png?width=960&height=919&v=134121810224300000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/pqdkjrjk/banner2.jpg?width=960&height=919&v=133506901593130000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/lxkldfvy/image-1-12.png?width=960&height=919&v=133988971422800000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ad0jmi5b/col-employee.jpg?width=960&height=919&v=133545452081230000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ehzjuptc/hikma-financials-homepage-image.png?width=508&height=446&v=133721904306230000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/2kii5tsj/rebecca-hall-508x446.jpg?width=508&height=446&v=134377475291000000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/i1qca02q/thumb-said-800x450-px-02.jpg?width=508&height=446&v=134304747047530000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/gybp1sa1/bbh-thumbnail-508x446.png?width=508&height=446&v=134263411319270000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/qklpcqrw/patients-father-and-son-having-fun-cropped.jpg?width=508&height=446&v=134249587994270000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/bizfrmbo/said-darwazah-insight-07-may-2026-preview.jpg?width=508&height=446&v=134226426647600000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/vjmpzw1b/manufacturing-today-image-march-2026.png?width=508&height=446&v=134217595821770000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/j4zlp0u1/web-full-banner-1792x900.jpg?width=508&height=446&v=134182330078070000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/mcihgcls/thumb-4-508x446.jpg?width=508&height=446&v=134165391480170000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/mjdhpjy2/faisal-option-1-home.jpg?width=508&height=446&v=134122615043200000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/riulzaec/508x446-nassim.jpg?width=508&height=446&v=134121817678470000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/i4tjllr3/hafrun-508x446-1.jpg?width=508&height=446&v=134080228313600000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/lwdljqmc/844c2fdb534a0612341c1a938a6f5f0c3bb8c38c.jfif?width=508&height=446&v=134039757345100000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/glyfxjfu/508x446.jpg?width=508&height=446&v=133995713663430000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ehzjuptc/hikma-financials-homepage-image.png?width=789&height=362&v=133721904306230000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ekhk1weh/logo.svg?width=210&height=769&v=133425496535130000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://youtu.be/V_Cd_d0Gdjk?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1",
+      "domain": "youtu.be",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Regular.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Bold.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/svgicons.woff2?t=1793633981108",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Light.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/502.7dc2a99d544cb54add7a.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/983.a3373ca3297155b0a44e.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/875.928c8be50e561edfd2ab.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/24.ccd4555f5d059d5b3d82.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/720.4f334ccd6a787b06c6bb.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/88.bc35bbe1fb0dfe9089bc.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?origin=https%3A%2F%2Fplyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1&v=V_Cd_d0Gdjk&feature=youtu.be",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://youtu.be/V_Cd_d0Gdjk?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1",
+      "domain": "youtu.be",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/iframe_api",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-regular.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/player/a5c2aafe/www-widgetapi.vflset/www-widgetapi.js",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/embed/V_Cd_d0Gdjk?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&cc_lang_pref=auto&widget_referrer=https%3A%2F%2Fwww.hikma.com%2F&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fwww.hikma.com&widgetid=1&forigin=https%3A%2F%2Fwww.hikma.com%2F&aoriginsup=1&vf=1",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://i.ytimg.com/vi/V_Cd_d0Gdjk/maxresdefault.jpg",
+      "domain": "ytimg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/player/a5c2aafe/www-player.css",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/ss/k=ytembeds.base.up2XA8RJgHg.L.W.O/am=AAAAgA/d=1/br=1/rs=AGKMywHP1JtKhDRgUsLUnu543w_5X8T9AA/m=root,base",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.1PXdIa9VMxU.es5.O/am=AAAAgA/d=1/excm=base,root/br=1/rs=AGKMywEniQJmdQ_cqi29_Qz1H_XxAEa37A/m=root,base",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/player/a5c2aafe/player_embed.vflset/en_GB/base.js",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+      "domain": "gstatic.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://static.doubleclick.net/instream/ad_status.js",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.1PXdIa9VMxU.es5.O/ck=ytembeds.base.up2XA8RJgHg.L.W.O/am=AAAAgA/d=1/exm=base,root/excm=base,root/ed=1/br=1/rs=AGKMywGj_Qs8p3CLnGYch067Y-3vNvUSDw/m=r78Drb",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.google.com/js/th/n_BHgtbTP3l_ff810bu_K6lL5wb_ZK3aoRJMIVk8Tks.js",
+      "domain": "google.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://noembed.com/embed?url=https://www.youtube.com/watch?v=V_Cd_d0Gdjk",
+      "domain": "noembed.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/id?slf_rd=1",
+      "domain": "doubleclick.net",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://i.ytimg.com/vi/V_Cd_d0Gdjk/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEwgYihlMA8=&rs=AOn4CLCfEUwziCpxCXvnTL6c8OoVl_3_CQ",
+      "domain": "ytimg.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdn.plyr.io/3.8.5/plyr.svg",
+      "domain": "plyr.io",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.hikma.com&p=CookieControl%20Multi-Site&v=9&k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/generate_204?3w4yFQ",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+      "domain": "googleapis.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/accessibility-loader.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/preload-helper.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/main-widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget-core.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/i18next.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/footer.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/contrastAdjustments.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/linkNewTabHandler.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/colorOptions.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/sounds/close.mp3",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/fontSize.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/lineHeight.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/letterSpacing.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/getWidgetSettingsApi.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://freeada.skynettechnologies.com/api/widget-settings",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/lang-node/en-GB.json",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/shortcut.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Normal.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatopsia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Speak-to-Navigate.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Summarise-Page.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/ASL.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Keyboard-Navigation.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Sign-Language-Font.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Locator.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Slow-Cursor.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Blue-Light-Filter.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Indicators.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/icomoon.ttf?v1.5",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-500.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/openWidget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/checkLiveTranslation.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/sounds/open.mp3",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UMB-XSRF-V%5C%22%2C%5C%22UMB_UCONTEXT%5C%22%2C%5C%22UMB_UCONTEXT_C%5C%22%2C%5C%22UMB-XSRF-TOKEN%5C%22%2C%5C%22UMB_UPDCHK%5C%22%2C%5C%22ASP.NET_SessionId%5C%22%5D%2C%5C%22optionalCookies%5C%22%3A%7B%5C%22analytics%5C%22%3A%5C%22revoked%5C%22%7D%2C%5C%22statement%5C%22%3A%7B%5C%22shown%5C%22%3Atrue%2C%5C%22updated%5C%22%3A%5C%2226%2F12%2F2023%5C%22%7D%2C%5C%22consentDate%5C%22%3A1794111017512%2C%5C%22consentExpiry%5C%22%3A90%2C%5C%22interactedWith%5C%22%3Atrue%2C%5C%22user%5C%22%3A%5C%22BD80EE27-F2C0-4A7C-ACAB-D9024C197F94%5C%22%7D%22",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+      "domain": "gstatic.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/applyFixes.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ada.skynettechnologies.us/api/for-widget-combine-data",
+      "domain": "skynettechnologies.us",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.hikma.com/document-hub/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.hikma.com/css/style.min.css?v=639292307880000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/global.min.js?v=639292308040000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ma3j3uhz/logocoral.svg?width=145&height=40&v=133426217345700000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ekhk1weh/logo.svg?width=210&height=769&v=133425496535130000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/svgicons.woff2?t=1793633981108",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Light.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Regular.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Bold.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/480.1bf34302296e6e4f0381.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/753.15de726b2cda36280506.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-regular.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.hikma.com&p=CookieControl%20Multi-Site&v=9&k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/accessibility-loader.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/preload-helper.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/main-widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget-core.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/i18next.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/footer.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/contrastAdjustments.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/linkNewTabHandler.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/colorOptions.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ada.skynettechnologies.us/api/widget-setting-status",
+      "domain": "skynettechnologies.us",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/fontSize.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/lineHeight.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/letterSpacing.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-500.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/icomoon.ttf?v1.5",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/shortcut.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Normal.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatopsia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Speak-to-Navigate.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Summarise-Page.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/ASL.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Keyboard-Navigation.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Sign-Language-Font.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Locator.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Slow-Cursor.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Blue-Light-Filter.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Indicators.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/openWidget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/checkLiveTranslation.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/fr-dz/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/css/style.min.css?v=639292307880000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/global.min.js?v=639292308040000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ma3j3uhz/logocoral.svg?width=145&height=40&v=133426217345700000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/qsdceqfo/hikma-algeria-video-image.png?width=800&height=947&v=133988961670500000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/jhfas2w0/algeria-30-years.jpg?width=800&height=947&v=133516414963400000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ekhk1weh/logo.svg?width=210&height=769&v=133425496535130000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BHhiGFPWBNE?origin=https://plyr.io&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1",
+      "domain": "youtube.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://products.hikma.com/Product/menaproducts",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/svgicons.woff2?t=1793633981108",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Light.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Regular.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Bold.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/24.ccd4555f5d059d5b3d82.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/983.a3373ca3297155b0a44e.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/612.2e8c46f17bb914efc593.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/950.822258ea9c66b734382c.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/80.f75ccf07439f0bb8116f.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/88.bc35bbe1fb0dfe9089bc.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/201.135bad8115422cd89077.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-regular.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.hikma.com&p=CookieControl%20Multi-Site&v=9&k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-Q20DR7HV5B",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://products.hikma.com/lib/bootstrap/dist/css/bootstrap.min.css",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://products.hikma.com/css/site.css",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://products.hikma.com/jqueryui/jquery-ui.css",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+      "domain": "cloudflare.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://products.hikma.com/lib/jquery/dist/jquery.min.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://products.hikma.com/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://products.hikma.com/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://products.hikma.com/jqueryui/jquery-ui.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-Q20DR7HV5B&gtm=45je6b41v9223657531za208zd9223657531xf1&_p=1794111027001&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=998329330.1794111027&frm=2&ngs=1&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=en-gb&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423~120412526~120420416~120469145~120469153~121246026~121246034~123814185&sid=1794111027&sct=1&seg=0&dl=https%3A%2F%2Fproducts.hikma.com%2FProduct%2Fmenaproducts&dt=&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=955",
+      "domain": "google-analytics.com",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/accessibility-loader.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/preload-helper.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/main-widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget-core.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/i18next.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/footer.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/contrastAdjustments.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/linkNewTabHandler.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/colorOptions.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ada.skynettechnologies.us/api/widget-setting-status",
+      "domain": "skynettechnologies.us",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/fontSize.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/lineHeight.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/letterSpacing.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-500.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/icomoon.ttf?v1.5",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/lang-node/fr.json",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/shortcut.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Normal.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatopsia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Speak-to-Navigate.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Summarise-Page.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/ASL.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Keyboard-Navigation.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Sign-Language-Font.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Locator.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Slow-Cursor.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Blue-Light-Filter.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Indicators.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/openWidget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/checkLiveTranslation.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/en-ca/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/en-ca/overview/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/css/style.min.css?v=639292307880000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/global.min.js?v=639292308040000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ma3j3uhz/logocoral.svg?width=145&height=40&v=133426217345700000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ss2ls1wh/employee-in-the-office.jpeg?width=800&height=947&v=133499724381000000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/dxxjidwb/injectables-port-7.jpg?width=800&height=947&v=133988963302730000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/pckiffto/lab-shot-option-1.jpg?width=800&height=947&v=133504770733200000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/cx1jb32s/3.jpg?width=800&height=947&v=133988963304600000&format=webp",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ekhk1weh/logo.svg?width=210&height=769&v=133425496535130000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/svgicons.woff2?t=1793633981108",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Light.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Regular.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Bold.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/24.ccd4555f5d059d5b3d82.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/983.a3373ca3297155b0a44e.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/612.2e8c46f17bb914efc593.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/950.822258ea9c66b734382c.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/201.135bad8115422cd89077.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/88.bc35bbe1fb0dfe9089bc.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-regular.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.hikma.com&p=CookieControl%20Multi-Site&v=9&k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/accessibility-loader.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/preload-helper.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/main-widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget-core.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/i18next.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/footer.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/contrastAdjustments.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/linkNewTabHandler.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/colorOptions.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ada.skynettechnologies.us/api/widget-setting-status",
+      "domain": "skynettechnologies.us",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/fontSize.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/lineHeight.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/letterSpacing.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-500.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/icomoon.ttf?v1.5",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/shortcut.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Normal.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatopsia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Speak-to-Navigate.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Summarise-Page.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/ASL.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Keyboard-Navigation.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Sign-Language-Font.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Locator.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Slow-Cursor.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Blue-Light-Filter.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Indicators.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/openWidget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/checkLiveTranslation.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/useful-links/privacy-policy/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/css/style.min.css?v=639292307880000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/global.min.js?v=639292308040000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ma3j3uhz/logocoral.svg?width=145&height=40&v=133426217345700000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/2inpgmiv/privacy-table.jpg",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ekhk1weh/logo.svg?width=210&height=769&v=133425496535130000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/svgicons.woff2?t=1793633981108",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Light.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Regular.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Bold.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/201.135bad8115422cd89077.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-regular.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.hikma.com&p=CookieControl%20Multi-Site&v=9&k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/accessibility-loader.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/preload-helper.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/main-widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget-core.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/i18next.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/footer.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/contrastAdjustments.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/linkNewTabHandler.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/colorOptions.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ada.skynettechnologies.us/api/widget-setting-status",
+      "domain": "skynettechnologies.us",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/fontSize.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/lineHeight.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/letterSpacing.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-500.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/icomoon.ttf?v1.5",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/shortcut.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Normal.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatopsia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Speak-to-Navigate.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Summarise-Page.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/ASL.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Keyboard-Navigation.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Sign-Language-Font.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Locator.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Slow-Cursor.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Blue-Light-Filter.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Indicators.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/openWidget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/checkLiveTranslation.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/useful-links/cookie-policy/",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/css/style.min.css?v=639292307880000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/global.min.js?v=639292308040000000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://tools.euroland.com/tools/common/eurolandiframeautoheight/eurolandtoolsintegrationobject.js",
+      "domain": "euroland.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ma3j3uhz/logocoral.svg?width=145&height=40&v=133426217345700000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/media/ekhk1weh/logo.svg?width=210&height=769&v=133425496535130000",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/all-in-one-accessibility-js-widget-minify.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/svgicons.woff2?t=1793633981108",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Light.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Regular.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/assets/fonts/Guillon-Bold.woff2",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.hikma.com/js/201.135bad8115422cd89077.js",
+      "domain": "hikma.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-regular.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://apikeys.civiccomputing.com/c/v?d=www.hikma.com&p=CookieControl%20Multi-Site&v=9&k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&format=json",
+      "domain": "civiccomputing.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "xhr",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/accessibility-loader.js?colorcode=",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/preload-helper.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/main-widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget-core.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/i18next.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/widget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/footer.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/contrastAdjustments.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/linkNewTabHandler.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/colorOptions.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://ada.skynettechnologies.us/api/widget-setting-status",
+      "domain": "skynettechnologies.us",
+      "third_party": true,
+      "method": "POST",
+      "type": "fetch",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/fontSize.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/lineHeight.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/letterSpacing.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/rubik-v28-arabic_cyrillic_cyrillic-ext_hebrew_latin_latin-ext-500.woff2",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/icomoon.ttf?v1.5",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-1.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/shortcut.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Normal.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Protanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Deuteranopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Tritanopia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatomaly.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/images/Achromatopsia.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Speak-to-Navigate.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Summarise-Page.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/ASL.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Keyboard-Navigation.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Sign-Language-Font.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Locator.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Slow-Cursor.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Blue-Light-Filter.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/fonts/Focus-Indicators.svg",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/openWidget.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.skynettechnologies.com/accessibility/js/assets/checkLiveTranslation.js",
+      "domain": "skynettechnologies.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "YSC",
+        "value": "7VS9OglIfGc",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "VISITOR_INFO1_LIVE",
+        "value": "UZUMj4PIAEk",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": 1809663012.801934,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "VISITOR_PRIVACY_METADATA",
+        "value": "CgJHQhIEGgAgIw%3D%3D",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": 1809663012.801956,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "value"
+      },
+      {
+        "name": "__Secure-YNID",
+        "value": "CtsBCAUSjQEBDB6PDKywXaFKeonuOUB-l7BIqd4jDEg_ATnoAfu28Awt8NmJc4pdWkVCPc0-F_aOlboSDKfLFJU8VDKHnqdoKKm6Ynf369oGH0WXRJr1gFeGzPPJ7mON2mzAAgAhg_isD6r1Lbs062M8yry8xomDGW0hpL2hhZ7gUv1RRwF60SwaWsrH9ZfUABGt3UIoBTJFARxY9WqLxJLRM2Ljr6pa5h6gCBpfc2STdN98Xgir1d5WKBSP4MDzG1an0kg2PQddda8XqIznyepJGeNsx6-yxrCZNhcK",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": 1809663012.801803,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "__Secure-ROLLOUT_TOKEN",
+        "value": "CMbHiKbstaK-KRCR_uKswPeXAxjJ5OeswPeXAw%3D%3D",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": 1809663012.801974,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "YSC",
+        "value": "7VS9OglIfGc",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "__Secure-YNID",
+        "value": "CtsBCAUSjQEBDB6PDKywXaFKeonuOUB-l7BIqd4jDEg_ATnoAfu28Awt8NmJc4pdWkVCPc0-F_aOlboSDKfLFJU8VDKHnqdoKKm6Ynf369oGH0WXRJr1gFeGzPPJ7mON2mzAAgAhg_isD6r1Lbs062M8yry8xomDGW0hpL2hhZ7gUv1RRwF60SwaWsrH9ZfUABGt3UIoBTJFARxY9WqLxJLRM2Ljr6pa5h6gCBpfc2STdN98Xgir1d5WKBSP4MDzG1an0kg2PQddda8XqIznyepJGeNsx6-yxrCZNhcK",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": 1809663012.801803,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "__Secure-ROLLOUT_TOKEN",
+        "value": "CMbHiKbstaK-KRCR_uKswPeXAxjJ5OeswPeXAw%3D%3D",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": 1809663012.801974,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "id"
+      },
+      {
+        "name": "CookieControl",
+        "value": "{\"necessaryCookies\":[\"UMB-XSRF-V\",\"UMB_UCONTEXT\",\"UMB_UCONTEXT_C\",\"UMB-XSRF-TOKEN\",\"UMB_UPDCHK\",\"ASP.NET_SessionId\"],\"optionalCookies\":{\"analytics\":\"revoked\"},\"statement\":{\"shown\":true,\"updated\":\"26/12/2023\"},\"consentDate\":1794111017512,\"consentExpiry\":90,\"interactedWith\":true,\"user\":\"BD80EE27-F2C0-4A7C-ACAB-D9024C197F94\"}",
+        "domain": ".hikma.com",
+        "path": "/",
+        "expires": 1801887017,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "VISITOR_PRIVACY_METADATA",
+        "value": "CgJHQhIEGgAgRQ%3D%3D",
+        "domain": ".youtube.com",
+        "path": "/",
+        "expires": 1828239026.349566,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None",
+        "tracker_company": "Google",
+        "value_kind": "value"
+      },
+      {
+        "name": "cookiesession1",
+        "value": "678A3EDADF21FD60AC50484CDB0518A3",
+        "domain": "products.hikma.com",
+        "path": "/",
+        "expires": 1825647026.994259,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      }
+    ]
+  },
+  "policy": {
+    "url": "https://www.hikma.com/useful-links/privacy-policy/",
+    "found": true,
+    "companies_named": [],
+    "dpo_contact": "privacypolicy@hikma.com",
+    "cookie_policy_url": "https://www.hikma.com/useful-links/cookie-policy/",
+    "format": "html",
+    "text_chars": 31986,
+    "chars_sent": 31986
+  },
+  "visited_pages": [
+    "https://www.hikma.com/document-hub/",
+    "https://www.hikma.com/fr-dz/",
+    "https://www.hikma.com/en-ca/overview/"
+  ],
+  "fingerprinting": [
+    {
+      "technique": "webgl",
+      "script": "https://www.google.com/js/th/n_BHgtbTP3l_ff810bu_K6lL5wb_ZK3aoRJMIVk8Tks.js",
+      "detail": "read the GPU vendor/model (UNMASKED_*_WEBGL)",
+      "phase": "before_consent"
+    }
+  ],
+  "id_leaks": [
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "statement",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "NET_Se\u2026onId",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "consen\u2026piry",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "analytics",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "UMB_UC\u2026XT_C",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "UMB_UCONTEXT",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "consentDate",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "UMB-XSRF-V",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "UMB-XS\u2026OKEN",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "BD80EE\u20267F94",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "intera\u2026With",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "UMB_UPDCHK",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "option\u2026kies",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    },
+    {
+      "cookie": "CookieControl",
+      "cookie_domain": "hikma.com",
+      "id_preview": "necess\u2026kies",
+      "to": "civiccomputing.com",
+      "company": null,
+      "category": null,
+      "phase": "before_consent",
+      "in": "address",
+      "encoding": "raw",
+      "confidence": "likely",
+      "example": "https://clapi.civiccomputing.com/1/log?k=052cf4f20ac363cf70bef38a1f1ed334e226fd12&d=www.hikma.com&u=undefined&c=%22%7B%5C%22necessaryCookies%5C%22%3A%5B%5C%22UM"
+    }
+  ],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "critical",
+      "ai_severity": "high",
+      "severity_note": "Raised to critical: rated high and backed by advertising or session-replay evidence.",
+      "title": "Cookie policy promise contradicted by pre-consent and post-rejection tracking",
+      "detail": "Google/YouTube tracking cookies were present before the banner was answered and remained present after rejection, while the cookie policy says cookies generally cannot be deployed without consent. This also conflicts with the policy's description of a system allowing users to give permission or deny cookies.",
+      "law": "PECR reg. 6; UK GDPR Art. 5(1)(a) and Art. 7",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "policy_quote": "In most cases cookies cannot be deployed without consent.",
+      "reasoning": "This is a direct contradiction between the site's stated cookie practice and the observed deployment of tracking cookies before consent and after rejection. The severity is high because the evidence concerns identifiers associated with Google/YouTube tracking and the policy expressly promises consent-based control.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 5(1)(a) and Art. 7"
+    },
+    {
+      "severity": "high",
+      "title": "Google cookies were set before you could choose",
+      "detail": "5 tracking cookies (VISITOR_INFO1_LIVE, VISITOR_PRIVACY_METADATA, YSC, __Secure-ROLLOUT_TOKEN, __Secure-YNID) were already set before the cookie banner was answered (Advertising). VISITOR_INFO1_LIVE, YSC, __Secure-ROLLOUT_TOKEN, __Secure-YNID hold what looks like a unique ID.",
+      "law": "PECR reg. 6 (consent needed before storing cookies)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "high",
+      "title": "Google still received data after you rejected cookies",
+      "detail": "5 requests to google-analytics.com, googletagmanager.com, youtube.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "medium",
+      "title": "1 tracking company not named in the privacy policy",
+      "detail": "The policy names 0 companies. We saw these and found no mention: Google. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "law": "UK GDPR Art. 13(1)(e) (you must be told who receives your data)",
+      "source": "observed",
+      "law_eu": "EU GDPR Art. 13(1)(e)"
+    },
+    {
+      "severity": "medium",
+      "title": "google.com fingerprinted your device (WebGL (GPU model))",
+      "detail": "Scripts from google.com (https://www.google.com/js/th/n_BHgtbTP3l_ff810bu_K6lL5wb_ZK3aoRJMIVk8Tks.js) used WebGL (GPU model) fingerprinting before you answered the cookie banner.",
+      "law": "PECR reg. 6 (consent needed to access information on a device, not just cookies); ICO guidance on fingerprinting",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EDPB Guidelines 05/2020 on consent; EDPB Cookie Banner Taskforce report (2023)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 5,
+    "companies_seen": 1,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": [
+      "Google"
+    ],
+    "companies_after_reject": [
+      "Google"
+    ],
+    "companies_with_cookies_before_consent": [
+      "Google"
+    ],
+    "categories": {
+      "Google": "Advertising"
+    },
+    "fingerprinting_domains": [
+      "google.com"
+    ],
+    "id_leak_companies": []
+  },
+  "letter": {
+    "kind": "complaint",
+    "to": "privacypolicy@hikma.com",
+    "subject": "Concern regarding cookie and tracking practices on hikma.com",
+    "body": "Dear Data Protection Officer,\n\nI am writing to raise concerns identified during an automated, passive audit of https://hikma.com on 2026-11-08 04:10 UTC. Using a fresh browser, the audit visited the site, clicked the cookie banner option \u201cI do not accept\u201d, then browsed a small number of pages and recorded what was still set or sent.\n\nThe findings are as follows:\n\n1. Our review suggests your cookie policy may be contradicted by the site\u2019s behaviour. Google/YouTube tracking cookies were present before the banner was answered and remained present after rejection, while your policy states, \u201cIn most cases cookies cannot be deployed without consent.\u201d This also appears inconsistent with the policy\u2019s description of a system allowing users to give permission or deny cookies.\n\n2. Google cookies were set before any choice was made. We observed 5 tracking cookies already set before the cookie banner was answered: VISITOR_INFO1_LIVE, VISITOR_PRIVACY_METADATA, YSC, __Secure-ROLLOUT_TOKEN and __Secure-YNID. VISITOR_INFO1_LIVE, YSC, __Secure-ROLLOUT_TOKEN and __Secure-YNID held what looks like a unique ID.\n\n3. Google still received data after cookies were rejected. After clicking \u201cI do not accept\u201d, we observed 5 requests to google-analytics.com, googletagmanager.com and youtube.com.\n\n4. One tracking company observed was not named in the privacy policy we reviewed at https://www.hikma.com/useful-links/privacy-policy/. The policy names 0 companies. We observed Google and found no mention of it, although the policy may describe recipients only by category.\n\n5. google.com fingerprinted the device before any banner choice was made. Scripts from google.com (https://www.google.com/js/th/n_BHgtbTP3l_ff810bu_K6lL5wb_ZK3aoRJMIVk8Tks.js) used WebGL (GPU model) fingerprinting before the cookie banner was answered.\n\nPlease would you:\n\n1. Explain each of the points above.\n2. Confirm which cookies and trackers you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential cookies or tracking operating without consent.\n4. Reply within one month.\n\nIf this matter is not resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T04:10:56.604656+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Cookie policy promise contradicted by pre-consent and post-rejection tracking",
+      "Google cookies were set before you could choose",
+      "Google still received data after you rejected cookies",
+      "1 tracking company not named in the privacy policy",
+      "google.com fingerprinted your device (WebGL (GPU model))"
+    ],
+    "delivery": {
+      "mode": "live",
+      "sent": false,
+      "to": null,
+      "at": "2026-11-08T04:11:01.712241+00:00",
+      "reason": "SMTPDataError: (502, b'5.7.0 Your SMTP account is not yet activated. Please contact us at contact@sendinblue.com to request activation.')",
+      "message_id": null,
+      "site": "hikma.com",
+      "intended_to": "privacypolicy@hikma.com",
+      "saved_to": null,
+      "trigger": "auto"
+    },
+    "auto": {
+      "tier": "critical",
+      "reason": "Audit's worst finding is critical."
+    }
+  },
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit found a clear mismatch between the site's stated cookie-consent approach and observed Google/YouTube tracking before consent and after rejection. The privacy policy covers many UK GDPR topics, including purposes, lawful bases, recipients, retention and rights, but the observed behaviour creates a serious transparency and fairness concern.",
+    "findings_kept": 1,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: True. Method: llm. Buttons clicked: I do not accept.",
+      "E2: Fingerprinting by scripts from google.com: webgl; phases: before_consent.",
+      "E3: Tracker Google (Advertising): 14 requests before consent, 5 after reject, to doubleclick.net, google-analytics.com, googletagmanager.com, youtube.com. Example after-reject requests: https://www.youtube.com/youtubei/v1/log_event?alt=json | https://www.youtube.com/youtubei/v1/log_event?alt=json",
+      "E4: Tracking cookie YSC from Google on .youtube.com present before the banner was answered; session cookie; holds what looks like a unique ID.",
+      "E5: Tracking cookie VISITOR_INFO1_LIVE from Google on .youtube.com present before the banner was answered; expires in 180 days; holds what looks like a unique ID.",
+      "E6: Tracking cookie VISITOR_PRIVACY_METADATA from Google on .youtube.com present before the banner was answered; expires in 180 days.",
+      "E7: Tracking cookie __Secure-YNID from Google on .youtube.com present before the banner was answered; expires in 180 days; holds what looks like a unique ID.",
+      "E8: Tracking cookie __Secure-ROLLOUT_TOKEN from Google on .youtube.com present before the banner was answered; expires in 180 days; holds what looks like a unique ID.",
+      "E9: Tracking cookie YSC from Google on .youtube.com present after reject; session cookie; holds what looks like a unique ID.",
+      "E10: Tracking cookie __Secure-YNID from Google on .youtube.com present after reject; expires in 180 days; holds what looks like a unique ID.",
+      "E11: Tracking cookie __Secure-ROLLOUT_TOKEN from Google on .youtube.com present after reject; expires in 180 days; holds what looks like a unique ID.",
+      "E12: Tracking cookie VISITOR_PRIVACY_METADATA from Google on .youtube.com present after reject; expires in 395 days.",
+      "E13: Pages browsed and scrolled after reject: https://www.hikma.com/document-hub/, https://www.hikma.com/fr-dz/, https://www.hikma.com/en-ca/overview/.",
+      "E14: Privacy policy: https://www.hikma.com/useful-links/privacy-policy/. Companies it names: none extracted. Contact email found: privacypolicy@hikma.com.",
+      "E15: Cookie policy: https://www.hikma.com/useful-links/cookie-policy/.",
+      "E16: Automated check (high): Google cookies were set before you could choose. 5 tracking cookies (VISITOR_INFO1_LIVE, VISITOR_PRIVACY_METADATA, YSC, __Secure-ROLLOUT_TOKEN, __Secure-YNID) were already set before the cookie banner was answered (Advertising). VISITOR_INFO1_LIVE, YSC, __Secure-ROLLOUT_TOKEN, __Secure-YNID hold what looks like a unique ID.",
+      "E17: Automated check (high): Google still received data after you rejected cookies. 5 requests to google-analytics.com, googletagmanager.com, youtube.com after you clicked reject (Advertising).",
+      "E18: Automated check (medium): 1 tracking company not named in the privacy policy. The policy names 0 companies. We saw these and found no mention: Google. (The policy may describe them only by category, e.g. 'advertising partners'.)",
+      "E19: Automated check (medium): google.com fingerprinted your device (WebGL (GPU model)). Scripts from google.com (https://www.google.com/js/th/n_BHgtbTP3l_ff810bu_K6lL5wb_ZK3aoRJMIVk8Tks.js) used WebGL (GPU model) fingerprinting before you answered the cookie banner."
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "Where We process your personal data, the local Hikma company that has a relationship with you is considered the controller of your personal data."
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "We use information held about you in the following ways:"
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "present",
+        "quote": "Most commonly, we will use your personal data for the performance of a contract or where it is necessary for our legitimate interests and your interests and fundamental rights do not override those interests."
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "We may also disclose your personal information to third parties as follows:"
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "We will only retain your personal data for as long as it is necessary to do so in order to achieve the purposes for which it was collected."
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "present",
+        "quote": "You also have the right to ask Us to correct any mistakes in your information, to delete your personal data, or to provide you with a copy of your personal data to be used for your own purposes"
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "You can also manage cookies via your browser settings (this will allow you to refuse the setting of all or some cookies)"
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "present",
+        "quote": "You also have the right, if necessary, to lodge a complaint regarding the use of your personal data with a supervisory authority, which in the UK is the Information Commissioner\u2019s Office."
+      }
+    }
+  }
+}

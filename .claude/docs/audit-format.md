@@ -70,6 +70,10 @@ Added for the AI legal review (nothing renamed):
 - `ai_review`: `{ "model", "summary", "findings_kept", "findings_dropped", "evidence": ["E1: ...", ...], "error"? }`
 - `visited_pages`: pages browsed (and scrolled) after reject.
 - `fingerprinting`: list of `{technique: "canvas"|"webgl"|"audio"|"fonts", script, detail, phase}`, one per technique per script per phase (agent/fingerprint.py). `summary.fingerprinting_domains` lists the script domains.
+- `id_leaks`: our per-browser IDs found in requests to OTHER companies (agent/crosssite.py). Each: `{cookie, cookie_domain, id_preview, to, company, category, phase, in: "address"|"body", encoding: "raw"|"base64"|"base64url"|"md5"|"sha1"|"sha256", confidence: "confirmed"|"likely", example}`. "confirmed" = the value differed in a second, fresh browser; only confirmed leaks to known tracker companies become findings ("Your ID was sent to X ..."). Full IDs are never saved, only `id_preview`.
+- `id_syncs`: ad-tech ID matching seen in requests: `{type: "Google cookie matching"|"Prebid shared user IDs", to, phase, example?, sources?}`. Any = a "high" finding.
+- `summary.id_leak_companies`: companies that received one of our IDs.
+- Cross-site proof results (not part of an audit) are saved as `linkage/<timestamp>.json`: `{started_at, duration_s, sites: [{site, url, loaded, rejected, error?}], requests, links: [{company, category, via, id_preview, sites: {site: {phases, example}}, after_reject_on}], cost}`. A link = the same per-browser ID reached the same company from 2+ sites in one browser. API: `POST /api/cross-site/prove {sites?}` (2-5 audited sites; omitted = auto-picked), `GET /api/cross-site/proof`.
 - `cookies.*[].value_kind`: what the cookie holds: `"empty"` (blank, or only `key=` labels), `"placeholder"` (deleted / null / 0 / false), `"id"` (looks like a unique identifier) or `"value"` (anything else). Empty and placeholder tracker cookies are not counted as tracking evidence (compare + AI review).
 
 Added for letters and email:

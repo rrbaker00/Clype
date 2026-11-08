@@ -1,0 +1,1305 @@
+{
+  "url": "https://glencore.com",
+  "started_at": "2026-11-08T04:07:12.476323+00:00",
+  "duration_s": 60.81,
+  "cost": {
+    "llm_calls": 3,
+    "input_tokens": 6694,
+    "output_tokens": 2811,
+    "model": "gpt-5.4+gpt-5.6-luna",
+    "elapsed_s": 60.81,
+    "by_model": {
+      "gpt-5.6-luna": {
+        "llm_calls": 2,
+        "input_tokens": 6038,
+        "output_tokens": 2352
+      },
+      "gpt-5.4": {
+        "llm_calls": 1,
+        "input_tokens": 656,
+        "output_tokens": 459
+      }
+    }
+  },
+  "consent": {
+    "banner_found": true,
+    "rejected": true,
+    "method": "selector",
+    "clicks": [
+      "Reject all cookies"
+    ],
+    "accept_label": "Accept all cookies",
+    "preticked": [],
+    "reject_steps": 1
+  },
+  "requests": [
+    {
+      "url": "https://glencore.com/",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/css/gc~2026-11-05-15-41-44-000~cache.css",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo-white.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/chunk-vendors~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/main~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/sprite.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-Regular.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-SemiBold.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:f421c062-e228-42d9-b53d-e33fda6e737f/image00010.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:e6d95c49-8445-4bd5-b0ef-52c592717825/Overhead%20view%20of%20reahb.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:786eee08-3083-4926-abdd-5aa3c83686bd/glencore-canada-onaping-depth-project-milestone.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.glencore.com/dam/jcr:42ef00c0-e097-4016-8f5e-b85e736f0cc0/Business%20Model%202025%20horizontal%20for%20teaser%20813x660.2026-03-09-17-19-47.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:a44884d3-62d5-402f-9059-c8014023a58c/who-we-are-teaser.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:00f9c8c8-0531-4ce2-94e7-a0465afa86d8/M001%20-%20Homepage%20carousel%20image%20-%20climate%20report.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x960/dam/jcr:d2b4ef30-2176-4c7f-bee7-854b692e5b5c/Daisy_16_9_HD.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x960/dam/jcr:5aa95379-ee41-42fe-ba3a-a92f6df7059f/SD-cover.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x960/dam/jcr:5fb04493-53c1-42af-bacc-a9e07ba0719c/250218_Glencore_ATC_Website_03%201.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "before_consent",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x960/dam/jcr:f6187b02-44dd-423b-bcbb-4726600a2944/Fairness%20and%20respect.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x960/dam/jcr:22f51a1a-9b28-4ea0-a5f9-cc0dd16f5126/careers.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/careers",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/en/careers",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/css/gc~2026-11-05-15-41-44-000~cache.css",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo-white.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/chunk-vendors~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/main~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/sprite.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-Regular.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-SemiBold.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1600x1200/dam/jcr:e26e5b60-3956-4297-96e5-ec061646a203/careers-bg.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:ccfee8e4-1490-4647-8e49-65e6323b8d2d/Andrew%20McNamara%20lansdcape.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/dam/jcr:91ab54f5-a109-46bc-bffc-74809c46475c/250624_AGM2025_ATCFilm_Header.2025-06-24-17-22-28.mp4",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "media",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:e97b805d-8797-44ca-a382-75d07b7d9ec8/careers-teams1.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:9132e1b9-a20a-4e1d-b456-0b1e31613aee/careers-teams.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1200x666/dam/jcr:332b1b05-4763-47d9-9b78-756e6b3b455e/character-detail-2.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.imaging/focalpoint/1280x711/dam/jcr:6fd37978-b3b3-460a-bf53-0fe582e3501d/careers-interested.webp",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/publications",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/css/gc~2026-11-05-15-41-44-000~cache.css",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo-white.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/chunk-vendors~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/main~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/sprite.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-Regular.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-SemiBold.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/td?id=GTM-K6F9BXS&v=3&t=t&pid=223440092&gtm=45He6b41v79494478za200zd79494478xf1&seq=1&exp=115938465~115938468~118897920~118897930~120385423~120412528~120420416~120469145~120469153~121246026~121246034~123814183&dl=www.glencore.com%2Fpublications&tdp=GTM-K6F9BXS;9494478;0;0;0&frm=0&rtg=9494478&slo=2&hlo=2&lst=2&bt=0&ct=3&z=0",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.glencore.com/world-map",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/css/gc~2026-11-05-15-41-44-000~cache.css",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo-white.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/chunk-vendors~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/main~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/sprite.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-Regular.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-SemiBold.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.glencore.com/terms/privacy-notice",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/en/terms/privacy-notice",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/css/gc~2026-11-05-15-41-44-000~cache.css",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo-white.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/chunk-vendors~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/main~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/sprite.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-Regular.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-SemiBold.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.glencore.com/zh/terms/privacy-notice",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/css/gc~2026-11-05-15-41-44-000~cache.css",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo-white.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/chunk-vendors~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/main~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/sprite.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-Regular.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-SemiBold.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    },
+    {
+      "url": "https://www.glencore.com/terms/cookies-notice",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/en/terms/cookies-notice",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "document",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/css/gc~2026-11-05-15-41-44-000~cache.css",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "stylesheet",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/Glencore_logo-white.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "image",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/chunk-vendors~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/js/main~2026-11-05-15-41-44-000~cache.js",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/img/sprite.svg",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "other",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-Regular.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.glencore.com/.resources/gc/webresources/fonts/Montserrat-SemiBold.woff2",
+      "domain": "glencore.com",
+      "third_party": false,
+      "method": "GET",
+      "type": "font",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": false
+      }
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "domain": "googletagmanager.com",
+      "third_party": true,
+      "method": "GET",
+      "type": "script",
+      "phase": "after_reject",
+      "tracker": {
+        "is_tracker": true,
+        "company": "Google",
+        "category": "Advertising"
+      }
+    }
+  ],
+  "cookies": {
+    "before_consent": [
+      {
+        "name": "prev-selected-locale",
+        "value": "en",
+        "domain": "www.glencore.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      }
+    ],
+    "after_reject": [
+      {
+        "name": "csrf",
+        "value": "0plTB4cxgGBz4VnD9J-3dcNxZPJpFDR1kOxv23k4o8YTnoyoNKgbGswocFDB4N8cxZdZWp4bkOYCGoRD-rr4WQ:AAABoblXFUM:o8gYvfHaZNMP7N68VzOxTg",
+        "domain": "www.glencore.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Strict",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "NSPESS",
+        "value": "ffffffffc3a0fc1e45525d5f4f58455e445a4a4229a0",
+        "domain": "www.glencore.com",
+        "path": "/",
+        "expires": 1794118056.690439,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "id"
+      },
+      {
+        "name": "shown-language-hint",
+        "value": "true",
+        "domain": "www.glencore.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "Current-Language",
+        "value": "zh",
+        "domain": "www.glencore.com",
+        "path": "/",
+        "expires": 1825214856.690332,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      },
+      {
+        "name": "prev-selected-locale",
+        "value": "en",
+        "domain": "www.glencore.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax",
+        "tracker_company": null,
+        "value_kind": "value"
+      }
+    ]
+  },
+  "policy": {
+    "url": "https://www.glencore.com/en/terms/privacy-notice",
+    "found": true,
+    "companies_named": [],
+    "dpo_contact": "privacy@glencore.com",
+    "cookie_policy_url": "https://www.glencore.com/en/terms/cookies-notice",
+    "format": "html",
+    "text_chars": 2635,
+    "chars_sent": 2635
+  },
+  "visited_pages": [
+    "https://www.glencore.com/en/careers",
+    "https://www.glencore.com/publications",
+    "https://www.glencore.com/world-map"
+  ],
+  "fingerprinting": [],
+  "id_leaks": [],
+  "id_syncs": [],
+  "findings": [
+    {
+      "severity": "high",
+      "title": "Google still received data after you rejected cookies",
+      "detail": "7 requests to googletagmanager.com after you clicked reject (Advertising).",
+      "law": "PECR reg. 6 (cookies / tracking need consent)",
+      "source": "observed",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device)"
+    },
+    {
+      "severity": "medium",
+      "ai_severity": "high",
+      "severity_note": "Lowered from high: no substantial advertising or session-replay evidence cited (a tracking cookie, activity after reject, or 3+ requests to an actual tracking domain; a tag loader like Google Tag Manager alone doesn't count), so an exemption or innocent explanation is plausible.",
+      "title": "Advertising tracking appears to operate despite cookie rejection",
+      "detail": "The audit successfully clicked \u201cReject all cookies\u201d, but Google advertising-related requests continued afterwards. This appears inconsistent with the cookie policy's promise that only cookies allowed by the user will be used.",
+      "law": "PECR reg. 6; UK GDPR Art. 5(1)(a) and Art. 7",
+      "source": "ai",
+      "evidence": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "policy_quote": "We take care to protect your information (even if it was collected by other organisations for example by having contracts that limit how your information can be used), and regularly check that they only use cookies that we have allowed.",
+      "reasoning": "The evidence identifies the continuing Google requests as advertising tracking, and they occurred after rejection. This is high severity because the observed behaviour appears to directly contradict the site's stated cookie-control promise, in addition to raising the PECR consent issue already indicated by the audit.",
+      "law_eu": "ePrivacy Directive 2002/58/EC Art. 5(3) (consent before storing/reading on a device); EU GDPR Art. 5(1)(a) and Art. 7"
+    },
+    {
+      "severity": "medium",
+      "ai_severity": "medium",
+      "severity_note": null,
+      "title": "Privacy notice lacks substantive UK GDPR transparency information",
+      "detail": "The supplied privacy notice contains headings for legal basis, sharing, international transfers, retention and rights, but provides no substantive explanation under those headings. It therefore does not clearly explain key information required for people to understand how their data is used.",
+      "law": "UK GDPR Art. 5(1)(a), Art. 6 and Art. 13(1)(e)-(f)",
+      "source": "ai",
+      "evidence": [
+        "E4"
+      ],
+      "policy_quote": null,
+      "reasoning": "This is a significant transparency gap, particularly concerning lawful bases, retention, rights, complaints and international transfers. Medium severity is appropriate because the supplied text may be incomplete or link to further material, but the crawler did not find the required detail in the policy text provided.",
+      "law_eu": "EU GDPR Art. 5(1)(a), Art. 6 and Art. 13(1)(e)-(f)"
+    }
+  ],
+  "summary": {
+    "trackers_after_reject": 7,
+    "companies_seen": 1,
+    "companies_in_policy": 0,
+    "companies_not_disclosed": [],
+    "companies_after_reject": [
+      "Google"
+    ],
+    "companies_with_cookies_before_consent": [],
+    "categories": {
+      "Google": "Advertising"
+    },
+    "fingerprinting_domains": [],
+    "id_leak_companies": []
+  },
+  "letter": {
+    "kind": "complaint",
+    "to": "privacy@glencore.com",
+    "subject": "Concern regarding cookie rejection and transparency on glencore.com",
+    "body": "Dear Data Protection Officer,\n\nI am writing to raise concerns identified during an automated, passive privacy audit of https://glencore.com on 2026-11-08 04:07 UTC. The audit used a fresh browser, clicked the cookie banner\u2019s \u201cReject all cookies\u201d option, then recorded what was still sent while browsing the site.\n\nAfter rejecting cookies, the following pages were visited: https://www.glencore.com/en/careers, https://www.glencore.com/publications, and https://www.glencore.com/world-map. Your privacy notice at https://www.glencore.com/en/terms/privacy-notice was also reviewed.\n\nThe points I ask you to explain are:\n\n1. It was observed that Google still received data after cookies were rejected. Specifically, there were 7 requests to googletagmanager.com after \u201cReject all cookies\u201d was clicked. These were classified in the audit as advertising-related.\n\n2. Our review suggests that advertising tracking appears to operate despite cookie rejection. The audit successfully clicked \u201cReject all cookies\u201d, but Google advertising-related requests continued afterwards. This appears inconsistent with the statement in your policy that: \u201cWe take care to protect your information (even if it was collected by other organisations for example by having contracts that limit how your information can be used), and regularly check that they only use cookies that we have allowed.\u201d\n\n3. Our review also suggests that the privacy notice lacks substantive transparency information. Although it contains headings for legal basis, sharing, international transfers, retention and rights, it does not appear to provide substantive explanation under those headings, making it unclear how key aspects of personal data use are explained to individuals.\n\nPlease would you:\n\n1. Explain each of the points above.\n2. Confirm which cookies or trackers you consider strictly necessary or otherwise exempt, and why.\n3. Stop any non-essential tracking that operates without consent.\n4. Reply within one month.\n\nIf this matter is not resolved, it may be raised with the Information Commissioner\u2019s Office.\n\nYours faithfully,\nJoshua Baker",
+    "drafted_at": "2026-11-08T04:08:08.664501+00:00",
+    "model": "gpt-5.4",
+    "findings_used": [
+      "Google still received data after you rejected cookies",
+      "Advertising tracking appears to operate despite cookie rejection",
+      "Privacy notice lacks substantive UK GDPR transparency information"
+    ],
+    "delivery": null,
+    "auto": {
+      "tier": "high",
+      "reason": "Audit's worst finding is high."
+    }
+  },
+  "loaded": true,
+  "errors": [],
+  "ai_review": {
+    "model": "gpt-5.6-luna",
+    "summary": "The audit found advertising-related Google requests continuing after the user rejected cookies, apparently conflicting with the site's stated cookie-control approach. The privacy notice also provides only headings for several important UK GDPR transparency topics, without the substantive information in the supplied text. This is an automated assessment, not legal advice.",
+    "findings_kept": 2,
+    "findings_dropped": 0,
+    "evidence": [
+      "E1: Cookie banner found: True. Reject clicked successfully: True. Method: selector. Buttons clicked: Reject all cookies.",
+      "E2: Tracker Google (Advertising): 1 requests before consent, 7 after reject, to googletagmanager.com. Example after-reject requests: https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS | https://www.googletagmanager.com/gtm.js?id=GTM-K6F9BXS",
+      "E3: Pages browsed and scrolled after reject: https://www.glencore.com/en/careers, https://www.glencore.com/publications, https://www.glencore.com/world-map.",
+      "E4: Privacy policy: https://www.glencore.com/en/terms/privacy-notice. Companies it names: none extracted. Contact email found: privacy@glencore.com.",
+      "E5: Cookie policy: https://www.glencore.com/en/terms/cookies-notice.",
+      "E6: Automated check (high): Google still received data after you rejected cookies. 7 requests to googletagmanager.com after you clicked reject (Advertising)."
+    ],
+    "policy_checklist": {
+      "controller_identity": {
+        "label": "Who is responsible (the controller)",
+        "status": "present",
+        "quote": "The organisation that will make decisions about how your information is handled is Glencore International AG"
+      },
+      "purposes": {
+        "label": "What the data is used for",
+        "status": "present",
+        "quote": "They help us understand more about the number of people visiting our websites and the pages that are used the most."
+      },
+      "lawful_basis": {
+        "label": "The legal basis for using it",
+        "status": "unclear",
+        "quote": null
+      },
+      "recipients": {
+        "label": "Who it is shared with",
+        "status": "present",
+        "quote": "We sometimes send the information for analytics and search engine providers to help us understand more about what it means."
+      },
+      "retention": {
+        "label": "How long it is kept",
+        "status": "present",
+        "quote": "You can control what cookies are allowed to be used on our websites and how long they are kept"
+      },
+      "rights": {
+        "label": "Your rights (access, erasure, objection...)",
+        "status": "unclear",
+        "quote": null
+      },
+      "withdraw_consent": {
+        "label": "How to withdraw consent",
+        "status": "present",
+        "quote": "You can control what cookies are allowed to be used on our websites and how long they are kept, by switching them on or off"
+      },
+      "complain_to_regulator": {
+        "label": "Right to complain to the ICO",
+        "status": "unclear",
+        "quote": null
+      }
+    }
+  }
+}

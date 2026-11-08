@@ -189,6 +189,13 @@ def holds_value(cookie):
     return cookie.get("value_kind", "value") not in ("empty", "placeholder")
 
 
+def owner(domain):
+    """Company that owns a domain (Tracker Radar entity, e.g. "Google" for both google-analytics.com
+    and doubleclick.net), or the domain itself if unknown. Used so a company passing data between
+    its own domains isn't called a leak."""
+    return _DOMAIN_TO_COMPANY.get(domain) or domain
+
+
 def match_cookie(name, cookie_domain, site_domain):
     """Tracker dict for a cookie: known tracker cookie NAME first, then the cookie's domain."""
     for prefix, company in FIRST_PARTY_TRACKER_COOKIES.items():

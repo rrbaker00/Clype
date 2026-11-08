@@ -15,6 +15,14 @@ def base_domain(url):
         return ".".join(p for p in (ext.subdomain, ext.domain) if p).removeprefix("www.")
     return f"{ext.domain}.{ext.suffix}"
 
+def _body(request):
+    """POST body as text (empty for GET). post_data crashes on binary (gzip) bodies: decode leniently."""
+    try:
+        return (request.post_data_buffer or b"").decode("utf-8", "ignore")[:20000]
+    except Exception:
+        return ""
+
+
 def make_logger(site_domain):
     """Build a (requests_list, on_request_handler, phase_state) trio.
     Every captured request is tagged with phase_state['phase'] at the
@@ -31,6 +39,7 @@ def make_logger(site_domain):
             "method": request.method,
             "type": request.resource_type,
             "phase": phase_state["phase"],
+            "_post": _body(request),   # for the ID-leak check (agent/crosssite.py); removed before saving
         })
 
     return requests_list, on_request, phase_state
