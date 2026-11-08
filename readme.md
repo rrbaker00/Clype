@@ -28,6 +28,15 @@ Additonal features
 - **Tracker data:** `data/trackers.json` is derived from [DuckDuckGo Tracker Radar](https://github.com/duckduckgo/tracker-radar)
   (© 2020 Duck Duck Go, Inc.), licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
   We reduced it to a domain → company-name map; that file is shared under the same licence. Details: `data/README.md`.
-- **Open-source libraries** (all MIT / BSD-3-Clause / Apache-2.0 / PSF): Playwright and Chromium, FastAPI, Starlette,
-  uvicorn, Pydantic, OpenAI Python SDK, tldextract (with the Public Suffix List, MPL-2.0), python-dotenv, pypdf (PDF policies).
+- **Open-source libraries** (all MIT / BSD-3-Clause / Apache-2.0 / PSF / ISC): Playwright, FastAPI, Starlette,
+  uvicorn, Pydantic, httpx, anyio, greenlet, OpenAI Python SDK, tldextract (with the Public Suffix List, MPL-2.0),
+  python-dotenv, pypdf (PDF policies).
+- **Browsers** (downloaded by Playwright, not included in this repo): Firefox (MPL-2.0) for audits, Chromium (BSD)
+  for the cross-site proof.
+- **Firefox extension and dashboard:** our own code and icons; nothing is loaded from third-party sites.
+- **Research notes and reports** (`research_notes/`, `reports/`, `docs/`): contain public sector information licensed
+  under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+  (UK legislation, ICO guidance), short quotations from EDPB guidelines and academic papers, each cited where used.
+  Detection methods follow published research (OpenWPM, Englehardt & Narayanan; Acar et al.; Chen et al.;
+  Privacy Badger's heuristics); no code from those projects is included.
 - **Services:** OpenAI API (AI review, policy reading, letters), Brevo (email sending).
