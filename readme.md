@@ -1,11 +1,6 @@
 # Overveiw 
 A browser agent that visits a site, clicks “Reject all” on the cookie banner, and watches what still gets sent anyway. It then reads the privacy policy, points out where the site broke its own promises, and drafts a complaint letter.
 
-## Covers:
-- Wordsmith (main): a long agent workflow with a legal angle.
-- G-Research: it shows hidden tracking.
-- Metaview: best overall, all projects are eligible.
-
 Core Features 
 1. Record everything: open the site and log every request, cookie and script it loads.
 2. Reject cookies: the agent finds the cookie banner and clicks “Reject all”, including digging through “Manage preferences” if needed.
