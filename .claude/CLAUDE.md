@@ -53,7 +53,7 @@ detection (canvas / WebGL / AudioContext hooks via `add_init_script`).
   `outbox` saves .eml files instead. `high` audits are drafted, never sent automatically.
   The dashboard's "Send email" button sends one letter after a confirm, following the same
   SEND_MODE and live limits. Never send from tests or debugging runs.
-  Audits started by the Firefox extension (extension/) never send, whatever SEND_MODE says.
+  Audits started by the extension (extension/, extensions-chrome/) never send, whatever SEND_MODE says.
 - **Track cost.** Log tokens used and time taken per audit into the audit
   JSON. Wordsmith judges on this.
 - Never commit `.env` or API keys.
@@ -67,6 +67,7 @@ agent/       capture, consent, browse, trackers, policy, compare, letter
 api/main.py  FastAPI: POST /audit {url} -> audit JSON
 web/         frontend
 extension/   Firefox extension (toolbar badge, popup, critical alerts); talks to api/ on :8000
+extensions-chrome/ Support for manifest v3 for chrome extensions
 data/        tracker lists
 audits/      saved audit JSON (one file per run)
 ```

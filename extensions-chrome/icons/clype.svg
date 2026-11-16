@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Shield with a "C": Clype -->
+  <path d="M32 4 L56 13 V31 C56 46 45 56 32 60 C19 56 8 46 8 31 V13 Z" fill="#7c3aed"/>
+  <path d="M41 24 A11 11 0 1 0 41 40" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+</svg>
