@@ -29,6 +29,8 @@ Additonal features
 - **Browsers** (downloaded by Playwright, not included in this repo): Firefox (MPL-2.0) for audits, Chromium (BSD)
   for the cross-site proof.
 - **Firefox extension and dashboard:** our own code and icons; nothing is loaded from third-party sites.
+- **Chrome Extenstion** 
+https://github.com/mozilla/webextension-polyfill - MPL2.0 licence
 - **Research notes and reports** (`research_notes/`, `reports/`, `docs/`): contain public sector information licensed
   under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
   (UK legislation, ICO guidance), short quotations from EDPB guidelines and academic papers, each cited where used.

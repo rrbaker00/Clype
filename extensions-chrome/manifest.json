@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Clype",
+  "version": "0.2.0",
+  "description": "Audits each new site you visit for cookie-consent and privacy-policy problems (needs the Clype server running on this computer).",
+  "icons": {
+    "96": "icons/clype-96.png"
+  },
+  "action": {
+    "default_icon": "icons/clype-96.png",
+    "default_title": "Clype",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "browser-polyfill.js",
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "alarms",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "cookies",
+    "browsingData",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions":[
+    "<all_urls>"
+  ]
+}

@@ -1,0 +1,28 @@
+:root { --bg: #13111c; --panel: #1d1a29; --line: #2e2a3d; --text: #ece9f5; --muted: #9a94ad;
+        --bad: #f43f5e; --high: #fb923c; --warn: #f59e0b; --ok: #34d399; --accent: #7c3aed; }
+body { width: 360px; margin: 0; padding: 12px; background: var(--bg); color: var(--text);
+       font: 13px/1.4 system-ui, sans-serif; }
+header { display: flex; align-items: center; gap: 8px; font-size: 15px; margin-bottom: 10px; }
+.toggle + .toggle { margin-left: 0; }
+.yours { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+.toggle { margin-left: auto; font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 4px; }
+h2 { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 14px 0 6px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.card.critical { border-color: var(--bad); }
+.row { display: flex; align-items: center; gap: 8px; }
+.site { font-weight: 700; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+.pill { margin-left: auto; font-size: 11px; font-weight: 700; padding: 1px 8px; border-radius: 99px; border: 1px solid currentColor; white-space: nowrap; }
+.sev-critical { color: var(--bad); } .sev-high { color: var(--high); } .sev-medium { color: var(--warn); }
+.sev-low, .sev-ok { color: var(--ok); } .sev-none { color: var(--muted); }
+ul { margin: 6px 0; padding-left: 16px; }
+button { background: var(--accent); color: #fff; border: 0; border-radius: 7px; padding: 5px 10px; font: inherit; cursor: pointer; }
+button.secondary { background: transparent; color: var(--muted); border: 1px solid var(--line); }
+.actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+a { color: #c4b5fd; }
+.report { display: flex; align-items: center; gap: 8px; padding: 7px 4px; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--text); }
+.report:hover { background: var(--panel); }
+.report .date { font-size: 11px; color: var(--muted); }
+#reports { max-height: 260px; overflow-y: auto; }
+footer { margin-top: 10px; text-align: right; }
