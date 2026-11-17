@@ -12,7 +12,7 @@ Core Features
 8. Results page: a clear visual of what leaked, the broken promises, and the letter.
 9. Check for crossite tracking. 
 
-Additonal features 
+Features in development
 - Fuck this site (send random data)
 - Block ads 
 - look for data collection in input boxes, eg typing a email into a   box w out submiting it 
